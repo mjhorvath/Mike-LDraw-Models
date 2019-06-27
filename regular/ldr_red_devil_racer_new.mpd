@@ -1,0 +1,284 @@
+0 FILE complete.dat
+0 Name: complete.dat
+0 Author: Michael Horvath
+0 Unofficial Model
+0 This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
+0 International License. You should have received a copy of the license along
+0 with this work. If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 14 0 -54 160 1 0 0 0 0.997913 -0.064571 0 0.064571 0.997913 whole.dat
+0 MLCAD HIDE 1 14 0 0 0 1 0 0 0 1 0 0 0 1 axis_32s.dat
+0 
+0 
+0 
+0 
+0 
+
+0
+0 FILE whole.dat
+
+0 Name: whole.dat
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 1
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 axel.dat
+1 15 0 -22 -340 1 0 0 0 1 0 0 0 1 axel.dat
+1 15 20 -40 -100 1 0 0 0 1 0 0 0 1 inner.dat
+1 15 -16 -118 -130 1 0 0 0 -0.064571 0.997913 0 -0.997913 -0.064571 headlights.dat
+1 15 16 -118 -130 1 0 0 0 -0.064571 0.997913 0 -0.997913 -0.064571 headlights.dat
+1 15 20 -40 -100 1 0 0 0 1 0 0 0 1 outer.dat
+1 15 0 -54 -370 1 0 0 0 0.997913 0.064571 0 -0.064571 0.997913 87695.dat
+0 MLCAD HIDE 1 15 0 0 0 1 0 0 0 1 0 0 0 1 axis_32s.dat
+1 15 -10 -112 -2 1 0 0 0 0.87 -0.5 0 0.5 0.87 spoiler.dat
+
+
+
+0
+0 FILE axel.dat
+0 WRITE Axle hidden, as it causes LDView to crash.
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 3737.dat
+0 Name: axel.dat
+1 7 90 0 0 0 0 -1 0 1 0 1 0 0 2695.dat
+1 7 -90 0 0 0 0 1 0 1 0 -1 0 0 2695.dat
+1 0 -90 0 0 0 0 1 0 1 0 -1 0 0 2696.dat
+1 0 90 0 0 0 0 -1 0 1 0 1 0 0 2696.dat
+1 7 30 0 0 0 0 1 0 1 0 -1 0 0 3713.dat
+1 7 70 0 0 0 0 1 0 1 0 -1 0 0 3713.dat
+1 7 -30 0 0 0 0 -1 0 1 0 1 0 0 3713.dat
+1 7 -70 0 0 0 0 -1 0 1 0 1 0 0 3713.dat
+
+
+
+0
+0 FILE inner.dat
+
+0 Name: inner.dat
+0 ROTATION CENTER 10 23.2056 -110 1 "Custom" 
+0 ROTATION CONFIG 0 1
+1 0 -20 -40 90 -1 0 0 0 1 0 0 0 -1 6153.dat
+1 4 -20 0 -70 -1 0 0 0 1 0 0 0 -1 steer.dat
+1 4 -20 -8 10 1 0 0 0 1 0 0 0 1 2432.dat
+1 4 20.001 -16 -40 1 0 0 0 1 0 0 0 1 43721.dat
+1 4 20.001 -16 120 -1 0 0 0 1 0 0 0 -1 43720.dat
+1 4 -19.999 -16 160 -1 0 0 0 1 0 0 0 -1 3003.dat
+1 4 10.001 -16 170 -1 0 0 0 1 0 0 0 -1 4070.dat
+1 36 10.001 -6 184 -1 0 0 0 0 -1 0 -1 0 3024.dat
+1 36 -49.999 -6 184 -1 0 0 0 0 -1 0 -1 0 3024.dat
+1 4 -49.999 -16 170 -1 0 0 0 1 0 0 0 -1 4070.dat
+1 4 -19.999 8 120 -1 0 0 0 1 0 0 0 -1 3001.dat
+1 4 -19.999 8 160 -1 0 0 0 1 0 0 0 -1 3001.dat
+1 4 -39.999 32 130 -1 0 0 0 1 0 0 0 -1 3747a.dat
+1 4 0.001 32 130 -1 0 0 0 1 0 0 0 -1 3747a.dat
+1 4 0.001 32 70 1 0 0 0 1 0 0 0 1 3660.dat
+1 4 -39.999 32 70 1 0 0 0 1 0 0 0 1 3660.dat
+1 4 -19.999 8 80 -1 0 0 0 1 0 0 0 -1 3001.dat
+1 4 -19.999 -16 120 -1 0 0 0 1 0 0 0 -1 3003.dat
+1 4 10.001 -16 40 0 0 -1 0 1 0 1 0 0 3037.dat
+1 4 -49.999 -16 40 0 0 1 0 1 0 -1 0 0 3037.dat
+1 4 -59.999 -16 120 -1 0 0 0 1 0 0 0 -1 43721.dat
+1 4 -59.999 -16 -40 1 0 0 0 1 0 0 0 1 43720.dat
+1 4 -19.999 -16 -90 1 0 0 0 1 0 0 0 1 4858.dat
+1 4 -19.999 8 -90 1 0 0 0 1 0 0 0 1 4855.dat
+1 4 -9.999 8 -70 0 0 -1 0 1 0 1 0 0 3665a.dat
+1 4 -29.999 8 -70 0 0 1 0 1 0 -1 0 0 3665a.dat
+1 4 -50 -16 -20 0 0 -1 0 1 0 1 0 0 4865a.dat
+1 4 -20 24 0 0 0 1 0 1 0 -1 0 0 3032.dat
+1 4 10 16 -20 0 0 1 0 1 0 -1 0 0 3710.dat
+1 4 10 8 -20 0 0 1 0 1 0 -1 0 0 3710.dat
+1 4 10 16 40 0 0 1 0 1 0 -1 0 0 3023.dat
+1 4 10 8 40 0 0 1 0 1 0 -1 0 0 3023.dat
+1 4 -10 -48 60 0 0 -1 0 1 0 1 0 0 44302.dat
+1 4 -30 -48 60 0 0 -1 0 1 0 1 0 0 44302.dat
+1 4 -20 -64 -10 1 0 0 0 1 0 0 0 1 45677.dat
+1 4 -20 -64 10 -1 0 0 0 1 0 0 0 -1 45677.dat
+1 39 -20 -48 -70 1 0 0 0 1 0 0 0 1 4866.dat
+1 0 -20 -80 -10 1 0 0 0 1 0 0 0 1 2540.dat
+1 0 -20 -72 0 1 0 0 0 1 0 0 0 1 3022.dat
+1 0 -20 -64 20 -1 0 0 0 1 0 0 0 -1 15068.dat
+1 0 -21 15 -12 1 0 0 0 0 1 0 -1 0 3816.dat
+1 0 -19 15 -12 1 0 0 0 0 1 0 -1 0 3817.dat
+1 0 -20 15.84 -10.81 1 0 0 0 0.869569 0.502046 0 -0.502046 0.869569 torso.dat
+
+
+
+0
+0 FILE outer.dat
+
+0 Name: outer.dat
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 4 -70 8 0 1 0 0 0 1 0 0 0 1 strut.dat
+1 4 30 8 0 1 0 0 0 1 0 0 0 1 strut.dat
+1 4 -20 32 -270 1 0 0 0 1 0 0 0 1 3666.dat
+1 4 -20 8 -270 1 0 0 0 1 0 0 0 1 3937.dat
+1 0 -20 20 -290 1 0 0 0 0 -1 0 1 0 2922a.dat
+1 4 -20 32 -250 1 0 0 0 1 0 0 0 1 3666.dat
+1 4 -20 0 -220 1 0 0 0 1 0 0 0 1 3958.dat
+1 4 -60 0 -130 -1 0 0 0 1 0 0 0 -1 43722.dat
+1 4 20 0 -130 -1 0 0 0 1 0 0 0 -1 43723.dat
+1 4 -30 -8 -270 0 0 -1 0 1 0 1 0 0 2555.dat
+1 4 -10 -8 -270 0 0 -1 0 1 0 1 0 0 2555.dat
+1 4 -20 8 -250 1 0 0 0 1 0 0 0 1 3023.dat
+1 4 40 18 -10 0 1 0 -1 0 0 0 0 1 42023.dat
+1 4 40 18 30 0 1 0 0 0 1 1 0 0 3004.dat
+1 4 40 18 110 0 1 0 0 0 1 1 0 0 3666.dat
+1 4 -80 18 -10 0 -1 0 1 0 0 0 0 1 42023.dat
+1 4 -80 18 30 0 -1 0 0 0 1 -1 0 0 3004.dat
+1 4 -80 18 110 0 -1 0 0 0 1 -1 0 0 3666.dat
+
+
+
+0
+0 FILE spoiler.dat
+
+0 Name: spoiler.dat
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 4 10 0 40 1 0 0 0 1 0 0 0 1 4477.dat
+1 0 100 -24 30 0 0 1 0 1 0 -1 0 0 4865a.dat
+1 0 -80 -24 30 0 0 -1 0 1 0 1 0 0 4865a.dat
+1 0 10 -8 40 -1 0 0 0 1 0 0 0 -1 4162.dat
+1 4 10 0 10 1 0 0 0 1 0 0 0 1 3022.dat
+1 4 10 8 20 0 0 1 0 1 0 -1 0 0 3021.dat
+1 4 0 16 10 0 0 1 0 1 0 -1 0 0 44301.dat
+1 4 20 16 10 0 0 1 0 1 0 -1 0 0 44301.dat
+1 4 -50 0 10 0 0 1 0 1 0 -1 0 0 41770.dat
+1 4 70 0 10 0 0 -1 0 1 0 1 0 0 41769.dat
+
+
+
+0
+0 FILE anten.dat
+
+0 Name: anten.dat
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 0 -32 0 1 0 0 0 1 0 0 0 1 2433.dat
+1 0 0 -40 0 1 0 0 0 1 0 0 0 1 2569.dat
+
+
+
+0
+0 FILE torso.dat
+
+0 Name: torso.dat
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 0 -44 0 1 0 0 0 1 0 0 0 1 973p52.dat
+0 MLCAD HIDE 1 0 0 0 0 1 0 0 0 1 0 0 0 1 axis_32s.dat
+1 14 0 -68 0 1 0 0 0 1 0 0 0 1 3626bp01.dat
+1 0 0 -68 0 1 0 0 0 1 0 0 0 1 2446.dat
+1 39 0 -68 0 1 0 0 0 1 0 0 0 1 2447.dat
+1 0 0 -12 0 1 0 0 0 1 0 0 0 1 3815.dat
+1 0 30 -31.22 1.49 1 0 0 0 0.91 -0.42 0 0.42 0.91 limbl.dat
+1 0 -20 -31.22 1.49 1 0 0 0 0.91 -0.42 0 0.42 0.91 limbr.dat
+
+
+
+0
+0 FILE strut.dat
+
+0 Name: strut.dat
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 4 0 0 80 0 0 1 0 1 0 -1 0 0 2730.dat
+1 4 0 0 -140 0 0 1 0 1 0 -1 0 0 3895.dat
+1 4 0 0 -270 1 0 0 0 1 0 0 0 1 4070.dat
+1 47 0 10 -284 1 0 0 0 0 -1 0 1 0 6141.dat
+1 47 0 10 -284 1 0 0 0 1 0 0 0 1 light.dat
+1 4 0 24 100 1 0 0 0 1 0 0 0 1 2823.dat
+1 4 0 24 -180 0 0 1 0 1 0 -1 0 0 3666.dat
+1 4 0 24 -20 0 0 1 0 1 0 -1 0 0 4477.dat
+1 36 0 -8 170 1 0 0 0 1 0 0 0 1 light.dat
+1 4 0 24 130 -1 0 0 0 1 0 0 0 -1 4287a.dat
+
+
+
+0
+0 FILE limbl.dat
+
+0 Name: limbl.dat
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 -30 -4 0 1 0 0 0 0.71 0.71 0 -0.71 0.71 976.dat
+1 0 -8 -1 -29 0 0 -1 0 1 0 1 0 0 977.dat
+
+
+
+0
+0 FILE limbr.dat
+
+0 Name: limbr.dat
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 20 -4 0 1 0 0 0 0.71 0.71 0 -0.71 0.71 975.dat
+1 0 -2 -1 -29 0 0 -1 0 1 0 1 0 0 977.dat
+
+
+
+
+0
+0 FILE headlights.dat
+0 Untitled
+0 Name: headlights.dat
+0 Author: MLCad
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 47 0 14 0 1 0 0 0 1 0 0 0 1 6141.dat
+1 0 0 6 0 0 0 1 0 1 0 -1 0 0 2555.dat
+0 
+0 
+
+0
+0 FILE steer.dat
+0 New Model
+0 Name: steer.dat
+0 Author: MLCad
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 4 0 -24 0 1 0 0 0 1 0 0 0 1 3937.dat
+1 4 0 -14 -10 1 0 0 0 0 -1 0 1 0 3938.dat
+1 4 0 -14 -18 1 0 0 0 0 -1 0 1 0 3829c01.dat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0 
+0 
+0 
+0 
+0 
+0
+0

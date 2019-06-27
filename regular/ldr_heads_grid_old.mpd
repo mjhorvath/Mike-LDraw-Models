@@ -1,0 +1,50 @@
+0
+0 FILE heads.dat
+0 Name: heads.dat
+0 WRITE Author: Michael Horvath
+0 This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 
+0 International License. You should have received a copy of the license along 
+0 with this work. If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+1 14 -240 128 0 1 0 0 0 1 0 0 0 1 3626bpa5.dat
+1 14 -210 32 0 1 0 0 0 1 0 0 0 1 3626ap01.dat
+1 14 -150 32 0 1 0 0 0 1 0 0 0 1 3626bp05.dat
+1 14 -180 32 0 1 0 0 0 1 0 0 0 1 3626bps2.dat
+1 14 -120 32 0 1 0 0 0 1 0 0 0 1 3626bps7.dat
+1 14 -210 64 0 1 0 0 0 1 0 0 0 1 3626bpa4.dat
+1 14 -180 64 0 1 0 0 0 1 0 0 0 1 3626bpst.dat
+1 14 -90 0 0 1 0 0 0 1 0 0 0 1 3626bps9.dat
+1 14 -120 0 0 1 0 0 0 1 0 0 0 1 3626bps4.dat
+1 14 -150 0 0 1 0 0 0 1 0 0 0 1 3626bpsc.dat
+1 14 -180 0 0 1 0 0 0 1 0 0 0 1 3626bps3.dat
+1 14 -210 0 0 1 0 0 0 1 0 0 0 1 3626bps5.dat
+1 14 -150 64 0 1 0 0 0 1 0 0 0 1 3626bps8.dat
+1 14 -120 64 0 1 0 0 0 1 0 0 0 1 3626bpsb.dat
+1 14 -210 128 0 1 0 0 0 1 0 0 0 1 3626bp02.dat
+1 14 -210 96 0 1 0 0 0 1 0 0 0 1 3626bp06.dat
+1 14 -180 96 0 1 0 0 0 1 0 0 0 1 3626bp04.dat
+1 14 -150 96 0 1 0 0 0 1 0 0 0 1 3626bp03.dat
+1 14 -120 96 0 1 0 0 0 1 0 0 0 1 3626bpa3.dat
+1 14 -180 128 0 1 0 0 0 1 0 0 0 1 3626bp63.dat
+1 14 -240 96 0 1 0 0 0 1 0 0 0 1 3626bpa7.dat
+1 14 -150 128 0 1 0 0 0 1 0 0 0 1 3626bp40.dat
+1 14 -120 128 0 1 0 0 0 1 0 0 0 1 3626bp61.dat
+1 14 -120 160 0 1 0 0 0 1 0 0 0 1 3626bp62.dat
+1 14 -270 128 0 1 0 0 0 1 0 0 0 1 3626bp65.dat
+1 14 -270 96 0 1 0 0 0 1 0 0 0 1 3626bp69.dat
+1 14 -240 64 0 1 0 0 0 1 0 0 0 1 3626bpa1.dat
+1 14 -240 32 0 1 0 0 0 1 0 0 0 1 3626bp39.dat
+1 14 -240 0 0 1 0 0 0 1 0 0 0 1 3626bpa6.dat
+1 14 -270 0 0 1 0 0 0 1 0 0 0 1 3626bp7a.dat
+1 14 -270 32 0 1 0 0 0 1 0 0 0 1 3626bpa2.dat
+1 14 -270 64 0 1 0 0 0 1 0 0 0 1 82359.dat
+1 7 -270 160 0 1 0 0 0 1 0 0 0 1 3626bp31.dat
+1 7 -240 160 0 1 0 0 0 1 0 0 0 1 3626bp30.dat
+1 7 -150 160 0 1 0 0 0 1 0 0 0 1 3626bp34.dat
+1 7 -180 160 0 1 0 0 0 1 0 0 0 1 3626bp33.dat
+1 7 -210 160 0 1 0 0 0 1 0 0 0 1 3626bp32.dat
+1 14 -90 32 0 1 0 0 0 1 0 0 0 1 3626bp3k.dat
+1 14 -90 128 0 1 0 0 0 1 0 0 0 1 3626bpac.dat
+1 14 -90 64 0 1 0 0 0 1 0 0 0 1 3626bp3j.dat
+1 14 -90 96 0 1 0 0 0 1 0 0 0 1 3626bpse.dat

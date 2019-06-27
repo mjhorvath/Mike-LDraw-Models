@@ -1,0 +1,568 @@
+0 FILE complete.dat
+0 WRITE Author: Michael Horvath
+0 This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 
+0 International License. You should have received a copy of the license along 
+0 with this work. If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 0 -355.17 -40.68 0 0 -1 -0.422618 -0.906308 0 -0.906308 0.422618 0 body.dat
+0
+0 FILE body.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 -30 34 -20 0 0.57 0.82 0 -0.82 0.57 1 0 0 halflow.dat
+1 0 10 24 0 1 0 0 0 1 0 0 0 1 halfup.dat
+0
+0 FILE halflow.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 10 -16 10 1 0 0 0 1 0 0 0 1 torsolow.dat
+1 0 60 99 -185 -1 0 0 0 0.5 -0.87 0 -0.87 -0.5 ped.dat
+1 0 10 -10 -40 1 0 0 0 1 0 0 0 1 tailup.dat
+1 0 30 -33 -233 0 0 -1 0.5 0.87 0 0.87 -0.5 0 taillow.dat
+0
+0 FILE halfup.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 0 32 -220 1 0 0 0 1 0 0 0 1 wings.dat
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 torsoup.dat
+1 0 -84 -128 -90 0 0.71 -0.71 0 0.71 0.71 1 0 0 arml.dat
+1 0 29 -15 60 0 0.71 -0.71 0 0.71 0.71 1 0 0 armr.dat
+0
+0 FILE torsolow.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 1 10 0 0 1 0 0 0 1 0 0 0 1 3149e.dat
+1 1 10 6 -50 1 0 0 0 1 0 0 0 1 3640.dat
+1 1 10 42 -50 1 0 0 0 0 1 0 -1 0 3956.dat
+1 1 10 52 -58 0 0 1 -1 0 0 0 -1 0 3021.dat
+1 1 10 22 -40 -1 0 0 0 1 0 0 0 -1 3660.dat
+1 0 10 0 0 1 0 0 0 1 0 0 0 1 313.dat
+1 7 10 62 -66 -1 0 0 0 0 -1 0 -1 0 3679.dat
+0
+0 FILE ped.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 30 -135.56 -6 0 0 1 0.5 0.87 0 -0.87 0.5 0 pelvis.dat
+1 0 60 -122.18 -8.29 1 0 0 0 0.939586 0.338346 0 -0.338346 0.939586 uplegl.dat
+1 0 80 29 -37 1 0 0 0 1 0 0 0 1 lowlegl.dat
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 legr.dat
+0
+0 FILE tailup.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 1 10 0 -120 -1 0 0 0 1 0 0 0 -1 3639.dat
+1 1 10 -8 -100 -1 0 0 0 1 0 0 0 -1 4859.dat
+1 1 0 -8 -140 0 0 1 0 1 0 -1 0 0 4275b.dat
+1 1 20 -8 -140 0 0 1 0 1 0 -1 0 0 4275b.dat
+0
+0 FILE taillow.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 1 0 0 0 1 0 0 0 1 0 0 0 1 4276b.dat
+1 1 0 0 20 1 0 0 0 1 0 0 0 1 4276b.dat
+1 1 -10 0 -40 1 0 0 0 1 0 0 0 1 2450.dat
+1 1 -10 0 60 0 0 -1 0 1 0 1 0 0 2450.dat
+1 1 0 8 10 0 0 -1 0 1 0 1 0 0 3020.dat
+1 1 -30 0 10 0 0 1 0 1 0 -1 0 0 3023.dat
+1 1 -10 -8 10 0 0 -1 0 1 0 1 0 0 6239.dat
+0
+0 FILE wings.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 10 0 0 1 0 0 0 1 0 0 0 1 wingr.dat
+1 0 10 0 440 -1 0 0 0 1 0 0 0 -1 wingl.dat
+0
+0 FILE torsoup.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 shell.dat
+1 0 -22 -12 10 0 -1 0 0 0 1 -1 0 0 guts.dat
+1 15 34 -94 -10 0 -1 0 0 0 -1 1 0 0 shldlow.dat
+1 0 136.21 35.21 10 0 -0.66 -0.76 0 -0.76 0.66 -1 0 0 shldmid.dat
+1 0 96.81 42.32 0 -0.95 0.31 0 -0.31 -0.95 0 0 0 1 shldup.dat
+1 0 103.61 -36.06 -14.29 0.68 -0.73 0.01 0.72 0.67 -0.16 0.11 0.11 0.99 helmet.dat
+1 0 -10 8 0 1 0 0 0 1 0 0 0 1 3068b.dat
+0
+0 FILE arml.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 35 60 -69 -0.26 -0.48 -0.84 -0.97 0.13 0.22 0 0.87 -0.5 appendl.dat
+1 0 0 160 0 1 0 0 0 1 0 0 0 1 socketl.dat
+0
+0 FILE armr.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 socketr.dat
+1 0 34 -85 5 0.84 -0.26 0.48 0.22 0.97 0.13 -0.5 0 0.87 appendr.dat
+0
+0 FILE pelvis.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 1 10 0 0 1 0 0 0 1 0 0 0 1 3700.dat
+1 1 10 0 20 1 0 0 0 1 0 0 0 1 3700.dat
+1 1 10 -8 10 1 0 0 0 1 0 0 0 1 3680.dat
+0
+0 FILE uplegl.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 20 66 0 -1 0 0 0 -1 0 0 0 1 thigh.dat
+1 0 20 122 10 1 0 0 0 -1 0 0 0 -1 knee.dat
+0
+0 FILE lowlegl.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 0 112 20 1 0 0 0 1 0 0 0 1 footl.dat
+1 0 10 120 50 -1 0 0 0 -1 0 0 0 1 shin.dat
+0
+0 FILE legr.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 0 -56 -10 1 0 0 0 -1 0 0 0 -1 thigh.dat
+1 0 0 144 20 1 0 0 0 1 0 0 0 1 footr.dat
+1 0 10 152 50 -1 0 0 0 -1 0 0 0 1 shin.dat
+1 0 0 0 0 1 0 0 0 -1 0 0 0 -1 knee.dat
+0
+0 FILE wingr.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 0 0 200 1 0 0 0 1 0 0 0 1 30119.dat
+1 15 -10 80 0 0 0 -1 0 1 0 1 0 0 3585.dat
+1 0 0 24 150 1 0 0 0 1 0 0 0 1 2540.dat
+1 15 0 66 150 0 0 -1 0 1 0 1 0 0 4868a.dat
+1 7 0 66 150 0 0 -1 0 1 0 1 0 0 4869.dat
+1 7 -10 8 200 0 0 -1 0 1 0 1 0 0 4595.dat
+1 7 -10 18 182 1 0 0 0 0 -1 0 1 0 2412a.dat
+1 7 -10 18 218 1 0 0 0 0 1 0 -1 0 2412a.dat
+1 0 16 26 130 0 1 0 0 0 -1 -1 0 0 3062b.dat
+1 0 -16 26 130 0 -1 0 0 0 -1 1 0 0 3062b.dat
+1 0 64 26 130 0 -1 0 0 0 -1 1 0 0 3062b.dat
+1 0 -66 26 130 0 1 0 0 0 -1 -1 0 0 3062b.dat
+1 0 -90 26 129 0 1 0 0 0 -1 -1 0 0 4589.dat
+1 0 42 26 130 1 0 0 0 0 -1 0 1 0 4274.dat
+1 0 -42 26 130 -1 0 0 0 0 -1 0 -1 0 4274.dat
+1 0 70 26 130 0 -1 0 -1 0 0 0 0 -1 4592.dat
+1 7 79 18 200 0 1 0 1 0 0 0 0 -1 3957a.dat
+1 7 89 18 200 -1 0 0 0 1 0 0 0 -1 32002.dat
+0
+0 FILE wingl.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 0 0 200 1 0 0 0 1 0 0 0 1 30119.dat
+1 15 10 80 0 0 0 1 0 1 0 -1 0 0 3586.dat
+1 0 0 24 150 1 0 0 0 1 0 0 0 1 2540.dat
+1 15 0 66 150 0 0 1 0 1 0 -1 0 0 4868a.dat
+1 7 0 66 150 0 0 1 0 1 0 -1 0 0 4869.dat
+1 7 10 8 200 0 0 1 0 1 0 -1 0 0 4595.dat
+1 7 10 18 182 1 0 0 0 0 -1 0 1 0 2412a.dat
+1 7 10 18 218 1 0 0 0 0 1 0 -1 0 2412a.dat
+1 0 16 26 130 0 1 0 0 0 -1 -1 0 0 3062b.dat
+1 0 -16 26 130 0 -1 0 0 0 -1 1 0 0 3062b.dat
+1 0 64 26 130 0 -1 0 0 0 -1 1 0 0 3062b.dat
+1 0 -66 26 130 0 1 0 0 0 -1 -1 0 0 3062b.dat
+1 0 42 26 130 1 0 0 0 1 0 0 0 1 4274.dat
+1 0 -42 26 130 -1 0 0 0 1 0 0 0 -1 4274.dat
+1 0 86 26 130 0 -1 0 0 0 -1 1 0 0 4589.dat
+1 0 -74 26 130 0 1 0 -1 0 0 0 0 1 4592.dat
+1 7 -77 18 200 0 -1 0 1 0 0 0 0 1 3957a.dat
+1 7 -87 18 200 1 0 0 0 1 0 0 0 1 32002.dat
+0
+0 FILE shell.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 10 0 0 1 0 0 0 1 0 0 0 1 4854.dat
+1 0 30 -24 -30 1 0 0 0 1 0 0 0 1 3700.dat
+1 0 30 -24 30 1 0 0 0 1 0 0 0 1 3700.dat
+1 0 0 -24 30 1 0 0 0 1 0 0 0 1 3005.dat
+1 0 -20 -24 30 0 0 1 0 1 0 -1 0 0 4070.dat
+1 0 -20 -24 -30 0 0 1 0 1 0 -1 0 0 4070.dat
+1 0 0 -24 -30 1 0 0 0 1 0 0 0 1 3005.dat
+1 15 10 -56 0 1 0 0 0 1 0 0 0 1 4857.dat
+1 15 -10 -32 -30 1 0 0 0 1 0 0 0 1 3069b.dat
+1 15 30 -32 -30 1 0 0 0 1 0 0 0 1 3069b.dat
+1 15 10 -32 30 1 0 0 0 1 0 0 0 1 4625.dat
+1 1 -20 -88 0 0 0 1 0 1 0 -1 0 0 2432.dat
+1 1 0 -80 0 0 0 1 0 1 0 -1 0 0 3004.dat
+1 1 0 -104 0 0 0 -1 0 1 0 1 0 0 3937.dat
+1 1 -40 34 0 0 0 -1 0 1 0 1 0 0 314e.dat
+0
+0 FILE guts.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 10 0 0 1 0 0 0 1 0 0 0 1 3022.dat
+1 0 10 -48 0 1 0 0 0 1 0 0 0 1 4345b.dat
+1 0 10 -48 0 1 0 0 0 1 0 0 0 1 4346.dat
+1 0 10 -72 10 1 0 0 0 1 0 0 0 1 3004.dat
+1 0 20 -72 -10 1 0 0 0 1 0 0 0 1 4070.dat
+1 0 0 -72 -10 1 0 0 0 1 0 0 0 1 4070.dat
+1 0 10 -62 -24 1 0 0 0 0 -1 0 1 0 3023.dat
+1 0 10 -62 -32 1 0 0 0 0 -1 0 1 0 3069b.dat
+1 0 10 -52 20 -1 0 0 0 0 1 0 1 0 3956.dat
+1 0 10 -88 0 -1 0 0 0 1 0 0 0 -1 4508.dat
+0
+0 FILE shldlow.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 10 0 0 1 0 0 0 1 0 0 0 1 3937.dat
+1 15 10 24 0 1 0 0 0 1 0 0 0 1 3938.dat
+0
+0 FILE shldmid.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 10 0 0 -1 0 0 0 1 0 0 0 -1 2452.dat
+1 0 10 8 0 1 0 0 0 1 0 0 0 1 3023.dat
+1 0 10 16 0 1 0 0 0 1 0 0 0 1 3023.dat
+1 47 10 24 0 1 0 0 0 1 0 0 0 1 2466.dat
+1 15 10 160 0 1 0 0 0 1 0 0 0 1 3938.dat
+0
+0 FILE shldup.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 10 8 0 1 0 0 0 1 0 0 0 1 4276b.dat
+1 0 10 0 0 -1 0 0 0 1 0 0 0 -1 4276b.dat
+0
+0 FILE helmet.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 1 0 0 0 1 0 0 0 1 0 0 0 1 3937.dat
+1 1 0 24 10 1 0 0 0 1 0 0 0 1 3022.dat
+1 7 10 32 10 0 0 1 0 1 0 -1 0 0 3938.dat
+1 1 0 0 20 -1 0 0 0 1 0 0 0 -1 3937.dat
+1 0 0 2.26 -4.94 -1 0 0 0 0.84 0.54 0 0.54 -0.84 eye.dat
+1 0 0 1.7 24.38 1 0 0 0 0.84 0.54 0 -0.54 0.84 eye.dat
+1 16 -6.62 44.94 0.38 0 -0.69 -0.72 0 0.72 -0.69 1 0 0 neck.dat
+0
+0 FILE appendl.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 44 26 20 0 -0.71 0.71 0 0.71 0.71 -1 0 0 4arml.dat
+1 0 -12 104 0 0 -1 0 0 0 -1 1 0 0 uparml.dat
+1 0 18.68 114 44 -1 0 0 0 0 -1 0 -1 0 gun.dat
+0 MLCAD HIDE 1 0 32.68 84 -20 0 1 0 1 0 0 0 0 -1 lamp.dat
+0
+0 FILE socketl.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 shouldl.dat
+1 0 20 -8 -10 0 0 -1 0 1 0 1 0 0 armpit.dat
+0
+0 FILE socketr.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 10 0 0 1 0 0 0 1 0 0 0 1 shouldr.dat
+1 0 10 -8 10 0 0 1 0 1 0 -1 0 0 armpit.dat
+1 15 0 8 0 0 0 -1 0 1 0 1 0 0 3023.dat
+0
+0 FILE appendr.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 uparmr.dat
+1 0 0 -56 -38 1 0 0 0 0.71 -0.71 0 0.71 0.71 4armr.dat
+0
+0 FILE thigh.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 0 -24 0 1 0 0 0 1 0 0 0 1 3940.dat
+1 0 0 24 0 1 0 0 0 1 0 0 0 1 3941.dat
+1 0 0 56 0 1 0 0 0 1 0 0 0 1 2444.dat
+1 0 -10 40 -10 1 0 0 0 1 0 0 0 1 6091.dat
+1 0 -10 40 10 -1 0 0 0 1 0 0 0 -1 6091.dat
+1 0 10 48 0 0 0 -1 0 1 0 1 0 0 3023.dat
+1 0 -10 64 0 0 0 -1 0 1 0 1 0 0 3023.dat
+1 0 -10 72 -10 1 0 0 0 1 0 0 0 1 3665.dat
+1 0 -10 72 10 -1 0 0 0 1 0 0 0 -1 3665.dat
+1 0 20 66 0 1 0 0 0 1 0 0 0 1 4459.dat
+0
+0 FILE knee.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 3937.dat
+1 0 -10 0 20 1 0 0 0 1 0 0 0 1 6231.dat
+1 0 10 0 20 0 0 1 0 1 0 -1 0 0 6231.dat
+1 0 0 24 10 0 0 1 0 1 0 -1 0 0 3022.dat
+0
+0 FILE footl.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 0 -20 -20 1 0 0 0 1 0 0 0 1 4858.dat
+1 15 30 -20 0 -1 0 0 0 1 0 0 0 -1 4286.dat
+1 15 -30 -20 0 -1 0 0 0 1 0 0 0 -1 4286.dat
+1 15 -30 -44 0 1 0 0 0 1 0 0 0 1 3040b.dat
+1 15 30 -92 0 1 0 0 0 1 0 0 0 1 4460a.dat
+1 15 0 4 -70 1 0 0 0 1 0 0 0 1 4859.dat
+1 0 30 4 10 0 0 1 0 1 0 -1 0 0 3710.dat
+1 0 -30 4 10 0 0 1 0 1 0 -1 0 0 3710.dat
+1 15 -30 12 20 1 0 0 0 1 0 0 0 1 6141.dat
+1 15 -30 12 0 1 0 0 0 1 0 0 0 1 6141.dat
+1 15 -30 12 -20 1 0 0 0 1 0 0 0 1 6141.dat
+1 15 30 12 -20 1 0 0 0 1 0 0 0 1 6141.dat
+1 15 30 12 0 1 0 0 0 1 0 0 0 1 6141.dat
+1 15 30 12 20 1 0 0 0 1 0 0 0 1 6141.dat
+1 15 30 12 40 1 0 0 0 1 0 0 0 1 6141.dat
+1 15 10 -4 -30 0 0 -1 0 1 0 1 0 0 30383.dat
+1 15 -10 -4 -30 0 0 -1 0 1 0 1 0 0 30383.dat
+1 15 0 4 -30 1 0 0 0 1 0 0 0 1 3022.dat
+1 0 0 12 -50 1 0 0 0 1 0 0 0 1 2654.dat
+1 15 -30 12 40 1 0 0 0 1 0 0 0 1 6141.dat
+1 0 0 12 -80 -1 0 0 0 1 0 0 0 -1 3839b.dat
+0
+0 FILE shin.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 10 24 -20 1 0 0 0 1 0 0 0 1 4476.dat
+1 0 10 8 -10 0 0 1 0 1 0 -1 0 0 3021.dat
+1 0 10 -8 -10 -1 0 0 0 1 0 0 0 -1 41855.dat
+1 0 0 16 -20 0 0 1 0 1 0 -1 0 0 44302.dat
+1 0 20 16 -20 0 0 1 0 1 0 -1 0 0 44302.dat
+1 0 10 16 10 1 0 0 0 1 0 0 0 1 3023.dat
+1 0 10 144 -60 0 0 1 0 1 0 -1 0 0 3020.dat
+1 0 20 16 -20 0 0 1 0 1 0 -1 0 0 4275b.dat
+1 7 10 152 -50 1 0 0 0 1 0 0 0 1 3938.dat
+0
+0 FILE footr.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 0 -20 -20 1 0 0 0 1 0 0 0 1 4858.dat
+1 15 30 -20 0 -1 0 0 0 1 0 0 0 -1 4286.dat
+1 15 -30 -20 0 -1 0 0 0 1 0 0 0 -1 4286.dat
+1 15 30 -44 0 1 0 0 0 1 0 0 0 1 3040b.dat
+1 15 -30 -92 0 1 0 0 0 1 0 0 0 1 4460a.dat
+1 15 0 4 -70 1 0 0 0 1 0 0 0 1 4859.dat
+1 0 30 4 10 0 0 1 0 1 0 -1 0 0 3710.dat
+1 0 -30 4 10 0 0 1 0 1 0 -1 0 0 3710.dat
+1 15 -30 12 20 1 0 0 0 1 0 0 0 1 6141.dat
+1 15 -30 12 0 1 0 0 0 1 0 0 0 1 6141.dat
+1 15 -30 12 -20 1 0 0 0 1 0 0 0 1 6141.dat
+1 15 30 12 -20 1 0 0 0 1 0 0 0 1 6141.dat
+1 15 30 12 0 1 0 0 0 1 0 0 0 1 6141.dat
+1 15 30 12 20 1 0 0 0 1 0 0 0 1 6141.dat
+1 15 30 12 40 1 0 0 0 1 0 0 0 1 6141.dat
+1 15 10 -4 -30 0 0 -1 0 1 0 1 0 0 30383.dat
+1 15 -10 -4 -30 0 0 -1 0 1 0 1 0 0 30383.dat
+1 15 0 4 -30 1 0 0 0 1 0 0 0 1 3068b.dat
+1 0 0 12 -50 1 0 0 0 1 0 0 0 1 2654.dat
+1 15 -30 12 40 1 0 0 0 1 0 0 0 1 6141.dat
+1 0 0 12 -80 -1 0 0 0 1 0 0 0 -1 3839b.dat
+0
+0 FILE eye.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 1 0 0 0 1 0 0 0 1 0 0 0 1 3938.dat
+1 47 10 -8 0 1 0 0 0 1 0 0 0 1 6141.dat
+1 47 -10 -8 0 1 0 0 0 1 0 0 0 1 6141.dat
+0
+0 FILE neck.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 7 10 0 0 1 0 0 0 1 0 0 0 1 3679.dat
+1 7 10 -24 -10 -1 0 0 0 1 0 0 0 -1 3937.dat
+0
+0 FILE 4arml.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 10 -16 20 -1 0 0 0 1 0 0 0 -1 3680.dat
+1 0 10 -8 20 1 0 0 0 1 0 0 0 1 3940.dat
+1 0 10 40 20 1 0 0 0 1 0 0 0 1 3022.dat
+1 7 10 48 10 1 0 0 0 1 0 0 0 1 3938.dat
+1 7 0 -16 30 0 0 1 0 1 0 -1 0 0 handl.dat
+0
+0 FILE uparml.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 10 -32 30 -1 0 0 0 1 0 0 0 -1 3937.dat
+1 0 0 -16 10 0 0 1 0 1 0 -1 0 0 4085c.dat
+1 0 20 -16 10 1 0 0 0 1 0 0 0 1 6019.dat
+1 0 10 -24 10 1 0 0 0 1 0 0 0 1 3023.dat
+1 0 10 -32 10 1 0 0 0 1 0 0 0 1 3069b.dat
+1 0 10 -8 20 1 0 0 0 1 0 0 0 1 3940.dat
+1 0 10 40 20 1 0 0 0 1 0 0 0 1 3941.dat
+1 7 10 64 20 1 0 0 0 1 0 0 0 1 3679.dat
+0
+0 FILE gun.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 7 10 0 0 1 0 0 0 1 0 0 0 1 4360.dat
+1 7 -38 8 0 0 1 0 1 0 0 0 0 -1 3957a.dat
+1 7 -118 8 0 -1 0 0 0 -1 0 0 0 1 32002.dat
+1 7 44 8 0 -1 0 0 0 -1 0 0 0 1 32002.dat
+0
+0 FILE lamp.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 10 0 0 1 0 0 0 1 0 0 0 1 3957a.dat
+1 15 10 -24 0 1 0 0 0 1 0 0 0 1 4589.dat
+1 15 10 8 0 1 0 0 0 1 0 0 0 1 4740.dat
+1 46 10 16 0 1 0 0 0 1 0 0 0 1 6141.dat
+0
+0 FILE handl.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 wristl.dat
+1 0 10 -41.59 24.87 0 0 1 0.97 -0.28 0 0.28 0.97 0 fingerl.dat
+1 0 10 -42.04 -5.59 0 0 -1 0.97 -0.26 0 -0.26 -0.97 0 fingerl.dat
+0
+0 FILE shouldl.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 10 0 0 1 0 0 0 1 0 0 0 1 4854.dat
+1 15 40 -8 0 0 0 -1 0 1 0 1 0 0 2458.dat
+1 15 -20 -8 0 0 0 -1 0 1 0 1 0 0 4865a.dat
+1 15 10 -8 30 1 0 0 0 1 0 0 0 1 3710.dat
+1 15 10 -8 -30 1 0 0 0 1 0 0 0 1 3710.dat
+1 15 40 -16 0 0 0 1 0 1 0 -1 0 0 3710.dat
+1 15 20 8 0 0 0 1 0 1 0 -1 0 0 3023.dat
+1 0 10 -40 -30 1 0 0 0 1 0 0 0 1 2432.dat
+1 0 10 -40 30 -1 0 0 0 1 0 0 0 -1 2432.dat
+0
+0 FILE armpit.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 10 0 2 1 0 0 0 0.97 0.26 0 -0.26 0.97 6134.dat
+1 0 10 -5 14 1 0 0 0 0.97 0.26 0 -0.26 0.97 3680.dat
+1 0 10 0 0 -1 0 0 0 1 0 0 0 -1 3937.dat
+0
+0 FILE shouldr.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 10 0 0 1 0 0 0 1 0 0 0 1 4854.dat
+1 15 -20 -8 0 0 0 1 0 1 0 -1 0 0 2458.dat
+1 15 40 -8 0 0 0 1 0 1 0 -1 0 0 4865a.dat
+1 15 10 -8 30 1 0 0 0 1 0 0 0 1 3710.dat
+1 15 10 -8 -30 1 0 0 0 1 0 0 0 1 3710.dat
+1 15 -20 -16 0 0 0 1 0 1 0 -1 0 0 3710.dat
+1 0 10 -40 -30 1 0 0 0 1 0 0 0 1 2432.dat
+1 0 10 -40 30 -1 0 0 0 1 0 0 0 -1 2432.dat
+0
+0 FILE uparmr.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 10 48 0 1 0 0 0 1 0 0 0 1 3941.dat
+1 7 10 72 0 1 0 0 0 1 0 0 0 1 3679.dat
+1 0 10 0 0 1 0 0 0 1 0 0 0 1 3940.dat
+1 0 10 -24 -10 1 0 0 0 1 0 0 0 1 3937.dat
+1 7 10 -8 10 1 0 0 0 1 0 0 0 1 4590.dat
+1 0 10 -16 10 1 0 0 0 1 0 0 0 1 3023.dat
+1 0 10 -24 10 1 0 0 0 1 0 0 0 1 3069b.dat
+1 7 -20 8 20 1 0 0 0 1 0 0 0 1 3062b.dat
+1 7 40 8 20 1 0 0 0 1 0 0 0 1 3062b.dat
+1 7 -20 -32 20 1 0 0 0 1 0 0 0 1 3062b.dat
+1 7 40 -32 20 1 0 0 0 1 0 0 0 1 3062b.dat
+1 7 40 -56 20 1 0 0 0 1 0 0 0 1 4589.dat
+1 7 -20 -56 20 1 0 0 0 1 0 0 0 1 4589.dat
+0
+0 FILE 4armr.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 10 0 0 1 0 0 0 1 0 0 0 1 3680.dat
+1 0 0 -8 20 0 0 1 0 1 0 -1 0 0 handr.dat
+1 0 10 8 0 1 0 0 0 1 0 0 0 1 3941.dat
+1 0 10 32 0 1 0 0 0 1 0 0 0 1 3022.dat
+1 7 10 40 -10 1 0 0 0 1 0 0 0 1 3938.dat
+0
+0 FILE handr.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 10 0 0 1 0 0 0 1 0 0 0 1 wristr.dat
+1 0 20 -21 -15 0 0 1 -0.87 -0.5 0 0.5 -0.87 0 fingerr.dat
+1 0 20 -21 35 0 0 -1 -0.87 -0.5 0 -0.5 0.87 0 fingerr.dat
+0
+0 FILE wristl.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 10 -8 20 -1 0 0 0 1 0 0 0 -1 2452.dat
+1 0 10 -8 0 1 0 0 0 1 0 0 0 1 2452.dat
+1 7 10 0 10 1 0 0 0 1 0 0 0 1 3679.dat
+0
+0 FILE fingerl.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 10 0 0 1 0 0 0 1 0 0 0 1 4276b.dat
+1 7 10 -8 0 1 0 0 0 1 0 0 0 1 2412a.dat
+0
+0 FILE wristr.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 10 0 0 1 0 0 0 1 0 0 0 1 2452.dat
+1 0 10 0 20 -1 0 0 0 1 0 0 0 -1 2452.dat
+1 0 10 -8 10 1 0 0 0 1 0 0 0 1 3068b.dat
+1 7 10 8 10 1 0 0 0 1 0 0 0 1 3679.dat
+0
+0 FILE fingerr.dat
+0 
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 7 10 0 0 1 0 0 0 1 0 0 0 1 4626.dat
+1 0 -28 14 0 0 1 0 0 0 1 1 0 0 3069b.dat
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0
+0

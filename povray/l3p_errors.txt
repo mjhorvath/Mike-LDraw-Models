@@ -1,0 +1,4 @@
+SKIPPING "C:\Users\Public\Documents\LDraw\ldconfig.ldr" Line 327: Illegal color code: 0 !COLOUR Main_Colour                                           CODE  16   VALUE #FFFF80   EDGE #333333
+SKIPPING "C:\Users\Public\Documents\LDraw\ldconfig.ldr" Line 328: Illegal color code: 0 !COLOUR Edge_Colour                                           CODE  24   VALUE #7F7F7F   EDGE #333333
+NOTABENE "ring3.dat" referenced by "s\3626bs01.dat": Moved to 4-4ring3
+NOTABENE "ring2.dat" referenced by "s\3626bs01.dat": Moved to 4-4ring2
