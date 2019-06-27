@@ -8,6 +8,8 @@ There are four folders:
 * regular - the latest versions of my models in LDR and MPD format
 * renders - rendered images created using POV-Ray
 
+There was originally a fifth folder for what I call "superinlined" models created using the "lowest level" extraction tool in MPDCenter, but the files were too large to upload to GitHub.
+
 
 The licenses are:
 
