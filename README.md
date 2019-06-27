@@ -1,13 +1,12 @@
 # mike_ldraw_models
 Mike Horvath's LDraw models and scenes.
 
-There are five folders:
+There are four folders:
 
 * inlined - created using the "library level" extraction tool of MPDCenter
 * povray - models and scenes in POV-Ray format
 * regular - the latest versions of my models in LDR and MPD format
 * renders - rendered images created using POV-Ray
-* superinlined - created using the "lowest level" extraction tool of MPDCenter
 
 
 The licenses are:
