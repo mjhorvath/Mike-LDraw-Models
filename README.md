@@ -5,9 +5,9 @@ There are four folders:
 
 * boxed - contains "boxed" versions of models created using [LDraw Boxer](https://github.com/Jeremy1980/LDBoxer)
 * inlined - created using the "library level" extraction tool of [MPDCenter](https://ldraw.heidemann.org/index.php?page=mpdcenter)
-* povray - models and scenes in POV-Ray format
+* povray - models and scenes in [POV-Ray](http://www.povray.org/) format
 * regular - the latest versions of my models in MPD format
-* renders - rendered images created using POV-Ray
+* renders - rendered images created using [POV-Ray](http://www.povray.org/)
 
 There was originally a sixth folder for what I call "superinlined" models created using the "lowest level" extraction tool of [MPDCenter](https://ldraw.heidemann.org/index.php?page=mpdcenter), but the files were too large to upload to GitHub.
 
