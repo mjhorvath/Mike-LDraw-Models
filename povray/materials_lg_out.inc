@@ -15,9 +15,9 @@
 // License along with this library; if not, write to the Free Software
 // Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
-// Regular plastic parts don't have have normals.
+// In the LGEO library, regular plastic parts don't have normals.
 // Other parts (e.g. rubber, pearl, chrome, transparent) do have normals.
-// Slope parts don't have additional normals.
+// Slope parts don't have alternate stronger normals.
 
 
 // row 1

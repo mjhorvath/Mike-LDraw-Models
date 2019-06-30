@@ -14,8 +14,14 @@
 // You should have received a copy of the GNU Lesser General Public
 // License along with this library; if not, write to the Free Software
 // Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+// 
+// By default, LDView materials do not have normals. There are also 
+// no alternative materials for sloped parts featuring extra bumps.
+// Only when substituting mesh geometry with LGEO geometry does 
+// LDView add bumps to the regular materials and create special 
+// materials for sloped parts.
 
-
+// Currently does support blurred reflections, but does not support SSLT (yet).
 // +am3 +r9 +a0.002 +ac0.99
 // +am = sampling method
 // +r = antialias depth
@@ -24,9 +30,12 @@
 
 #version 3.7;
 
-#declare LDXSkipOpaqueColorMacro = true;
-#declare LDXSkipTransColorMacro = true;
+// Not sure what these are for.
+//#declare LDXSkipOpaqueColorMacro = true;
+//#declare LDXSkipTransColorMacro = true;
 
+#declare PlasticSpecularity  = 1.0;
+#declare PlasticRoughness    = 0.001;
 
 
 
@@ -75,12 +84,49 @@ matrix <aw,0,0,0,ah,0,0,0,ad,ax,ay,az>
 #macro LDXOpaqueColor(r, g, b)
 #if (version >= 3.1) material { #end
 	texture {
-		pigment { rgbf <r,g,b,0> }
+		pigment { srgbf <r,g,b,0> }
 #if (LDXQual > 1)
-		finish { ambient LDXAmb diffuse LDXDif }
-		finish { phong LDXPhong phong_size LDXPhongS reflection LDXRefl }
+		#if (Use_BlurRef = true)
+			#if (Use_Uber = true)
+				finish
+				{
+					emission		0
+					specular albedo	PlasticSpecularity
+					roughness		PlasticRoughness
+					fresnel			on
+					reflection
+					{
+						PlasticSpecularity
+						fresnel on
+						roughness PlasticRoughness
+					}
+					conserve_energy
+				}
+			#else
+				finish
+				{
+					ambient			0
+					diffuse albedo	1
+					specular albedo	PlasticSpecularity
+					roughness		PlasticRoughness
+					fresnel			on
+					reflection
+					{
+						PlasticSpecularity
+						fresnel on
+					}
+					conserve_energy
+				}
+			#end
+		#else
+			finish { ambient LDXAmb diffuse LDXDif }
+			finish { phong LDXPhong phong_size LDXPhongS reflection LDXRefl }
+		#end
 #end
 	}
+#if (version >= 3.1) #if (LDXQual > 1)
+	interior { ior LDXIoR }
+#end #end
 #if (version >= 3.1) } #end
 #end
 
@@ -89,11 +135,44 @@ matrix <aw,0,0,0,ah,0,0,0,ad,ax,ay,az>
 #macro LDXTransColor(r, g, b)
 #if (version >= 3.1) material { #end
 	texture {
-		pigment { #if (LDXQual > 1) rgbf <r,g,b,LDXTFilt> #else rgbf <0.6,0.6,0.6,0> #end }
+		pigment { #if (LDXQual > 1) srgbf <r,g,b,LDXTFilt> #else srgbf <0.6,0.6,0.6,0> #end }
 #if (LDXQual > 1)
-		finish { ambient LDXAmb diffuse LDXDif }
-		finish { phong LDXPhong phong_size LDXPhongS reflection LDXTRefl }
-		#if (version >= 3.1) #else finish { refraction 1 ior LDXIoR } #end
+		#if (Use_BlurRef = true)
+			#if (Use_Uber = true)
+				finish
+				{
+					emission		0
+					specular albedo	PlasticSpecularity
+					roughness		PlasticRoughness
+					fresnel			on
+					reflection
+					{
+						PlasticSpecularity
+						fresnel on
+						roughness PlasticRoughness
+					}
+					conserve_energy
+				}
+			#else
+				finish
+				{
+					ambient			0
+					diffuse albedo	1
+					specular albedo	PlasticSpecularity
+					roughness		PlasticRoughness
+					fresnel			on
+					reflection
+					{
+						PlasticSpecularity
+						fresnel on
+					}
+					conserve_energy
+				}
+			#end
+		#else
+			finish { ambient LDXAmb diffuse LDXDif }
+			finish { phong LDXPhong phong_size LDXPhongS reflection LDXTRefl }
+		#end
 #end
 	}
 #if (version >= 3.1) #if (LDXQual > 1)
@@ -109,10 +188,32 @@ matrix <aw,0,0,0,ah,0,0,0,ad,ax,ay,az>
 	texture {
 		pigment { rgbf <r,g,b,0> }
 #if (LDXQual > 1)
-		finish { ambient LDXAmb diffuse LDXDif }
-		finish { phong LDXRubberPhong phong_size LDXRubberPhongS reflection LDXRubberRefl }
+		#if (false = true)
+			#if (Use_Uber = true)
+				finish
+				{
+					emission		0
+					specular albedo	PlasticSpecularity
+					roughness		PlasticRoughness
+					fresnel			on
+					reflection
+					{
+						PlasticSpecularity
+						fresnel on
+						roughness PlasticRoughness
+					}
+					conserve_energy
+				}
+			#else
+				// to do
+			#end
+		#else
+			finish { ambient LDXAmb diffuse LDXDif }
+			finish { phong LDXRubberPhong phong_size LDXRubberPhongS reflection LDXRubberRefl }
+		#end
 #end
 	}
+	// needs an interior and ior here as well for SSLT to work
 #if (version >= 3.1) } #end
 #end
 
@@ -123,10 +224,32 @@ matrix <aw,0,0,0,ah,0,0,0,ad,ax,ay,az>
 	texture {
 		pigment { rgbf <r,g,b,0> }
 #if (LDXQual > 1)
-		finish { ambient LDXAmb diffuse LDXDif }
-		finish { phong LDXPhong phong_size LDXPhongS reflection LDXChromeRefl brilliance LDXChromeBril metallic specular LDXChromeSpec roughness LDXChromeRough}
+		#if (false = true)
+			#if (Use_Uber = true)
+				finish
+				{
+					emission		0
+					specular albedo	PlasticSpecularity
+					roughness		PlasticRoughness
+					fresnel			on
+					reflection
+					{
+						PlasticSpecularity
+						fresnel on
+						roughness PlasticRoughness
+					}
+					conserve_energy
+				}
+			#else
+				// to do
+			#end
+		#else
+			finish { ambient LDXAmb diffuse LDXDif }
+			finish { phong LDXPhong phong_size LDXPhongS reflection LDXChromeRefl brilliance LDXChromeBril metallic specular LDXChromeSpec roughness LDXChromeRough}
+		#end
 #end
 	}
+	// needs an interior and ior here as well for SSLT to work
 #if (version >= 3.1) } #end
 #end
 

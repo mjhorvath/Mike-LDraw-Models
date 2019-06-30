@@ -20,6 +20,12 @@
 
 
 // -------------------------------------------------------------
+// Global settings
+
+global_settings {assumed_gamma 1}
+
+
+// -------------------------------------------------------------
 // Standard includes
 
 #include "stdinc.inc"
@@ -28,15 +34,6 @@
 #include "stones.inc"
 #include "glass.inc"
 #include "metals.inc"
-
-
-// -------------------------------------------------------------
-// Global settings
-
-global_settings
-{
-	assumed_gamma	1
-}
 
 
 // -------------------------------------------------------------
