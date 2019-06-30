@@ -42,7 +42,7 @@ global_settings
 #declare Use_LGEO			= true;
 #declare Use_BlurRef		= true;				// blurred reflections
 #declare Use_BlurTyp		= 1;				// type of blurred reflections, method 1 requires focal blur and lots of antialiasing or the texture will look grainy, method 3 does not require these things but is much much slower, method 2 lies somewhere in between
-#declare Use_BlurAmt		= 1/32;				// amount of blurring in reflections, ignored if "materials_ldc_shadowno_clipka.inc" is used
+#declare Use_BlurAmt		= 1/32;				// amount of blurring in reflections, ignored if "materials_ldc_defs_clipka.inc" is used
 #declare Use_BlurSmp		= 8;				// number of samples in blurred reflections
 #declare Use_BlurFoc		=false;				// camera focal blur
 #declare Use_Area_Light		=false;				// not used in this scene currently
@@ -56,7 +56,7 @@ global_settings
 #declare Use_LGEO			= true;
 #declare Use_BlurRef		=false;				// blurred reflections
 #declare Use_BlurTyp		= 1;				// type of blurred reflections, method 1 requires focal blur and lots of antialiasing or the texture will look grainy, method 3 does not require these things but is much much slower, method 2 lies somewhere in between
-#declare Use_BlurAmt		= 1/32;				// amount of blurring in reflections, ignored if "materials_ldc_shadowno_clipka.inc" is used
+#declare Use_BlurAmt		= 1/32;				// amount of blurring in reflections, ignored if "materials_ldc_defs_clipka.inc" is used
 #declare Use_BlurSmp		= 8;				// number of samples in blurred reflections
 #declare Use_BlurFoc		=false;				// camera focal blur
 #declare Use_Area_Light		=false;				// not used currently
@@ -172,9 +172,9 @@ global_settings
 #declare MJHMissingMat = material {texture {MJHMissingTex}}
 
 #include "materials_blurred_reflections.inc"
-//#include "materials_ldc_shadowno.inc"					// lq
-//#include "materials_ldc_shadowno_mjh.inc"				// mq
-#include "materials_ldc_shadowno_clipka.inc"			// hq
+//#include "materials_ldc_defs.inc"					// lq
+//#include "materials_ldc_defs_mjh.inc"				// mq
+#include "materials_ldc_defs_clipka.inc"			// hq
 #include "materials_ldc_out.inc"
 #include "materials_all_missing.inc"
 #include "materials_all_convert.inc"

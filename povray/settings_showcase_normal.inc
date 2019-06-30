@@ -51,7 +51,7 @@
 	#declare Use_LGEO			= true;				// LGEO replacement parts
 	#declare Use_BlurRef		= true;				// blurred reflections
 	#declare Use_BlurTyp		= 1;				// type of blurred reflections if not using UberPOV, method 1 requires focal blur and lots of antialiasing or the texture will look grainy, method 3 does not require these things but is much much slower, method 2 lies somewhere in between
-	#declare Use_BlurAmt		= 1/32;				// amount of blurring in reflections, ignored in favor of presets when using "materials_ldc_shadowno_clipka.inc"
+	#declare Use_BlurAmt		= 1/32;				// amount of blurring in reflections, ignored in favor of presets when using "materials_ldc_defs_clipka.inc"
 	#declare Use_BlurSmp		= 8;				// number of samples in blurred reflections, only applies to methods 2 and 3
 	#declare Use_BlurFoc		= true;				// focal blur
 	#declare Use_Area_Light		= true;				// for softer shadows
@@ -66,7 +66,7 @@
 	#declare Use_LGEO			=false;				// LGEO replacement parts
 	#declare Use_BlurRef		=false;				// blurred reflections
 	#declare Use_BlurTyp		= 1;				// type of blurred reflections if not using UberPOV, method 1 requires focal blur and lots of antialiasing or the texture will look grainy, method 3 does not require these things but is much much slower, method 2 lies somewhere in between
-	#declare Use_BlurAmt		= 1/32;				// amount of blurring in reflections, ignored in favor of presets when using "materials_ldc_shadowno_clipka.inc"
+	#declare Use_BlurAmt		= 1/32;				// amount of blurring in reflections, ignored in favor of presets when using "materials_ldc_defs_clipka.inc"
 	#declare Use_BlurSmp		= 8;				// number of samples in blurred reflections, only applies to methods 2 and 3
 	#declare Use_BlurFoc		=false;				// focal blur
 	#declare Use_Area_Light		=false;				// for softer shadows

@@ -15,9 +15,9 @@
 #include "lg_defs.inc"
 #include "lg_color.inc"
 #include "materials_blurred_reflections.inc"
-//#include "materials_ldc_shadowno.inc"				// LQ
-#include "materials_ldc_shadowno_mjh.inc"			// MQ
-//#include "materials_ldc_shadowno_clipka.inc"		// HQ
+//#include "materials_ldc_defs.inc"				// LQ
+#include "materials_ldc_defs_mjh.inc"			// MQ
+//#include "materials_ldc_defs_clipka.inc"		// HQ
 #include "materials_ldc_out.inc"
 #include "materials_all_missing.inc"
 #include "materials_all_convert.inc"
@@ -26,7 +26,7 @@
 // -------------------------------------------------------------
 // LDView models & cameras
 
-#declare Use_Model = 2;
+#declare Use_Model = 1;
 #declare LDXCamAspect = image_width/image_height;
 
 #switch (Use_Model)

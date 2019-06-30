@@ -16,10 +16,10 @@
 // Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
 
-// Based on LDCad output by Roland Melkert, now in "materials_ldc_shadowno.inc".
+// Based on LDCad output by Roland Melkert, now in "materials_ldc_defs.inc".
 // Modified to support SSLT and blurred reflections.
 // SSLT requires an ior for every material. Also, the ior ideally needs to be different for each type of plastic, rubber, etc.
-// See "materials_ldc_shadowno_clipka.inc" for suggested changes by Christoph Lipka.
+// See "materials_ldc_defs_clipka.inc" for suggested changes by Christoph Lipka.
 // UberPOV supports a different method of generating blurred reflections which may be faster or better.
 
 #version 3.7;

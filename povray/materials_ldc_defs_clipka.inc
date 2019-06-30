@@ -16,7 +16,7 @@
 // Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
 
-// Based on LDCad output by Roland Melkert, now in "materials_ldc_shadowno.inc".
+// Based on LDCad output by Roland Melkert, now in "materials_ldc_defs.inc".
 // Modified to support SSLT and blurred reflections.
 // SSLT requires an ior for every material. Also, the ior ideally needs to be different depending on the type of plastic.
 // With suggestions by Christoph Lipka, http://news.povray.org/povray.binaries.images/thread/%3C54f750ca@news.povray.org%3E/?ttop=402742&toff=50
