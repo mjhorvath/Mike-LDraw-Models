@@ -110,11 +110,14 @@
 // -------------------------------------------------------------
 // LDView settings
 
-#ifndef (LDXQual)			#declare LDXQual		= L3Quality;	#end
-#ifndef (LDXSW)				#declare LDXSW			= L3SW;			#end
-#ifndef (LDXStuds)			#declare LDXStuds		= L3Studs;		#end
-#ifndef (LDXRefls)			#declare LDXRefls		= 1;			#end
-#ifndef (LDXShads)			#declare LDXShads		= 1;			#end
+#ifndef (LDXQual)			#declare LDXQual		= L3Quality;	#end	// Quality (0 = Bounding Box; 1 = No Refraction; 2 = Normal; 3 = Stud Logos)
+#ifndef (LDXSW)				#declare LDXSW			= L3SW;			#end	// Seam Width (0 for no seams)
+#ifndef (LDXStuds)			#declare LDXStuds		= L3Studs;		#end	// Show studs? (1 = YES; 0 = NO)
+#ifndef (LDXRefls)			#declare LDXRefls		= 1;			#end	// Reflections? (1 = YES; 0 = NO)
+#ifndef (LDXShads)			#declare LDXShads		= 1;			#end	// Shadows? (1 = YES; 0 = NO)
+#ifndef (LDXBackground)		#declare LDXBackground	= 0;			#end	// Include Background? (1 = YES; 0 = NO)
+#ifndef (LDXFloor)			#declare LDXFloor		= 0;			#end	// Include Floor? (1 = YES; 0 = NO)
+
 #ifndef (LDXAmb)			#declare LDXAmb			= L3Ambient;	#end
 #ifndef (LDXDif)			#declare LDXDif			= L3Diffuse;	#end
 #ifndef (LDXRefl)			#declare LDXRefl		= L3Reflection;	#end
@@ -130,13 +133,14 @@
 #ifndef (LDXChromeBril)		#declare LDXChromeBril	= 5;			#end
 #ifndef (LDXChromeSpec)		#declare LDXChromeSpec	= 0.8;			#end
 #ifndef (LDXChromeRough)	#declare LDXChromeRough	= 0.01;			#end
+#ifndef (LDXOpaqueNormal)	#declare LDXOpaqueNormal	= normal { bumps 0.001 scale 0.5 }; #end
+#ifndef (LDXTransNormal)	#declare LDXTransNormal		= normal { bumps 0.001 scale 0.5 }; #end
 #ifndef (LDXIPov)			#declare LDXIPov		= true;			#end	// Use inline POV code from LDraw file? (1 = YES; 0 = NO)
 #ifndef (LDXSkipLight1)		#declare LDXSkipLight1	= true;			#end
 #ifndef (LDXSkipLight2)		#declare LDXSkipLight2	= true;			#end
 #ifndef (LDXSkipLight3)		#declare LDXSkipLight3	= true;			#end
 #ifndef (LDXSkipCamera)		#declare LDXSkipCamera	= true;			#end
-#ifndef (LDXFloor)			#declare LDXFloor		=false;			#end
-#declare LDXOrigVer = version;	// DO NOT MODIFY
+#ifndef (LDXOrigVer)		#declare LDXOrigVer		= version;		#end	// DO NOT MODIFY
 
 /*
 // A hack I devised

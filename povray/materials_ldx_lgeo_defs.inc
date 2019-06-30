@@ -1,26 +1,5 @@
-// POV-Ray scripts for LDraw models and scenes
-// Copyright (C) 2019  Michael Horvath
-// 
-// This library is free software; you can redistribute it and/or
-// modify it under the terms of the GNU Lesser General Public
-// License as published by the Free Software Foundation; either
-// version 2.1 of the License, or (at your option) any later version.
-// 
-// This library is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-// Lesser General Public License for more details.
-// 
-// You should have received a copy of the GNU Lesser General Public
-// License along with this library; if not, write to the Free Software
-// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
-// 
-// By default, LDView materials do not have normals. There are also 
-// no alternative materials for sloped parts featuring extra bumps.
-// Only when substituting mesh geometry with LGEO geometry does 
-// LDView add bumps to the regular materials and create special 
-// materials for sloped parts.
-
+// Deafult LDView output when LGEO parts are used.
+// Some materials need to be updated for assumed_gamma changes.
 // +am3 +r9 +a0.002 +ac0.99
 // +am = sampling method
 // +r = antialias depth
@@ -28,10 +7,6 @@
 // +ac = ???
 
 #version 3.7;
-
-// Not sure what these are for.
-//#declare LDXSkipOpaqueColorMacro = true;
-//#declare LDXSkipTransColorMacro = true;
 
 #include "lg_color.inc"
 
@@ -1760,12 +1735,12 @@
 #ifndef (LDXColor406) // Rubber Dark Blue
 #declare LDXColor406 = #if (version >= 3.1) material { #end
 	texture {
-		lg_rubber_dark_purple
+		lg_rubber_dark_blue
 	}
 #if (version >= 3.1) } #end
 #declare LDXColor406_slope = #if (version >= 3.1) material { #end
 	texture {
-		lg_rubber_dark_purple
+		lg_rubber_dark_blue
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
 #if (version >= 3.1) } #end

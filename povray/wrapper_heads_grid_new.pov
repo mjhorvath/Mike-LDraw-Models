@@ -10,10 +10,7 @@
 
 #version 3.7;
 
-global_settings
-{
-	assumed_gamma	1
-}
+global_settings {assumed_gamma 1}
 
 #include "stdinc.inc"
 
@@ -294,5 +291,5 @@ sphere
 // -------------------------------------------------------------
 // Models
 
-#include "l3p_nice_heads_grid_new.pov"
-//#include "ldv_nice_heads_grid_new.pov"			// some of the meshes are smoother, but some of them look worse in combination with primitive substitution
+#include "l3p_nice_heads_grid_new_lgeo_n.pov"
+//#include "ldv_nice_heads_grid_new_lgeo_n.pov"			// some of the meshes are smoother, but some of them look worse in combination with primitive substitution

@@ -3,7 +3,7 @@
 // https://creativecommons.org/licenses/by-sa/4.0/ or send a letter to Creative 
 // Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
 // 
-// Note that resolutions greater than 1024x1024px will cause some mobile browser to not show the panoramas.
+// Note that resolutions greater than 1024x1024px will cause some mobile browsers to not show the panoramas.
 // +kfi0 +kff3 +ki0 +kf1 +kc
 // +am3 +r9 +a0.002 +ac0.99
 // +am = Sampling_Method
@@ -14,7 +14,9 @@
 // +KFI5 +KFF5 +KC
 // +K0 +KC
 
-#version 3.7;							// LDView only properly supports POV-Ray 3.6
+#version 3.7;
+
+global_settings {assumed_gamma 1}
 
 
 // -------------------------------------------------------------
@@ -199,19 +201,19 @@ sphere
 		#declare Camera_Transform = transform
 		{
 			rotate		Camera_Rotate
-		//	matrix <0,0,-1,0,1,0,1,0,0,0,-88,-640>		// front entrance, yes lens flare
-		//	matrix <0,0,-1,0,1,0,1,0,0,0,-88,100>		// courtyard, no lens flare
-			matrix <0,0,-1,0,1,0,1,0,0,0,-88,-180>		// gateway, no lens flare
-		//	matrix <0,0,-1,0,1,0,1,0,0,-280,-88,-180>	// storeroom, no lens flare
-		//	matrix <0,0,-1,0,1,0,1,0,0,280,-312,140>	// lounge, no lens flare
-		//	matrix <0,0,-1,0,1,0,1,0,0,200,-312,-140>	// barracks east, no lens flare
-		//	matrix <0,0,-1,0,1,0,1,0,0,-200,-312,-140>	// barracks west, no lens flare
-		//	matrix <0,0,-1,0,1,0,1,0,0,-360,-312,140>	// clinic, no lens flare
-		//	matrix <0,0,-1,0,1,0,1,0,0,0,-88,640>		// rear entrance, yes lens flare
-		//	matrix <0,0,-1,0,1,0,1,0,0,0,-728,0>		// overhead view, yes lens flare
-		//	matrix <0,0,-1,0,1,0,1,0,0,400,-184,-180>	// stairweell, no lens flare
-		//	matrix <0,0,-1,0,1,0,1,0,0,-800,-88,0>		// outside west, yes lens flare
-		//	matrix <0,0,-1,0,1,0,1,0,0,800,-88,0>		// outside east, yes lens flare
+		//	matrix <0,0,-1,0,1,0,1,0,0,0,-88,-640>		// front entrance, lens flare yes
+		//	matrix <0,0,-1,0,1,0,1,0,0,0,-88,100>		// courtyard, lens flare no
+			matrix <0,0,-1,0,1,0,1,0,0,0,-88,-180>		// gateway, lens flare no
+		//	matrix <0,0,-1,0,1,0,1,0,0,-280,-88,-180>	// storeroom, lens flare no
+		//	matrix <0,0,-1,0,1,0,1,0,0,280,-312,140>	// lounge, lens flare no
+		//	matrix <0,0,-1,0,1,0,1,0,0,200,-312,-140>	// barracks east, lens flare no
+		//	matrix <0,0,-1,0,1,0,1,0,0,-200,-312,-140>	// barracks west, lens flare no
+		//	matrix <0,0,-1,0,1,0,1,0,0,-360,-312,140>	// clinic, lens flare no
+		//	matrix <0,0,-1,0,1,0,1,0,0,0,-88,640>		// rear entrance, lens flare yes
+		//	matrix <0,0,-1,0,1,0,1,0,0,0,-728,0>		// overhead view, lens flare yes
+		//	matrix <0,0,-1,0,1,0,1,0,0,400,-184,-180>	// stairwell, lens flare no
+		//	matrix <0,0,-1,0,1,0,1,0,0,-800,-88,0>		// outside west, lens flare yes
+		//	matrix <0,0,-1,0,1,0,1,0,0,800,-88,0>		// outside east, lens flare yes
 		}
 		camera
 		{
@@ -231,19 +233,19 @@ sphere
 		#declare Camera_LookAt		= Camera_Location + Camera_Direction;
 		#declare Camera_Transform = transform
 		{
-		//	matrix <0,0,-1,0,1,0,1,0,0,0,-88,-640>		// front entrance, yes lens flare
-		//	matrix <0,0,-1,0,1,0,1,0,0,0,-88,100>		// courtyard, no lens flare
-		//	matrix <0,0,-1,0,1,0,1,0,0,0,-88,-180>		// gateway, no lens flare
-		//	matrix <0,0,-1,0,1,0,1,0,0,-280,-88,-180>	// storeroom, no lens flare
-		//	matrix <0,0,-1,0,1,0,1,0,0,280,-312,140>	// lounge, no lens flare
-		//	matrix <0,0,-1,0,1,0,1,0,0,200,-312,-140>	// barracks east, no lens flare
-		//	matrix <0,0,-1,0,1,0,1,0,0,-200,-312,-140>	// barracks west, no lens flare
-		//	matrix <0,0,-1,0,1,0,1,0,0,-360,-312,140>	// clinic, no lens flare
-		//	matrix <0,0,-1,0,1,0,1,0,0,0,-88,640>		// rear entrance, yes lens flare
-		//	matrix <0,0,-1,0,1,0,1,0,0,0,-728,0>		// overhead view, yes lens flare
-			matrix <0,0,-1,0,1,0,1,0,0,400,-184,-180>	// stairweell, no lens flare
-		//	matrix <0,0,-1,0,1,0,1,0,0,-800,-88,0>		// outside west, yes lens flare
-		//	matrix <0,0,-1,0,1,0,1,0,0,800,-88,0>		// outside east, yes lens flare
+		//	matrix <0,0,-1,0,1,0,1,0,0,0,-88,-640>		// front entrance, lens flare yes
+		//	matrix <0,0,-1,0,1,0,1,0,0,0,-88,100>		// courtyard, lens flare no
+		//	matrix <0,0,-1,0,1,0,1,0,0,0,-88,-180>		// gateway, lens flare no
+		//	matrix <0,0,-1,0,1,0,1,0,0,-280,-88,-180>	// storeroom, lens flare no
+		//	matrix <0,0,-1,0,1,0,1,0,0,280,-312,140>	// lounge, lens flare no
+		//	matrix <0,0,-1,0,1,0,1,0,0,200,-312,-140>	// barracks east, lens flare no
+		//	matrix <0,0,-1,0,1,0,1,0,0,-200,-312,-140>	// barracks west, lens flare no
+		//	matrix <0,0,-1,0,1,0,1,0,0,-360,-312,140>	// clinic, lens flare no
+		//	matrix <0,0,-1,0,1,0,1,0,0,0,-88,640>		// rear entrance, lens flare yes
+		//	matrix <0,0,-1,0,1,0,1,0,0,0,-728,0>		// overhead view, lens flare yes
+			matrix <0,0,-1,0,1,0,1,0,0,400,-184,-180>	// stairwell, lens flare no
+		//	matrix <0,0,-1,0,1,0,1,0,0,-800,-88,0>		// outside west, lens flare yes
+		//	matrix <0,0,-1,0,1,0,1,0,0,800,-88,0>		// outside east, lens flare yes
 		}
 		camera
 		{
@@ -277,7 +279,7 @@ sphere
 // Models
 
 
-// These need to be commented out in the model file.
+// These need to be manually commented out in the model file.
 #declare LDX_light_dot_dat = light_source
 {
 	0
@@ -287,4 +289,4 @@ sphere
 }
 #declare LDX_camera_dot_dat = union {}
 
-#include "ldv_cubemap_carriage_house_new.pov"
+#include "ldv_cubemap_carriage_house_new_lgeo_y.pov"

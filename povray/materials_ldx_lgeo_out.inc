@@ -120,7 +120,7 @@
 
 // color 24 - Edge_Colour
 #ifdef (LDXColor24) #ifndef (MJHMat24) #declare MJHMat24 = LDXColor24; #end #end
-#ifdef (LDXColor24) #ifndef (MJHMat24Slope) #declare MJHMat24Slope = LDXColor24_slope; #end #end
+//#ifdef (LDXColor24) #ifndef (MJHMat24Slope) #declare MJHMat24Slope = LDXColor24_slope; #end #end		// missing
 
 // color 25 - Orange
 #ifdef (LDXColor25) #ifndef (MJHMat25) #declare MJHMat25 = LDXColor25; #end #end
@@ -180,7 +180,7 @@
 
 // color 39 - Trans_Very_Light_Blue
 #ifdef (LDXColor39) #ifndef (MJHMat39) #declare MJHMat39 = LDXColor39; #end #end
-#ifdef (LDXColor39) #ifndef (MJHMat39Slope) #declare MJHMat39Slope = LDXColor39_slope; #end #end
+//#ifdef (LDXColor39) #ifndef (MJHMat39Slope) #declare MJHMat39Slope = LDXColor39_slope; #end #end		// missing
 
 // color 40 - Trans_Black
 #ifdef (LDXColor40) #ifndef (MJHMat40) #declare MJHMat40 = LDXColor40; #end #end
@@ -204,7 +204,7 @@
 
 // color 45 - Trans_Pink
 #ifdef (LDXColor45) #ifndef (MJHMat45) #declare MJHMat45 = LDXColor45; #end #end
-#ifdef (LDXColor45) #ifndef (MJHMat45Slope) #declare MJHMat45Slope = LDXColor45_slope; #end #end
+//#ifdef (LDXColor45) #ifndef (MJHMat45Slope) #declare MJHMat45Slope = LDXColor45_slope; #end #end		// missing
 
 // color 46 - Trans_Yellow
 #ifdef (LDXColor46) #ifndef (MJHMat46) #declare MJHMat46 = LDXColor46; #end #end
@@ -228,23 +228,23 @@
 
 // color 60 - Chrome_Antique_Brass
 #ifdef (LDXColor60) #ifndef (MJHMat60) #declare MJHMat60 = LDXColor60; #end #end
-#ifdef (LDXColor60) #ifndef (MJHMat60Slope) #declare MJHMat60Slope = LDXColor60_slope; #end #end
+//#ifdef (LDXColor60) #ifndef (MJHMat60Slope) #declare MJHMat60Slope = LDXColor60_slope; #end #end		// missing
 
 // color 61 - Chrome_Blue
 #ifdef (LDXColor61) #ifndef (MJHMat61) #declare MJHMat61 = LDXColor61; #end #end
-#ifdef (LDXColor61) #ifndef (MJHMat61Slope) #declare MJHMat61Slope = LDXColor61_slope; #end #end
+//#ifdef (LDXColor61) #ifndef (MJHMat61Slope) #declare MJHMat61Slope = LDXColor61_slope; #end #end		// missing
 
 // color 62 - Chrome_Green
 #ifdef (LDXColor62) #ifndef (MJHMat62) #declare MJHMat62 = LDXColor62; #end #end
-#ifdef (LDXColor62) #ifndef (MJHMat62Slope) #declare MJHMat62Slope = LDXColor62_slope; #end #end
+//#ifdef (LDXColor62) #ifndef (MJHMat62Slope) #declare MJHMat62Slope = LDXColor62_slope; #end #end		// missing
 
 // color 63 - Chrome_Pink
 #ifdef (LDXColor63) #ifndef (MJHMat63) #declare MJHMat63 = LDXColor63; #end #end
-#ifdef (LDXColor63) #ifndef (MJHMat63Slope) #declare MJHMat63Slope = LDXColor63_slope; #end #end
+//#ifdef (LDXColor63) #ifndef (MJHMat63Slope) #declare MJHMat63Slope = LDXColor63_slope; #end #end		// missing
 
 // color 64 - Chrome_Black
 #ifdef (LDXColor64) #ifndef (MJHMat64) #declare MJHMat64 = LDXColor64; #end #end
-#ifdef (LDXColor64) #ifndef (MJHMat64Slope) #declare MJHMat64Slope = LDXColor64_slope; #end #end
+//#ifdef (LDXColor64) #ifndef (MJHMat64Slope) #declare MJHMat64Slope = LDXColor64_slope; #end #end		// missing
 
 // color 65 - Rubber_Yellow
 #ifdef (LDXColor65) #ifndef (MJHMat65) #declare MJHMat65 = LDXColor65; #end #end
@@ -288,11 +288,11 @@
 
 // color 75 - Speckle_Black_Copper
 #ifdef (LDXColor75) #ifndef (MJHMat75) #declare MJHMat75 = LDXColor75; #end #end
-#ifdef (LDXColor75) #ifndef (MJHMat75Slope) #declare MJHMat75Slope = LDXColor75_slope; #end #end
+//#ifdef (LDXColor75) #ifndef (MJHMat75Slope) #declare MJHMat75Slope = LDXColor75_slope; #end #end		// missing
 
 // color 76 - Speckle_Dark_Bluish_Grey_Silver
 #ifdef (LDXColor76) #ifndef (MJHMat76) #declare MJHMat76 = LDXColor76; #end #end
-#ifdef (LDXColor76) #ifndef (MJHMat76Slope) #declare MJHMat76Slope = LDXColor76_slope; #end #end
+//#ifdef (LDXColor76) #ifndef (MJHMat76Slope) #declare MJHMat76Slope = LDXColor76_slope; #end #end		// missing
 
 // color 77 - Light_Pink
 #ifdef (LDXColor77) #ifndef (MJHMat77) #declare MJHMat77 = LDXColor77; #end #end
@@ -312,7 +312,7 @@
 
 // color 81 - Metallic_Green
 #ifdef (LDXColor81) #ifndef (MJHMat81) #declare MJHMat81 = LDXColor81; #end #end
-#ifdef (LDXColor81) #ifndef (MJHMat81Slope) #declare MJHMat81Slope = LDXColor81_slope; #end #end
+//#ifdef (LDXColor81) #ifndef (MJHMat81Slope) #declare MJHMat81Slope = LDXColor81_slope; #end #end		// missing
 
 // color 82 - Metallic_Gold
 #ifdef (LDXColor82) #ifndef (MJHMat82) #declare MJHMat82 = LDXColor82; #end #end
@@ -320,7 +320,7 @@
 
 // color 83 - Metallic_Black
 #ifdef (LDXColor83) #ifndef (MJHMat83) #declare MJHMat83 = LDXColor83; #end #end
-#ifdef (LDXColor83) #ifndef (MJHMat83Slope) #declare MJHMat83Slope = LDXColor83_slope; #end #end
+//#ifdef (LDXColor83) #ifndef (MJHMat83Slope) #declare MJHMat83Slope = LDXColor83_slope; #end #end		// missing
 
 // color 84 - Medium_Dark_Flesh
 #ifdef (LDXColor84) #ifndef (MJHMat84) #declare MJHMat84 = LDXColor84; #end #end
@@ -336,7 +336,7 @@
 
 // color 87 - Metallic_Dark_Grey
 #ifdef (LDXColor87) #ifndef (MJHMat87) #declare MJHMat87 = LDXColor87; #end #end
-#ifdef (LDXColor87) #ifndef (MJHMat87Slope) #declare MJHMat87Slope = LDXColor87_slope; #end #end
+//#ifdef (LDXColor87) #ifndef (MJHMat87Slope) #declare MJHMat87Slope = LDXColor87_slope; #end #end		// missing
 
 // color 89 - Blue_Violet
 #ifdef (LDXColor89) #ifndef (MJHMat89) #declare MJHMat89 = LDXColor89; #end #end
@@ -352,15 +352,15 @@
 
 // color 110 - Violet
 #ifdef (LDXColor110) #ifndef (MJHMat110) #declare MJHMat110 = LDXColor110; #end #end
-#ifdef (LDXColor110) #ifndef (MJHMat110Slope) #declare MJHMat110Slope = LDXColor110_slope; #end #end
+//#ifdef (LDXColor110) #ifndef (MJHMat110Slope) #declare MJHMat110Slope = LDXColor110_slope; #end #end		// missing
 
 // color 112 - Medium_Violet
 #ifdef (LDXColor112) #ifndef (MJHMat112) #declare MJHMat112 = LDXColor112; #end #end
-#ifdef (LDXColor112) #ifndef (MJHMat112Slope) #declare MJHMat112Slope = LDXColor112_slope; #end #end
+//#ifdef (LDXColor112) #ifndef (MJHMat112Slope) #declare MJHMat112Slope = LDXColor112_slope; #end #end		// missing
 
 // color 114 - Glitter_Trans_Dark_Pink
 #ifdef (LDXColor114) #ifndef (MJHMat114) #declare MJHMat114 = LDXColor114; #end #end
-#ifdef (LDXColor114) #ifndef (MJHMat114Slope) #declare MJHMat114Slope = LDXColor114_slope; #end #end
+//#ifdef (LDXColor114) #ifndef (MJHMat114Slope) #declare MJHMat114Slope = LDXColor114_slope; #end #end		// missing
 
 // color 115 - Medium_Lime
 #ifdef (LDXColor115) #ifndef (MJHMat115) #declare MJHMat115 = LDXColor115; #end #end
@@ -368,35 +368,35 @@
 
 // color 117 - Glitter_Trans_Clear
 #ifdef (LDXColor117) #ifndef (MJHMat117) #declare MJHMat117 = LDXColor117; #end #end
-#ifdef (LDXColor117) #ifndef (MJHMat117Slope) #declare MJHMat117Slope = LDXColor117_slope; #end #end
+//#ifdef (LDXColor117) #ifndef (MJHMat117Slope) #declare MJHMat117Slope = LDXColor117_slope; #end #end		// missing
 
 // color 118 - Aqua
 #ifdef (LDXColor118) #ifndef (MJHMat118) #declare MJHMat118 = LDXColor118; #end #end
-#ifdef (LDXColor118) #ifndef (MJHMat118Slope) #declare MJHMat118Slope = LDXColor118_slope; #end #end
+//#ifdef (LDXColor118) #ifndef (MJHMat118Slope) #declare MJHMat118Slope = LDXColor118_slope; #end #end		// missing
 
 // color 120 - Light_Lime
 #ifdef (LDXColor120) #ifndef (MJHMat120) #declare MJHMat120 = LDXColor120; #end #end
-#ifdef (LDXColor120) #ifndef (MJHMat120Slope) #declare MJHMat120Slope = LDXColor120_slope; #end #end
+//#ifdef (LDXColor120) #ifndef (MJHMat120Slope) #declare MJHMat120Slope = LDXColor120_slope; #end #end		// missing
 
 // color 125 - Light_Orange
 #ifdef (LDXColor125) #ifndef (MJHMat125) #declare MJHMat125 = LDXColor125; #end #end
-#ifdef (LDXColor125) #ifndef (MJHMat125Slope) #declare MJHMat125Slope = LDXColor125_slope; #end #end
+//#ifdef (LDXColor125) #ifndef (MJHMat125Slope) #declare MJHMat125Slope = LDXColor125_slope; #end #end		// missing
 
 // color 128 - Dark_Nougat
 #ifdef (LDXColor128) #ifndef (MJHMat128) #declare MJHMat128 = LDXColor128; #end #end
-#ifdef (LDXColor128) #ifndef (MJHMat128Slope) #declare MJHMat128Slope = LDXColor128_slope; #end #end
+//#ifdef (LDXColor128) #ifndef (MJHMat128Slope) #declare MJHMat128Slope = LDXColor128_slope; #end #end		// missing
 
 // color 129 - Glitter_Trans_Purple
 #ifdef (LDXColor129) #ifndef (MJHMat129) #declare MJHMat129 = LDXColor129; #end #end
-#ifdef (LDXColor129) #ifndef (MJHMat129Slope) #declare MJHMat129Slope = LDXColor129_slope; #end #end
+//#ifdef (LDXColor129) #ifndef (MJHMat129Slope) #declare MJHMat129Slope = LDXColor129_slope; #end #end		// missing
 
 // color 132 - Speckle_Black_Silver
 #ifdef (LDXColor132) #ifndef (MJHMat132) #declare MJHMat132 = LDXColor132; #end #end
-#ifdef (LDXColor132) #ifndef (MJHMat132Slope) #declare MJHMat132Slope = LDXColor132_slope; #end #end
+//#ifdef (LDXColor132) #ifndef (MJHMat132Slope) #declare MJHMat132Slope = LDXColor132_slope; #end #end		// missing
 
 // color 133 - Speckle_Black_Gold
 #ifdef (LDXColor133) #ifndef (MJHMat133) #declare MJHMat133 = LDXColor133; #end #end
-#ifdef (LDXColor133) #ifndef (MJHMat133Slope) #declare MJHMat133Slope = LDXColor133_slope; #end #end
+//#ifdef (LDXColor133) #ifndef (MJHMat133Slope) #declare MJHMat133Slope = LDXColor133_slope; #end #end		// missing
 
 // color 134 - Copper
 #ifdef (LDXColor134) #ifndef (MJHMat134) #declare MJHMat134 = LDXColor134; #end #end
@@ -420,7 +420,7 @@
 
 // color 150 - Pearl_Very_Light_Grey
 #ifdef (LDXColor150) #ifndef (MJHMat150) #declare MJHMat150 = LDXColor150; #end #end
-#ifdef (LDXColor150) #ifndef (MJHMat150Slope) #declare MJHMat150Slope = LDXColor150_slope; #end #end
+//#ifdef (LDXColor150) #ifndef (MJHMat150Slope) #declare MJHMat150Slope = LDXColor150_slope; #end #end		// missing
 
 // color 151 - Very_Light_Bluish_Grey
 #ifdef (LDXColor151) #ifndef (MJHMat151) #declare MJHMat151 = LDXColor151; #end #end
@@ -428,7 +428,7 @@
 
 // color 178 - Flat_Dark_Gold
 #ifdef (LDXColor178) #ifndef (MJHMat178) #declare MJHMat178 = LDXColor178; #end #end
-#ifdef (LDXColor178) #ifndef (MJHMat178Slope) #declare MJHMat178Slope = LDXColor178_slope; #end #end
+//#ifdef (LDXColor178) #ifndef (MJHMat178Slope) #declare MJHMat178Slope = LDXColor178_slope; #end #end		// missing
 
 // color 179 - Flat_Silver
 #ifdef (LDXColor179) #ifndef (MJHMat179) #declare MJHMat179 = LDXColor179; #end #end
@@ -440,15 +440,15 @@
 
 // color 184 - Metallic_Bright_Red
 #ifdef (LDXColor184) #ifndef (MJHMat184) #declare MJHMat184 = LDXColor184; #end #end
-#ifdef (LDXColor184) #ifndef (MJHMat184Slope) #declare MJHMat184Slope = LDXColor184_slope; #end #end
+//#ifdef (LDXColor184) #ifndef (MJHMat184Slope) #declare MJHMat184Slope = LDXColor184_slope; #end #end		// missing
 
 // color 186 - Metallic_Dark_Green
 #ifdef (LDXColor186) #ifndef (MJHMat186) #declare MJHMat186 = LDXColor186; #end #end
-#ifdef (LDXColor186) #ifndef (MJHMat186Slope) #declare MJHMat186Slope = LDXColor186_slope; #end #end
+//#ifdef (LDXColor186) #ifndef (MJHMat186Slope) #declare MJHMat186Slope = LDXColor186_slope; #end #end		// missing
 
 // color 189 - Reddish_Gold
 #ifdef (LDXColor189) #ifndef (MJHMat189) #declare MJHMat189 = LDXColor189; #end #end
-#ifdef (LDXColor189) #ifndef (MJHMat189Slope) #declare MJHMat189Slope = LDXColor189_slope; #end #end
+//#ifdef (LDXColor189) #ifndef (MJHMat189Slope) #declare MJHMat189Slope = LDXColor189_slope; #end #end		// missing
 
 // color 191 - Bright_Light_Orange
 #ifdef (LDXColor191) #ifndef (MJHMat191) #declare MJHMat191 = LDXColor191; #end #end
@@ -456,7 +456,7 @@
 
 // color 212 - Bright_Light_Blue
 #ifdef (LDXColor212) #ifndef (MJHMat212) #declare MJHMat212 = LDXColor212; #end #end
-#ifdef (LDXColor212) #ifndef (MJHMat212Slope) #declare MJHMat212Slope = LDXColor212_slope; #end #end
+//#ifdef (LDXColor212) #ifndef (MJHMat212Slope) #declare MJHMat212Slope = LDXColor212_slope; #end #end		// missing
 
 // color 216 - Rust
 #ifdef (LDXColor216) #ifndef (MJHMat216) #declare MJHMat216 = LDXColor216; #end #end
@@ -464,19 +464,19 @@
 
 // color 218 - Reddish_Lilac
 #ifdef (LDXColor218) #ifndef (MJHMat218) #declare MJHMat218 = LDXColor218; #end #end
-#ifdef (LDXColor218) #ifndef (MJHMat218Slope) #declare MJHMat218Slope = LDXColor218_slope; #end #end
+//#ifdef (LDXColor218) #ifndef (MJHMat218Slope) #declare MJHMat218Slope = LDXColor218_slope; #end #end		// missing
 
 // color 219 - Lilac
 #ifdef (LDXColor219) #ifndef (MJHMat219) #declare MJHMat219 = LDXColor219; #end #end
-#ifdef (LDXColor219) #ifndef (MJHMat219Slope) #declare MJHMat219Slope = LDXColor219_slope; #end #end
+//#ifdef (LDXColor219) #ifndef (MJHMat219Slope) #declare MJHMat219Slope = LDXColor219_slope; #end #end		// missing
 
 // color 226 - Bright_Light_Yellow
 #ifdef (LDXColor226) #ifndef (MJHMat226) #declare MJHMat226 = LDXColor226; #end #end
-#ifdef (LDXColor226) #ifndef (MJHMat226Slope) #declare MJHMat226Slope = LDXColor226_slope; #end #end
+//#ifdef (LDXColor226) #ifndef (MJHMat226Slope) #declare MJHMat226Slope = LDXColor226_slope; #end #end		// missing
 
 // color 231 - Trans_Bright_Light_Orange
 #ifdef (LDXColor231) #ifndef (MJHMat231) #declare MJHMat231 = LDXColor231; #end #end
-#ifdef (LDXColor231) #ifndef (MJHMat231Slope) #declare MJHMat231Slope = LDXColor231_slope; #end #end
+//#ifdef (LDXColor231) #ifndef (MJHMat231Slope) #declare MJHMat231Slope = LDXColor231_slope; #end #end		// missing
 
 // color 232 - Sky_Blue
 #ifdef (LDXColor232) #ifndef (MJHMat232) #declare MJHMat232 = LDXColor232; #end #end
@@ -484,7 +484,7 @@
 
 // color 234 - Trans_Fire_Yellow
 #ifdef (LDXColor234) #ifndef (MJHMat234) #declare MJHMat234 = LDXColor234; #end #end
-#ifdef (LDXColor234) #ifndef (MJHMat234Slope) #declare MJHMat234Slope = LDXColor234_slope; #end #end
+//#ifdef (LDXColor234) #ifndef (MJHMat234Slope) #declare MJHMat234Slope = LDXColor234_slope; #end #end		// missing
 
 // color 256 - Rubber_Black
 #ifdef (LDXColor256) #ifndef (MJHMat256) #declare MJHMat256 = LDXColor256; #end #end
@@ -500,11 +500,11 @@
 
 // color 284 - Trans_Reddish_Lilac
 #ifdef (LDXColor284) #ifndef (MJHMat284) #declare MJHMat284 = LDXColor284; #end #end
-#ifdef (LDXColor284) #ifndef (MJHMat284Slope) #declare MJHMat284Slope = LDXColor284_slope; #end #end
+//#ifdef (LDXColor284) #ifndef (MJHMat284Slope) #declare MJHMat284Slope = LDXColor284_slope; #end #end		// missing
 
 // color 285 - Trans_Light_Green
 #ifdef (LDXColor285) #ifndef (MJHMat285) #declare MJHMat285 = LDXColor285; #end #end
-#ifdef (LDXColor285) #ifndef (MJHMat285Slope) #declare MJHMat285Slope = LDXColor285_slope; #end #end
+//#ifdef (LDXColor285) #ifndef (MJHMat285Slope) #declare MJHMat285Slope = LDXColor285_slope; #end #end		// missing
 
 // color 288 - Dark_Green
 #ifdef (LDXColor288) #ifndef (MJHMat288) #declare MJHMat288 = LDXColor288; #end #end
@@ -512,7 +512,7 @@
 
 // color 293 - Trans_Light_Blue_Violet
 #ifdef (LDXColor293) #ifndef (MJHMat293) #declare MJHMat293 = LDXColor293; #end #end
-#ifdef (LDXColor293) #ifndef (MJHMat293Slope) #declare MJHMat293Slope = LDXColor293_slope; #end #end
+//#ifdef (LDXColor293) #ifndef (MJHMat293Slope) #declare MJHMat293Slope = LDXColor293_slope; #end #end		// missing
 
 // color 294 - Glow_In_Dark_Trans
 #ifdef (LDXColor294) #ifndef (MJHMat294) #declare MJHMat294 = LDXColor294; #end #end
@@ -520,7 +520,7 @@
 
 // color 295 - Flamingo_Pink
 #ifdef (LDXColor295) #ifndef (MJHMat295) #declare MJHMat295 = LDXColor295; #end #end
-#ifdef (LDXColor295) #ifndef (MJHMat295Slope) #declare MJHMat295Slope = LDXColor295_slope; #end #end
+//#ifdef (LDXColor295) #ifndef (MJHMat295Slope) #declare MJHMat295Slope = LDXColor295_slope; #end #end		// missing
 
 // color 297 - Pearl_Gold
 #ifdef (LDXColor297) #ifndef (MJHMat297) #declare MJHMat297 = LDXColor297; #end #end
@@ -528,11 +528,11 @@
 
 // color 300 - Metallic_Copper
 #ifdef (LDXColor300) #ifndef (MJHMat300) #declare MJHMat300 = LDXColor300; #end #end
-#ifdef (LDXColor300) #ifndef (MJHMat300Slope) #declare MJHMat300Slope = LDXColor300_slope; #end #end
+//#ifdef (LDXColor300) #ifndef (MJHMat300Slope) #declare MJHMat300Slope = LDXColor300_slope; #end #end		// missing
 
 // color 302 - Glitter_Trans_Light_Blue
 #ifdef (LDXColor302) #ifndef (MJHMat302) #declare MJHMat302 = LDXColor302; #end #end
-#ifdef (LDXColor302) #ifndef (MJHMat302Slope) #declare MJHMat302Slope = LDXColor302_slope; #end #end
+//#ifdef (LDXColor302) #ifndef (MJHMat302Slope) #declare MJHMat302Slope = LDXColor302_slope; #end #end		// missing
 
 // color 308 - Dark_Brown
 #ifdef (LDXColor308) #ifndef (MJHMat308) #declare MJHMat308 = LDXColor308; #end #end
@@ -568,7 +568,7 @@
 
 // color 329 - Glow_In_Dark_White
 #ifdef (LDXColor329) #ifndef (MJHMat329) #declare MJHMat329 = LDXColor329; #end #end
-#ifdef (LDXColor329) #ifndef (MJHMat329Slope) #declare MJHMat329Slope = LDXColor329_slope; #end #end
+//#ifdef (LDXColor329) #ifndef (MJHMat329Slope) #declare MJHMat329Slope = LDXColor329_slope; #end #end		// missing
 
 // color 330 - Olive_Green
 #ifdef (LDXColor330) #ifndef (MJHMat330) #declare MJHMat330 = LDXColor330; #end #end
@@ -584,15 +584,15 @@
 
 // color 339 - Glitter_Trans_Neon_Green
 #ifdef (LDXColor339) #ifndef (MJHMat339) #declare MJHMat339 = LDXColor339; #end #end
-#ifdef (LDXColor339) #ifndef (MJHMat339Slope) #declare MJHMat339Slope = LDXColor339_slope; #end #end
+//#ifdef (LDXColor339) #ifndef (MJHMat339Slope) #declare MJHMat339Slope = LDXColor339_slope; #end #end		// missing
 
 // color 350 - Rubber_Orange
 #ifdef (LDXColor350) #ifndef (MJHMat350) #declare MJHMat350 = LDXColor350; #end #end
-#ifdef (LDXColor350) #ifndef (MJHMat350Slope) #declare MJHMat350Slope = LDXColor350_slope; #end #end
+//#ifdef (LDXColor350) #ifndef (MJHMat350Slope) #declare MJHMat350Slope = LDXColor350_slope; #end #end		// missing
 
 // color 351 - Medium_Dark_Pink
 #ifdef (LDXColor351) #ifndef (MJHMat351) #declare MJHMat351 = LDXColor351; #end #end
-#ifdef (LDXColor351) #ifndef (MJHMat351Slope) #declare MJHMat351Slope = LDXColor351_slope; #end #end
+//#ifdef (LDXColor351) #ifndef (MJHMat351Slope) #declare MJHMat351Slope = LDXColor351_slope; #end #end		// missing
 
 // color 366 - Earth_Orange
 #ifdef (LDXColor366) #ifndef (MJHMat366) #declare MJHMat366 = LDXColor366; #end #end
@@ -652,7 +652,7 @@
 
 // color 495 - Electric_Contact_Copper
 #ifdef (LDXColor495) #ifndef (MJHMat495) #declare MJHMat495 = LDXColor495; #end #end
-#ifdef (LDXColor495) #ifndef (MJHMat495Slope) #declare MJHMat495Slope = LDXColor495_slope; #end #end
+//#ifdef (LDXColor495) #ifndef (MJHMat495Slope) #declare MJHMat495Slope = LDXColor495_slope; #end #end		// missing
 
 // color 496 - Rubber_Light_Bluish_Grey
 #ifdef (LDXColor496) #ifndef (MJHMat496) #declare MJHMat496 = LDXColor496; #end #end

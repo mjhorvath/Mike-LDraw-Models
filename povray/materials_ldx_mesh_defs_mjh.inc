@@ -1,27 +1,6 @@
-// POV-Ray scripts for LDraw models and scenes
-// Copyright (C) 2019  Michael Horvath
-// 
-// This library is free software; you can redistribute it and/or
-// modify it under the terms of the GNU Lesser General Public
-// License as published by the Free Software Foundation; either
-// version 2.1 of the License, or (at your option) any later version.
-// 
-// This library is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-// Lesser General Public License for more details.
-// 
-// You should have received a copy of the GNU Lesser General Public
-// License along with this library; if not, write to the Free Software
-// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
-// 
-// By default, LDView materials do not have normals. There are also 
-// no alternative materials for sloped parts featuring extra bumps.
-// Only when substituting mesh geometry with LGEO geometry does 
-// LDView add bumps to the regular materials and create special 
-// materials for sloped parts.
-
-// Currently does support blurred reflections, but does not support SSLT (yet).
+// Default LDView output when LGEO parts are not used.
+// Modified by Michael Horvath.
+// Currently supports blurred reflections for some materials, but does not support SSLT at all.
 // +am3 +r9 +a0.002 +ac0.99
 // +am = sampling method
 // +r = antialias depth
@@ -30,75 +9,48 @@
 
 #version 3.7;
 
-// Not sure what these are for.
-//#declare LDXSkipOpaqueColorMacro = true;
-//#declare LDXSkipTransColorMacro = true;
+#if (version >= 3.7) global_settings {assumed_gamma 1} #end
 
-#declare PlasticSpecularity  = 1.0;
-#declare PlasticRoughness    = 0.001;
-
-
-
-#macro LDXSeamMatrix(Width, Height, Depth, CenterX, CenterY, CenterZ)
-#local aw = 0;
-#local ah = 0;
-#local ad = 0;
-#local ax = 0;
-#local ay = 0;
-#local az = 0;
-#if (Width != 0)
-#local aw = 1-LDXSW/Width;
-#end
-#if (Height != 0)
-#local ah = 1-LDXSW/Height;
-#end
-#if (Depth != 0)
-#local ad = 1-LDXSW/Depth;
-#end
-#if (Width != 0 & CenterX != 0)
-#local ax = LDXSW/(Width / CenterX);
-#end
-#if (Height != 0 & CenterY != 0)
-#local ay = LDXSW/(Height / CenterY);
-#end
-#if (Depth != 0 & CenterZ != 0)
-#local az = LDXSW/(Depth / CenterZ);
-#end
-#if (aw <= 0)
-#local aw = 1;
-#local ax = 0;
-#end
-#if (ah <= 0)
-#local ah = 1;
-#local ay = 0;
-#end
-#if (ad <= 0)
-#local ad = 1;
-#local az = 0;
-#end
-matrix <aw,0,0,0,ah,0,0,0,ad,ax,ay,az>
-#end
+// All these values should really be tailored for each material type.
+// Each material type needs to have an ior in order for SSLT to work.
+// Pearl should have separate materials from opaque.
+#declare LDXOpaqueSpecularity	= 1.0;
+#declare LDXOpaqueRoughness		= 0.001;
+#declare LDXOpaqueIor			= LDXIoR;
+#declare LDXTransSpecularity	= 1.0;
+#declare LDXTransRoughness		= 0.001;
+#declare LDXTransIor			= LDXIoR;
+#declare LDXChromeSpecularity	= 1.0;
+#declare LDXChromeRoughness		= 0.001;
+#declare LDXChromeIor			= LDXIoR;
+#declare LDXPearlSpecularity	= 1.0;
+#declare LDXPearlRoughness		= 0.001;
+#declare LDXPearlIor			= LDXIoR;
 
 
-
+#ifndef (LDXSkipOpaqueColorMacro)
 #macro LDXOpaqueColor(r, g, b)
 #if (version >= 3.1) material { #end
 	texture {
+#if (version >= 3.7)
 		pigment { srgbf <r,g,b,0> }
+#else
+		pigment { rgbf <r,g,b,0> }
+#end
 #if (LDXQual > 1)
 		#if (Use_BlurRef = true)
 			#if (Use_Uber = true)
 				finish
 				{
 					emission		0
-					specular albedo	PlasticSpecularity
-					roughness		PlasticRoughness
+					specular albedo	LDXOpaqueSpecularity
+					roughness		LDXOpaqueRoughness
 					fresnel			on
 					reflection
 					{
-						PlasticSpecularity
+						LDXOpaqueSpecularity
 						fresnel on
-						roughness PlasticRoughness
+						roughness LDXOpaqueRoughness
 					}
 					conserve_energy
 				}
@@ -107,49 +59,55 @@ matrix <aw,0,0,0,ah,0,0,0,ad,ax,ay,az>
 				{
 					ambient			0
 					diffuse albedo	1
-					specular albedo	PlasticSpecularity
-					roughness		PlasticRoughness
+					specular albedo	LDXOpaqueSpecularity
+					roughness		LDXOpaqueRoughness
 					fresnel			on
 					reflection
 					{
-						PlasticSpecularity
+						LDXOpaqueSpecularity
 						fresnel on
 					}
 					conserve_energy
 				}
+ 				// to do: need to specify a normal here too or use "materials_blurred_reflections.inc"
 			#end
 		#else
 			finish { ambient LDXAmb diffuse LDXDif }
 			finish { phong LDXPhong phong_size LDXPhongS reflection LDXRefl }
+			normal { LDXOpaqueNormal }
 		#end
 #end
 	}
 #if (version >= 3.1) #if (LDXQual > 1)
-	interior { ior LDXIoR }
+	interior { ior LDXOpaqueIor }
 #end #end
 #if (version >= 3.1) } #end
 #end
+#end
 
-
-
+#ifndef (LDXSkipTransColorMacro)
 #macro LDXTransColor(r, g, b)
 #if (version >= 3.1) material { #end
 	texture {
+#if (version >= 3.7)
 		pigment { #if (LDXQual > 1) srgbf <r,g,b,LDXTFilt> #else srgbf <0.6,0.6,0.6,0> #end }
+#else
+		pigment { #if (LDXQual > 1) rgbf <r,g,b,LDXTFilt> #else rgbf <0.6,0.6,0.6,0> #end }
+#end
 #if (LDXQual > 1)
 		#if (Use_BlurRef = true)
 			#if (Use_Uber = true)
 				finish
 				{
 					emission		0
-					specular albedo	PlasticSpecularity
-					roughness		PlasticRoughness
+					specular albedo	LDXTransSpecularity
+					roughness		LDXTransRoughness
 					fresnel			on
 					reflection
 					{
-						PlasticSpecularity
+						LDXTransSpecularity
 						fresnel on
-						roughness PlasticRoughness
+						roughness LDXTransRoughness
 					}
 					conserve_energy
 				}
@@ -158,102 +116,91 @@ matrix <aw,0,0,0,ah,0,0,0,ad,ax,ay,az>
 				{
 					ambient			0
 					diffuse albedo	1
-					specular albedo	PlasticSpecularity
-					roughness		PlasticRoughness
+					specular albedo	LDXTransSpecularity
+					roughness		LDXTransRoughness
 					fresnel			on
 					reflection
 					{
-						PlasticSpecularity
+						LDXTransSpecularity
 						fresnel on
 					}
 					conserve_energy
 				}
+ 				// to do: need to specify a normal here too or use "materials_blurred_reflections.inc"
 			#end
 		#else
 			finish { ambient LDXAmb diffuse LDXDif }
 			finish { phong LDXPhong phong_size LDXPhongS reflection LDXTRefl }
+			normal { LDXTransNormal }
 		#end
 #end
 	}
 #if (version >= 3.1) #if (LDXQual > 1)
-	interior { ior LDXIoR }
+	interior { refraction 1 ior LDXTransIor }
 #end #end
 #if (version >= 3.1) } #end
 #end
+#end
 
-
-
+#ifndef (LDXSkipRubberColorMacro)
 #macro LDXRubberColor(r, g, b)
 #if (version >= 3.1) material { #end
 	texture {
+#if (version >= 3.7)
+		pigment { srgbf <r,g,b,0> }
+#else
 		pigment { rgbf <r,g,b,0> }
+#end
 #if (LDXQual > 1)
 		#if (false = true)
 			#if (Use_Uber = true)
-				finish
-				{
-					emission		0
-					specular albedo	PlasticSpecularity
-					roughness		PlasticRoughness
-					fresnel			on
-					reflection
-					{
-						PlasticSpecularity
-						fresnel on
-						roughness PlasticRoughness
-					}
-					conserve_energy
-				}
+				// to do
 			#else
 				// to do
 			#end
 		#else
 			finish { ambient LDXAmb diffuse LDXDif }
 			finish { phong LDXRubberPhong phong_size LDXRubberPhongS reflection LDXRubberRefl }
+//			normal { LDXRubberNormal }		// to do: doesn't exist yet
 		#end
 #end
 	}
-	// needs an interior and ior here as well for SSLT to work
+	// needs an interior and ior here as well in order for SSLT to work
 #if (version >= 3.1) } #end
 #end
+#end
 
-
-
+#ifndef (LDXSkipChromeColorMacro)
 #macro LDXChromeColor(r, g, b)
 #if (version >= 3.1) material { #end
 	texture {
+#if (version >= 3.7)
+		pigment { srgbf <r,g,b,0> }
+#else
 		pigment { rgbf <r,g,b,0> }
+#end
 #if (LDXQual > 1)
 		#if (false = true)
 			#if (Use_Uber = true)
-				finish
-				{
-					emission		0
-					specular albedo	PlasticSpecularity
-					roughness		PlasticRoughness
-					fresnel			on
-					reflection
-					{
-						PlasticSpecularity
-						fresnel on
-						roughness PlasticRoughness
-					}
-					conserve_energy
-				}
+				// to do
 			#else
 				// to do
 			#end
 		#else
 			finish { ambient LDXAmb diffuse LDXDif }
 			finish { phong LDXPhong phong_size LDXPhongS reflection LDXChromeRefl brilliance LDXChromeBril metallic specular LDXChromeSpec roughness LDXChromeRough}
+//			normal { LDXChromeNormal }		// to do: doesn't exist yet
 		#end
 #end
 	}
-	// needs an interior and ior here as well for SSLT to work
+	// needs an interior and ior here as well in order for SSLT to work
 #if (version >= 3.1) } #end
 #end
+#end
 
-
+#ifndef (LDXSkipPearlColorMacro)
+	// to do
+#end
 
 #ifndef (LDXColor0) // Black
 #declare LDXColor0 = LDXOpaqueColor(0.019608,0.07451,0.113725)
@@ -463,7 +410,7 @@ matrix <aw,0,0,0,ah,0,0,0,ad,ax,ay,az>
 #declare LDXColor256 = LDXRubberColor(0.129412,0.129412,0.129412)
 #end
 
-#ifndef (LDXColor258)
+#ifndef (LDXColor258) // ???
 #declare LDXColor258 = LDXOpaqueColor(0.098039,0.34902,0.2)
 #end
 
@@ -471,7 +418,7 @@ matrix <aw,0,0,0,ah,0,0,0,ad,ax,ay,az>
 #declare LDXColor272 = LDXOpaqueColor(0.05098,0.196078,0.356863)
 #end
 
-#ifndef (LDXColor277)
+#ifndef (LDXColor277) // ???
 #declare LDXColor277 = LDXOpaqueColor(0.498039,0.2,0.647059)
 #end
 
@@ -491,7 +438,7 @@ matrix <aw,0,0,0,ah,0,0,0,ad,ax,ay,az>
 #declare LDXColor334 = LDXChromeColor(0.733333,0.647059,0.239216)
 #end
 
-#ifndef (LDXColor354)
+#ifndef (LDXColor354)	// ???
 #declare LDXColor354 = LDXOpaqueColor(0.2,0.34902,0.098039)
 #end
 
@@ -503,7 +450,7 @@ matrix <aw,0,0,0,ah,0,0,0,ad,ax,ay,az>
 #declare LDXColor379 = LDXOpaqueColor(0.34902,0.443137,0.517647)
 #end
 
-#ifndef (LDXColor382)
+#ifndef (LDXColor382) // ???
 #declare LDXColor382 = LDXOpaqueColor(0.8,0.666667,0.4)
 #end
 
@@ -515,11 +462,11 @@ matrix <aw,0,0,0,ah,0,0,0,ad,ax,ay,az>
 #declare LDXColor484 = LDXOpaqueColor(0.662745,0.333333,0)
 #end
 
-#ifndef (LDXColor487)
+#ifndef (LDXColor487) // ???
 #declare LDXColor487 = LDXOpaqueColor(0.8,0.74902,0.298039)
 #end
 
-#ifndef (LDXColor492)
+#ifndef (LDXColor492) // ???
 #declare LDXColor492 = LDXOpaqueColor(1,0.447059,0)
 #end
 
