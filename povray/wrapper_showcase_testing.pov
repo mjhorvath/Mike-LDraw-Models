@@ -24,7 +24,7 @@ global_settings {assumed_gamma 1}
 // -------------------------------------------------------------
 // Settings
 
-#declare Render_HQ = true;		// High quality render? Slow but better.
+#declare Render_HQ = false;		// High quality render? Slow but better.
 
 #include "settings_common_before.inc"
 #include "settings_showcase_normal.inc"
@@ -39,9 +39,9 @@ global_settings {assumed_gamma 1}
 
 // LDCad materials
 //#include "materials_ldc_defs.inc"				// LQ
-#include "materials_ldc_defs_mjh.inc"			// MQ
+//#include "materials_ldc_defs_mjh.inc"			// MQ
 //#include "materials_ldc_defs_clipka.inc"		// HQ
-#include "materials_ldc_out.inc"
+//#include "materials_ldc_out.inc"
 
 // LDView materials when mesh parts are used
 //#include "materials_ldx_mesh_defs.inc"			// LQ
@@ -57,8 +57,8 @@ global_settings {assumed_gamma 1}
 //#include "materials_l3p_out.inc"
 
 // LGEO default materials
-//#include "materials_lg_defs.inc"
-//#include "materials_lg_out.inc"
+#include "materials_lg_defs.inc"
+#include "materials_lg_out.inc"
 
 #include "materials_all_missing.inc"
 #include "materials_all_convert.inc"
@@ -67,7 +67,7 @@ global_settings {assumed_gamma 1}
 // -------------------------------------------------------------
 // LDView models
 
-#declare Use_Model = 1;
+#declare Use_Model = 0;
 #declare LDXCameraAspect	= image_width/image_height;
 #declare LDXCameraAngle		= 45;
 
