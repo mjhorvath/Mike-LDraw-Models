@@ -93,7 +93,7 @@
 #ifndef (L3TextureOpaqueRGB)
 #macro L3TextureOpaqueRGB(r,g,b)
 texture {
-	pigment { color srgb <r/255,g/255,b/255> }
+	pigment { color rgb <r/255,g/255,b/255> }
 	finish { L3FinishOpaque }
 	#if (L3Bumps & (L3Quality > 1)) normal { L3NormalBumps } #end
 }
@@ -103,7 +103,7 @@ texture {
 #ifndef (L3TextureChromeRGB)
 #macro L3TextureChromeRGB(r,g,b)
 texture {
-	pigment { color srgb <r/255,g/255,b/255> }
+	pigment { color rgb <r/255,g/255,b/255> }
 	finish { L3FinishChrome }
 	#if (L3Bumps & (L3Quality > 1)) normal { L3NormalBumps } #end
 }
@@ -113,7 +113,7 @@ texture {
 #ifndef (L3TexturePearlescentRGB)
 #macro L3TexturePearlescentRGB(r,g,b)
 texture {
-	pigment { color srgb <r/255,g/255,b/255> }
+	pigment { color rgb <r/255,g/255,b/255> }
 	finish { L3FinishPearlescent }
 	#if (L3Bumps & (L3Quality > 1)) normal { L3NormalBumps } #end
 }
@@ -123,7 +123,7 @@ texture {
 #ifndef (L3TextureRubberRGB)
 #macro L3TextureRubberRGB(r,g,b)
 texture {
-	pigment { color srgb <r/255,g/255,b/255> }
+	pigment { color rgb <r/255,g/255,b/255> }
 	finish { L3FinishRubber }
 	#if (L3Bumps & (L3Quality > 1)) normal { L3NormalBumps } #end
 }
@@ -133,7 +133,7 @@ texture {
 #ifndef (L3TextureMatte_metallicRGB)
 #macro L3TextureMatte_metallicRGB(r,g,b)
 texture {
-	pigment { color srgb <r/255,g/255,b/255> }
+	pigment { color rgb <r/255,g/255,b/255> }
 	finish { L3FinishMatte_metallic }
 	#if (L3Bumps & (L3Quality > 1)) normal { L3NormalBumps } #end
 }
@@ -143,7 +143,7 @@ texture {
 #ifndef (L3TextureMetalRGB)
 #macro L3TextureMetalRGB(r,g,b)
 texture {
-	pigment { color srgb <r/255,g/255,b/255> }
+	pigment { color rgb <r/255,g/255,b/255> }
 	finish { L3FinishMetal }
 	#if (L3Bumps & (L3Quality > 1)) normal { L3NormalBumps } #end
 }
@@ -155,8 +155,7 @@ texture {
 // Alpha -> Filter: 255 -> 1.00, 128 -> 0.85, 0 -> 0
 #local f = (a >= 128 ? 0.85 + (a-128) * 0.15 / (255-128) : a * 0.85 / 255);
 texture {
-//	pigment { color srgb <r/255,g/255,b/255> #if (L3Quality > 1) filter f #end }
-	pigment { color srgb <r/255,g/255,b/255> filter f }
+	pigment { color rgb <r/255,g/255,b/255> #if (L3Quality > 1) filter f #end }
 	finish { L3FinishTransparent }
 	#if (L3Bumps & (L3Quality > 1)) normal { L3NormalBumps } #end
 }

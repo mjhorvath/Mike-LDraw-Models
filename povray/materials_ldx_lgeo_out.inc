@@ -14,15 +14,6 @@
 // You should have received a copy of the GNU Lesser General Public
 // License along with this library; if not, write to the Free Software
 // Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
-// 
-// By default, LDView materials do not have normals. There are also 
-// no alternative materials for sloped parts featuring extra bumps.
-// Only when substituting the default mesh geometry with LGEO 
-// geometry does LDView add normals to the regular materials and 
-// create special materials for sloped parts.
-// 
-// LDView output also does not declare textures and materials 
-// separately as the other program outputs do.
 
 
 // row 1 - Black

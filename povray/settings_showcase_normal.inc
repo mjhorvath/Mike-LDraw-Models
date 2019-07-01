@@ -371,18 +371,33 @@ light_source
 	{
 		cylinder
 		{
-			0, x*guide_length, guide_radius
+			0, +x*guide_length, guide_radius
 			pigment {color srgb x}
 		}
 		cylinder
 		{
-			0, y*guide_length, guide_radius
+			0, +y*guide_length, guide_radius
 			pigment {color srgb y}
 		}
 		cylinder
 		{
-			0, z*guide_length, guide_radius
+			0, +z*guide_length, guide_radius
 			pigment {color srgb z}
+		}
+		cylinder
+		{
+			0, -x*guide_length, guide_radius
+			pigment {color srgb y+z}
+		}
+		cylinder
+		{
+			0, -y*guide_length, guide_radius
+			pigment {color srgb x+z}
+		}
+		cylinder
+		{
+			0, -z*guide_length, guide_radius
+			pigment {color srgb x+y}
 		}
 		sphere
 		{

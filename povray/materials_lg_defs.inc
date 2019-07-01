@@ -1,5 +1,3 @@
-// SSLT and blurred reflections are not supported by these materials.
-
 /*******************************************************************************/
 /*                                                                             */
 /* LGEO Libray Include File     (C) lgeo@digitalbricks.org (Lutz Uhlmann)      */

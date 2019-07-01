@@ -1,0 +1,3 @@
+SKIPPING "C:\Users\Public\Documents\LDraw\ldconfig.ldr" Line 327: Illegal color code: 0 !COLOUR Main_Colour                                           CODE  16   VALUE #FFFF80   EDGE #333333
+SKIPPING "C:\Users\Public\Documents\LDraw\ldconfig.ldr" Line 328: Illegal color code: 0 !COLOUR Edge_Colour                                           CODE  24   VALUE #7F7F7F   EDGE #333333
+WARNING "visualldconfig.mpd" Line 2206: Color 24 illegal for this line type, using 16: 1 24 0 0 0 0 0 1 0 1 0 -1 0 0 3003.DAT

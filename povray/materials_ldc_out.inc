@@ -14,11 +14,6 @@
 // You should have received a copy of the GNU Lesser General Public
 // License along with this library; if not, write to the Free Software
 // Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
-// 
-// LDCad output does not support alternative surface normals for 
-// sloped parts by default. I would need to add such capability 
-// manually, which is not trivial. Currently, I don't think LDCad 
-// supports using LGEO parts at all for some reason.
 
 
 // row 1 - Black
