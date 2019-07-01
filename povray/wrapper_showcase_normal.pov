@@ -60,7 +60,7 @@ global_settings {assumed_gamma 1}
 
 #switch (Use_Model)
 	#case (0)
-		#include "test/slope_test/slope_test_ldviewA5_lgeo_y.pov"
+		#include "../test/slope_test/slope_test_ldviewA5_lgeo_y.pov"
 	#break
 	#case (1)
 		#include "ldv_nice_androbot_mech_new_lgeo_y.pov"
