@@ -11,7 +11,7 @@
 // +a = Antialias_Threshold
 // +j = jitter
 
-#version 3.7;					// LDView only properly supports POV-Ray 3.6
+#version 3.7;
 
 
 // -------------------------------------------------------------
@@ -131,6 +131,7 @@ light_source
 	fade_distance light_distance
 	fade_power 1
 	shadowless
+	rotate y * 90
 	rotate y * 90
 }
 #end

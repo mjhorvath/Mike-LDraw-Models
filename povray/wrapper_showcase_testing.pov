@@ -31,7 +31,7 @@ global_settings {assumed_gamma 1}
 
 
 // -------------------------------------------------------------
-// Materials
+// Materials conversion
 
 #include "lg_defs.inc"
 #include "lg_color.inc"

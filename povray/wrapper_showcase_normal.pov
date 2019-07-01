@@ -31,7 +31,7 @@ global_settings {assumed_gamma 1}
 
 
 // -------------------------------------------------------------
-// Materials
+// Materials conversion
 
 #include "lg_defs.inc"
 #include "lg_color.inc"
@@ -42,23 +42,6 @@ global_settings {assumed_gamma 1}
 #include "materials_ldc_defs_mjh.inc"			// MQ
 //#include "materials_ldc_defs_clipka.inc"		// HQ
 #include "materials_ldc_out.inc"
-
-// LDView materials when mesh parts are used
-//#include "materials_ldx_mesh_defs.inc"			// LQ
-//#include "materials_ldx_mesh_defs_mjh.inc"		// MQ
-//#include "materials_ldx_mesh_out.inc"
-
-// LDView materials when LGEO parts are used
-//#include "materials_ldx_lgeo_defs.inc"
-//#include "materials_ldx_lgeo_out.inc"
-
-// L3P materials
-//#include "materials_l3p_defs.inc"
-//#include "materials_l3p_out.inc"
-
-// LGEO default materials
-//#include "materials_lg_defs.inc"
-//#include "materials_lg_out.inc"
 
 #include "materials_all_missing.inc"
 #include "materials_all_convert.inc"
