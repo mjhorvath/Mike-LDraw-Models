@@ -1,0 +1,11 @@
+// this probably won't work
+
+#declare ldSlopeBumps = 0.3;
+#declare ldSlopeScale = 25*0.02;
+#declare ldSlopeNormal = normal { bumps ldSlopeBumps scale ldSlopeScale }
+
+// row 1 - Black
+#ifdef (ldTex0) #ifndef (MJHTex0) #declare MJHTex0 = ldTex0; #end #end
+#ifdef (ldTex0) #ifndef (MJHTex0Slope) #declare MJHTex0Slope = texture { ldTex0 normal { ldSlopeNormal } } }; #end #end
+#ifdef (ldMat0) #ifndef (MJHMat0) #declare MJHMat0 = ldMat0; #end #end
+#ifdef (ldMat0) #ifndef (MJHMat0Slope) #declare MJHMat0Slope = material { ldMat0 texture { normal { ldSlopeNormal } } }; #end #end
