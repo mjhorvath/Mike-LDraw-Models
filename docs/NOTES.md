@@ -29,7 +29,7 @@
 
 # Other notes
 
-* As of 2019/07/01, the latest LGEO parts by Darats are missing "lg_4215a.inc", "lg_2345p44.inc" and "lg_3794a.inc", even though they are listed in his "LGEO.xml".
+* As of 2019/07/01, the latest LGEO parts by Darats are missing "lg_2345p44.inc" and "lg_3794a.inc", even though they are listed in his "LGEO.xml".
 * As of 2019/07/01, in Darats' version of "LGEO.xml" color 406 "lg_rubber_dark_purple" should be renamed to "lg_rubber_dark_blue" (or vice versa, I'm not entirely sure).
 * As of 2019/07/01, the latest version of LGEO's "lg_color.inc" is missing many colors, such as "color 495 - Electric_Contact_Copper" and "color 339 - Glitter_Trans_Neon_Green". This file needs to be updated.
 * The files "lg_colors.lst" and "lg_elements.lst" also need to be updated after every change to the LGEO library.
