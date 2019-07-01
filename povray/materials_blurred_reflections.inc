@@ -73,6 +73,7 @@
 
 
 // this method is faster, but requires focal blur and/or extra antialiasing or downsampling to smooth out the graininess
+// double check whether having two normals in the same block is okay
 #macro BlurredReflectionSingleNormals(InPigment, InFinish, InNormal, InAmount)
 //	texture
 //	{

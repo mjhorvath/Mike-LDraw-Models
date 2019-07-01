@@ -9,21 +9,26 @@ global_settings {assumed_gamma 1}
 
 
 // -------------------------------------------------------------
-// LDCad settings with LGEO
+// Settings
 
-#declare Render_HQ = true;		// High quality render? (slow)
+#declare Render_HQ = false;		// High quality render? Slow!
 
 #include "settings_common_before.inc"
 #include "settings_showcase_normal.inc"
+
+
+// -------------------------------------------------------------
+// Materials
+
 #include "lg_defs.inc"
 #include "lg_color.inc"
 #include "materials_blurred_reflections.inc"
 
 // LDCad materials
 //#include "materials_ldc_defs.inc"				// LQ
-//#include "materials_ldc_defs_mjh.inc"			// MQ
+#include "materials_ldc_defs_mjh.inc"			// MQ
 //#include "materials_ldc_defs_clipka.inc"		// HQ
-//#include "materials_ldc_out.inc"
+#include "materials_ldc_out.inc"
 
 // LDView materials when mesh parts are used
 //#include "materials_ldx_mesh_defs.inc"			// LQ
@@ -31,21 +36,33 @@ global_settings {assumed_gamma 1}
 //#include "materials_ldx_mesh_out.inc"
 
 // LDView materials when LGEO parts are used
-#include "materials_ldx_lgeo_defs.inc"
-#include "materials_ldx_lgeo_out.inc"
+//#include "materials_ldx_lgeo_defs.inc"
+//#include "materials_ldx_lgeo_out.inc"
+
+// L3P materials
+//#include "materials_l3p_defs.inc"
+//#include "materials_l3p_out.inc"
+
+// Default LGEO materials only
+//#include "materials_lg_defs.inc"
+//#include "materials_lg_out.inc"
 
 #include "materials_all_missing.inc"
 #include "materials_all_convert.inc"
 
 
 // -------------------------------------------------------------
-// LDView models & cameras
+// LDView models
 
 #declare Use_Model = 1;
 #declare LDXCameraAspect	= image_width/image_height;
 #declare LDXCameraAngle		= 45;
 
 #switch (Use_Model)
+	#case (0)
+//		#include "test/slope_test_ldviewA5_lgeo_y.pov"
+		#include "test/visualldconfig_ldviewA5_lgeo_y.pov"
+	#break
 	#case (1)
 		#include "ldv_nice_androbot_mech_new_lgeo_y.pov"
 		#declare LDXCameraTransform = transform
@@ -137,6 +154,10 @@ global_settings {assumed_gamma 1}
 		}
 	#break
 #end
+
+
+// -------------------------------------------------------------
+// LDView camera
 
 camera
 {

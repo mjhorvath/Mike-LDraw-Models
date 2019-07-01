@@ -11,7 +11,7 @@
 // This file was automatically generated from an LDraw file by the program
 // LDView.  See comments above for further details.
 
-#version 3.6;
+#version 3.7;
 /*
 #declare LDXQual = 3;	// Quality (0 = Bounding Box; 1 = No Refraction; 2 = Normal; 3 = Stud Logos)
 #declare LDXSW = 0.5;	// Seam Width (0 for no seams)

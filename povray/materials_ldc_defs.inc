@@ -14,9 +14,9 @@
 // You should have received a copy of the GNU Lesser General Public
 // License along with this library; if not, write to the Free Software
 // Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
-
-
-// When I get a chance, this should be reverted as much as possible back to the LDCad defaults.
+// 
+// When I get a chance, this file should be reverted as much as possible 
+// back to the LDCad defaults.
 
 #version 3.7;
 

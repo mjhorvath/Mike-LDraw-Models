@@ -11,12 +11,9 @@ There are four folders:
 
 There was originally a sixth folder for what I call "superinlined" models created using the "lowest level" extraction tool of [MPDCenter](https://ldraw.heidemann.org/index.php?page=mpdcenter), but the files were too large to upload to GitHub.
 
+Povray files prefixed with "wrapper" are the top level files that should be rendered. All other povray files are transcluded into them.
 
 The licenses are:
 
 * [LGPL 2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html) for programming code (POV-Ray SDL, JavaScript, etc.)
 * [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode) for artistic content (LDraw models, rendered images, etc.)
-
-To do:
-
-* I think I should expand the carriage house by one stud to completely fill the baseplate.

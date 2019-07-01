@@ -30,17 +30,18 @@
 
 #ifndef (LDXSkipOpaqueColorMacro)
 #macro LDXOpaqueColor(r, g, b)
+#if (version >= 3.7)
+	#local texPigment = pigment { srgbf <r,g,b,0> }
+#else
+	#local texPigment = pigment { rgbf <r,g,b,0> }
+#end
 #if (version >= 3.1) material { #end
 	texture {
-#if (version >= 3.7)
-		pigment { srgbf <r,g,b,0> }
-#else
-		pigment { rgbf <r,g,b,0> }
-#end
 #if (LDXQual > 1)
+		#local texNormal = LDXOpaqueNormal;
 		#if (Use_BlurRef = true)
 			#if (Use_Uber = true)
-				finish
+				#local texFinish = finish
 				{
 					emission		0
 					specular albedo	LDXOpaqueSpecularity
@@ -54,8 +55,11 @@
 					}
 					conserve_energy
 				}
+				pigment {texPigment}
+				finish {texFinish}
+				normal {texNormal}
 			#else
-				finish
+				#local texFinish = finish
 				{
 					ambient			0
 					diffuse albedo	1
@@ -69,13 +73,29 @@
 					}
 					conserve_energy
 				}
- 				// to do: need to specify a normal here too or use "materials_blurred_reflections.inc"
+				#if (Use_BlurTyp = 1)
+					BlurredReflectionSingleNormals(texPigment, texFinish, texNormal, Use_BlurAmt)
+				#elseif (Use_BlurTyp = 2)
+					BlurredReflectionMultiNormals(texPigment, texFinish, texNormal, Use_BlurAmt, Use_BlurSmp)
+				#elseif (Use_BlurTyp = 3)
+					BlurredReflectionMultiTextures(texPigment, texFinish, texNormal, Use_BlurAmt, Use_BlurSmp)
+				#end
 			#end
 		#else
-			finish { ambient LDXAmb diffuse LDXDif }
-			finish { phong LDXPhong phong_size LDXPhongS reflection LDXRefl }
-			normal { LDXOpaqueNormal }
+			#local texFinish = finish
+			{
+				ambient LDXAmb
+				diffuse LDXDif
+				phong LDXPhong
+				phong_size LDXPhongS
+				reflection LDXRefl
+			}
+			pigment {texPigment}
+			finish {texFinish}
+			normal { texNormal }
 		#end
+#else
+		pigment {texPigment}
 #end
 	}
 #if (version >= 3.1) #if (LDXQual > 1)
@@ -87,17 +107,18 @@
 
 #ifndef (LDXSkipTransColorMacro)
 #macro LDXTransColor(r, g, b)
+#if (version >= 3.7)
+	#local texPigment = pigment { #if (LDXQual > 1) srgbf <r,g,b,LDXTFilt> #else srgbf <0.6,0.6,0.6,0> #end }
+#else
+	#local texPigment = pigment { #if (LDXQual > 1) rgbf <r,g,b,LDXTFilt> #else rgbf <0.6,0.6,0.6,0> #end }
+#end
 #if (version >= 3.1) material { #end
 	texture {
-#if (version >= 3.7)
-		pigment { #if (LDXQual > 1) srgbf <r,g,b,LDXTFilt> #else srgbf <0.6,0.6,0.6,0> #end }
-#else
-		pigment { #if (LDXQual > 1) rgbf <r,g,b,LDXTFilt> #else rgbf <0.6,0.6,0.6,0> #end }
-#end
 #if (LDXQual > 1)
+		#local texNormal = LDXTransNormal;
 		#if (Use_BlurRef = true)
 			#if (Use_Uber = true)
-				finish
+				#local texFinish = finish
 				{
 					emission		0
 					specular albedo	LDXTransSpecularity
@@ -111,8 +132,11 @@
 					}
 					conserve_energy
 				}
+				pigment {texPigment}
+				finish {texFinish}
+				normal {texNormal}
 			#else
-				finish
+				#local texFinish = finish
 				{
 					ambient			0
 					diffuse albedo	1
@@ -126,13 +150,29 @@
 					}
 					conserve_energy
 				}
- 				// to do: need to specify a normal here too or use "materials_blurred_reflections.inc"
+				#if (Use_BlurTyp = 1)
+					BlurredReflectionSingleNormals(texPigment, texFinish, texNormal, Use_BlurAmt)
+				#elseif (Use_BlurTyp = 2)
+					BlurredReflectionMultiNormals(texPigment, texFinish, texNormal, Use_BlurAmt, Use_BlurSmp)
+				#elseif (Use_BlurTyp = 3)
+					BlurredReflectionMultiTextures(texPigment, texFinish, texNormal, Use_BlurAmt, Use_BlurSmp)
+				#end
 			#end
 		#else
-			finish { ambient LDXAmb diffuse LDXDif }
-			finish { phong LDXPhong phong_size LDXPhongS reflection LDXTRefl }
-			normal { LDXTransNormal }
+			#local texFinish = finish
+			{
+				ambient LDXAmb
+				diffuse LDXDif
+				phong LDXPhong
+				phong_size LDXPhongS
+				reflection LDXTRefl
+			}
+			pigment {texPigment}
+			finish {texFinish}
+			normal {texNormal}
 		#end
+#else
+		pigment {texPigment}
 #end
 	}
 #if (version >= 3.1) #if (LDXQual > 1)
@@ -144,14 +184,15 @@
 
 #ifndef (LDXSkipRubberColorMacro)
 #macro LDXRubberColor(r, g, b)
+#if (version >= 3.7)
+	#local texPigment = pigment { srgbf <r,g,b,0> }
+#else
+	#local texPigment = pigment { rgbf <r,g,b,0> }
+#end
 #if (version >= 3.1) material { #end
 	texture {
-#if (version >= 3.7)
-		pigment { srgbf <r,g,b,0> }
-#else
-		pigment { rgbf <r,g,b,0> }
-#end
 #if (LDXQual > 1)
+//		#local texNormal = normal {LDXRubberNormal}		// LDXRubberNormal doesn't exist yet
 		#if (false = true)
 			#if (Use_Uber = true)
 				// to do
@@ -159,9 +200,17 @@
 				// to do
 			#end
 		#else
-			finish { ambient LDXAmb diffuse LDXDif }
-			finish { phong LDXRubberPhong phong_size LDXRubberPhongS reflection LDXRubberRefl }
-//			normal { LDXRubberNormal }		// to do: doesn't exist yet
+			#local texFinish = finish
+			{
+				ambient LDXAmb
+				diffuse LDXDif
+				phong LDXRubberPhong
+				phong_size LDXRubberPhongS
+				reflection LDXRubberRefl
+			}
+			pigment {texPigment}
+			finish {texFinish}
+//			normal {texNormal}
 		#end
 #end
 	}
@@ -172,14 +221,15 @@
 
 #ifndef (LDXSkipChromeColorMacro)
 #macro LDXChromeColor(r, g, b)
+#if (version >= 3.7)
+	#local texPigment = pigment { srgbf <r,g,b,0> }
+#else
+	#local texPigment = pigment { rgbf <r,g,b,0> }
+#end
 #if (version >= 3.1) material { #end
 	texture {
-#if (version >= 3.7)
-		pigment { srgbf <r,g,b,0> }
-#else
-		pigment { rgbf <r,g,b,0> }
-#end
 #if (LDXQual > 1)
+//		#local texNormal = normal {LDXChromeNormal}		// LDXChromeNormal doesn't exist yet
 		#if (false = true)
 			#if (Use_Uber = true)
 				// to do
@@ -187,9 +237,20 @@
 				// to do
 			#end
 		#else
-			finish { ambient LDXAmb diffuse LDXDif }
-			finish { phong LDXPhong phong_size LDXPhongS reflection LDXChromeRefl brilliance LDXChromeBril metallic specular LDXChromeSpec roughness LDXChromeRough}
-//			normal { LDXChromeNormal }		// to do: doesn't exist yet
+			#local texFinish = finish
+			{
+				ambient LDXAmb
+				diffuse LDXDif
+				phong LDXPhong
+				phong_size LDXPhongS
+				reflection LDXChromeRefl
+				brilliance LDXChromeBril
+				metallic specular LDXChromeSpec
+				roughness LDXChromeRough
+			}
+			pigment {texPigment}
+			finish {texFinish}
+//			normal {texNormal}
 		#end
 #end
 	}
@@ -198,9 +259,11 @@
 #end
 #end
 
-#ifndef (LDXSkipPearlColorMacro)
-	// to do
-#end
+// to do
+//#ifndef (LDXSkipPearlColorMacro)
+//#macro LDXPearlColor(r, g, b)
+//#end
+//#end
 
 #ifndef (LDXColor0) // Black
 #declare LDXColor0 = LDXOpaqueColor(0.019608,0.07451,0.113725)
