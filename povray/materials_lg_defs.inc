@@ -221,7 +221,7 @@ global_settings { assumed_gamma 1.0 }
  pigment { color srgb <0,143,155>/255 }
  finish  { lg_solid_finish }
 }
-#declare lg_cyan = lg_teal
+#declare lg_cyan = lg_teal			///////////////////!!!
 
 // 4 RED / 21 BRIGHT RED [PEERON]
 // PEERON                    <196,40,27>/255
@@ -280,7 +280,7 @@ global_settings { assumed_gamma 1.0 }
   finish  { lg_solid_finish }
 }
 
-#declare lg_blue_green = lg_turquoise
+#declare lg_blue_green = lg_turquoise			///////////////////!!!
 
 // 12 SALMON / 4 BRICK RED [LDRAW]
 // LDRAW <242,112,94>
@@ -295,7 +295,7 @@ global_settings { assumed_gamma 1.0 }
  pigment { color srgb <252,151,172>/255 }
  finish  { lg_solid_finish }
 }
-#declare lg_rose = lg_pink
+#declare lg_rose = lg_pink			///////////////////!!!
 
 // 14 YELLOW / 24 BRIGHT YELLOW [PEERON]
 // PEERON                    <245,205,47>
@@ -357,7 +357,7 @@ global_settings { assumed_gamma 1.0 }
   finish  { lg_solid_finish }
 }
 
-#declare lg_violet = lg_purple
+#declare lg_violet = lg_purple			///////////////////!!!
 
 // 23 DARK BLUE-VIOLET / 196 DARK ROYAL BLUE [PEERON]
 // PEERON                    <35/255, 71/255, 139/255>
@@ -778,7 +778,7 @@ global_settings { assumed_gamma 1.0 }
  pigment { color srgb <238,196,182>/255 }
  finish  { lg_solid_finish }
 }
-#declare lg_light_red = lg_light_salmon
+#declare lg_light_red = lg_light_salmon			///////////////////!!!
 
 // 110 VIOLET / 110 BRIGHT BLUISH VIOLET
 

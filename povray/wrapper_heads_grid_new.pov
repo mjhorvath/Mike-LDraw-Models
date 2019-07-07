@@ -1,12 +1,25 @@
-// This work is licensed under the Creative Commons Attribution-Share Alike 4.0 
-// Unported License. To view a copy of this license, visit 
-// https://creativecommons.org/licenses/by-sa/4.0/ or send a letter to Creative 
-// Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+// POV-Ray scripts for LDraw models and scenes
+// Copyright (C) 2019  Michael Horvath
+// 
+// This library is free software; you can redistribute it and/or
+// modify it under the terms of the GNU Lesser General Public
+// License as published by the Free Software Foundation; either
+// version 2.1 of the License, or (at your option) any later version.
+// 
+// This library is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+// Lesser General Public License for more details.
+// 
+// You should have received a copy of the GNU Lesser General Public
+// License along with this library; if not, write to the Free Software
+// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 // 
 // +am = Sampling_Method
 // +r = Antialias_Depth
 // +a = Antialias_Threshold
 // +j = jitter
+
 
 #version 3.7;
 
