@@ -10,6 +10,7 @@
 
 #include "lg_color.inc"
 
+
 #ifndef (LDXColor0) // Black
 #declare LDXColor0 = #if (version >= 3.1) material { #end
 	texture {
@@ -336,10 +337,15 @@
 #macro LDXOpaqueColor(r, g, b)
 #if (version >= 3.1) material { #end
 	texture {
+#if (version >= 3.7)
+		pigment { srgbf <r,g,b,0> }
+#else
 		pigment { rgbf <r,g,b,0> }
+#end
 #if (LDXQual > 1)
 		finish { ambient LDXAmb diffuse LDXDif }
 		finish { phong LDXPhong phong_size LDXPhongS reflection LDXRefl }
+		normal { LDXOpaqueNormal }
 #end
 	}
 #if (version >= 3.1) } #end
@@ -453,14 +459,12 @@
 	texture {
 		lg_black_ir
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #declare LDXColor32_slope = #if (version >= 3.1) material { #end
 	texture {
 		lg_black_ir
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #end
 
@@ -469,14 +473,12 @@
 	texture {
 		lg_clear_blue
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #declare LDXColor33_slope = #if (version >= 3.1) material { #end
 	texture {
 		lg_clear_blue
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #end
 
@@ -485,14 +487,12 @@
 	texture {
 		lg_clear_green
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #declare LDXColor34_slope = #if (version >= 3.1) material { #end
 	texture {
 		lg_clear_green
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #end
 
@@ -501,14 +501,12 @@
 	texture {
 		lg_clear_bright_green
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #declare LDXColor35_slope = #if (version >= 3.1) material { #end
 	texture {
 		lg_clear_bright_green
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #end
 
@@ -517,14 +515,12 @@
 	texture {
 		lg_clear_red
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #declare LDXColor36_slope = #if (version >= 3.1) material { #end
 	texture {
 		lg_clear_red
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #end
 
@@ -533,14 +529,12 @@
 	texture {
 		lg_clear_pink
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #declare LDXColor37_slope = #if (version >= 3.1) material { #end
 	texture {
 		lg_clear_pink
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #end
 
@@ -549,14 +543,12 @@
 	texture {
 		lg_clear_neon_orange
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #declare LDXColor38_slope = #if (version >= 3.1) material { #end
 	texture {
 		lg_clear_neon_orange
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #end
 
@@ -564,10 +556,15 @@
 #macro LDXTransColor(r, g, b)
 #if (version >= 3.1) material { #end
 	texture {
+#if (version >= 3.7)
+		pigment { #if (LDXQual > 1) srgbf <r,g,b,LDXTFilt> #else srgbf <0.6,0.6,0.6,0> #end }
+#else
 		pigment { #if (LDXQual > 1) rgbf <r,g,b,LDXTFilt> #else rgbf <0.6,0.6,0.6,0> #end }
+#end
 #if (LDXQual > 1)
 		finish { ambient LDXAmb diffuse LDXDif }
 		finish { phong LDXPhong phong_size LDXPhongS reflection LDXTRefl }
+		normal { LDXTransNormal }
 		#if (version >= 3.1) #else finish { refraction 1 ior LDXIoR } #end
 #end
 	}
@@ -587,14 +584,12 @@
 	texture {
 		lg_clear_brown
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #declare LDXColor40_slope = #if (version >= 3.1) material { #end
 	texture {
 		lg_clear_brown
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #end
 
@@ -603,30 +598,26 @@
 	texture {
 		lg_clear_cyan
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #declare LDXColor41_slope = #if (version >= 3.1) material { #end
 	texture {
 		lg_clear_cyan
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #end
 
 #ifndef (LDXColor42) // Trans Neon Green
 #declare LDXColor42 = #if (version >= 3.1) material { #end
 	texture {
-		lg_clear_neon_green
+		lg_clear_neon_yellow
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #declare LDXColor42_slope = #if (version >= 3.1) material { #end
 	texture {
-		lg_clear_neon_green
+		lg_clear_neon_yellow
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #end
 
@@ -635,14 +626,12 @@
 	texture {
 		lg_clear_light_blue
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #declare LDXColor43_slope = #if (version >= 3.1) material { #end
 	texture {
 		lg_clear_light_blue
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #end
 
@@ -651,14 +640,12 @@
 	texture {
 		lg_clear_light_purple
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #declare LDXColor44_slope = #if (version >= 3.1) material { #end
 	texture {
 		lg_clear_light_purple
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #end
 
@@ -671,14 +658,12 @@
 	texture {
 		lg_clear_yellow
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #declare LDXColor46_slope = #if (version >= 3.1) material { #end
 	texture {
 		lg_clear_yellow
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #end
 
@@ -687,14 +672,12 @@
 	texture {
 		lg_clear
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #declare LDXColor47_slope = #if (version >= 3.1) material { #end
 	texture {
 		lg_clear
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #end
 
@@ -703,14 +686,12 @@
 	texture {
 		lg_clear_violet
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #declare LDXColor52_slope = #if (version >= 3.1) material { #end
 	texture {
 		lg_clear_violet
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #end
 
@@ -719,30 +700,26 @@
 	texture {
 		lg_clear_neon_yellow
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #declare LDXColor54_slope = #if (version >= 3.1) material { #end
 	texture {
 		lg_clear_neon_yellow
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #end
 
 #ifndef (LDXColor57) // Trans Orange
 #declare LDXColor57 = #if (version >= 3.1) material { #end
 	texture {
-		lg_clear_orange
+		lg_clear_neon_orange
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #declare LDXColor57_slope = #if (version >= 3.1) material { #end
 	texture {
-		lg_clear_orange
+		lg_clear_neon_orange
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #end
 
@@ -750,7 +727,11 @@
 #macro LDXChromeColor(r, g, b)
 #if (version >= 3.1) material { #end
 	texture {
+#if (version >= 3.7)
+		pigment { srgbf <r,g,b,0> }
+#else
 		pigment { rgbf <r,g,b,0> }
+#end
 #if (LDXQual > 1)
 		finish { ambient LDXAmb diffuse LDXDif }
 		finish { phong LDXPhong phong_size LDXPhongS reflection LDXChromeRefl brilliance LDXChromeBril metallic specular LDXChromeSpec roughness LDXChromeRough}
@@ -799,14 +780,12 @@
 	texture {
 		lg_rubber_clear_yellow
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #declare LDXColor66_slope = #if (version >= 3.1) material { #end
 	texture {
 		lg_rubber_clear_yellow
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #end
 
@@ -815,14 +794,12 @@
 	texture {
 		lg_rubber_clear
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #declare LDXColor67_slope = #if (version >= 3.1) material { #end
 	texture {
 		lg_rubber_clear
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #end
 
@@ -1103,7 +1080,17 @@
 #end
 
 #ifndef (LDXColor112) // Medium Violet
-#declare LDXColor112 = LDXOpaqueColor(0.407843,0.454902,0.792157)
+#declare LDXColor112 = #if (version >= 3.1) material { #end
+	texture {
+		lg_medium_violet
+	}
+#if (version >= 3.1) } #end
+#declare LDXColor112_slope = #if (version >= 3.1) material { #end
+	texture {
+		lg_medium_violet
+		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
+	}
+#if (version >= 3.1) } #end
 #end
 
 #ifndef (LDXColor114) // Glitter Trans Dark Pink
@@ -1201,12 +1188,12 @@
 #ifndef (LDXColor142) // Pearl Light Gold
 #declare LDXColor142 = #if (version >= 3.1) material { #end
 	texture {
-		lg_pearl_light_gold
+		lg_pearl_gold
 	}
 #if (version >= 3.1) } #end
 #declare LDXColor142_slope = #if (version >= 3.1) material { #end
 	texture {
-		lg_pearl_light_gold
+		lg_pearl_gold
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
 #if (version >= 3.1) } #end
@@ -1303,7 +1290,17 @@
 #end
 
 #ifndef (LDXColor212) // Bright Light Blue
-#declare LDXColor212 = LDXOpaqueColor(0.52549,0.756863,0.882353)
+#declare LDXColor212 = #if (version >= 3.1) material { #end
+	texture {
+		lg_bright_light_blue
+	}
+#if (version >= 3.1) } #end
+#declare LDXColor212_slope = #if (version >= 3.1) material { #end
+	texture {
+		lg_bright_light_blue
+		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
+	}
+#if (version >= 3.1) } #end
 #end
 
 #ifndef (LDXColor216) // Rust
@@ -1329,7 +1326,17 @@
 #end
 
 #ifndef (LDXColor226) // Bright Light Yellow
-#declare LDXColor226 = LDXOpaqueColor(1,0.941176,0.227451)
+#declare LDXColor226 = #if (version >= 3.1) material { #end
+	texture {
+		lg_bright_light_yellow
+	}
+#if (version >= 3.1) } #end
+#declare LDXColor226_slope = #if (version >= 3.1) material { #end
+	texture {
+		lg_bright_light_yellow
+		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
+	}
+#if (version >= 3.1) } #end
 #end
 
 #ifndef (LDXColor231) // Trans Bright Light Orange
@@ -1427,14 +1434,12 @@
 	texture {
 		lg_glow_in_dark_clear
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #declare LDXColor294_slope = #if (version >= 3.1) material { #end
 	texture {
 		lg_glow_in_dark_clear
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
-	#if (LDXQual > 1) interior { lg_ior } #end
 #if (version >= 3.1) } #end
 #end
 
@@ -1630,7 +1635,11 @@
 #macro LDXRubberColor(r, g, b)
 #if (version >= 3.1) material { #end
 	texture {
+#if (version >= 3.7)
+		pigment { srgbf <r,g,b,0> }
+#else
 		pigment { rgbf <r,g,b,0> }
+#end
 #if (LDXQual > 1)
 		finish { ambient LDXAmb diffuse LDXDif }
 		finish { phong LDXRubberPhong phong_size LDXRubberPhongS reflection LDXRubberRefl }
@@ -1646,6 +1655,10 @@
 
 #ifndef (LDXColor351) // Medium Dark Pink
 #declare LDXColor351 = LDXOpaqueColor(0.968627,0.521569,0.694118)
+#end
+
+#ifndef (LDXColor353)
+#declare LDXColor353 = LDXOpaqueColor(0.2,0.2,0.34902)
 #end
 
 #ifndef (LDXColor366) // Earth Orange
@@ -1888,6 +1901,18 @@
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
 #if (version >= 3.1) } #end
+#end
+
+#ifndef (LDXColor507)
+#declare LDXColor507 = LDXOpaqueColor(0.835294,0.996078,0.988235)
+#end
+
+#ifndef (LDXColor508)
+#declare LDXColor508 = LDXOpaqueColor(1,0.498039,0.498039)
+#end
+
+#ifndef (LDXColor509)
+#declare LDXColor509 = LDXOpaqueColor(1,0.843137,0.898039)
 #end
 
 #ifndef (LDXColor511) // Rubber White

@@ -1589,7 +1589,18 @@
 #declare ldTex351 = MJHTex351;
 #declare lg_undefined = MJHTex351;
 
-// row 144 - Earth_Orange
+// row 144 - Coral
+#declare LDXColor353 = MJHMat353;
+#declare LDXColor353_slope = MJHMat353Slope;
+#declare L3Texture353 = MJHTex353;
+#declare L3Texture353_slope = MJHTex353Slope;
+#declare L3Color353 = MJHMat353;
+#declare L3Color353_slope = MJHMat353Slope;
+#declare ldMat353 = MJHMat353;
+#declare ldTex353 = MJHTex353;
+#declare lg_undefined = MJHTex353;
+
+// row 145 - Earth_Orange
 #declare LDXColor366 = MJHMat366;
 #declare LDXColor366_slope = MJHMat366Slope;
 #declare L3Texture366 = MJHTex366;
@@ -1600,7 +1611,7 @@
 #declare ldTex366 = MJHTex366;
 #declare lg_earth_orange = MJHTex366;
 
-// row 145 - Sand_Purple
+// row 146 - Sand_Purple
 #declare LDXColor373 = MJHMat373;
 #declare LDXColor373_slope = MJHMat373Slope;
 #declare L3Texture373 = MJHTex373;
@@ -1611,7 +1622,7 @@
 #declare ldTex373 = MJHTex373;
 #declare lg_sand_purple = MJHTex373;
 
-// row 146 - Rubber_Light_Grey
+// row 147 - Rubber_Light_Grey
 #declare LDXColor375 = MJHMat375;
 #declare LDXColor375_slope = MJHMat375Slope;
 #declare L3Texture375 = MJHTex375;
@@ -1622,7 +1633,7 @@
 #declare ldTex375 = MJHTex375;
 #declare lg_rubber_light_gray = MJHTex375;
 
-// row 147 - Sand_Green
+// row 148 - Sand_Green
 #declare LDXColor378 = MJHMat378;
 #declare LDXColor378_slope = MJHMat378Slope;
 #declare L3Texture378 = MJHTex378;
@@ -1633,7 +1644,7 @@
 #declare ldTex378 = MJHTex378;
 #declare lg_sand_green = MJHTex378;
 
-// row 148 - Sand_Blue
+// row 149 - Sand_Blue
 #declare LDXColor379 = MJHMat379;
 #declare LDXColor379_slope = MJHMat379Slope;
 #declare L3Texture379 = MJHTex379;
@@ -1644,7 +1655,7 @@
 #declare ldTex379 = MJHTex379;
 #declare lg_sand_blue = MJHTex379;
 
-// row 149 - Chrome_Silver
+// row 150 - Chrome_Silver
 #declare LDXColor383 = MJHMat383;
 #declare LDXColor383_slope = MJHMat383Slope;
 #declare L3Texture383 = MJHTex383;
@@ -1655,7 +1666,7 @@
 #declare ldTex383 = MJHTex383;
 #declare lg_chrome = MJHTex383;
 
-// row 150 - Rubber_Dark_Blue
+// row 151 - Rubber_Dark_Blue
 #declare LDXColor406 = MJHMat406;
 #declare LDXColor406_slope = MJHMat406Slope;
 #declare L3Texture406 = MJHTex406;
@@ -1666,7 +1677,7 @@
 #declare ldTex406 = MJHTex406;
 #declare lg_rubber_dark_blue = MJHTex406;
 
-// row 151 - Rubber_Purple
+// row 152 - Rubber_Purple
 #declare LDXColor449 = MJHMat449;
 #declare LDXColor449_slope = MJHMat449Slope;
 #declare L3Texture449 = MJHTex449;
@@ -1677,7 +1688,7 @@
 #declare ldTex449 = MJHTex449;
 #declare lg_rubber_purple = MJHTex449;
 
-// row 152 - Fabuland_Brown
+// row 153 - Fabuland_Brown
 #declare LDXColor450 = MJHMat450;
 #declare LDXColor450_slope = MJHMat450Slope;
 #declare L3Texture450 = MJHTex450;
@@ -1688,7 +1699,7 @@
 #declare ldTex450 = MJHTex450;
 #declare lg_fabuland_brown = MJHTex450;
 
-// row 153 - Medium_Orange
+// row 154 - Medium_Orange
 #declare LDXColor462 = MJHMat462;
 #declare LDXColor462_slope = MJHMat462Slope;
 #declare L3Texture462 = MJHTex462;
@@ -1699,7 +1710,7 @@
 #declare ldTex462 = MJHTex462;
 #declare lg_light_orange = MJHTex462;
 
-// row 154 - Dark_Orange
+// row 155 - Dark_Orange
 #declare LDXColor484 = MJHMat484;
 #declare LDXColor484_slope = MJHMat484Slope;
 #declare L3Texture484 = MJHTex484;
@@ -1710,7 +1721,7 @@
 #declare ldTex484 = MJHTex484;
 #declare lg_dark_orange = MJHTex484;
 
-// row 155 - Rubber_Lime
+// row 156 - Rubber_Lime
 #declare LDXColor490 = MJHMat490;
 #declare LDXColor490_slope = MJHMat490Slope;
 #declare L3Texture490 = MJHTex490;
@@ -1721,7 +1732,7 @@
 #declare ldTex490 = MJHTex490;
 #declare lg_rubber_lime = MJHTex490;
 
-// row 156 - Magnet
+// row 157 - Magnet
 #declare LDXColor493 = MJHMat493;
 #declare LDXColor493_slope = MJHMat493Slope;
 #declare L3Texture493 = MJHTex493;
@@ -1732,7 +1743,7 @@
 #declare ldTex493 = MJHTex493;
 #declare lg_magnet = MJHTex493;
 
-// row 157 - Electric_Contact_Alloy
+// row 158 - Electric_Contact_Alloy
 #declare LDXColor494 = MJHMat494;
 #declare LDXColor494_slope = MJHMat494Slope;
 #declare L3Texture494 = MJHTex494;
@@ -1743,7 +1754,7 @@
 #declare ldTex494 = MJHTex494;
 #declare lg_electric_contact_alloy = MJHTex494;
 
-// row 158 - Electric_Contact_Copper
+// row 159 - Electric_Contact_Copper
 #declare LDXColor495 = MJHMat495;
 #declare LDXColor495_slope = MJHMat495Slope;
 #declare L3Texture495 = MJHTex495;
@@ -1754,7 +1765,7 @@
 #declare ldTex495 = MJHTex495;
 #declare lg_undefined = MJHTex495;
 
-// row 159 - Rubber_Light_Bluish_Grey
+// row 160 - Rubber_Light_Bluish_Grey
 #declare LDXColor496 = MJHMat496;
 #declare LDXColor496_slope = MJHMat496Slope;
 #declare L3Texture496 = MJHTex496;
@@ -1765,7 +1776,7 @@
 #declare ldTex496 = MJHTex496;
 #declare lg_rubber_light_bluish_gray = MJHTex496;
 
-// row 160 - Very_Light_Grey
+// row 161 - Very_Light_Grey
 #declare LDXColor503 = MJHMat503;
 #declare LDXColor503_slope = MJHMat503Slope;
 #declare L3Texture503 = MJHTex503;
@@ -1776,7 +1787,7 @@
 #declare ldTex503 = MJHTex503;
 #declare lg_very_light_grey = MJHTex503;
 
-// row 161 - Rubber_Flat_Silver
+// row 162 - Rubber_Flat_Silver
 #declare LDXColor504 = MJHMat504;
 #declare LDXColor504_slope = MJHMat504Slope;
 #declare L3Texture504 = MJHTex504;
@@ -1787,7 +1798,40 @@
 #declare ldTex504 = MJHTex504;
 #declare lg_rubber_flat_silver = MJHTex504;
 
-// row 162 - Rubber_White
+// row 163 - Light_Orange_Brown
+#declare LDXColor507 = MJHMat507;
+#declare LDXColor507_slope = MJHMat507Slope;
+#declare L3Texture507 = MJHTex507;
+#declare L3Texture507_slope = MJHTex507Slope;
+#declare L3Color507 = MJHMat507;
+#declare L3Color507_slope = MJHMat507Slope;
+#declare ldMat507 = MJHMat507;
+#declare ldTex507 = MJHTex507;
+#declare lg_undefined = MJHTex507;
+
+// row 164 - Fabuland_Red
+#declare LDXColor508 = MJHMat508;
+#declare LDXColor508_slope = MJHMat508Slope;
+#declare L3Texture508 = MJHTex508;
+#declare L3Texture508_slope = MJHTex508Slope;
+#declare L3Color508 = MJHMat508;
+#declare L3Color508_slope = MJHMat508Slope;
+#declare ldMat508 = MJHMat508;
+#declare ldTex508 = MJHTex508;
+#declare lg_undefined = MJHTex508;
+
+// row 165 - Fabuland_Orange
+#declare LDXColor509 = MJHMat509;
+#declare LDXColor509_slope = MJHMat509Slope;
+#declare L3Texture509 = MJHTex509;
+#declare L3Texture509_slope = MJHTex509Slope;
+#declare L3Color509 = MJHMat509;
+#declare L3Color509_slope = MJHMat509Slope;
+#declare ldMat509 = MJHMat509;
+#declare ldTex509 = MJHTex509;
+#declare lg_undefined = MJHTex509;
+
+// row 166 - Rubber_White
 #declare LDXColor511 = MJHMat511;
 #declare LDXColor511_slope = MJHMat511Slope;
 #declare L3Texture511 = MJHTex511;
@@ -1797,6 +1841,3 @@
 #declare ldMat511 = MJHMat511;
 #declare ldTex511 = MJHTex511;
 #declare lg_rubber_white = MJHTex511;
-
-// extra colors (see spreadsheet)
-#declare lg_gold_chrome = lg_chrome_gold;

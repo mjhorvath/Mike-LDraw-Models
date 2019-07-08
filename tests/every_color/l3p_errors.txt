@@ -1,0 +1,14 @@
+SKIPPING "C:\Users\Public\Documents\LDraw\ldconfig.ldr" Line 327: Illegal color code: 0 !COLOUR Main_Colour                                           CODE  16   VALUE #FFFF80   EDGE #333333
+SKIPPING "C:\Users\Public\Documents\LDraw\ldconfig.ldr" Line 328: Illegal color code: 0 !COLOUR Edge_Colour                                           CODE  24   VALUE #7F7F7F   EDGE #333333
+WARNING "every_color.ldr" Line 31: Color 24 illegal for this line type, using 16: 1 24 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat
+WARNING "every_color.ldr" Line 173: Unknown color, using 7: 1 10002 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat
+WARNING "every_color.ldr" Line 174: Unknown color, using 7: 1 10026 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat
+WARNING "every_color.ldr" Line 175: Unknown color, using 7: 1 10031 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat
+WARNING "every_color.ldr" Line 176: Unknown color, using 7: 1 10070 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat
+WARNING "every_color.ldr" Line 177: Unknown color, using 7: 1 10226 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat
+WARNING "every_color.ldr" Line 178: Unknown color, using 7: 1 10308 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat
+WARNING "every_color.ldr" Line 179: Unknown color, using 7: 1 10320 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat
+WARNING "every_color.ldr" Line 180: Unknown color, using 7: 1 10321 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat
+WARNING "every_color.ldr" Line 181: Unknown color, using 7: 1 10322 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat
+WARNING "every_color.ldr" Line 182: Unknown color, using 7: 1 10323 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat
+WARNING "every_color.ldr" Line 183: Unknown color, using 7: 1 10484 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat

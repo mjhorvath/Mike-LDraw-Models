@@ -588,78 +588,94 @@
 #ifdef (LDXColor351) #ifndef (MJHMat351) #declare MJHMat351 = LDXColor351; #end #end
 #ifdef (LDXColor351_slope) #ifndef (MJHMat351Slope) #declare MJHMat351Slope = LDXColor351_slope; #end #end
 
-// row 144 - Earth_Orange
+// row 144 - Coral
+#ifdef (LDXColor353) #ifndef (MJHMat353) #declare MJHMat353 = LDXColor353; #end #end
+#ifdef (LDXColor353_slope) #ifndef (MJHMat353Slope) #declare MJHMat353Slope = LDXColor353_slope; #end #end
+
+// row 145 - Earth_Orange
 #ifdef (LDXColor366) #ifndef (MJHMat366) #declare MJHMat366 = LDXColor366; #end #end
 #ifdef (LDXColor366_slope) #ifndef (MJHMat366Slope) #declare MJHMat366Slope = LDXColor366_slope; #end #end
 
-// row 145 - Sand_Purple
+// row 146 - Sand_Purple
 #ifdef (LDXColor373) #ifndef (MJHMat373) #declare MJHMat373 = LDXColor373; #end #end
 #ifdef (LDXColor373_slope) #ifndef (MJHMat373Slope) #declare MJHMat373Slope = LDXColor373_slope; #end #end
 
-// row 146 - Rubber_Light_Grey
+// row 147 - Rubber_Light_Grey
 #ifdef (LDXColor375) #ifndef (MJHMat375) #declare MJHMat375 = LDXColor375; #end #end
 #ifdef (LDXColor375_slope) #ifndef (MJHMat375Slope) #declare MJHMat375Slope = LDXColor375_slope; #end #end
 
-// row 147 - Sand_Green
+// row 148 - Sand_Green
 #ifdef (LDXColor378) #ifndef (MJHMat378) #declare MJHMat378 = LDXColor378; #end #end
 #ifdef (LDXColor378_slope) #ifndef (MJHMat378Slope) #declare MJHMat378Slope = LDXColor378_slope; #end #end
 
-// row 148 - Sand_Blue
+// row 149 - Sand_Blue
 #ifdef (LDXColor379) #ifndef (MJHMat379) #declare MJHMat379 = LDXColor379; #end #end
 #ifdef (LDXColor379_slope) #ifndef (MJHMat379Slope) #declare MJHMat379Slope = LDXColor379_slope; #end #end
 
-// row 149 - Chrome_Silver
+// row 150 - Chrome_Silver
 #ifdef (LDXColor383) #ifndef (MJHMat383) #declare MJHMat383 = LDXColor383; #end #end
 #ifdef (LDXColor383_slope) #ifndef (MJHMat383Slope) #declare MJHMat383Slope = LDXColor383_slope; #end #end
 
-// row 150 - Rubber_Dark_Blue
+// row 151 - Rubber_Dark_Blue
 #ifdef (LDXColor406) #ifndef (MJHMat406) #declare MJHMat406 = LDXColor406; #end #end
 #ifdef (LDXColor406_slope) #ifndef (MJHMat406Slope) #declare MJHMat406Slope = LDXColor406_slope; #end #end
 
-// row 151 - Rubber_Purple
+// row 152 - Rubber_Purple
 #ifdef (LDXColor449) #ifndef (MJHMat449) #declare MJHMat449 = LDXColor449; #end #end
 #ifdef (LDXColor449_slope) #ifndef (MJHMat449Slope) #declare MJHMat449Slope = LDXColor449_slope; #end #end
 
-// row 152 - Fabuland_Brown
+// row 153 - Fabuland_Brown
 #ifdef (LDXColor450) #ifndef (MJHMat450) #declare MJHMat450 = LDXColor450; #end #end
 #ifdef (LDXColor450_slope) #ifndef (MJHMat450Slope) #declare MJHMat450Slope = LDXColor450_slope; #end #end
 
-// row 153 - Medium_Orange
+// row 154 - Medium_Orange
 #ifdef (LDXColor462) #ifndef (MJHMat462) #declare MJHMat462 = LDXColor462; #end #end
 #ifdef (LDXColor462_slope) #ifndef (MJHMat462Slope) #declare MJHMat462Slope = LDXColor462_slope; #end #end
 
-// row 154 - Dark_Orange
+// row 155 - Dark_Orange
 #ifdef (LDXColor484) #ifndef (MJHMat484) #declare MJHMat484 = LDXColor484; #end #end
 #ifdef (LDXColor484_slope) #ifndef (MJHMat484Slope) #declare MJHMat484Slope = LDXColor484_slope; #end #end
 
-// row 155 - Rubber_Lime
+// row 156 - Rubber_Lime
 #ifdef (LDXColor490) #ifndef (MJHMat490) #declare MJHMat490 = LDXColor490; #end #end
 #ifdef (LDXColor490_slope) #ifndef (MJHMat490Slope) #declare MJHMat490Slope = LDXColor490_slope; #end #end
 
-// row 156 - Magnet
+// row 157 - Magnet
 #ifdef (LDXColor493) #ifndef (MJHMat493) #declare MJHMat493 = LDXColor493; #end #end
 #ifdef (LDXColor493_slope) #ifndef (MJHMat493Slope) #declare MJHMat493Slope = LDXColor493_slope; #end #end
 
-// row 157 - Electric_Contact_Alloy
+// row 158 - Electric_Contact_Alloy
 #ifdef (LDXColor494) #ifndef (MJHMat494) #declare MJHMat494 = LDXColor494; #end #end
 #ifdef (LDXColor494_slope) #ifndef (MJHMat494Slope) #declare MJHMat494Slope = LDXColor494_slope; #end #end
 
-// row 158 - Electric_Contact_Copper
+// row 159 - Electric_Contact_Copper
 #ifdef (LDXColor495) #ifndef (MJHMat495) #declare MJHMat495 = LDXColor495; #end #end
 #ifdef (LDXColor495_slope) #ifndef (MJHMat495Slope) #declare MJHMat495Slope = LDXColor495_slope; #end #end
 
-// row 159 - Rubber_Light_Bluish_Grey
+// row 160 - Rubber_Light_Bluish_Grey
 #ifdef (LDXColor496) #ifndef (MJHMat496) #declare MJHMat496 = LDXColor496; #end #end
 #ifdef (LDXColor496_slope) #ifndef (MJHMat496Slope) #declare MJHMat496Slope = LDXColor496_slope; #end #end
 
-// row 160 - Very_Light_Grey
+// row 161 - Very_Light_Grey
 #ifdef (LDXColor503) #ifndef (MJHMat503) #declare MJHMat503 = LDXColor503; #end #end
 #ifdef (LDXColor503_slope) #ifndef (MJHMat503Slope) #declare MJHMat503Slope = LDXColor503_slope; #end #end
 
-// row 161 - Rubber_Flat_Silver
+// row 162 - Rubber_Flat_Silver
 #ifdef (LDXColor504) #ifndef (MJHMat504) #declare MJHMat504 = LDXColor504; #end #end
 #ifdef (LDXColor504_slope) #ifndef (MJHMat504Slope) #declare MJHMat504Slope = LDXColor504_slope; #end #end
 
-// row 162 - Rubber_White
+// row 163 - Light_Orange_Brown
+#ifdef (LDXColor507) #ifndef (MJHMat507) #declare MJHMat507 = LDXColor507; #end #end
+#ifdef (LDXColor507_slope) #ifndef (MJHMat507Slope) #declare MJHMat507Slope = LDXColor507_slope; #end #end
+
+// row 164 - Fabuland_Red
+#ifdef (LDXColor508) #ifndef (MJHMat508) #declare MJHMat508 = LDXColor508; #end #end
+#ifdef (LDXColor508_slope) #ifndef (MJHMat508Slope) #declare MJHMat508Slope = LDXColor508_slope; #end #end
+
+// row 165 - Fabuland_Orange
+#ifdef (LDXColor509) #ifndef (MJHMat509) #declare MJHMat509 = LDXColor509; #end #end
+#ifdef (LDXColor509_slope) #ifndef (MJHMat509Slope) #declare MJHMat509Slope = LDXColor509_slope; #end #end
+
+// row 166 - Rubber_White
 #ifdef (LDXColor511) #ifndef (MJHMat511) #declare MJHMat511 = LDXColor511; #end #end
 #ifdef (LDXColor511_slope) #ifndef (MJHMat511Slope) #declare MJHMat511Slope = LDXColor511_slope; #end #end
