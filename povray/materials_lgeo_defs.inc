@@ -15,8 +15,6 @@
 /*            and utilized other sources to make models appear as accurate as  */
 /*            possible. Also added more LDraw colours.                         */
 /* 2013-05-27 Owen Burgoyne altered reflection for transparent parts.          */
-/* 2019-07-08 Michael Horvath added some missing colors as well as the         */
-/*            transforms needed to support Darats' new parts.                  */
 /*                                                                             */
 /* This file was updated to match the color definitions from the Peeron        */
 /* color list found at http://www.peeron.com/inv/colors/                       */
