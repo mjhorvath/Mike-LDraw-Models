@@ -1732,18 +1732,6 @@
 #declare lg_undefined = MJHTex351;
 #declare lc_Medium_Dark_Pink = MJHTex351;
 
-// row 144 - Coral
-#declare LDXColor353 = MJHMat353;
-#declare LDXColor353_slope = MJHMat353Slope;
-#declare L3Texture353 = MJHTex353;
-#declare L3Texture353_slope = MJHTex353Slope;
-#declare L3Color353 = MJHMat353;
-#declare L3Color353_slope = MJHMat353Slope;
-#declare ldMat353 = MJHMat353;
-#declare ldTex353 = MJHTex353;
-#declare lg_undefined = MJHTex353;
-#declare lc_Coral = MJHTex353;
-
 // row 145 - Earth_Orange
 #declare LDXColor366 = MJHMat366;
 #declare LDXColor366_slope = MJHMat366Slope;
@@ -1959,42 +1947,6 @@
 #declare ldTex504 = MJHTex504;
 #declare lg_rubber_flat_silver = MJHTex504;
 #declare lc_Rubber_Flat_Silver = MJHTex504;
-
-// row 163 - Light_Orange_Brown
-#declare LDXColor507 = MJHMat507;
-#declare LDXColor507_slope = MJHMat507Slope;
-#declare L3Texture507 = MJHTex507;
-#declare L3Texture507_slope = MJHTex507Slope;
-#declare L3Color507 = MJHMat507;
-#declare L3Color507_slope = MJHMat507Slope;
-#declare ldMat507 = MJHMat507;
-#declare ldTex507 = MJHTex507;
-#declare lg_undefined = MJHTex507;
-#declare lc_Light_Orange_Brown = MJHTex507;
-
-// row 164 - Fabuland_Red
-#declare LDXColor508 = MJHMat508;
-#declare LDXColor508_slope = MJHMat508Slope;
-#declare L3Texture508 = MJHTex508;
-#declare L3Texture508_slope = MJHTex508Slope;
-#declare L3Color508 = MJHMat508;
-#declare L3Color508_slope = MJHMat508Slope;
-#declare ldMat508 = MJHMat508;
-#declare ldTex508 = MJHTex508;
-#declare lg_undefined = MJHTex508;
-#declare lc_Fabuland_Red = MJHTex508;
-
-// row 165 - Fabuland_Orange
-#declare LDXColor509 = MJHMat509;
-#declare LDXColor509_slope = MJHMat509Slope;
-#declare L3Texture509 = MJHTex509;
-#declare L3Texture509_slope = MJHTex509Slope;
-#declare L3Color509 = MJHMat509;
-#declare L3Color509_slope = MJHMat509Slope;
-#declare ldMat509 = MJHMat509;
-#declare ldTex509 = MJHTex509;
-#declare lg_undefined = MJHTex509;
-#declare lc_Fabuland_Orange = MJHTex509;
 
 // row 166 - Rubber_White
 #declare LDXColor511 = MJHMat511;

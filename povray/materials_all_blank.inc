@@ -874,12 +874,6 @@
 #declare MJHMat351 = material {}
 #declare MJHMat351Slope = material {}
 
-// row 144 - Coral
-#declare MJHTex353 = texture {}
-#declare MJHTex353Slope = texture {}
-#declare MJHMat353 = material {}
-#declare MJHMat353Slope = material {}
-
 // row 145 - Earth_Orange
 #declare MJHTex366 = texture {}
 #declare MJHTex366Slope = texture {}
@@ -987,24 +981,6 @@
 #declare MJHTex504Slope = texture {}
 #declare MJHMat504 = material {}
 #declare MJHMat504Slope = material {}
-
-// row 163 - Light_Orange_Brown
-#declare MJHTex507 = texture {}
-#declare MJHTex507Slope = texture {}
-#declare MJHMat507 = material {}
-#declare MJHMat507Slope = material {}
-
-// row 164 - Fabuland_Red
-#declare MJHTex508 = texture {}
-#declare MJHTex508Slope = texture {}
-#declare MJHMat508 = material {}
-#declare MJHMat508Slope = material {}
-
-// row 165 - Fabuland_Orange
-#declare MJHTex509 = texture {}
-#declare MJHTex509Slope = texture {}
-#declare MJHMat509 = material {}
-#declare MJHMat509Slope = material {}
 
 // row 166 - Rubber_White
 #declare MJHTex511 = texture {}

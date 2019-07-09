@@ -874,12 +874,6 @@
 #ifdef (L3Color351) #ifndef (MJHMat351) #declare MJHMat351 = L3Color351; #end #end
 #ifdef (L3Color351_slope) #ifndef (MJHMat351Slope) #declare MJHMat351Slope = L3Color351_slope; #end #end
 
-// row 144 - Coral
-#ifdef (L3Texture353) #ifndef (MJHTex353) #declare MJHTex353 = L3Texture353; #end #end
-#ifdef (L3Texture353_slope) #ifndef (MJHTex353Slope) #declare MJHTex353Slope = L3Texture353_slope; #end #end
-#ifdef (L3Color353) #ifndef (MJHMat353) #declare MJHMat353 = L3Color353; #end #end
-#ifdef (L3Color353_slope) #ifndef (MJHMat353Slope) #declare MJHMat353Slope = L3Color353_slope; #end #end
-
 // row 145 - Earth_Orange
 #ifdef (L3Texture366) #ifndef (MJHTex366) #declare MJHTex366 = L3Texture366; #end #end
 #ifdef (L3Texture366_slope) #ifndef (MJHTex366Slope) #declare MJHTex366Slope = L3Texture366_slope; #end #end
@@ -987,24 +981,6 @@
 #ifdef (L3Texture504_slope) #ifndef (MJHTex504Slope) #declare MJHTex504Slope = L3Texture504_slope; #end #end
 #ifdef (L3Color504) #ifndef (MJHMat504) #declare MJHMat504 = L3Color504; #end #end
 #ifdef (L3Color504_slope) #ifndef (MJHMat504Slope) #declare MJHMat504Slope = L3Color504_slope; #end #end
-
-// row 163 - Light_Orange_Brown
-#ifdef (L3Texture507) #ifndef (MJHTex507) #declare MJHTex507 = L3Texture507; #end #end
-#ifdef (L3Texture507_slope) #ifndef (MJHTex507Slope) #declare MJHTex507Slope = L3Texture507_slope; #end #end
-#ifdef (L3Color507) #ifndef (MJHMat507) #declare MJHMat507 = L3Color507; #end #end
-#ifdef (L3Color507_slope) #ifndef (MJHMat507Slope) #declare MJHMat507Slope = L3Color507_slope; #end #end
-
-// row 164 - Fabuland_Red
-#ifdef (L3Texture508) #ifndef (MJHTex508) #declare MJHTex508 = L3Texture508; #end #end
-#ifdef (L3Texture508_slope) #ifndef (MJHTex508Slope) #declare MJHTex508Slope = L3Texture508_slope; #end #end
-#ifdef (L3Color508) #ifndef (MJHMat508) #declare MJHMat508 = L3Color508; #end #end
-#ifdef (L3Color508_slope) #ifndef (MJHMat508Slope) #declare MJHMat508Slope = L3Color508_slope; #end #end
-
-// row 165 - Fabuland_Orange
-#ifdef (L3Texture509) #ifndef (MJHTex509) #declare MJHTex509 = L3Texture509; #end #end
-#ifdef (L3Texture509_slope) #ifndef (MJHTex509Slope) #declare MJHTex509Slope = L3Texture509_slope; #end #end
-#ifdef (L3Color509) #ifndef (MJHMat509) #declare MJHMat509 = L3Color509; #end #end
-#ifdef (L3Color509_slope) #ifndef (MJHMat509Slope) #declare MJHMat509Slope = L3Color509_slope; #end #end
 
 // row 166 - Rubber_White
 #ifdef (L3Texture511) #ifndef (MJHTex511) #declare MJHTex511 = L3Texture511; #end #end

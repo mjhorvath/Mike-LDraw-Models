@@ -2306,21 +2306,6 @@ material {
 #end
 
 
-//// Color 353
-#ifndef (L3Texture353)
-#declare L3Texture353 = L3TextureOpaqueRGB(44,71,115)
-#end
-#ifndef (L3Texture353_slope)
-#declare L3Texture353_slope = L3TextureSlope(L3Texture353)
-#end
-#ifndef (L3Color353)
-#declare L3Color353 = L3Material(L3Texture353)
-#end
-#ifndef (L3Color353_slope)
-#declare L3Color353_slope = L3Material(L3Texture353_slope)
-#end
-
-
 //// Color 366 Earth_Orange (from ldconfig.ldr)
 #ifndef (L3Texture366)
 #declare L3Texture366 = L3TextureOpaqueRGB(250,156,28)
@@ -2588,51 +2573,6 @@ material {
 #end
 #ifndef (L3Color504_slope)
 #declare L3Color504_slope = L3Material(L3Texture504_slope)
-#end
-
-
-//// Color 507
-#ifndef (L3Texture507)
-#declare L3Texture507 = L3TextureOpaqueRGB(170,210,215)
-#end
-#ifndef (L3Texture507_slope)
-#declare L3Texture507_slope = L3TextureSlope(L3Texture507)
-#end
-#ifndef (L3Color507)
-#declare L3Color507 = L3Material(L3Texture507)
-#end
-#ifndef (L3Color507_slope)
-#declare L3Color507_slope = L3Material(L3Texture507_slope)
-#end
-
-
-//// Color 508
-#ifndef (L3Texture508)
-#declare L3Texture508 = L3TextureOpaqueRGB(248.5,183.5,174.5)
-#end
-#ifndef (L3Texture508_slope)
-#declare L3Texture508_slope = L3TextureSlope(L3Texture508)
-#end
-#ifndef (L3Color508)
-#declare L3Color508 = L3Material(L3Texture508)
-#end
-#ifndef (L3Color508_slope)
-#declare L3Color508_slope = L3Material(L3Texture508_slope)
-#end
-
-
-//// Color 509
-#ifndef (L3Texture509)
-#declare L3Texture509 = L3TextureOpaqueRGB(253.5,203,213.5)
-#end
-#ifndef (L3Texture509_slope)
-#declare L3Texture509_slope = L3TextureSlope(L3Texture509)
-#end
-#ifndef (L3Color509)
-#declare L3Color509 = L3Material(L3Texture509)
-#end
-#ifndef (L3Color509_slope)
-#declare L3Color509_slope = L3Material(L3Texture509_slope)
 #end
 
 

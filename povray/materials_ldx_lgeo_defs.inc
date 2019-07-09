@@ -1657,10 +1657,6 @@
 #declare LDXColor351 = LDXOpaqueColor(0.968627,0.521569,0.694118)
 #end
 
-#ifndef (LDXColor353)
-#declare LDXColor353 = LDXOpaqueColor(0.2,0.2,0.34902)
-#end
-
 #ifndef (LDXColor366) // Earth Orange
 #declare LDXColor366 = #if (version >= 3.1) material { #end
 	texture {
@@ -1901,18 +1897,6 @@
 		#if (LDXQual > 1) normal { bumps 0.3 scale 25*0.02 } #end
 	}
 #if (version >= 3.1) } #end
-#end
-
-#ifndef (LDXColor507)
-#declare LDXColor507 = LDXOpaqueColor(0.835294,0.996078,0.988235)
-#end
-
-#ifndef (LDXColor508)
-#declare LDXColor508 = LDXOpaqueColor(1,0.498039,0.498039)
-#end
-
-#ifndef (LDXColor509)
-#declare LDXColor509 = LDXOpaqueColor(1,0.843137,0.898039)
 #end
 
 #ifndef (LDXColor511) // Rubber White

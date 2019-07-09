@@ -833,10 +833,6 @@
 #declare LDXColor351 = LDXOpaqueColor(0.968627,0.521569,0.694118)
 #end
 
-#ifndef (LDXColor353) // Coral
-#declare LDXColor353 = LDXOpaqueColor(0.2,0.2,0.34902)
-#end
-
 #ifndef (LDXColor366) // Earth Orange
 #declare LDXColor366 = LDXOpaqueColor(0.980392,0.611765,0.109804)
 #end
@@ -907,18 +903,6 @@
 
 #ifndef (LDXColor504) // Rubber Flat Silver
 #declare LDXColor504 = LDXRubberColor(0.537255,0.529412,0.533333)
-#end
-
-#ifndef (LDXColor507) // Light Orange Brown
-#declare LDXColor507 = LDXOpaqueColor(0.835294,0.996078,0.988235)
-#end
-
-#ifndef (LDXColor508) // Fabuland Red
-#declare LDXColor508 = LDXOpaqueColor(1,0.498039,0.498039)
-#end
-
-#ifndef (LDXColor509) // Fabuland Orange
-#declare LDXColor509 = LDXOpaqueColor(1,0.843137,0.898039)
 #end
 
 #ifndef (LDXColor511) // Rubber White

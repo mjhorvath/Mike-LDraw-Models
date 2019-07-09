@@ -874,12 +874,6 @@
 #ifndef (MJHMat351) #declare MJHMat351 = material {MJHMissingMat} #end
 #ifndef (MJHMat351Slope) #declare MJHMat351Slope = material {MJHMissingMat} #end
 
-// row 144 - Coral
-#ifndef (MJHTex353) #declare MJHTex353 = texture {MJHMissingTex} #end
-#ifndef (MJHTex353Slope) #declare MJHTex353Slope = texture {MJHMissingTex} #end
-#ifndef (MJHMat353) #declare MJHMat353 = material {MJHMissingMat} #end
-#ifndef (MJHMat353Slope) #declare MJHMat353Slope = material {MJHMissingMat} #end
-
 // row 145 - Earth_Orange
 #ifndef (MJHTex366) #declare MJHTex366 = texture {MJHMissingTex} #end
 #ifndef (MJHTex366Slope) #declare MJHTex366Slope = texture {MJHMissingTex} #end
@@ -987,24 +981,6 @@
 #ifndef (MJHTex504Slope) #declare MJHTex504Slope = texture {MJHMissingTex} #end
 #ifndef (MJHMat504) #declare MJHMat504 = material {MJHMissingMat} #end
 #ifndef (MJHMat504Slope) #declare MJHMat504Slope = material {MJHMissingMat} #end
-
-// row 163 - Light_Orange_Brown
-#ifndef (MJHTex507) #declare MJHTex507 = texture {MJHMissingTex} #end
-#ifndef (MJHTex507Slope) #declare MJHTex507Slope = texture {MJHMissingTex} #end
-#ifndef (MJHMat507) #declare MJHMat507 = material {MJHMissingMat} #end
-#ifndef (MJHMat507Slope) #declare MJHMat507Slope = material {MJHMissingMat} #end
-
-// row 164 - Fabuland_Red
-#ifndef (MJHTex508) #declare MJHTex508 = texture {MJHMissingTex} #end
-#ifndef (MJHTex508Slope) #declare MJHTex508Slope = texture {MJHMissingTex} #end
-#ifndef (MJHMat508) #declare MJHMat508 = material {MJHMissingMat} #end
-#ifndef (MJHMat508Slope) #declare MJHMat508Slope = material {MJHMissingMat} #end
-
-// row 165 - Fabuland_Orange
-#ifndef (MJHTex509) #declare MJHTex509 = texture {MJHMissingTex} #end
-#ifndef (MJHTex509Slope) #declare MJHTex509Slope = texture {MJHMissingTex} #end
-#ifndef (MJHMat509) #declare MJHMat509 = material {MJHMissingMat} #end
-#ifndef (MJHMat509Slope) #declare MJHMat509Slope = material {MJHMissingMat} #end
 
 // row 166 - Rubber_White
 #ifndef (MJHTex511) #declare MJHTex511 = texture {MJHMissingTex} #end

@@ -881,12 +881,6 @@
 #ifdef (lc_Medium_Dark_Pink) #ifndef (MJHMat351) #declare MJHMat351 = material {texture {MJHTex351} interior {lc_ior_block}} #end #end
 #ifdef (lc_Medium_Dark_Pink) #ifndef (MJHMat351Slope) #declare MJHMat351Slope = material { texture {MJHTex351Slope} interior {lc_ior_block}} #end #end
 
-// row 144 - Coral
-#ifdef (lc_Coral) #ifndef (MJHTex353) #declare MJHTex353 = texture {lc_Coral} #end #end
-#ifdef (lc_Coral) #ifndef (MJHTex353Slope) #declare MJHTex353Slope = texture {lc_Coral  normal {lc_slope_normal}} #end #end
-#ifdef (lc_Coral) #ifndef (MJHMat353) #declare MJHMat353 = material {texture {MJHTex353} interior {lc_ior_block}} #end #end
-#ifdef (lc_Coral) #ifndef (MJHMat353Slope) #declare MJHMat353Slope = material { texture {MJHTex353Slope} interior {lc_ior_block}} #end #end
-
 // row 145 - Earth_Orange
 #ifdef (lc_Earth_Orange) #ifndef (MJHTex366) #declare MJHTex366 = texture {lc_Earth_Orange} #end #end
 #ifdef (lc_Earth_Orange) #ifndef (MJHTex366Slope) #declare MJHTex366Slope = texture {lc_Earth_Orange  normal {lc_slope_normal}} #end #end
@@ -994,24 +988,6 @@
 #ifdef (lc_Rubber_Flat_Silver) #ifndef (MJHTex504Slope) #declare MJHTex504Slope = texture {lc_Rubber_Flat_Silver  normal {lc_slope_normal}} #end #end
 #ifdef (lc_Rubber_Flat_Silver) #ifndef (MJHMat504) #declare MJHMat504 = material {texture {MJHTex504} interior {lc_ior_block}} #end #end
 #ifdef (lc_Rubber_Flat_Silver) #ifndef (MJHMat504Slope) #declare MJHMat504Slope = material { texture {MJHTex504Slope} interior {lc_ior_block}} #end #end
-
-// row 163 - Light_Orange_Brown
-#ifdef (lc_Light_Orange_Brown) #ifndef (MJHTex507) #declare MJHTex507 = texture {lc_Light_Orange_Brown} #end #end
-#ifdef (lc_Light_Orange_Brown) #ifndef (MJHTex507Slope) #declare MJHTex507Slope = texture {lc_Light_Orange_Brown  normal {lc_slope_normal}} #end #end
-#ifdef (lc_Light_Orange_Brown) #ifndef (MJHMat507) #declare MJHMat507 = material {texture {MJHTex507} interior {lc_ior_block}} #end #end
-#ifdef (lc_Light_Orange_Brown) #ifndef (MJHMat507Slope) #declare MJHMat507Slope = material { texture {MJHTex507Slope} interior {lc_ior_block}} #end #end
-
-// row 164 - Fabuland_Red
-#ifdef (lc_Fabuland_Red) #ifndef (MJHTex508) #declare MJHTex508 = texture {lc_Fabuland_Red} #end #end
-#ifdef (lc_Fabuland_Red) #ifndef (MJHTex508Slope) #declare MJHTex508Slope = texture {lc_Fabuland_Red  normal {lc_slope_normal}} #end #end
-#ifdef (lc_Fabuland_Red) #ifndef (MJHMat508) #declare MJHMat508 = material {texture {MJHTex508} interior {lc_ior_block}} #end #end
-#ifdef (lc_Fabuland_Red) #ifndef (MJHMat508Slope) #declare MJHMat508Slope = material { texture {MJHTex508Slope} interior {lc_ior_block}} #end #end
-
-// row 165 - Fabuland_Orange
-#ifdef (lc_Fabuland_Orange) #ifndef (MJHTex509) #declare MJHTex509 = texture {lc_Fabuland_Orange} #end #end
-#ifdef (lc_Fabuland_Orange) #ifndef (MJHTex509Slope) #declare MJHTex509Slope = texture {lc_Fabuland_Orange  normal {lc_slope_normal}} #end #end
-#ifdef (lc_Fabuland_Orange) #ifndef (MJHMat509) #declare MJHMat509 = material {texture {MJHTex509} interior {lc_ior_block}} #end #end
-#ifdef (lc_Fabuland_Orange) #ifndef (MJHMat509Slope) #declare MJHMat509Slope = material { texture {MJHTex509Slope} interior {lc_ior_block}} #end #end
 
 // row 166 - Rubber_White
 #ifdef (lc_Rubber_White) #ifndef (MJHTex511) #declare MJHTex511 = texture {lc_Rubber_White} #end #end

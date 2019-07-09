@@ -879,12 +879,6 @@
 #ifdef (lg_undefined) #ifndef (MJHMat351) #declare MJHMat351 = material { texture { MJHTex351 } interior { lg_ior } } #end #end
 #ifdef (lg_undefined) #ifndef (MJHMat351Slope) #declare MJHMat351Slope = material { texture { MJHTex351Slope } interior { lg_ior } } #end #end
 
-// row 144 - Coral
-#ifdef (lg_undefined) #ifndef (MJHTex353) #declare MJHTex353 = texture { lg_undefined } #end #end
-#ifdef (lg_undefined) #ifndef (MJHTex353Slope) #declare MJHTex353Slope = texture { lg_undefined normal { lg_slope_normal } } #end #end
-#ifdef (lg_undefined) #ifndef (MJHMat353) #declare MJHMat353 = material { texture { MJHTex353 } interior { lg_ior } } #end #end
-#ifdef (lg_undefined) #ifndef (MJHMat353Slope) #declare MJHMat353Slope = material { texture { MJHTex353Slope } interior { lg_ior } } #end #end
-
 // row 145 - Earth_Orange
 #ifdef (lg_earth_orange) #ifndef (MJHTex366) #declare MJHTex366 = texture { lg_earth_orange } #end #end
 #ifdef (lg_earth_orange) #ifndef (MJHTex366Slope) #declare MJHTex366Slope = texture { lg_earth_orange normal { lg_slope_normal } } #end #end
@@ -992,24 +986,6 @@
 #ifdef (lg_rubber_flat_silver) #ifndef (MJHTex504Slope) #declare MJHTex504Slope = texture { lg_rubber_flat_silver normal { lg_slope_normal } } #end #end
 #ifdef (lg_rubber_flat_silver) #ifndef (MJHMat504) #declare MJHMat504 = material { texture { MJHTex504 } interior { lg_ior } } #end #end
 #ifdef (lg_rubber_flat_silver) #ifndef (MJHMat504Slope) #declare MJHMat504Slope = material { texture { MJHTex504Slope } interior { lg_ior } } #end #end
-
-// row 163 - Light_Orange_Brown
-#ifdef (lg_undefined) #ifndef (MJHTex507) #declare MJHTex507 = texture { lg_undefined } #end #end
-#ifdef (lg_undefined) #ifndef (MJHTex507Slope) #declare MJHTex507Slope = texture { lg_undefined normal { lg_slope_normal } } #end #end
-#ifdef (lg_undefined) #ifndef (MJHMat507) #declare MJHMat507 = material { texture { MJHTex507 } interior { lg_ior } } #end #end
-#ifdef (lg_undefined) #ifndef (MJHMat507Slope) #declare MJHMat507Slope = material { texture { MJHTex507Slope } interior { lg_ior } } #end #end
-
-// row 164 - Fabuland_Red
-#ifdef (lg_undefined) #ifndef (MJHTex508) #declare MJHTex508 = texture { lg_undefined } #end #end
-#ifdef (lg_undefined) #ifndef (MJHTex508Slope) #declare MJHTex508Slope = texture { lg_undefined normal { lg_slope_normal } } #end #end
-#ifdef (lg_undefined) #ifndef (MJHMat508) #declare MJHMat508 = material { texture { MJHTex508 } interior { lg_ior } } #end #end
-#ifdef (lg_undefined) #ifndef (MJHMat508Slope) #declare MJHMat508Slope = material { texture { MJHTex508Slope } interior { lg_ior } } #end #end
-
-// row 165 - Fabuland_Orange
-#ifdef (lg_undefined) #ifndef (MJHTex509) #declare MJHTex509 = texture { lg_undefined } #end #end
-#ifdef (lg_undefined) #ifndef (MJHTex509Slope) #declare MJHTex509Slope = texture { lg_undefined normal { lg_slope_normal } } #end #end
-#ifdef (lg_undefined) #ifndef (MJHMat509) #declare MJHMat509 = material { texture { MJHTex509 } interior { lg_ior } } #end #end
-#ifdef (lg_undefined) #ifndef (MJHMat509Slope) #declare MJHMat509Slope = material { texture { MJHTex509Slope } interior { lg_ior } } #end #end
 
 // row 166 - Rubber_White
 #ifdef (lg_rubber_white) #ifndef (MJHTex511) #declare MJHTex511 = texture { lg_rubber_white } #end #end

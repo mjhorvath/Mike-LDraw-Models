@@ -588,10 +588,6 @@
 #ifdef (LDXColor351) #ifndef (MJHMat351) #declare MJHMat351 = LDXColor351; #end #end
 #ifdef (LDXColor351) #ifndef (MJHMat351Slope) #declare MJHMat351Slope = LDXColor351; #end #end
 
-// row 144 - Coral
-#ifdef (LDXColor353) #ifndef (MJHMat353) #declare MJHMat353 = LDXColor353; #end #end
-#ifdef (LDXColor353) #ifndef (MJHMat353Slope) #declare MJHMat353Slope = LDXColor353; #end #end
-
 // row 145 - Earth_Orange
 #ifdef (LDXColor366) #ifndef (MJHMat366) #declare MJHMat366 = LDXColor366; #end #end
 #ifdef (LDXColor366) #ifndef (MJHMat366Slope) #declare MJHMat366Slope = LDXColor366; #end #end
@@ -663,18 +659,6 @@
 // row 162 - Rubber_Flat_Silver
 #ifdef (LDXColor504) #ifndef (MJHMat504) #declare MJHMat504 = LDXColor504; #end #end
 #ifdef (LDXColor504) #ifndef (MJHMat504Slope) #declare MJHMat504Slope = LDXColor504; #end #end
-
-// row 163 - Light_Orange_Brown
-#ifdef (LDXColor507) #ifndef (MJHMat507) #declare MJHMat507 = LDXColor507; #end #end
-#ifdef (LDXColor507) #ifndef (MJHMat507Slope) #declare MJHMat507Slope = LDXColor507; #end #end
-
-// row 164 - Fabuland_Red
-#ifdef (LDXColor508) #ifndef (MJHMat508) #declare MJHMat508 = LDXColor508; #end #end
-#ifdef (LDXColor508) #ifndef (MJHMat508Slope) #declare MJHMat508Slope = LDXColor508; #end #end
-
-// row 165 - Fabuland_Orange
-#ifdef (LDXColor509) #ifndef (MJHMat509) #declare MJHMat509 = LDXColor509; #end #end
-#ifdef (LDXColor509) #ifndef (MJHMat509Slope) #declare MJHMat509Slope = LDXColor509; #end #end
 
 // row 166 - Rubber_White
 #ifdef (LDXColor511) #ifndef (MJHMat511) #declare MJHMat511 = LDXColor511; #end #end

@@ -874,12 +874,6 @@
 #ifdef (ldMat351) #ifndef (MJHMat351) #declare MJHMat351 = ldMat351; #end #end
 #ifdef (ldMat351) #ifndef (MJHMat351Slope) #declare MJHMat351Slope = ldMat351; #end #end
 
-// row 144 - Coral
-#ifdef (ldTex353) #ifndef (MJHTex353) #declare MJHTex353 = ldTex353; #end #end
-#ifdef (ldTex353) #ifndef (MJHTex353Slope) #declare MJHTex353Slope = ldTex353; #end #end
-#ifdef (ldMat353) #ifndef (MJHMat353) #declare MJHMat353 = ldMat353; #end #end
-#ifdef (ldMat353) #ifndef (MJHMat353Slope) #declare MJHMat353Slope = ldMat353; #end #end
-
 // row 145 - Earth_Orange
 #ifdef (ldTex366) #ifndef (MJHTex366) #declare MJHTex366 = ldTex366; #end #end
 #ifdef (ldTex366) #ifndef (MJHTex366Slope) #declare MJHTex366Slope = ldTex366; #end #end
@@ -987,24 +981,6 @@
 #ifdef (ldTex504) #ifndef (MJHTex504Slope) #declare MJHTex504Slope = ldTex504; #end #end
 #ifdef (ldMat504) #ifndef (MJHMat504) #declare MJHMat504 = ldMat504; #end #end
 #ifdef (ldMat504) #ifndef (MJHMat504Slope) #declare MJHMat504Slope = ldMat504; #end #end
-
-// row 163 - Light_Orange_Brown
-#ifdef (ldTex507) #ifndef (MJHTex507) #declare MJHTex507 = ldTex507; #end #end
-#ifdef (ldTex507) #ifndef (MJHTex507Slope) #declare MJHTex507Slope = ldTex507; #end #end
-#ifdef (ldMat507) #ifndef (MJHMat507) #declare MJHMat507 = ldMat507; #end #end
-#ifdef (ldMat507) #ifndef (MJHMat507Slope) #declare MJHMat507Slope = ldMat507; #end #end
-
-// row 164 - Fabuland_Red
-#ifdef (ldTex508) #ifndef (MJHTex508) #declare MJHTex508 = ldTex508; #end #end
-#ifdef (ldTex508) #ifndef (MJHTex508Slope) #declare MJHTex508Slope = ldTex508; #end #end
-#ifdef (ldMat508) #ifndef (MJHMat508) #declare MJHMat508 = ldMat508; #end #end
-#ifdef (ldMat508) #ifndef (MJHMat508Slope) #declare MJHMat508Slope = ldMat508; #end #end
-
-// row 165 - Fabuland_Orange
-#ifdef (ldTex509) #ifndef (MJHTex509) #declare MJHTex509 = ldTex509; #end #end
-#ifdef (ldTex509) #ifndef (MJHTex509Slope) #declare MJHTex509Slope = ldTex509; #end #end
-#ifdef (ldMat509) #ifndef (MJHMat509) #declare MJHMat509 = ldMat509; #end #end
-#ifdef (ldMat509) #ifndef (MJHMat509Slope) #declare MJHMat509Slope = ldMat509; #end #end
 
 // row 166 - Rubber_White
 #ifdef (ldTex511) #ifndef (MJHTex511) #declare MJHTex511 = ldTex511; #end #end
