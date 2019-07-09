@@ -62,90 +62,90 @@ global_settings {assumed_gamma 1}
 		#include "ldv_nice_androbot_mech_new_lgeo_y.pov"
 		#declare LDXCameraTransform = transform
 		{
-			translate -LDXCameraLookAt
-			scale 5/4
-			translate <0,0,0>
-			translate +LDXCameraLookAt
+			translate	-LDXCameraLookAt
+			scale		5/4
+			translate	<0,0,0>
+			translate	+LDXCameraLookAt
 		}
 	#break
 	#case (2)
 		#include "ldv_nice_carriage_house_new_lgeo_y.pov"
 		#declare LDXCameraTransform = transform
 		{
-			translate -LDXCameraLookAt
-			scale 1
-			translate <+080,+120,-020>
-			translate +LDXCameraLookAt
+			translate	-LDXCameraLookAt
+			scale		1
+			translate	<+080,+120,-020>
+			translate	+LDXCameraLookAt
 		}
 	#break
 	#case (3)
 		#include "ldv_nice_dune_rover_new_lgeo_y.pov"
 		#declare LDXCameraTransform = transform
 		{
-			translate -LDXCameraLookAt
-			scale 1.1
-			translate <0,+32,0>
-			translate +LDXCameraLookAt
+			translate	-LDXCameraLookAt
+			scale		1.1
+			translate	<0,+32,0>
+			translate	+LDXCameraLookAt
 		}
 	#break
 	#case (4)
 		#include "ldv_nice_high_tech_lab_new_lgeo_y.pov"
 		#declare LDXCameraTransform = transform
 		{
-			translate -LDXCameraLookAt
-//			scale 1.1
-//			translate <0,+32,0>
-			translate +LDXCameraLookAt
+			translate	-LDXCameraLookAt
+			scale		1
+			translate	<0,0,0>
+			translate	+LDXCameraLookAt
 		}
 	#break
 	#case (5)
 		#include "ldv_nice_manned_mech_new_lgeo_y.pov"
 		#declare LDXCameraTransform = transform
 		{
-			translate -LDXCameraLookAt
-//			scale 1.1
-//			translate <0,+32,0>
-			translate +LDXCameraLookAt
+			translate	-LDXCameraLookAt
+			scale		1
+			translate	<0,0,0>
+			translate	+LDXCameraLookAt
 		}
 	#break
 	#case (6)
 		#include "ldv_nice_red_devil_racer_new_lgeo_y.pov"
 		#declare LDXCameraTransform = transform
 		{
-			translate -LDXCameraLookAt
-			scale 14/16
-			translate <+040,+000,-080>
-			translate +LDXCameraLookAt
+			translate	-LDXCameraLookAt
+			scale		14/16
+			translate	<+040,+000,-080>
+			translate	+LDXCameraLookAt
 		}
 	#break
 	#case (7)
 		#include "ldv_nice_salt_flats_speeder_new_lgeo_y.pov"
 		#declare LDXCameraTransform = transform
 		{
-			translate -LDXCameraLookAt
-//			scale 14/16
-//			translate <+40,0,-80>
-			translate +LDXCameraLookAt
+			translate	-LDXCameraLookAt
+			scale		1
+			translate	<0,0,0>
+			translate	+LDXCameraLookAt
 		}
 	#break
 	#case (8)
 		#include "ldv_nice_small_shuttle_new_lgeo_y.pov"
 		#declare LDXCameraTransform = transform
 		{
-			translate -LDXCameraLookAt
-//			scale 14/16
-//			translate <+40,0,-80>
-			translate +LDXCameraLookAt
+			translate	-LDXCameraLookAt
+			scale		1
+			translate	<0,0,0>
+			translate	+LDXCameraLookAt
 		}
 	#break
 	#case (9)
 		#include "ldv_nice_yellow_castle_new_lgeo_y.pov"
 		#declare LDXCameraTransform = transform
 		{
-			translate -LDXCameraLookAt
-//			scale 14/16
-//			translate <+40,0,-80>
-			translate +LDXCameraLookAt
+			translate	-LDXCameraLookAt
+			scale		1
+			translate	<0,0,0>
+			translate	+LDXCameraLookAt
 		}
 	#break
 #end
