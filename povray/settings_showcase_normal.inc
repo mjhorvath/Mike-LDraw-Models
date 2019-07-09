@@ -170,9 +170,17 @@
 
 // -------------------------------------------------------------
 // LGEO settings
+// lg_ior should be defined here too.
 
 #ifndef (lg_quality)	#declare lg_quality	= L3Quality;	#end
 #ifndef (lg_studs)		#declare lg_studs	= L3Studs;		#end
+
+
+// -------------------------------------------------------------
+// LeoCad settings
+// This is a variable I created.
+
+#ifndef (lc_ior)		#declare lc_ior		= L3Ior;		#end
 
 
 // -------------------------------------------------------------

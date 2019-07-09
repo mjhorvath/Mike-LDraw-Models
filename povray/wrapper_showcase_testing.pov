@@ -37,7 +37,7 @@ global_settings {assumed_gamma 1}
 #include "lg_color.inc"
 #include "materials_blurred_reflections.inc"
 
-#declare Use_Materials = 1;
+#declare Use_Materials = 5;
 #switch (Use_Materials)
 	#case (1)
 		// LDCad materials
@@ -63,6 +63,11 @@ global_settings {assumed_gamma 1}
 		#include "materials_l3p_out.inc"
 	#break
 	#case (5)
+		// LeoCAD materials
+		#include "materials_leo_defs.inc"
+		#include "materials_leo_out.inc"
+	#break
+	#case (6)
 		// LGEO materials
 		#include "materials_lgeo_defs.inc"
 		#include "materials_lgeo_out.inc"
@@ -76,7 +81,7 @@ global_settings {assumed_gamma 1}
 // -------------------------------------------------------------
 // LDView models
 
-#declare Use_Model = 1;
+#declare Use_Model			= 5;
 #declare LDXCameraAspect	= image_width/image_height;
 #declare LDXCameraAngle		= 45;
 

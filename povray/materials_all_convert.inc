@@ -26,6 +26,7 @@
 #declare ldMat0 = MJHMat0;
 #declare ldTex0 = MJHTex0;
 #declare lg_black = MJHTex0;
+#declare lc_Black = MJHTex0;
 
 // row 2 - Blue
 #declare LDXColor1 = MJHMat1;
@@ -37,6 +38,7 @@
 #declare ldMat1 = MJHMat1;
 #declare ldTex1 = MJHTex1;
 #declare lg_blue = MJHTex1;
+#declare lc_Blue = MJHTex1;
 
 // row 3 - Green
 #declare LDXColor2 = MJHMat2;
@@ -48,6 +50,7 @@
 #declare ldMat2 = MJHMat2;
 #declare ldTex2 = MJHTex2;
 #declare lg_green = MJHTex2;
+#declare lc_Green = MJHTex2;
 
 // row 4 - Dark_Turquoise
 #declare LDXColor3 = MJHMat3;
@@ -59,6 +62,7 @@
 #declare ldMat3 = MJHMat3;
 #declare ldTex3 = MJHTex3;
 #declare lg_cyan = MJHTex3;
+#declare lc_Dark_Turquoise = MJHTex3;
 
 // row 5 - Red
 #declare LDXColor4 = MJHMat4;
@@ -70,6 +74,7 @@
 #declare ldMat4 = MJHMat4;
 #declare ldTex4 = MJHTex4;
 #declare lg_red = MJHTex4;
+#declare lc_Red = MJHTex4;
 
 // row 6 - Dark_Pink
 #declare LDXColor5 = MJHMat5;
@@ -81,6 +86,7 @@
 #declare ldMat5 = MJHMat5;
 #declare ldTex5 = MJHTex5;
 #declare lg_dark_pink = MJHTex5;
+#declare lc_Dark_Pink = MJHTex5;
 
 // row 7 - Brown
 #declare LDXColor6 = MJHMat6;
@@ -92,6 +98,7 @@
 #declare ldMat6 = MJHMat6;
 #declare ldTex6 = MJHTex6;
 #declare lg_brown = MJHTex6;
+#declare lc_Brown = MJHTex6;
 
 // row 8 - Light_Grey
 #declare LDXColor7 = MJHMat7;
@@ -103,6 +110,7 @@
 #declare ldMat7 = MJHMat7;
 #declare ldTex7 = MJHTex7;
 #declare lg_grey = MJHTex7;
+#declare lc_Light_Grey = MJHTex7;
 
 // row 9 - Dark_Grey
 #declare LDXColor8 = MJHMat8;
@@ -114,6 +122,7 @@
 #declare ldMat8 = MJHMat8;
 #declare ldTex8 = MJHTex8;
 #declare lg_dark_grey = MJHTex8;
+#declare lc_Dark_Grey = MJHTex8;
 
 // row 10 - Light_Blue
 #declare LDXColor9 = MJHMat9;
@@ -125,6 +134,7 @@
 #declare ldMat9 = MJHMat9;
 #declare ldTex9 = MJHTex9;
 #declare lg_light_blue = MJHTex9;
+#declare lc_Light_Blue = MJHTex9;
 
 // row 11 - Bright_Green
 #declare LDXColor10 = MJHMat10;
@@ -136,6 +146,7 @@
 #declare ldMat10 = MJHMat10;
 #declare ldTex10 = MJHTex10;
 #declare lg_bright_green = MJHTex10;
+#declare lc_Bright_Green = MJHTex10;
 
 // row 12 - Light_Turquoise
 #declare LDXColor11 = MJHMat11;
@@ -147,6 +158,7 @@
 #declare ldMat11 = MJHMat11;
 #declare ldTex11 = MJHTex11;
 #declare lg_turquoise = MJHTex11;
+#declare lc_Light_Turquoise = MJHTex11;
 
 // row 13 - Salmon
 #declare LDXColor12 = MJHMat12;
@@ -158,6 +170,7 @@
 #declare ldMat12 = MJHMat12;
 #declare ldTex12 = MJHTex12;
 #declare lg_salmon = MJHTex12;
+#declare lc_Salmon = MJHTex12;
 
 // row 14 - Pink
 #declare LDXColor13 = MJHMat13;
@@ -169,6 +182,7 @@
 #declare ldMat13 = MJHMat13;
 #declare ldTex13 = MJHTex13;
 #declare lg_pink = MJHTex13;
+#declare lc_Pink = MJHTex13;
 
 // row 15 - Yellow
 #declare LDXColor14 = MJHMat14;
@@ -180,6 +194,7 @@
 #declare ldMat14 = MJHMat14;
 #declare ldTex14 = MJHTex14;
 #declare lg_yellow = MJHTex14;
+#declare lc_Yellow = MJHTex14;
 
 // row 16 - White
 #declare LDXColor15 = MJHMat15;
@@ -191,6 +206,7 @@
 #declare ldMat15 = MJHMat15;
 #declare ldTex15 = MJHTex15;
 #declare lg_white = MJHTex15;
+#declare lc_White = MJHTex15;
 
 // row 17 - Main_Colour
 #declare LDXColor16 = MJHMat16;
@@ -202,6 +218,7 @@
 #declare ldMat16 = MJHMat16;
 #declare ldTex16 = MJHTex16;
 #declare lg_undefined = MJHTex16;
+#declare lc_Main_Colour = MJHTex16;
 
 // row 18 - Light_Green
 #declare LDXColor17 = MJHMat17;
@@ -213,6 +230,7 @@
 #declare ldMat17 = MJHMat17;
 #declare ldTex17 = MJHTex17;
 #declare lg_light_green = MJHTex17;
+#declare lc_Light_Green = MJHTex17;
 
 // row 19 - Light_Yellow
 #declare LDXColor18 = MJHMat18;
@@ -224,6 +242,7 @@
 #declare ldMat18 = MJHMat18;
 #declare ldTex18 = MJHTex18;
 #declare lg_light_yellow = MJHTex18;
+#declare lc_Light_Yellow = MJHTex18;
 
 // row 20 - Tan
 #declare LDXColor19 = MJHMat19;
@@ -235,6 +254,7 @@
 #declare ldMat19 = MJHMat19;
 #declare ldTex19 = MJHTex19;
 #declare lg_tan = MJHTex19;
+#declare lc_Tan = MJHTex19;
 
 // row 21 - Light_Violet
 #declare LDXColor20 = MJHMat20;
@@ -246,6 +266,7 @@
 #declare ldMat20 = MJHMat20;
 #declare ldTex20 = MJHTex20;
 #declare lg_light_violet = MJHTex20;
+#declare lc_Light_Violet = MJHTex20;
 
 // row 22 - Glow_In_Dark_Opaque
 #declare LDXColor21 = MJHMat21;
@@ -257,6 +278,7 @@
 #declare ldMat21 = MJHMat21;
 #declare ldTex21 = MJHTex21;
 #declare lg_glow_in_dark_opaque = MJHTex21;
+#declare lc_Glow_In_Dark_Opaque = MJHTex21;
 
 // row 23 - Purple
 #declare LDXColor22 = MJHMat22;
@@ -268,6 +290,7 @@
 #declare ldMat22 = MJHMat22;
 #declare ldTex22 = MJHTex22;
 #declare lg_purple = MJHTex22;
+#declare lc_Purple = MJHTex22;
 
 // row 24 - Dark_Blue_Violet
 #declare LDXColor23 = MJHMat23;
@@ -279,6 +302,7 @@
 #declare ldMat23 = MJHMat23;
 #declare ldTex23 = MJHTex23;
 #declare lg_violet_blue = MJHTex23;
+#declare lc_Dark_Blue_Violet = MJHTex23;
 
 // row 25 - Edge_Colour
 #declare LDXColor24 = MJHMat24;
@@ -290,6 +314,7 @@
 #declare ldMat24 = MJHMat24;
 #declare ldTex24 = MJHTex24;
 #declare lg_undefined = MJHTex24;
+#declare lc_Edge_Colour = MJHTex24;
 
 // row 26 - Orange
 #declare LDXColor25 = MJHMat25;
@@ -301,6 +326,7 @@
 #declare ldMat25 = MJHMat25;
 #declare ldTex25 = MJHTex25;
 #declare lg_orange = MJHTex25;
+#declare lc_Orange = MJHTex25;
 
 // row 27 - Magenta
 #declare LDXColor26 = MJHMat26;
@@ -312,6 +338,7 @@
 #declare ldMat26 = MJHMat26;
 #declare ldTex26 = MJHTex26;
 #declare lg_magenta = MJHTex26;
+#declare lc_Magenta = MJHTex26;
 
 // row 28 - Lime
 #declare LDXColor27 = MJHMat27;
@@ -323,6 +350,7 @@
 #declare ldMat27 = MJHMat27;
 #declare ldTex27 = MJHTex27;
 #declare lg_lime = MJHTex27;
+#declare lc_Lime = MJHTex27;
 
 // row 29 - Dark_Tan
 #declare LDXColor28 = MJHMat28;
@@ -334,6 +362,7 @@
 #declare ldMat28 = MJHMat28;
 #declare ldTex28 = MJHTex28;
 #declare lg_dark_tan = MJHTex28;
+#declare lc_Dark_Tan = MJHTex28;
 
 // row 30 - Bright_Pink
 #declare LDXColor29 = MJHMat29;
@@ -345,6 +374,7 @@
 #declare ldMat29 = MJHMat29;
 #declare ldTex29 = MJHTex29;
 #declare lg_light_purple = MJHTex29;
+#declare lc_Bright_Pink = MJHTex29;
 
 // row 31 - Medium_Lavender
 #declare LDXColor30 = MJHMat30;
@@ -356,6 +386,7 @@
 #declare ldMat30 = MJHMat30;
 #declare ldTex30 = MJHTex30;
 #declare lg_medium_lavender = MJHTex30;
+#declare lc_Medium_Lavender = MJHTex30;
 
 // row 32 - Lavender
 #declare LDXColor31 = MJHMat31;
@@ -367,6 +398,7 @@
 #declare ldMat31 = MJHMat31;
 #declare ldTex31 = MJHTex31;
 #declare lg_lavender = MJHTex31;
+#declare lc_Lavender = MJHTex31;
 
 // row 33 - Trans_Black_IR_Lens
 #declare LDXColor32 = MJHMat32;
@@ -378,6 +410,7 @@
 #declare ldMat32 = MJHMat32;
 #declare ldTex32 = MJHTex32;
 #declare lg_black_ir = MJHTex32;
+#declare lc_Trans_Black_IR_Lens = MJHTex32;
 
 // row 34 - Trans_Dark_Blue
 #declare LDXColor33 = MJHMat33;
@@ -389,6 +422,7 @@
 #declare ldMat33 = MJHMat33;
 #declare ldTex33 = MJHTex33;
 #declare lg_clear_blue = MJHTex33;
+#declare lc_Trans_Dark_Blue = MJHTex33;
 
 // row 35 - Trans_Green
 #declare LDXColor34 = MJHMat34;
@@ -400,6 +434,7 @@
 #declare ldMat34 = MJHMat34;
 #declare ldTex34 = MJHTex34;
 #declare lg_clear_green = MJHTex34;
+#declare lc_Trans_Green = MJHTex34;
 
 // row 36 - Trans_Bright_Green
 #declare LDXColor35 = MJHMat35;
@@ -411,6 +446,7 @@
 #declare ldMat35 = MJHMat35;
 #declare ldTex35 = MJHTex35;
 #declare lg_clear_bright_green = MJHTex35;
+#declare lc_Trans_Bright_Green = MJHTex35;
 
 // row 37 - Trans_Red
 #declare LDXColor36 = MJHMat36;
@@ -422,6 +458,7 @@
 #declare ldMat36 = MJHMat36;
 #declare ldTex36 = MJHTex36;
 #declare lg_clear_red = MJHTex36;
+#declare lc_Trans_Red = MJHTex36;
 
 // row 38 - Trans_Dark_Pink
 #declare LDXColor37 = MJHMat37;
@@ -433,6 +470,7 @@
 #declare ldMat37 = MJHMat37;
 #declare ldTex37 = MJHTex37;
 #declare lg_clear_violet = MJHTex37;
+#declare lc_Trans_Dark_Pink = MJHTex37;
 
 // row 39 - Trans_Neon_Orange
 #declare LDXColor38 = MJHMat38;
@@ -444,6 +482,7 @@
 #declare ldMat38 = MJHMat38;
 #declare ldTex38 = MJHTex38;
 #declare lg_clear_neon_orange = MJHTex38;
+#declare lc_Trans_Neon_Orange = MJHTex38;
 
 // row 40 - Trans_Very_Light_Blue
 #declare LDXColor39 = MJHMat39;
@@ -455,6 +494,7 @@
 #declare ldMat39 = MJHMat39;
 #declare ldTex39 = MJHTex39;
 #declare lg_clear_brown = MJHTex39;
+#declare lc_Trans_Very_Light_Blue = MJHTex39;
 
 // row 41 - Trans_Black
 #declare LDXColor40 = MJHMat40;
@@ -466,6 +506,7 @@
 #declare ldMat40 = MJHMat40;
 #declare ldTex40 = MJHTex40;
 #declare lg_clear_brown = MJHTex40;
+#declare lc_Trans_Black = MJHTex40;
 
 // row 42 - Trans_Medium_Blue
 #declare LDXColor41 = MJHMat41;
@@ -477,6 +518,7 @@
 #declare ldMat41 = MJHMat41;
 #declare ldTex41 = MJHTex41;
 #declare lg_clear_cyan = MJHTex41;
+#declare lc_Trans_Medium_Blue = MJHTex41;
 
 // row 43 - Trans_Neon_Green
 #declare LDXColor42 = MJHMat42;
@@ -488,6 +530,7 @@
 #declare ldMat42 = MJHMat42;
 #declare ldTex42 = MJHTex42;
 #declare lg_clear_neon_yellow = MJHTex42;
+#declare lc_Trans_Neon_Green = MJHTex42;
 
 // row 44 - Trans_Light_Blue
 #declare LDXColor43 = MJHMat43;
@@ -499,6 +542,7 @@
 #declare ldMat43 = MJHMat43;
 #declare ldTex43 = MJHTex43;
 #declare lg_clear_light_blue = MJHTex43;
+#declare lc_Trans_Light_Blue = MJHTex43;
 
 // row 45 - Trans_Bright_Reddish_Lilac
 #declare LDXColor44 = MJHMat44;
@@ -510,6 +554,7 @@
 #declare ldMat44 = MJHMat44;
 #declare ldTex44 = MJHTex44;
 #declare lg_clear_light_purple = MJHTex44;
+#declare lc_Trans_Bright_Reddish_Lilac = MJHTex44;
 
 // row 46 - Trans_Pink
 #declare LDXColor45 = MJHMat45;
@@ -521,6 +566,7 @@
 #declare ldMat45 = MJHMat45;
 #declare ldTex45 = MJHTex45;
 #declare lg_clear_pink = MJHTex45;
+#declare lc_Trans_Pink = MJHTex45;
 
 // row 47 - Trans_Yellow
 #declare LDXColor46 = MJHMat46;
@@ -532,6 +578,7 @@
 #declare ldMat46 = MJHMat46;
 #declare ldTex46 = MJHTex46;
 #declare lg_clear_yellow = MJHTex46;
+#declare lc_Trans_Yellow = MJHTex46;
 
 // row 48 - Trans_Clear
 #declare LDXColor47 = MJHMat47;
@@ -543,6 +590,7 @@
 #declare ldMat47 = MJHMat47;
 #declare ldTex47 = MJHTex47;
 #declare lg_clear = MJHTex47;
+#declare lc_Trans_Clear = MJHTex47;
 
 // row 49 - Trans_Purple
 #declare LDXColor52 = MJHMat52;
@@ -554,6 +602,7 @@
 #declare ldMat52 = MJHMat52;
 #declare ldTex52 = MJHTex52;
 #declare lg_clear_violet = MJHTex52;
+#declare lc_Trans_Purple = MJHTex52;
 
 // row 50 - Trans_Neon_Yellow
 #declare LDXColor54 = MJHMat54;
@@ -565,6 +614,7 @@
 #declare ldMat54 = MJHMat54;
 #declare ldTex54 = MJHTex54;
 #declare lg_clear_neon_yellow = MJHTex54;
+#declare lc_Trans_Neon_Yellow = MJHTex54;
 
 // row 51 - Trans_Orange
 #declare LDXColor57 = MJHMat57;
@@ -576,6 +626,7 @@
 #declare ldMat57 = MJHMat57;
 #declare ldTex57 = MJHTex57;
 #declare lg_clear_neon_orange = MJHTex57;
+#declare lc_Trans_Orange = MJHTex57;
 
 // row 52 - Chrome_Antique_Brass
 #declare LDXColor60 = MJHMat60;
@@ -587,6 +638,7 @@
 #declare ldMat60 = MJHMat60;
 #declare ldTex60 = MJHTex60;
 #declare lg_undefined = MJHTex60;
+#declare lc_Chrome_Antique_Brass = MJHTex60;
 
 // row 53 - Chrome_Blue
 #declare LDXColor61 = MJHMat61;
@@ -598,6 +650,7 @@
 #declare ldMat61 = MJHMat61;
 #declare ldTex61 = MJHTex61;
 #declare lg_undefined = MJHTex61;
+#declare lc_Chrome_Blue = MJHTex61;
 
 // row 54 - Chrome_Green
 #declare LDXColor62 = MJHMat62;
@@ -609,6 +662,7 @@
 #declare ldMat62 = MJHMat62;
 #declare ldTex62 = MJHTex62;
 #declare lg_undefined = MJHTex62;
+#declare lc_Chrome_Green = MJHTex62;
 
 // row 55 - Chrome_Pink
 #declare LDXColor63 = MJHMat63;
@@ -620,6 +674,7 @@
 #declare ldMat63 = MJHMat63;
 #declare ldTex63 = MJHTex63;
 #declare lg_undefined = MJHTex63;
+#declare lc_Chrome_Pink = MJHTex63;
 
 // row 56 - Chrome_Black
 #declare LDXColor64 = MJHMat64;
@@ -631,6 +686,7 @@
 #declare ldMat64 = MJHMat64;
 #declare ldTex64 = MJHTex64;
 #declare lg_undefined = MJHTex64;
+#declare lc_Chrome_Black = MJHTex64;
 
 // row 57 - Rubber_Yellow
 #declare LDXColor65 = MJHMat65;
@@ -642,6 +698,7 @@
 #declare ldMat65 = MJHMat65;
 #declare ldTex65 = MJHTex65;
 #declare lg_rubber_yellow = MJHTex65;
+#declare lc_Rubber_Yellow = MJHTex65;
 
 // row 58 - Rubber_Trans_Yellow
 #declare LDXColor66 = MJHMat66;
@@ -653,6 +710,7 @@
 #declare ldMat66 = MJHMat66;
 #declare ldTex66 = MJHTex66;
 #declare lg_rubber_clear_yellow = MJHTex66;
+#declare lc_Rubber_Trans_Yellow = MJHTex66;
 
 // row 59 - Rubber_Trans_Clear
 #declare LDXColor67 = MJHMat67;
@@ -664,6 +722,7 @@
 #declare ldMat67 = MJHMat67;
 #declare ldTex67 = MJHTex67;
 #declare lg_rubber_clear = MJHTex67;
+#declare lc_Rubber_Trans_Clear = MJHTex67;
 
 // row 60 - Very_Light_Orange
 #declare LDXColor68 = MJHMat68;
@@ -675,6 +734,7 @@
 #declare ldMat68 = MJHMat68;
 #declare ldTex68 = MJHTex68;
 #declare lg_very_light_orange = MJHTex68;
+#declare lc_Very_Light_Orange = MJHTex68;
 
 // row 61 - Bright_Reddish_Lilac
 #declare LDXColor69 = MJHMat69;
@@ -686,6 +746,7 @@
 #declare ldMat69 = MJHMat69;
 #declare ldTex69 = MJHTex69;
 #declare lg_bright_purple = MJHTex69;
+#declare lc_Bright_Reddish_Lilac = MJHTex69;
 
 // row 62 - Reddish_Brown
 #declare LDXColor70 = MJHMat70;
@@ -697,6 +758,7 @@
 #declare ldMat70 = MJHMat70;
 #declare ldTex70 = MJHTex70;
 #declare lg_reddish_brown = MJHTex70;
+#declare lc_Reddish_Brown = MJHTex70;
 
 // row 63 - Light_Bluish_Grey
 #declare LDXColor71 = MJHMat71;
@@ -708,6 +770,7 @@
 #declare ldMat71 = MJHMat71;
 #declare ldTex71 = MJHTex71;
 #declare lg_bluish_grey = MJHTex71;
+#declare lc_Light_Bluish_Grey = MJHTex71;
 
 // row 64 - Dark_Bluish_Grey
 #declare LDXColor72 = MJHMat72;
@@ -719,6 +782,7 @@
 #declare ldMat72 = MJHMat72;
 #declare ldTex72 = MJHTex72;
 #declare lg_dark_bluish_grey = MJHTex72;
+#declare lc_Dark_Bluish_Grey = MJHTex72;
 
 // row 65 - Medium_Blue
 #declare LDXColor73 = MJHMat73;
@@ -730,6 +794,7 @@
 #declare ldMat73 = MJHMat73;
 #declare ldTex73 = MJHTex73;
 #declare lg_medium_blue = MJHTex73;
+#declare lc_Medium_Blue = MJHTex73;
 
 // row 66 - Medium_Green
 #declare LDXColor74 = MJHMat74;
@@ -741,6 +806,7 @@
 #declare ldMat74 = MJHMat74;
 #declare ldTex74 = MJHTex74;
 #declare lg_medium_green = MJHTex74;
+#declare lc_Medium_Green = MJHTex74;
 
 // row 67 - Speckle_Black_Copper
 #declare LDXColor75 = MJHMat75;
@@ -752,6 +818,7 @@
 #declare ldMat75 = MJHMat75;
 #declare ldTex75 = MJHTex75;
 #declare lg_undefined = MJHTex75;
+#declare lc_Speckle_Black_Copper = MJHTex75;
 
 // row 68 - Speckle_Dark_Bluish_Grey_Silver
 #declare LDXColor76 = MJHMat76;
@@ -763,6 +830,7 @@
 #declare ldMat76 = MJHMat76;
 #declare ldTex76 = MJHTex76;
 #declare lg_undefined = MJHTex76;
+#declare lc_Speckle_Dark_Bluish_Grey_Silver = MJHTex76;
 
 // row 69 - Light_Pink
 #declare LDXColor77 = MJHMat77;
@@ -774,6 +842,7 @@
 #declare ldMat77 = MJHMat77;
 #declare ldTex77 = MJHTex77;
 #declare lg_paradisa_pink = MJHTex77;
+#declare lc_Light_Pink = MJHTex77;
 
 // row 70 - Light_Flesh
 #declare LDXColor78 = MJHMat78;
@@ -785,6 +854,7 @@
 #declare ldMat78 = MJHMat78;
 #declare ldTex78 = MJHTex78;
 #declare lg_light_flesh = MJHTex78;
+#declare lc_Light_Flesh = MJHTex78;
 
 // row 71 - Milky_White
 #declare LDXColor79 = MJHMat79;
@@ -796,6 +866,7 @@
 #declare ldMat79 = MJHMat79;
 #declare ldTex79 = MJHTex79;
 #declare lg_milky_white = MJHTex79;
+#declare lc_Milky_White = MJHTex79;
 
 // row 72 - Metallic_Silver
 #declare LDXColor80 = MJHMat80;
@@ -807,6 +878,7 @@
 #declare ldMat80 = MJHMat80;
 #declare ldTex80 = MJHTex80;
 #declare lg_metallic_silver = MJHTex80;
+#declare lc_Metallic_Silver = MJHTex80;
 
 // row 73 - Metallic_Green
 #declare LDXColor81 = MJHMat81;
@@ -818,6 +890,7 @@
 #declare ldMat81 = MJHMat81;
 #declare ldTex81 = MJHTex81;
 #declare lg_undefined = MJHTex81;
+#declare lc_Metallic_Green = MJHTex81;
 
 // row 74 - Metallic_Gold
 #declare LDXColor82 = MJHMat82;
@@ -829,6 +902,7 @@
 #declare ldMat82 = MJHMat82;
 #declare ldTex82 = MJHTex82;
 #declare lg_metallic_gold = MJHTex82;
+#declare lc_Metallic_Gold = MJHTex82;
 
 // row 75 - Metallic_Black
 #declare LDXColor83 = MJHMat83;
@@ -840,6 +914,7 @@
 #declare ldMat83 = MJHMat83;
 #declare ldTex83 = MJHTex83;
 #declare lg_undefined = MJHTex83;
+#declare lc_Metallic_Black = MJHTex83;
 
 // row 76 - Medium_Dark_Flesh
 #declare LDXColor84 = MJHMat84;
@@ -851,6 +926,7 @@
 #declare ldMat84 = MJHMat84;
 #declare ldTex84 = MJHTex84;
 #declare lg_medium_dark_flesh = MJHTex84;
+#declare lc_Medium_Dark_Flesh = MJHTex84;
 
 // row 77 - Medium_Lilac
 #declare LDXColor85 = MJHMat85;
@@ -862,6 +938,7 @@
 #declare ldMat85 = MJHMat85;
 #declare ldTex85 = MJHTex85;
 #declare lg_medium_violet = MJHTex85;
+#declare lc_Medium_Lilac = MJHTex85;
 
 // row 78 - Dark_Flesh
 #declare LDXColor86 = MJHMat86;
@@ -873,6 +950,7 @@
 #declare ldMat86 = MJHMat86;
 #declare ldTex86 = MJHTex86;
 #declare lg_dark_flesh = MJHTex86;
+#declare lc_Dark_Flesh = MJHTex86;
 
 // row 79 - Metallic_Dark_Grey
 #declare LDXColor87 = MJHMat87;
@@ -884,6 +962,7 @@
 #declare ldMat87 = MJHMat87;
 #declare ldTex87 = MJHTex87;
 #declare lg_undefined = MJHTex87;
+#declare lc_Metallic_Dark_Grey = MJHTex87;
 
 // row 80 - Blue_Violet
 #declare LDXColor89 = MJHMat89;
@@ -895,6 +974,7 @@
 #declare ldMat89 = MJHMat89;
 #declare ldTex89 = MJHTex89;
 #declare lg_royal_blue = MJHTex89;
+#declare lc_Blue_Violet = MJHTex89;
 
 // row 81 - Flesh
 #declare LDXColor92 = MJHMat92;
@@ -906,6 +986,7 @@
 #declare ldMat92 = MJHMat92;
 #declare ldTex92 = MJHTex92;
 #declare lg_flesh = MJHTex92;
+#declare lc_Flesh = MJHTex92;
 
 // row 82 - Light_Salmon
 #declare LDXColor100 = MJHMat100;
@@ -917,6 +998,7 @@
 #declare ldMat100 = MJHMat100;
 #declare ldTex100 = MJHTex100;
 #declare lg_light_salmon = MJHTex100;
+#declare lc_Light_Salmon = MJHTex100;
 
 // row 83 - Violet
 #declare LDXColor110 = MJHMat110;
@@ -928,6 +1010,7 @@
 #declare ldMat110 = MJHMat110;
 #declare ldTex110 = MJHTex110;
 #declare lg_undefined = MJHTex110;
+#declare lc_Violet = MJHTex110;
 
 // row 84 - Medium_Violet
 #declare LDXColor112 = MJHMat112;
@@ -939,6 +1022,7 @@
 #declare ldMat112 = MJHMat112;
 #declare ldTex112 = MJHTex112;
 #declare lg_undefined = MJHTex112;
+#declare lc_Medium_Violet = MJHTex112;
 
 // row 85 - Glitter_Trans_Dark_Pink
 #declare LDXColor114 = MJHMat114;
@@ -950,6 +1034,7 @@
 #declare ldMat114 = MJHMat114;
 #declare ldTex114 = MJHTex114;
 #declare lg_undefined = MJHTex114;
+#declare lc_Glitter_Trans_Dark_Pink = MJHTex114;
 
 // row 86 - Medium_Lime
 #declare LDXColor115 = MJHMat115;
@@ -961,6 +1046,7 @@
 #declare ldMat115 = MJHMat115;
 #declare ldTex115 = MJHTex115;
 #declare lg_medium_lime = MJHTex115;
+#declare lc_Medium_Lime = MJHTex115;
 
 // row 87 - Glitter_Trans_Clear
 #declare LDXColor117 = MJHMat117;
@@ -972,6 +1058,7 @@
 #declare ldMat117 = MJHMat117;
 #declare ldTex117 = MJHTex117;
 #declare lg_undefined = MJHTex117;
+#declare lc_Glitter_Trans_Clear = MJHTex117;
 
 // row 88 - Aqua
 #declare LDXColor118 = MJHMat118;
@@ -983,6 +1070,7 @@
 #declare ldMat118 = MJHMat118;
 #declare ldTex118 = MJHTex118;
 #declare lg_undefined = MJHTex118;
+#declare lc_Aqua = MJHTex118;
 
 // row 89 - Light_Lime
 #declare LDXColor120 = MJHMat120;
@@ -994,6 +1082,7 @@
 #declare ldMat120 = MJHMat120;
 #declare ldTex120 = MJHTex120;
 #declare lg_undefined = MJHTex120;
+#declare lc_Light_Lime = MJHTex120;
 
 // row 90 - Light_Orange
 #declare LDXColor125 = MJHMat125;
@@ -1005,6 +1094,7 @@
 #declare ldMat125 = MJHMat125;
 #declare ldTex125 = MJHTex125;
 #declare lg_undefined = MJHTex125;
+#declare lc_Light_Orange = MJHTex125;
 
 // row 91 - Dark_Nougat
 #declare LDXColor128 = MJHMat128;
@@ -1016,6 +1106,7 @@
 #declare ldMat128 = MJHMat128;
 #declare ldTex128 = MJHTex128;
 #declare lg_undefined = MJHTex128;
+#declare lc_Dark_Nougat = MJHTex128;
 
 // row 92 - Glitter_Trans_Purple
 #declare LDXColor129 = MJHMat129;
@@ -1027,6 +1118,7 @@
 #declare ldMat129 = MJHMat129;
 #declare ldTex129 = MJHTex129;
 #declare lg_undefined = MJHTex129;
+#declare lc_Glitter_Trans_Purple = MJHTex129;
 
 // row 93 - Speckle_Black_Silver
 #declare LDXColor132 = MJHMat132;
@@ -1038,6 +1130,7 @@
 #declare ldMat132 = MJHMat132;
 #declare ldTex132 = MJHTex132;
 #declare lg_undefined = MJHTex132;
+#declare lc_Speckle_Black_Silver = MJHTex132;
 
 // row 94 - Speckle_Black_Gold
 #declare LDXColor133 = MJHMat133;
@@ -1049,6 +1142,7 @@
 #declare ldMat133 = MJHMat133;
 #declare ldTex133 = MJHTex133;
 #declare lg_undefined = MJHTex133;
+#declare lc_Speckle_Black_Gold = MJHTex133;
 
 // row 95 - Copper
 #declare LDXColor134 = MJHMat134;
@@ -1060,6 +1154,7 @@
 #declare ldMat134 = MJHMat134;
 #declare ldTex134 = MJHTex134;
 #declare lg_pearl_copper = MJHTex134;
+#declare lc_Copper = MJHTex134;
 
 // row 96 - Pearl_Light_Grey
 #declare LDXColor135 = MJHMat135;
@@ -1071,6 +1166,7 @@
 #declare ldMat135 = MJHMat135;
 #declare ldTex135 = MJHTex135;
 #declare lg_pearl_grey = MJHTex135;
+#declare lc_Pearl_Light_Grey = MJHTex135;
 
 // row 97 - Metal_Blue
 #declare LDXColor137 = MJHMat137;
@@ -1082,6 +1178,7 @@
 #declare ldMat137 = MJHMat137;
 #declare ldTex137 = MJHTex137;
 #declare lg_pearl_blue = MJHTex137;
+#declare lc_Metal_Blue = MJHTex137;
 
 // row 98 - Pearl_Light_Gold
 #declare LDXColor142 = MJHMat142;
@@ -1093,6 +1190,7 @@
 #declare ldMat142 = MJHMat142;
 #declare ldTex142 = MJHTex142;
 #declare lg_pearl_gold = MJHTex142;
+#declare lc_Pearl_Light_Gold = MJHTex142;
 
 // row 99 - Pearl_Dark_Grey
 #declare LDXColor148 = MJHMat148;
@@ -1104,6 +1202,7 @@
 #declare ldMat148 = MJHMat148;
 #declare ldTex148 = MJHTex148;
 #declare lg_pearl_dark_grey = MJHTex148;
+#declare lc_Pearl_Dark_Grey = MJHTex148;
 
 // row 100 - Pearl_Very_Light_Grey
 #declare LDXColor150 = MJHMat150;
@@ -1115,6 +1214,7 @@
 #declare ldMat150 = MJHMat150;
 #declare ldTex150 = MJHTex150;
 #declare lg_undefined = MJHTex150;
+#declare lc_Pearl_Very_Light_Grey = MJHTex150;
 
 // row 101 - Very_Light_Bluish_Grey
 #declare LDXColor151 = MJHMat151;
@@ -1126,6 +1226,7 @@
 #declare ldMat151 = MJHMat151;
 #declare ldTex151 = MJHTex151;
 #declare lg_very_light_bluish_grey = MJHTex151;
+#declare lc_Very_Light_Bluish_Grey = MJHTex151;
 
 // row 102 - Flat_Dark_Gold
 #declare LDXColor178 = MJHMat178;
@@ -1137,6 +1238,7 @@
 #declare ldMat178 = MJHMat178;
 #declare ldTex178 = MJHTex178;
 #declare lg_undefined = MJHTex178;
+#declare lc_Flat_Dark_Gold = MJHTex178;
 
 // row 103 - Flat_Silver
 #declare LDXColor179 = MJHMat179;
@@ -1148,6 +1250,7 @@
 #declare ldMat179 = MJHMat179;
 #declare ldTex179 = MJHTex179;
 #declare lg_flat_silver = MJHTex179;
+#declare lc_Flat_Silver = MJHTex179;
 
 // row 104 - Pearl_White
 #declare LDXColor183 = MJHMat183;
@@ -1159,6 +1262,7 @@
 #declare ldMat183 = MJHMat183;
 #declare ldTex183 = MJHTex183;
 #declare lg_pearl_white = MJHTex183;
+#declare lc_Pearl_White = MJHTex183;
 
 // row 105 - Metallic_Bright_Red
 #declare LDXColor184 = MJHMat184;
@@ -1170,6 +1274,7 @@
 #declare ldMat184 = MJHMat184;
 #declare ldTex184 = MJHTex184;
 #declare lg_undefined = MJHTex184;
+#declare lc_Metallic_Bright_Red = MJHTex184;
 
 // row 106 - Metallic_Dark_Green
 #declare LDXColor186 = MJHMat186;
@@ -1181,6 +1286,7 @@
 #declare ldMat186 = MJHMat186;
 #declare ldTex186 = MJHTex186;
 #declare lg_undefined = MJHTex186;
+#declare lc_Metallic_Dark_Green = MJHTex186;
 
 // row 107 - Reddish_Gold
 #declare LDXColor189 = MJHMat189;
@@ -1192,6 +1298,7 @@
 #declare ldMat189 = MJHMat189;
 #declare ldTex189 = MJHTex189;
 #declare lg_undefined = MJHTex189;
+#declare lc_Reddish_Gold = MJHTex189;
 
 // row 108 - Bright_Light_Orange
 #declare LDXColor191 = MJHMat191;
@@ -1203,6 +1310,7 @@
 #declare ldMat191 = MJHMat191;
 #declare ldTex191 = MJHTex191;
 #declare lg_bright_light_orange = MJHTex191;
+#declare lc_Bright_Light_Orange = MJHTex191;
 
 // row 109 - Bright_Light_Blue
 #declare LDXColor212 = MJHMat212;
@@ -1214,6 +1322,7 @@
 #declare ldMat212 = MJHMat212;
 #declare ldTex212 = MJHTex212;
 #declare lg_bright_light_blue = MJHTex212;
+#declare lc_Bright_Light_Blue = MJHTex212;
 
 // row 110 - Rust
 #declare LDXColor216 = MJHMat216;
@@ -1225,6 +1334,7 @@
 #declare ldMat216 = MJHMat216;
 #declare ldTex216 = MJHTex216;
 #declare lg_rust = MJHTex216;
+#declare lc_Rust = MJHTex216;
 
 // row 111 - Reddish_Lilac
 #declare LDXColor218 = MJHMat218;
@@ -1236,6 +1346,7 @@
 #declare ldMat218 = MJHMat218;
 #declare ldTex218 = MJHTex218;
 #declare lg_undefined = MJHTex218;
+#declare lc_Reddish_Lilac = MJHTex218;
 
 // row 112 - Lilac
 #declare LDXColor219 = MJHMat219;
@@ -1247,6 +1358,7 @@
 #declare ldMat219 = MJHMat219;
 #declare ldTex219 = MJHTex219;
 #declare lg_undefined = MJHTex219;
+#declare lc_Lilac = MJHTex219;
 
 // row 113 - Bright_Light_Yellow
 #declare LDXColor226 = MJHMat226;
@@ -1258,6 +1370,7 @@
 #declare ldMat226 = MJHMat226;
 #declare ldTex226 = MJHTex226;
 #declare lg_bright_light_yellow = MJHTex226;
+#declare lc_Bright_Light_Yellow = MJHTex226;
 
 // row 114 - Trans_Bright_Light_Orange
 #declare LDXColor231 = MJHMat231;
@@ -1269,6 +1382,7 @@
 #declare ldMat231 = MJHMat231;
 #declare ldTex231 = MJHTex231;
 #declare lg_undefined = MJHTex231;
+#declare lc_Trans_Bright_Light_Orange = MJHTex231;
 
 // row 115 - Sky_Blue
 #declare LDXColor232 = MJHMat232;
@@ -1280,6 +1394,7 @@
 #declare ldMat232 = MJHMat232;
 #declare ldTex232 = MJHTex232;
 #declare lg_sky_blue = MJHTex232;
+#declare lc_Sky_Blue = MJHTex232;
 
 // row 116 - Trans_Fire_Yellow
 #declare LDXColor234 = MJHMat234;
@@ -1291,6 +1406,7 @@
 #declare ldMat234 = MJHMat234;
 #declare ldTex234 = MJHTex234;
 #declare lg_undefined = MJHTex234;
+#declare lc_Trans_Fire_Yellow = MJHTex234;
 
 // row 117 - Rubber_Black
 #declare LDXColor256 = MJHMat256;
@@ -1302,6 +1418,7 @@
 #declare ldMat256 = MJHMat256;
 #declare ldTex256 = MJHTex256;
 #declare lg_rubber_black = MJHTex256;
+#declare lc_Rubber_Black = MJHTex256;
 
 // row 118 - Dark_Blue
 #declare LDXColor272 = MJHMat272;
@@ -1313,6 +1430,7 @@
 #declare ldMat272 = MJHMat272;
 #declare ldTex272 = MJHTex272;
 #declare lg_dark_blue = MJHTex272;
+#declare lc_Dark_Blue = MJHTex272;
 
 // row 119 - Rubber_Blue
 #declare LDXColor273 = MJHMat273;
@@ -1324,6 +1442,7 @@
 #declare ldMat273 = MJHMat273;
 #declare ldTex273 = MJHTex273;
 #declare lg_rubber_blue = MJHTex273;
+#declare lc_Rubber_Blue = MJHTex273;
 
 // row 120 - Trans_Reddish_Lilac
 #declare LDXColor284 = MJHMat284;
@@ -1335,6 +1454,7 @@
 #declare ldMat284 = MJHMat284;
 #declare ldTex284 = MJHTex284;
 #declare lg_undefined = MJHTex284;
+#declare lc_Trans_Reddish_Lilac = MJHTex284;
 
 // row 121 - Trans_Light_Green
 #declare LDXColor285 = MJHMat285;
@@ -1346,6 +1466,7 @@
 #declare ldMat285 = MJHMat285;
 #declare ldTex285 = MJHTex285;
 #declare lg_undefined = MJHTex285;
+#declare lc_Trans_Light_Green = MJHTex285;
 
 // row 122 - Dark_Green
 #declare LDXColor288 = MJHMat288;
@@ -1357,6 +1478,7 @@
 #declare ldMat288 = MJHMat288;
 #declare ldTex288 = MJHTex288;
 #declare lg_dark_green = MJHTex288;
+#declare lc_Dark_Green = MJHTex288;
 
 // row 123 - Trans_Light_Blue_Violet
 #declare LDXColor293 = MJHMat293;
@@ -1368,6 +1490,7 @@
 #declare ldMat293 = MJHMat293;
 #declare ldTex293 = MJHTex293;
 #declare lg_undefined = MJHTex293;
+#declare lc_Trans_Light_Blue_Violet = MJHTex293;
 
 // row 124 - Glow_In_Dark_Trans
 #declare LDXColor294 = MJHMat294;
@@ -1379,6 +1502,7 @@
 #declare ldMat294 = MJHMat294;
 #declare ldTex294 = MJHTex294;
 #declare lg_glow_in_dark_clear = MJHTex294;
+#declare lc_Glow_In_Dark_Trans = MJHTex294;
 
 // row 125 - Flamingo_Pink
 #declare LDXColor295 = MJHMat295;
@@ -1390,6 +1514,7 @@
 #declare ldMat295 = MJHMat295;
 #declare ldTex295 = MJHTex295;
 #declare lg_undefined = MJHTex295;
+#declare lc_Flamingo_Pink = MJHTex295;
 
 // row 126 - Pearl_Gold
 #declare LDXColor297 = MJHMat297;
@@ -1401,6 +1526,7 @@
 #declare ldMat297 = MJHMat297;
 #declare ldTex297 = MJHTex297;
 #declare lg_pearl_gold = MJHTex297;
+#declare lc_Pearl_Gold = MJHTex297;
 
 // row 127 - Metallic_Copper
 #declare LDXColor300 = MJHMat300;
@@ -1412,6 +1538,7 @@
 #declare ldMat300 = MJHMat300;
 #declare ldTex300 = MJHTex300;
 #declare lg_undefined = MJHTex300;
+#declare lc_Metallic_Copper = MJHTex300;
 
 // row 128 - Glitter_Trans_Light_Blue
 #declare LDXColor302 = MJHMat302;
@@ -1423,6 +1550,7 @@
 #declare ldMat302 = MJHMat302;
 #declare ldTex302 = MJHTex302;
 #declare lg_undefined = MJHTex302;
+#declare lc_Glitter_Trans_Light_Blue = MJHTex302;
 
 // row 129 - Dark_Brown
 #declare LDXColor308 = MJHMat308;
@@ -1434,6 +1562,7 @@
 #declare ldMat308 = MJHMat308;
 #declare ldTex308 = MJHTex308;
 #declare lg_dark_brown = MJHTex308;
+#declare lc_Dark_Brown = MJHTex308;
 
 // row 130 - Maersk_Blue
 #declare LDXColor313 = MJHMat313;
@@ -1445,6 +1574,7 @@
 #declare ldMat313 = MJHMat313;
 #declare ldTex313 = MJHTex313;
 #declare lg_maersk_blue = MJHTex313;
+#declare lc_Maersk_Blue = MJHTex313;
 
 // row 131 - Dark_Red
 #declare LDXColor320 = MJHMat320;
@@ -1456,6 +1586,7 @@
 #declare ldMat320 = MJHMat320;
 #declare ldTex320 = MJHTex320;
 #declare lg_dark_red = MJHTex320;
+#declare lc_Dark_Red = MJHTex320;
 
 // row 132 - Dark_Azure
 #declare LDXColor321 = MJHMat321;
@@ -1467,6 +1598,7 @@
 #declare ldMat321 = MJHMat321;
 #declare ldTex321 = MJHTex321;
 #declare lg_dark_azur = MJHTex321;
+#declare lc_Dark_Azure = MJHTex321;
 
 // row 133 - Medium_Azure
 #declare LDXColor322 = MJHMat322;
@@ -1478,6 +1610,7 @@
 #declare ldMat322 = MJHMat322;
 #declare ldTex322 = MJHTex322;
 #declare lg_medium_azur = MJHTex322;
+#declare lc_Medium_Azure = MJHTex322;
 
 // row 134 - Light_Aqua
 #declare LDXColor323 = MJHMat323;
@@ -1489,6 +1622,7 @@
 #declare ldMat323 = MJHMat323;
 #declare ldTex323 = MJHTex323;
 #declare lg_light_aqua = MJHTex323;
+#declare lc_Light_Aqua = MJHTex323;
 
 // row 135 - Rubber_Red
 #declare LDXColor324 = MJHMat324;
@@ -1500,6 +1634,7 @@
 #declare ldMat324 = MJHMat324;
 #declare ldTex324 = MJHTex324;
 #declare lg_rubber_red = MJHTex324;
+#declare lc_Rubber_Red = MJHTex324;
 
 // row 136 - Yellowish_Green
 #declare LDXColor326 = MJHMat326;
@@ -1511,6 +1646,7 @@
 #declare ldMat326 = MJHMat326;
 #declare ldTex326 = MJHTex326;
 #declare lg_spring_yellowish_green = MJHTex326;
+#declare lc_Yellowish_Green = MJHTex326;
 
 // row 137 - Glow_In_Dark_White
 #declare LDXColor329 = MJHMat329;
@@ -1522,6 +1658,7 @@
 #declare ldMat329 = MJHMat329;
 #declare ldTex329 = MJHTex329;
 #declare lg_undefined = MJHTex329;
+#declare lc_Glow_In_Dark_White = MJHTex329;
 
 // row 138 - Olive_Green
 #declare LDXColor330 = MJHMat330;
@@ -1533,6 +1670,7 @@
 #declare ldMat330 = MJHMat330;
 #declare ldTex330 = MJHTex330;
 #declare lg_olive_green = MJHTex330;
+#declare lc_Olive_Green = MJHTex330;
 
 // row 139 - Chrome_Gold
 #declare LDXColor334 = MJHMat334;
@@ -1544,6 +1682,7 @@
 #declare ldMat334 = MJHMat334;
 #declare ldTex334 = MJHTex334;
 #declare lg_chrome_gold = MJHTex334;
+#declare lc_Chrome_Gold = MJHTex334;
 
 // row 140 - Sand_Red
 #declare LDXColor335 = MJHMat335;
@@ -1555,6 +1694,7 @@
 #declare ldMat335 = MJHMat335;
 #declare ldTex335 = MJHTex335;
 #declare lg_sand_red = MJHTex335;
+#declare lc_Sand_Red = MJHTex335;
 
 // row 141 - Glitter_Trans_Neon_Green
 #declare LDXColor339 = MJHMat339;
@@ -1566,6 +1706,7 @@
 #declare ldMat339 = MJHMat339;
 #declare ldTex339 = MJHTex339;
 #declare lg_undefined = MJHTex339;
+#declare lc_Glitter_Trans_Neon_Green = MJHTex339;
 
 // row 142 - Rubber_Orange
 #declare LDXColor350 = MJHMat350;
@@ -1577,6 +1718,7 @@
 #declare ldMat350 = MJHMat350;
 #declare ldTex350 = MJHTex350;
 #declare lg_undefined = MJHTex350;
+#declare lc_Rubber_Orange = MJHTex350;
 
 // row 143 - Medium_Dark_Pink
 #declare LDXColor351 = MJHMat351;
@@ -1588,6 +1730,7 @@
 #declare ldMat351 = MJHMat351;
 #declare ldTex351 = MJHTex351;
 #declare lg_undefined = MJHTex351;
+#declare lc_Medium_Dark_Pink = MJHTex351;
 
 // row 144 - Coral
 #declare LDXColor353 = MJHMat353;
@@ -1599,6 +1742,7 @@
 #declare ldMat353 = MJHMat353;
 #declare ldTex353 = MJHTex353;
 #declare lg_undefined = MJHTex353;
+#declare lc_Coral = MJHTex353;
 
 // row 145 - Earth_Orange
 #declare LDXColor366 = MJHMat366;
@@ -1610,6 +1754,7 @@
 #declare ldMat366 = MJHMat366;
 #declare ldTex366 = MJHTex366;
 #declare lg_earth_orange = MJHTex366;
+#declare lc_Earth_Orange = MJHTex366;
 
 // row 146 - Sand_Purple
 #declare LDXColor373 = MJHMat373;
@@ -1621,6 +1766,7 @@
 #declare ldMat373 = MJHMat373;
 #declare ldTex373 = MJHTex373;
 #declare lg_sand_purple = MJHTex373;
+#declare lc_Sand_Purple = MJHTex373;
 
 // row 147 - Rubber_Light_Grey
 #declare LDXColor375 = MJHMat375;
@@ -1632,6 +1778,7 @@
 #declare ldMat375 = MJHMat375;
 #declare ldTex375 = MJHTex375;
 #declare lg_rubber_light_gray = MJHTex375;
+#declare lc_Rubber_Light_Grey = MJHTex375;
 
 // row 148 - Sand_Green
 #declare LDXColor378 = MJHMat378;
@@ -1643,6 +1790,7 @@
 #declare ldMat378 = MJHMat378;
 #declare ldTex378 = MJHTex378;
 #declare lg_sand_green = MJHTex378;
+#declare lc_Sand_Green = MJHTex378;
 
 // row 149 - Sand_Blue
 #declare LDXColor379 = MJHMat379;
@@ -1654,6 +1802,7 @@
 #declare ldMat379 = MJHMat379;
 #declare ldTex379 = MJHTex379;
 #declare lg_sand_blue = MJHTex379;
+#declare lc_Sand_Blue = MJHTex379;
 
 // row 150 - Chrome_Silver
 #declare LDXColor383 = MJHMat383;
@@ -1665,6 +1814,7 @@
 #declare ldMat383 = MJHMat383;
 #declare ldTex383 = MJHTex383;
 #declare lg_chrome = MJHTex383;
+#declare lc_Chrome_Silver = MJHTex383;
 
 // row 151 - Rubber_Dark_Blue
 #declare LDXColor406 = MJHMat406;
@@ -1676,6 +1826,7 @@
 #declare ldMat406 = MJHMat406;
 #declare ldTex406 = MJHTex406;
 #declare lg_rubber_dark_blue = MJHTex406;
+#declare lc_Rubber_Dark_Blue = MJHTex406;
 
 // row 152 - Rubber_Purple
 #declare LDXColor449 = MJHMat449;
@@ -1687,6 +1838,7 @@
 #declare ldMat449 = MJHMat449;
 #declare ldTex449 = MJHTex449;
 #declare lg_rubber_purple = MJHTex449;
+#declare lc_Rubber_Purple = MJHTex449;
 
 // row 153 - Fabuland_Brown
 #declare LDXColor450 = MJHMat450;
@@ -1698,6 +1850,7 @@
 #declare ldMat450 = MJHMat450;
 #declare ldTex450 = MJHTex450;
 #declare lg_fabuland_brown = MJHTex450;
+#declare lc_Fabuland_Brown = MJHTex450;
 
 // row 154 - Medium_Orange
 #declare LDXColor462 = MJHMat462;
@@ -1709,6 +1862,7 @@
 #declare ldMat462 = MJHMat462;
 #declare ldTex462 = MJHTex462;
 #declare lg_light_orange = MJHTex462;
+#declare lc_Medium_Orange = MJHTex462;
 
 // row 155 - Dark_Orange
 #declare LDXColor484 = MJHMat484;
@@ -1720,6 +1874,7 @@
 #declare ldMat484 = MJHMat484;
 #declare ldTex484 = MJHTex484;
 #declare lg_dark_orange = MJHTex484;
+#declare lc_Dark_Orange = MJHTex484;
 
 // row 156 - Rubber_Lime
 #declare LDXColor490 = MJHMat490;
@@ -1731,6 +1886,7 @@
 #declare ldMat490 = MJHMat490;
 #declare ldTex490 = MJHTex490;
 #declare lg_rubber_lime = MJHTex490;
+#declare lc_Rubber_Lime = MJHTex490;
 
 // row 157 - Magnet
 #declare LDXColor493 = MJHMat493;
@@ -1742,6 +1898,7 @@
 #declare ldMat493 = MJHMat493;
 #declare ldTex493 = MJHTex493;
 #declare lg_magnet = MJHTex493;
+#declare lc_Magnet = MJHTex493;
 
 // row 158 - Electric_Contact_Alloy
 #declare LDXColor494 = MJHMat494;
@@ -1753,6 +1910,7 @@
 #declare ldMat494 = MJHMat494;
 #declare ldTex494 = MJHTex494;
 #declare lg_electric_contact_alloy = MJHTex494;
+#declare lc_Electric_Contact_Alloy = MJHTex494;
 
 // row 159 - Electric_Contact_Copper
 #declare LDXColor495 = MJHMat495;
@@ -1764,6 +1922,7 @@
 #declare ldMat495 = MJHMat495;
 #declare ldTex495 = MJHTex495;
 #declare lg_undefined = MJHTex495;
+#declare lc_Electric_Contact_Copper = MJHTex495;
 
 // row 160 - Rubber_Light_Bluish_Grey
 #declare LDXColor496 = MJHMat496;
@@ -1775,6 +1934,7 @@
 #declare ldMat496 = MJHMat496;
 #declare ldTex496 = MJHTex496;
 #declare lg_rubber_light_bluish_gray = MJHTex496;
+#declare lc_Rubber_Light_Bluish_Grey = MJHTex496;
 
 // row 161 - Very_Light_Grey
 #declare LDXColor503 = MJHMat503;
@@ -1786,6 +1946,7 @@
 #declare ldMat503 = MJHMat503;
 #declare ldTex503 = MJHTex503;
 #declare lg_very_light_grey = MJHTex503;
+#declare lc_Very_Light_Grey = MJHTex503;
 
 // row 162 - Rubber_Flat_Silver
 #declare LDXColor504 = MJHMat504;
@@ -1797,6 +1958,7 @@
 #declare ldMat504 = MJHMat504;
 #declare ldTex504 = MJHTex504;
 #declare lg_rubber_flat_silver = MJHTex504;
+#declare lc_Rubber_Flat_Silver = MJHTex504;
 
 // row 163 - Light_Orange_Brown
 #declare LDXColor507 = MJHMat507;
@@ -1808,6 +1970,7 @@
 #declare ldMat507 = MJHMat507;
 #declare ldTex507 = MJHTex507;
 #declare lg_undefined = MJHTex507;
+#declare lc_Light_Orange_Brown = MJHTex507;
 
 // row 164 - Fabuland_Red
 #declare LDXColor508 = MJHMat508;
@@ -1819,6 +1982,7 @@
 #declare ldMat508 = MJHMat508;
 #declare ldTex508 = MJHTex508;
 #declare lg_undefined = MJHTex508;
+#declare lc_Fabuland_Red = MJHTex508;
 
 // row 165 - Fabuland_Orange
 #declare LDXColor509 = MJHMat509;
@@ -1830,6 +1994,7 @@
 #declare ldMat509 = MJHMat509;
 #declare ldTex509 = MJHTex509;
 #declare lg_undefined = MJHTex509;
+#declare lc_Fabuland_Orange = MJHTex509;
 
 // row 166 - Rubber_White
 #declare LDXColor511 = MJHMat511;
@@ -1841,3 +2006,4 @@
 #declare ldMat511 = MJHMat511;
 #declare ldTex511 = MJHTex511;
 #declare lg_rubber_white = MJHTex511;
+#declare lc_Rubber_White = MJHTex511;
