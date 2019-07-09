@@ -24,7 +24,7 @@ global_settings {assumed_gamma 1}
 // -------------------------------------------------------------
 // Settings
 
-#declare Render_HQ = true;		// High quality render? Slow but better.
+#declare Use_HQRender = true;		// High quality render? Slow but better.
 
 #include "settings_common_before.inc"
 #include "settings_showcase_normal.inc"

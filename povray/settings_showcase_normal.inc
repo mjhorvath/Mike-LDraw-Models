@@ -41,9 +41,9 @@
 //IndoorLQ		= 9
 //IndoorHQ		= 10
 
-#ifndef (Render_HQ)	#declare Render_HQ = false;	#end
+#ifndef (Use_HQRender)	#declare Render_HQ = false;	#end
 
-#if (Render_HQ = true)
+#if (Use_HQRender = true)
 	#declare Use_Radiosity		= true;				// turn radiosity on/off
 	#declare Use_Rad_Setting	= 5;				// radiosity setting, see chart above
 	#declare Use_Uber			=false;				// toggle blurred reflections method depending on whether you are using POV-Ray or UberPOV
