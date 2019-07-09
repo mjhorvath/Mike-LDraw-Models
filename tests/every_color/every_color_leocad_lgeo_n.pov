@@ -166,21 +166,6 @@ global_settings {
 #declare lc_Electric_Contact_Copper = texture { pigment { rgb <0.682353, 0.478431, 0.349020> } finish { ambient 0.1 phong 0.2 phong_size 20 } }
 #declare lc_Main_Colour = texture { pigment { rgb <1.000000, 1.000000, 0.501961> } finish { ambient 0.1 phong 0.2 phong_size 20 } }
 #declare lc_Edge_Colour = texture { pigment { rgb <0.498039, 0.498039, 0.498039> } finish { ambient 0.1 phong 0.2 phong_size 20 } }
-#declare lc_Color_353 = texture { pigment { rgb <0.500000, 0.500000, 0.500000> } finish { ambient 0.1 phong 0.2 phong_size 20 } }
-#declare lc_Color_507 = texture { pigment { rgb <0.500000, 0.500000, 0.500000> } finish { ambient 0.1 phong 0.2 phong_size 20 } }
-#declare lc_Color_508 = texture { pigment { rgb <0.500000, 0.500000, 0.500000> } finish { ambient 0.1 phong 0.2 phong_size 20 } }
-#declare lc_Color_509 = texture { pigment { rgb <0.500000, 0.500000, 0.500000> } finish { ambient 0.1 phong 0.2 phong_size 20 } }
-#declare lc_Color_10002 = texture { pigment { rgb <0.500000, 0.500000, 0.500000> } finish { ambient 0.1 phong 0.2 phong_size 20 } }
-#declare lc_Color_10026 = texture { pigment { rgb <0.500000, 0.500000, 0.500000> } finish { ambient 0.1 phong 0.2 phong_size 20 } }
-#declare lc_Color_10031 = texture { pigment { rgb <0.500000, 0.500000, 0.500000> } finish { ambient 0.1 phong 0.2 phong_size 20 } }
-#declare lc_Color_10070 = texture { pigment { rgb <0.500000, 0.500000, 0.500000> } finish { ambient 0.1 phong 0.2 phong_size 20 } }
-#declare lc_Color_10226 = texture { pigment { rgb <0.500000, 0.500000, 0.500000> } finish { ambient 0.1 phong 0.2 phong_size 20 } }
-#declare lc_Color_10308 = texture { pigment { rgb <0.500000, 0.500000, 0.500000> } finish { ambient 0.1 phong 0.2 phong_size 20 } }
-#declare lc_Color_10320 = texture { pigment { rgb <0.500000, 0.500000, 0.500000> } finish { ambient 0.1 phong 0.2 phong_size 20 } }
-#declare lc_Color_10321 = texture { pigment { rgb <0.500000, 0.500000, 0.500000> } finish { ambient 0.1 phong 0.2 phong_size 20 } }
-#declare lc_Color_10322 = texture { pigment { rgb <0.500000, 0.500000, 0.500000> } finish { ambient 0.1 phong 0.2 phong_size 20 } }
-#declare lc_Color_10323 = texture { pigment { rgb <0.500000, 0.500000, 0.500000> } finish { ambient 0.1 phong 0.2 phong_size 20 } }
-#declare lc_Color_10484 = texture { pigment { rgb <0.500000, 0.500000, 0.500000> } finish { ambient 0.1 phong 0.2 phong_size 20 } }
 
 #declare lc_3005_dat = mesh {
   smooth_triangle { <0.24, -0.24, -0.16>, <-0.00, -0.00, -1.00>, <0.24, 0.24, -0.16>, <-0.00, -0.00, -1.00>, <-0.24, 0.24, -0.16>, <-0.00, -0.00, -1.00> }
@@ -1015,11 +1000,6 @@ object {
 }
 object {
  lc_3005_dat
- texture { lc_Color_353 }
- matrix <-1.0000, -0.0000, -0.0000, -0.0000, -1.0000, -0.0000, 0.0000, 0.0000, 1.0000, 0.0000, 0.0000, 0.9600>
-}
-object {
- lc_3005_dat
  texture { lc_Earth_Orange }
  matrix <-1.0000, -0.0000, -0.0000, -0.0000, -1.0000, -0.0000, 0.0000, 0.0000, 1.0000, 0.0000, 0.0000, 0.9600>
 }
@@ -1110,76 +1090,6 @@ object {
 }
 object {
  lc_3005_dat
- texture { lc_Color_507 }
- matrix <-1.0000, -0.0000, -0.0000, -0.0000, -1.0000, -0.0000, 0.0000, 0.0000, 1.0000, 0.0000, 0.0000, 0.9600>
-}
-object {
- lc_3005_dat
- texture { lc_Color_508 }
- matrix <-1.0000, -0.0000, -0.0000, -0.0000, -1.0000, -0.0000, 0.0000, 0.0000, 1.0000, 0.0000, 0.0000, 0.9600>
-}
-object {
- lc_3005_dat
- texture { lc_Color_509 }
- matrix <-1.0000, -0.0000, -0.0000, -0.0000, -1.0000, -0.0000, 0.0000, 0.0000, 1.0000, 0.0000, 0.0000, 0.9600>
-}
-object {
- lc_3005_dat
  texture { lc_Rubber_White }
- matrix <-1.0000, -0.0000, -0.0000, -0.0000, -1.0000, -0.0000, 0.0000, 0.0000, 1.0000, 0.0000, 0.0000, 0.9600>
-}
-object {
- lc_3005_dat
- texture { lc_Color_10002 }
- matrix <-1.0000, -0.0000, -0.0000, -0.0000, -1.0000, -0.0000, 0.0000, 0.0000, 1.0000, 0.0000, 0.0000, 0.9600>
-}
-object {
- lc_3005_dat
- texture { lc_Color_10026 }
- matrix <-1.0000, -0.0000, -0.0000, -0.0000, -1.0000, -0.0000, 0.0000, 0.0000, 1.0000, 0.0000, 0.0000, 0.9600>
-}
-object {
- lc_3005_dat
- texture { lc_Color_10031 }
- matrix <-1.0000, -0.0000, -0.0000, -0.0000, -1.0000, -0.0000, 0.0000, 0.0000, 1.0000, 0.0000, 0.0000, 0.9600>
-}
-object {
- lc_3005_dat
- texture { lc_Color_10070 }
- matrix <-1.0000, -0.0000, -0.0000, -0.0000, -1.0000, -0.0000, 0.0000, 0.0000, 1.0000, 0.0000, 0.0000, 0.9600>
-}
-object {
- lc_3005_dat
- texture { lc_Color_10226 }
- matrix <-1.0000, -0.0000, -0.0000, -0.0000, -1.0000, -0.0000, 0.0000, 0.0000, 1.0000, 0.0000, 0.0000, 0.9600>
-}
-object {
- lc_3005_dat
- texture { lc_Color_10308 }
- matrix <-1.0000, -0.0000, -0.0000, -0.0000, -1.0000, -0.0000, 0.0000, 0.0000, 1.0000, 0.0000, 0.0000, 0.9600>
-}
-object {
- lc_3005_dat
- texture { lc_Color_10320 }
- matrix <-1.0000, -0.0000, -0.0000, -0.0000, -1.0000, -0.0000, 0.0000, 0.0000, 1.0000, 0.0000, 0.0000, 0.9600>
-}
-object {
- lc_3005_dat
- texture { lc_Color_10321 }
- matrix <-1.0000, -0.0000, -0.0000, -0.0000, -1.0000, -0.0000, 0.0000, 0.0000, 1.0000, 0.0000, 0.0000, 0.9600>
-}
-object {
- lc_3005_dat
- texture { lc_Color_10322 }
- matrix <-1.0000, -0.0000, -0.0000, -0.0000, -1.0000, -0.0000, 0.0000, 0.0000, 1.0000, 0.0000, 0.0000, 0.9600>
-}
-object {
- lc_3005_dat
- texture { lc_Color_10323 }
- matrix <-1.0000, -0.0000, -0.0000, -0.0000, -1.0000, -0.0000, 0.0000, 0.0000, 1.0000, 0.0000, 0.0000, 0.9600>
-}
-object {
- lc_3005_dat
- texture { lc_Color_10484 }
  matrix <-1.0000, -0.0000, -0.0000, -0.0000, -1.0000, -0.0000, 0.0000, 0.0000, 1.0000, 0.0000, 0.0000, 0.9600>
 }

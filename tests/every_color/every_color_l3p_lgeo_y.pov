@@ -13,8 +13,9 @@
 // SearchDir2:   C:\Users\Public\Documents\LDraw\P\ (0x9)
 // SearchDir3:   C:\Users\Public\Documents\LDraw\PARTS\ (0x4)
 // SearchDir4:   C:\Users\Public\Documents\LDraw\MODELS\ (0x0)
+// LGEODIR:      C:\Users\Public\Documents\LDraw\LGEO (LGEODIR environment variable)
 // ldconfig.ldr: C:\Users\Public\Documents\LDraw\ldconfig.ldr
-// Commandline:  "E:\Programs Windows\LDraw\l3p14beta\L3P20131119.exe" every_color.ldr every_color_l3p_lgeo_n.pov -o -p
+// Commandline:  "E:\Programs Windows\LDraw\l3p14beta\L3P20131119.exe" every_color.ldr every_color_l3p_lgeo_y.pov -o -p -lgeo
 
 #if (version < 3.1)
 	#error "This POV code requires at least version 3.1\n"
@@ -77,72 +78,48 @@
 }
 
 
+#declare lg_quality = L3Quality;
+#declare lg_studs = L3Studs;
+
+#include "lg_defs.inc"
+#include "lg_color.inc"
+
+#declare L3LDrawToLgeo = transform { matrix <0,-LG_BRICK_WIDTH/20,0, 0,0,-LG_BRICK_HEIGHT/24, -LG_BRICK_WIDTH/20,0,0, 0,0,4*LG_BRICK_HEIGHT/24> }
+#declare L3LgeoToLDraw = transform { matrix <0,0,-20/LG_BRICK_WIDTH, -20/LG_BRICK_WIDTH,0,0, 0,-24/LG_BRICK_HEIGHT,0, 0,0,0> }
+
+
 
 
 //// Finishes
 #ifndef (L3FinishOpaque)
-#declare L3FinishOpaque = finish {
-	ambient L3Ambient
-	diffuse L3Diffuse
-	#if (L3Quality >= 2)
-		phong 0.5
-		phong_size 40
-		reflection 0.08
-	#end
-}
+#declare L3FinishOpaque = finish { lg_solid_finish }
 #end
 
 #ifndef (L3FinishChrome)
-#declare L3FinishChrome = finish {
-	ambient 0.25
-	diffuse 0.6
-	#if (L3Quality >= 2)
-		brilliance 5
-		metallic
-		specular 0.80
-		roughness 1/100
-		reflection 0.65
-	#end
-}
+#declare L3FinishChrome = finish { lg_chrome_finish }
 #end
 
 #ifndef (L3FinishPearlescent)
-//Not supported yet, using Opaque
-#declare L3FinishPearlescent = finish { L3FinishOpaque }
+#declare L3FinishPearlescent = finish { lg_pearl_finish }
 #end
 
 #ifndef (L3FinishRubber)
-#declare L3FinishRubber = finish {
-	ambient L3Ambient
-	diffuse L3Diffuse
-	#if (L3Quality >= 2)
-		phong 0.1
-		phong_size 10
-		reflection 0
-	#end
-}
+//Not supported in LGEO, using Opaque
+#declare L3FinishRubber = finish { L3FinishOpaque }
 #end
 
 #ifndef (L3FinishMatte_metallic)
-//Not supported yet, using Opaque
+//Not supported in LGEO, using Opaque
 #declare L3FinishMatte_metallic = finish { L3FinishOpaque }
 #end
 
 #ifndef (L3FinishMetal)
-//Not supported yet, using Opaque
+//Not supported in LGEO, using Opaque
 #declare L3FinishMetal = finish { L3FinishOpaque }
 #end
 
 #ifndef (L3FinishTransparent)
-#declare L3FinishTransparent = finish {
-	ambient L3Ambient
-	diffuse L3Diffuse
-	#if (L3Quality >= 2)
-		phong 0.5
-		phong_size 40
-		reflection 0.2
-	#end
-}
+#declare L3FinishTransparent = finish { lg_transparent_finish }
 #end
 
 
@@ -242,7 +219,7 @@ material {
 material {
 	texture { tex }
 	#if (L3Quality > 1)
-		interior { ior L3Ior }
+		interior { lg_ior }
 	#end
 }
 #end
@@ -250,9 +227,9 @@ material {
 
 
 
-//// Color 7 Light_Grey (from ldconfig.ldr)
+//// Color 7 Light_Grey (from lg_color.inc)
 #ifndef (L3Texture7)
-#declare L3Texture7 = L3TextureOpaqueRGB(155,161,157)
+#declare L3Texture7 = texture { lg_grey }
 #end
 #ifndef (L3Texture7_slope)
 #declare L3Texture7_slope = L3TextureSlope(L3Texture7)
@@ -265,9 +242,9 @@ material {
 #end
 
 
-//// Color 0 Black (from ldconfig.ldr)
+//// Color 0 Black (from lg_color.inc)
 #ifndef (L3Texture0)
-#declare L3Texture0 = L3TextureOpaqueRGB(5,19,29)
+#declare L3Texture0 = texture { lg_black }
 #end
 #ifndef (L3Texture0_slope)
 #declare L3Texture0_slope = L3TextureSlope(L3Texture0)
@@ -280,9 +257,9 @@ material {
 #end
 
 
-//// Color 1 Blue (from ldconfig.ldr)
+//// Color 1 Blue (from lg_color.inc)
 #ifndef (L3Texture1)
-#declare L3Texture1 = L3TextureOpaqueRGB(0,85,191)
+#declare L3Texture1 = texture { lg_blue }
 #end
 #ifndef (L3Texture1_slope)
 #declare L3Texture1_slope = L3TextureSlope(L3Texture1)
@@ -295,9 +272,9 @@ material {
 #end
 
 
-//// Color 2 Green (from ldconfig.ldr)
+//// Color 2 Green (from lg_color.inc)
 #ifndef (L3Texture2)
-#declare L3Texture2 = L3TextureOpaqueRGB(37,122,62)
+#declare L3Texture2 = texture { lg_green }
 #end
 #ifndef (L3Texture2_slope)
 #declare L3Texture2_slope = L3TextureSlope(L3Texture2)
@@ -310,9 +287,9 @@ material {
 #end
 
 
-//// Color 3 Dark_Turquoise (from ldconfig.ldr)
+//// Color 3 Dark_Turquoise (from lg_color.inc)
 #ifndef (L3Texture3)
-#declare L3Texture3 = L3TextureOpaqueRGB(0,131,143)
+#declare L3Texture3 = texture { lg_cyan }
 #end
 #ifndef (L3Texture3_slope)
 #declare L3Texture3_slope = L3TextureSlope(L3Texture3)
@@ -325,9 +302,9 @@ material {
 #end
 
 
-//// Color 4 Red (from ldconfig.ldr)
+//// Color 4 Red (from lg_color.inc)
 #ifndef (L3Texture4)
-#declare L3Texture4 = L3TextureOpaqueRGB(201,26,9)
+#declare L3Texture4 = texture { lg_red }
 #end
 #ifndef (L3Texture4_slope)
 #declare L3Texture4_slope = L3TextureSlope(L3Texture4)
@@ -340,9 +317,9 @@ material {
 #end
 
 
-//// Color 5 Dark_Pink (from ldconfig.ldr)
+//// Color 5 Dark_Pink (from lg_color.inc)
 #ifndef (L3Texture5)
-#declare L3Texture5 = L3TextureOpaqueRGB(200,112,160)
+#declare L3Texture5 = texture { lg_dark_pink }
 #end
 #ifndef (L3Texture5_slope)
 #declare L3Texture5_slope = L3TextureSlope(L3Texture5)
@@ -355,9 +332,9 @@ material {
 #end
 
 
-//// Color 6 Brown (from ldconfig.ldr)
+//// Color 6 Brown (from lg_color.inc)
 #ifndef (L3Texture6)
-#declare L3Texture6 = L3TextureOpaqueRGB(88,57,39)
+#declare L3Texture6 = texture { lg_brown }
 #end
 #ifndef (L3Texture6_slope)
 #declare L3Texture6_slope = L3TextureSlope(L3Texture6)
@@ -370,9 +347,9 @@ material {
 #end
 
 
-//// Color 8 Dark_Grey (from ldconfig.ldr)
+//// Color 8 Dark_Grey (from lg_color.inc)
 #ifndef (L3Texture8)
-#declare L3Texture8 = L3TextureOpaqueRGB(109,110,92)
+#declare L3Texture8 = texture { lg_dark_grey }
 #end
 #ifndef (L3Texture8_slope)
 #declare L3Texture8_slope = L3TextureSlope(L3Texture8)
@@ -385,9 +362,9 @@ material {
 #end
 
 
-//// Color 9 Light_Blue (from ldconfig.ldr)
+//// Color 9 Light_Blue (from lg_color.inc)
 #ifndef (L3Texture9)
-#declare L3Texture9 = L3TextureOpaqueRGB(180,210,227)
+#declare L3Texture9 = texture { lg_light_blue }
 #end
 #ifndef (L3Texture9_slope)
 #declare L3Texture9_slope = L3TextureSlope(L3Texture9)
@@ -400,9 +377,9 @@ material {
 #end
 
 
-//// Color 10 Bright_Green (from ldconfig.ldr)
+//// Color 10 Bright_Green (from lg_color.inc)
 #ifndef (L3Texture10)
-#declare L3Texture10 = L3TextureOpaqueRGB(75,159,74)
+#declare L3Texture10 = texture { lg_bright_green }
 #end
 #ifndef (L3Texture10_slope)
 #declare L3Texture10_slope = L3TextureSlope(L3Texture10)
@@ -415,9 +392,9 @@ material {
 #end
 
 
-//// Color 11 Light_Turquoise (from ldconfig.ldr)
+//// Color 11 Light_Turquoise (from lg_color.inc)
 #ifndef (L3Texture11)
-#declare L3Texture11 = L3TextureOpaqueRGB(85,165,175)
+#declare L3Texture11 = texture { lg_turquoise }
 #end
 #ifndef (L3Texture11_slope)
 #declare L3Texture11_slope = L3TextureSlope(L3Texture11)
@@ -430,9 +407,9 @@ material {
 #end
 
 
-//// Color 12 Salmon (from ldconfig.ldr)
+//// Color 12 Salmon (from lg_color.inc)
 #ifndef (L3Texture12)
-#declare L3Texture12 = L3TextureOpaqueRGB(242,112,94)
+#declare L3Texture12 = texture { lg_salmon }
 #end
 #ifndef (L3Texture12_slope)
 #declare L3Texture12_slope = L3TextureSlope(L3Texture12)
@@ -445,9 +422,9 @@ material {
 #end
 
 
-//// Color 13 Pink (from ldconfig.ldr)
+//// Color 13 Pink (from lg_color.inc)
 #ifndef (L3Texture13)
-#declare L3Texture13 = L3TextureOpaqueRGB(252,151,172)
+#declare L3Texture13 = texture { lg_pink }
 #end
 #ifndef (L3Texture13_slope)
 #declare L3Texture13_slope = L3TextureSlope(L3Texture13)
@@ -460,9 +437,9 @@ material {
 #end
 
 
-//// Color 14 Yellow (from ldconfig.ldr)
+//// Color 14 Yellow (from lg_color.inc)
 #ifndef (L3Texture14)
-#declare L3Texture14 = L3TextureOpaqueRGB(242,205,55)
+#declare L3Texture14 = texture { lg_yellow }
 #end
 #ifndef (L3Texture14_slope)
 #declare L3Texture14_slope = L3TextureSlope(L3Texture14)
@@ -475,9 +452,9 @@ material {
 #end
 
 
-//// Color 15 White (from ldconfig.ldr)
+//// Color 15 White (from lg_color.inc)
 #ifndef (L3Texture15)
-#declare L3Texture15 = L3TextureOpaqueRGB(255,255,255)
+#declare L3Texture15 = texture { lg_white }
 #end
 #ifndef (L3Texture15_slope)
 #declare L3Texture15_slope = L3TextureSlope(L3Texture15)
@@ -490,9 +467,9 @@ material {
 #end
 
 
-//// Color 17 Light_Green (from ldconfig.ldr)
+//// Color 17 Light_Green (from lg_color.inc)
 #ifndef (L3Texture17)
-#declare L3Texture17 = L3TextureOpaqueRGB(194,218,184)
+#declare L3Texture17 = texture { lg_light_green }
 #end
 #ifndef (L3Texture17_slope)
 #declare L3Texture17_slope = L3TextureSlope(L3Texture17)
@@ -505,9 +482,9 @@ material {
 #end
 
 
-//// Color 18 Light_Yellow (from ldconfig.ldr)
+//// Color 18 Light_Yellow (from lg_color.inc)
 #ifndef (L3Texture18)
-#declare L3Texture18 = L3TextureOpaqueRGB(251,230,150)
+#declare L3Texture18 = texture { lg_light_yellow }
 #end
 #ifndef (L3Texture18_slope)
 #declare L3Texture18_slope = L3TextureSlope(L3Texture18)
@@ -520,9 +497,9 @@ material {
 #end
 
 
-//// Color 19 Tan (from ldconfig.ldr)
+//// Color 19 Tan (from lg_color.inc)
 #ifndef (L3Texture19)
-#declare L3Texture19 = L3TextureOpaqueRGB(228,205,158)
+#declare L3Texture19 = texture { lg_tan }
 #end
 #ifndef (L3Texture19_slope)
 #declare L3Texture19_slope = L3TextureSlope(L3Texture19)
@@ -535,9 +512,9 @@ material {
 #end
 
 
-//// Color 20 Light_Violet (from ldconfig.ldr)
+//// Color 20 Light_Violet (from lg_color.inc)
 #ifndef (L3Texture20)
-#declare L3Texture20 = L3TextureOpaqueRGB(201,202,226)
+#declare L3Texture20 = texture { lg_light_violet }
 #end
 #ifndef (L3Texture20_slope)
 #declare L3Texture20_slope = L3TextureSlope(L3Texture20)
@@ -550,9 +527,9 @@ material {
 #end
 
 
-//// Color 21 Glow_In_Dark_Opaque (from ldconfig.ldr)
+//// Color 21 Glow_In_Dark_Opaque (from lg_color.inc)
 #ifndef (L3Texture21)
-#declare L3Texture21 = L3TextureOtherRGBFAL(224,255,176,0,240,15)
+#declare L3Texture21 = texture { lg_glow_in_dark_opaque }
 #end
 #ifndef (L3Texture21_slope)
 #declare L3Texture21_slope = L3TextureSlope(L3Texture21)
@@ -565,9 +542,9 @@ material {
 #end
 
 
-//// Color 22 Purple (from ldconfig.ldr)
+//// Color 22 Purple (from lg_color.inc)
 #ifndef (L3Texture22)
-#declare L3Texture22 = L3TextureOpaqueRGB(129,0,123)
+#declare L3Texture22 = texture { lg_purple }
 #end
 #ifndef (L3Texture22_slope)
 #declare L3Texture22_slope = L3TextureSlope(L3Texture22)
@@ -580,9 +557,9 @@ material {
 #end
 
 
-//// Color 23 Dark_Blue_Violet (from ldconfig.ldr)
+//// Color 23 Dark_Blue_Violet (from lg_color.inc)
 #ifndef (L3Texture23)
-#declare L3Texture23 = L3TextureOpaqueRGB(32,50,176)
+#declare L3Texture23 = texture { lg_violet_blue }
 #end
 #ifndef (L3Texture23_slope)
 #declare L3Texture23_slope = L3TextureSlope(L3Texture23)
@@ -595,9 +572,9 @@ material {
 #end
 
 
-//// Color 25 Orange (from ldconfig.ldr)
+//// Color 25 Orange (from lg_color.inc)
 #ifndef (L3Texture25)
-#declare L3Texture25 = L3TextureOpaqueRGB(254,138,24)
+#declare L3Texture25 = texture { lg_orange }
 #end
 #ifndef (L3Texture25_slope)
 #declare L3Texture25_slope = L3TextureSlope(L3Texture25)
@@ -610,9 +587,9 @@ material {
 #end
 
 
-//// Color 26 Magenta (from ldconfig.ldr)
+//// Color 26 Magenta (from lg_color.inc)
 #ifndef (L3Texture26)
-#declare L3Texture26 = L3TextureOpaqueRGB(146,57,120)
+#declare L3Texture26 = texture { lg_magenta }
 #end
 #ifndef (L3Texture26_slope)
 #declare L3Texture26_slope = L3TextureSlope(L3Texture26)
@@ -625,9 +602,9 @@ material {
 #end
 
 
-//// Color 27 Lime (from ldconfig.ldr)
+//// Color 27 Lime (from lg_color.inc)
 #ifndef (L3Texture27)
-#declare L3Texture27 = L3TextureOpaqueRGB(187,233,11)
+#declare L3Texture27 = texture { lg_lime }
 #end
 #ifndef (L3Texture27_slope)
 #declare L3Texture27_slope = L3TextureSlope(L3Texture27)
@@ -640,9 +617,9 @@ material {
 #end
 
 
-//// Color 28 Dark_Tan (from ldconfig.ldr)
+//// Color 28 Dark_Tan (from lg_color.inc)
 #ifndef (L3Texture28)
-#declare L3Texture28 = L3TextureOpaqueRGB(149,138,115)
+#declare L3Texture28 = texture { lg_dark_tan }
 #end
 #ifndef (L3Texture28_slope)
 #declare L3Texture28_slope = L3TextureSlope(L3Texture28)
@@ -655,9 +632,9 @@ material {
 #end
 
 
-//// Color 29 Bright_Pink (from ldconfig.ldr)
+//// Color 29 Bright_Pink (from lg_color.inc)
 #ifndef (L3Texture29)
-#declare L3Texture29 = L3TextureOpaqueRGB(228,173,200)
+#declare L3Texture29 = texture { lg_light_purple }
 #end
 #ifndef (L3Texture29_slope)
 #declare L3Texture29_slope = L3TextureSlope(L3Texture29)
@@ -670,9 +647,9 @@ material {
 #end
 
 
-//// Color 30 Medium_Lavender (from ldconfig.ldr)
+//// Color 30 Medium_Lavender (from lg_color.inc)
 #ifndef (L3Texture30)
-#declare L3Texture30 = L3TextureOpaqueRGB(172,120,186)
+#declare L3Texture30 = texture { lg_medium_lavender }
 #end
 #ifndef (L3Texture30_slope)
 #declare L3Texture30_slope = L3TextureSlope(L3Texture30)
@@ -685,9 +662,9 @@ material {
 #end
 
 
-//// Color 31 Lavender (from ldconfig.ldr)
+//// Color 31 Lavender (from lg_color.inc)
 #ifndef (L3Texture31)
-#declare L3Texture31 = L3TextureOpaqueRGB(225,213,237)
+#declare L3Texture31 = texture { lg_lavender }
 #end
 #ifndef (L3Texture31_slope)
 #declare L3Texture31_slope = L3TextureSlope(L3Texture31)
@@ -700,9 +677,9 @@ material {
 #end
 
 
-//// Color 32 Trans_Black_IR_Lens (from ldconfig.ldr)
+//// Color 32 Trans_Black_IR_Lens (from lg_color.inc)
 #ifndef (L3Texture32)
-#declare L3Texture32 = L3TextureTransparentRGBA(0,0,0,210)
+#declare L3Texture32 = texture { lg_black_ir }
 #end
 #ifndef (L3Texture32_slope)
 #declare L3Texture32_slope = L3TextureSlope(L3Texture32)
@@ -715,9 +692,9 @@ material {
 #end
 
 
-//// Color 33 Trans_Dark_Blue (from ldconfig.ldr)
+//// Color 33 Trans_Dark_Blue (from lg_color.inc)
 #ifndef (L3Texture33)
-#declare L3Texture33 = L3TextureTransparentRGBA(0,32,160,128)
+#declare L3Texture33 = texture { lg_clear_blue }
 #end
 #ifndef (L3Texture33_slope)
 #declare L3Texture33_slope = L3TextureSlope(L3Texture33)
@@ -730,9 +707,9 @@ material {
 #end
 
 
-//// Color 34 Trans_Green (from ldconfig.ldr)
+//// Color 34 Trans_Green (from lg_color.inc)
 #ifndef (L3Texture34)
-#declare L3Texture34 = L3TextureTransparentRGBA(35,120,65,128)
+#declare L3Texture34 = texture { lg_clear_green }
 #end
 #ifndef (L3Texture34_slope)
 #declare L3Texture34_slope = L3TextureSlope(L3Texture34)
@@ -745,9 +722,9 @@ material {
 #end
 
 
-//// Color 35 Trans_Bright_Green (from ldconfig.ldr)
+//// Color 35 Trans_Bright_Green (from lg_color.inc)
 #ifndef (L3Texture35)
-#declare L3Texture35 = L3TextureTransparentRGBA(86,230,70,128)
+#declare L3Texture35 = texture { lg_clear_bright_green }
 #end
 #ifndef (L3Texture35_slope)
 #declare L3Texture35_slope = L3TextureSlope(L3Texture35)
@@ -760,9 +737,9 @@ material {
 #end
 
 
-//// Color 36 Trans_Red (from ldconfig.ldr)
+//// Color 36 Trans_Red (from lg_color.inc)
 #ifndef (L3Texture36)
-#declare L3Texture36 = L3TextureTransparentRGBA(201,26,9,128)
+#declare L3Texture36 = texture { lg_clear_red }
 #end
 #ifndef (L3Texture36_slope)
 #declare L3Texture36_slope = L3TextureSlope(L3Texture36)
@@ -775,9 +752,9 @@ material {
 #end
 
 
-//// Color 37 Trans_Dark_Pink (from ldconfig.ldr)
+//// Color 37 Trans_Dark_Pink (from lg_color.inc)
 #ifndef (L3Texture37)
-#declare L3Texture37 = L3TextureTransparentRGBA(223,102,149,128)
+#declare L3Texture37 = texture { lg_clear_pink }
 #end
 #ifndef (L3Texture37_slope)
 #declare L3Texture37_slope = L3TextureSlope(L3Texture37)
@@ -790,9 +767,9 @@ material {
 #end
 
 
-//// Color 38 Trans_Neon_Orange (from ldconfig.ldr)
+//// Color 38 Trans_Neon_Orange (from lg_color.inc)
 #ifndef (L3Texture38)
-#declare L3Texture38 = L3TextureTransparentRGBA(255,128,13,128)
+#declare L3Texture38 = texture { lg_clear_neon_orange }
 #end
 #ifndef (L3Texture38_slope)
 #declare L3Texture38_slope = L3TextureSlope(L3Texture38)
@@ -807,6 +784,7 @@ material {
 
 //// Color 39 Trans_Very_Light_Blue (from ldconfig.ldr)
 #ifndef (L3Texture39)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture39 = L3TextureTransparentRGBA(193,223,240,128)
 #end
 #ifndef (L3Texture39_slope)
@@ -820,9 +798,9 @@ material {
 #end
 
 
-//// Color 40 Trans_Black (from ldconfig.ldr)
+//// Color 40 Trans_Black (from lg_color.inc)
 #ifndef (L3Texture40)
-#declare L3Texture40 = L3TextureTransparentRGBA(99,95,82,128)
+#declare L3Texture40 = texture { lg_clear_brown }
 #end
 #ifndef (L3Texture40_slope)
 #declare L3Texture40_slope = L3TextureSlope(L3Texture40)
@@ -835,9 +813,9 @@ material {
 #end
 
 
-//// Color 41 Trans_Medium_Blue (from ldconfig.ldr)
+//// Color 41 Trans_Medium_Blue (from lg_color.inc)
 #ifndef (L3Texture41)
-#declare L3Texture41 = L3TextureTransparentRGBA(85,154,183,128)
+#declare L3Texture41 = texture { lg_clear_cyan }
 #end
 #ifndef (L3Texture41_slope)
 #declare L3Texture41_slope = L3TextureSlope(L3Texture41)
@@ -850,9 +828,9 @@ material {
 #end
 
 
-//// Color 42 Trans_Neon_Green (from ldconfig.ldr)
+//// Color 42 Trans_Neon_Green (from lg_color.inc)
 #ifndef (L3Texture42)
-#declare L3Texture42 = L3TextureTransparentRGBA(192,255,0,128)
+#declare L3Texture42 = texture { lg_clear_neon_yellow }
 #end
 #ifndef (L3Texture42_slope)
 #declare L3Texture42_slope = L3TextureSlope(L3Texture42)
@@ -865,9 +843,9 @@ material {
 #end
 
 
-//// Color 43 Trans_Light_Blue (from ldconfig.ldr)
+//// Color 43 Trans_Light_Blue (from lg_color.inc)
 #ifndef (L3Texture43)
-#declare L3Texture43 = L3TextureTransparentRGBA(174,233,239,128)
+#declare L3Texture43 = texture { lg_clear_light_blue }
 #end
 #ifndef (L3Texture43_slope)
 #declare L3Texture43_slope = L3TextureSlope(L3Texture43)
@@ -880,9 +858,9 @@ material {
 #end
 
 
-//// Color 44 Trans_Bright_Reddish_Lilac (from ldconfig.ldr)
+//// Color 44 Trans_Bright_Reddish_Lilac (from lg_color.inc)
 #ifndef (L3Texture44)
-#declare L3Texture44 = L3TextureTransparentRGBA(150,112,159,128)
+#declare L3Texture44 = texture { lg_clear_light_purple }
 #end
 #ifndef (L3Texture44_slope)
 #declare L3Texture44_slope = L3TextureSlope(L3Texture44)
@@ -897,6 +875,7 @@ material {
 
 //// Color 45 Trans_Pink (from ldconfig.ldr)
 #ifndef (L3Texture45)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture45 = L3TextureTransparentRGBA(252,151,172,128)
 #end
 #ifndef (L3Texture45_slope)
@@ -910,9 +889,9 @@ material {
 #end
 
 
-//// Color 46 Trans_Yellow (from ldconfig.ldr)
+//// Color 46 Trans_Yellow (from lg_color.inc)
 #ifndef (L3Texture46)
-#declare L3Texture46 = L3TextureTransparentRGBA(245,205,47,128)
+#declare L3Texture46 = texture { lg_clear_yellow }
 #end
 #ifndef (L3Texture46_slope)
 #declare L3Texture46_slope = L3TextureSlope(L3Texture46)
@@ -925,9 +904,9 @@ material {
 #end
 
 
-//// Color 47 Trans_Clear (from ldconfig.ldr)
+//// Color 47 Trans_Clear (from lg_color.inc)
 #ifndef (L3Texture47)
-#declare L3Texture47 = L3TextureTransparentRGBA(252,252,252,128)
+#declare L3Texture47 = texture { lg_clear }
 #end
 #ifndef (L3Texture47_slope)
 #declare L3Texture47_slope = L3TextureSlope(L3Texture47)
@@ -940,9 +919,9 @@ material {
 #end
 
 
-//// Color 52 Trans_Purple (from ldconfig.ldr)
+//// Color 52 Trans_Purple (from lg_color.inc)
 #ifndef (L3Texture52)
-#declare L3Texture52 = L3TextureTransparentRGBA(165,165,203,128)
+#declare L3Texture52 = texture { lg_clear_violet }
 #end
 #ifndef (L3Texture52_slope)
 #declare L3Texture52_slope = L3TextureSlope(L3Texture52)
@@ -955,9 +934,9 @@ material {
 #end
 
 
-//// Color 54 Trans_Neon_Yellow (from ldconfig.ldr)
+//// Color 54 Trans_Neon_Yellow (from lg_color.inc)
 #ifndef (L3Texture54)
-#declare L3Texture54 = L3TextureTransparentRGBA(218,176,0,128)
+#declare L3Texture54 = texture { lg_clear_neon_yellow }
 #end
 #ifndef (L3Texture54_slope)
 #declare L3Texture54_slope = L3TextureSlope(L3Texture54)
@@ -970,9 +949,9 @@ material {
 #end
 
 
-//// Color 57 Trans_Orange (from ldconfig.ldr)
+//// Color 57 Trans_Orange (from lg_color.inc)
 #ifndef (L3Texture57)
-#declare L3Texture57 = L3TextureTransparentRGBA(240,143,28,128)
+#declare L3Texture57 = texture { lg_clear_neon_orange }
 #end
 #ifndef (L3Texture57_slope)
 #declare L3Texture57_slope = L3TextureSlope(L3Texture57)
@@ -987,6 +966,7 @@ material {
 
 //// Color 60 Chrome_Antique_Brass (from ldconfig.ldr)
 #ifndef (L3Texture60)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture60 = L3TextureChromeRGB(100,90,76)
 #end
 #ifndef (L3Texture60_slope)
@@ -1002,6 +982,7 @@ material {
 
 //// Color 61 Chrome_Blue (from ldconfig.ldr)
 #ifndef (L3Texture61)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture61 = L3TextureChromeRGB(108,150,191)
 #end
 #ifndef (L3Texture61_slope)
@@ -1017,6 +998,7 @@ material {
 
 //// Color 62 Chrome_Green (from ldconfig.ldr)
 #ifndef (L3Texture62)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture62 = L3TextureChromeRGB(60,179,113)
 #end
 #ifndef (L3Texture62_slope)
@@ -1032,6 +1014,7 @@ material {
 
 //// Color 63 Chrome_Pink (from ldconfig.ldr)
 #ifndef (L3Texture63)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture63 = L3TextureChromeRGB(170,77,142)
 #end
 #ifndef (L3Texture63_slope)
@@ -1047,6 +1030,7 @@ material {
 
 //// Color 64 Chrome_Black (from ldconfig.ldr)
 #ifndef (L3Texture64)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture64 = L3TextureChromeRGB(27,42,52)
 #end
 #ifndef (L3Texture64_slope)
@@ -1060,9 +1044,9 @@ material {
 #end
 
 
-//// Color 65 Rubber_Yellow (from ldconfig.ldr)
+//// Color 65 Rubber_Yellow (from lg_color.inc)
 #ifndef (L3Texture65)
-#declare L3Texture65 = L3TextureRubberRGB(245,205,47)
+#declare L3Texture65 = texture { lg_rubber_yellow }
 #end
 #ifndef (L3Texture65_slope)
 #declare L3Texture65_slope = L3TextureSlope(L3Texture65)
@@ -1075,9 +1059,9 @@ material {
 #end
 
 
-//// Color 66 Rubber_Trans_Yellow (from ldconfig.ldr)
+//// Color 66 Rubber_Trans_Yellow (from lg_color.inc)
 #ifndef (L3Texture66)
-#declare L3Texture66 = L3TextureOtherRGBFAL(202,176,0,3,128,-1)
+#declare L3Texture66 = texture { lg_rubber_clear_yellow }
 #end
 #ifndef (L3Texture66_slope)
 #declare L3Texture66_slope = L3TextureSlope(L3Texture66)
@@ -1090,9 +1074,9 @@ material {
 #end
 
 
-//// Color 67 Rubber_Trans_Clear (from ldconfig.ldr)
+//// Color 67 Rubber_Trans_Clear (from lg_color.inc)
 #ifndef (L3Texture67)
-#declare L3Texture67 = L3TextureOtherRGBFAL(255,255,255,3,128,-1)
+#declare L3Texture67 = texture { lg_rubber_clear }
 #end
 #ifndef (L3Texture67_slope)
 #declare L3Texture67_slope = L3TextureSlope(L3Texture67)
@@ -1105,9 +1089,9 @@ material {
 #end
 
 
-//// Color 68 Very_Light_Orange (from ldconfig.ldr)
+//// Color 68 Very_Light_Orange (from lg_color.inc)
 #ifndef (L3Texture68)
-#declare L3Texture68 = L3TextureOpaqueRGB(243,207,155)
+#declare L3Texture68 = texture { lg_very_light_orange }
 #end
 #ifndef (L3Texture68_slope)
 #declare L3Texture68_slope = L3TextureSlope(L3Texture68)
@@ -1120,9 +1104,9 @@ material {
 #end
 
 
-//// Color 69 Bright_Reddish_Lilac (from ldconfig.ldr)
+//// Color 69 Bright_Reddish_Lilac (from lg_color.inc)
 #ifndef (L3Texture69)
-#declare L3Texture69 = L3TextureOpaqueRGB(205,98,152)
+#declare L3Texture69 = texture { lg_bright_purple }
 #end
 #ifndef (L3Texture69_slope)
 #declare L3Texture69_slope = L3TextureSlope(L3Texture69)
@@ -1135,9 +1119,9 @@ material {
 #end
 
 
-//// Color 70 Reddish_Brown (from ldconfig.ldr)
+//// Color 70 Reddish_Brown (from lg_color.inc)
 #ifndef (L3Texture70)
-#declare L3Texture70 = L3TextureOpaqueRGB(88,42,18)
+#declare L3Texture70 = texture { lg_reddish_brown }
 #end
 #ifndef (L3Texture70_slope)
 #declare L3Texture70_slope = L3TextureSlope(L3Texture70)
@@ -1150,9 +1134,9 @@ material {
 #end
 
 
-//// Color 71 Light_Bluish_Grey (from ldconfig.ldr)
+//// Color 71 Light_Bluish_Grey (from lg_color.inc)
 #ifndef (L3Texture71)
-#declare L3Texture71 = L3TextureOpaqueRGB(160,165,169)
+#declare L3Texture71 = texture { lg_bluish_grey }
 #end
 #ifndef (L3Texture71_slope)
 #declare L3Texture71_slope = L3TextureSlope(L3Texture71)
@@ -1165,9 +1149,9 @@ material {
 #end
 
 
-//// Color 72 Dark_Bluish_Grey (from ldconfig.ldr)
+//// Color 72 Dark_Bluish_Grey (from lg_color.inc)
 #ifndef (L3Texture72)
-#declare L3Texture72 = L3TextureOpaqueRGB(108,110,104)
+#declare L3Texture72 = texture { lg_dark_bluish_grey }
 #end
 #ifndef (L3Texture72_slope)
 #declare L3Texture72_slope = L3TextureSlope(L3Texture72)
@@ -1180,9 +1164,9 @@ material {
 #end
 
 
-//// Color 73 Medium_Blue (from ldconfig.ldr)
+//// Color 73 Medium_Blue (from lg_color.inc)
 #ifndef (L3Texture73)
-#declare L3Texture73 = L3TextureOpaqueRGB(92,157,209)
+#declare L3Texture73 = texture { lg_medium_blue }
 #end
 #ifndef (L3Texture73_slope)
 #declare L3Texture73_slope = L3TextureSlope(L3Texture73)
@@ -1195,9 +1179,9 @@ material {
 #end
 
 
-//// Color 74 Medium_Green (from ldconfig.ldr)
+//// Color 74 Medium_Green (from lg_color.inc)
 #ifndef (L3Texture74)
-#declare L3Texture74 = L3TextureOpaqueRGB(115,220,161)
+#declare L3Texture74 = texture { lg_medium_green }
 #end
 #ifndef (L3Texture74_slope)
 #declare L3Texture74_slope = L3TextureSlope(L3Texture74)
@@ -1212,6 +1196,7 @@ material {
 
 //// Color 75 Speckle_Black_Copper (from ldconfig.ldr)
 #ifndef (L3Texture75)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture75 = L3TextureOpaqueRGB(0,0,0)
 #end
 #ifndef (L3Texture75_slope)
@@ -1227,6 +1212,7 @@ material {
 
 //// Color 76 Speckle_Dark_Bluish_Grey_Silver (from ldconfig.ldr)
 #ifndef (L3Texture76)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture76 = L3TextureOpaqueRGB(99,95,97)
 #end
 #ifndef (L3Texture76_slope)
@@ -1240,9 +1226,9 @@ material {
 #end
 
 
-//// Color 77 Light_Pink (from ldconfig.ldr)
+//// Color 77 Light_Pink (from lg_color.inc)
 #ifndef (L3Texture77)
-#declare L3Texture77 = L3TextureOpaqueRGB(254,204,207)
+#declare L3Texture77 = texture { lg_paradisa_pink }
 #end
 #ifndef (L3Texture77_slope)
 #declare L3Texture77_slope = L3TextureSlope(L3Texture77)
@@ -1255,9 +1241,9 @@ material {
 #end
 
 
-//// Color 78 Light_Flesh (from ldconfig.ldr)
+//// Color 78 Light_Flesh (from lg_color.inc)
 #ifndef (L3Texture78)
-#declare L3Texture78 = L3TextureOpaqueRGB(246,215,179)
+#declare L3Texture78 = texture { lg_light_flesh }
 #end
 #ifndef (L3Texture78_slope)
 #declare L3Texture78_slope = L3TextureSlope(L3Texture78)
@@ -1270,9 +1256,9 @@ material {
 #end
 
 
-//// Color 79 Milky_White (from ldconfig.ldr)
+//// Color 79 Milky_White (from lg_color.inc)
 #ifndef (L3Texture79)
-#declare L3Texture79 = L3TextureTransparentRGBA(255,255,255,240)
+#declare L3Texture79 = texture { lg_milky_white }
 #end
 #ifndef (L3Texture79_slope)
 #declare L3Texture79_slope = L3TextureSlope(L3Texture79)
@@ -1285,9 +1271,9 @@ material {
 #end
 
 
-//// Color 80 Metallic_Silver (from ldconfig.ldr)
+//// Color 80 Metallic_Silver (from lg_color.inc)
 #ifndef (L3Texture80)
-#declare L3Texture80 = L3TextureMetalRGB(165,169,180)
+#declare L3Texture80 = texture { lg_metallic_silver }
 #end
 #ifndef (L3Texture80_slope)
 #declare L3Texture80_slope = L3TextureSlope(L3Texture80)
@@ -1302,6 +1288,7 @@ material {
 
 //// Color 81 Metallic_Green (from ldconfig.ldr)
 #ifndef (L3Texture81)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture81 = L3TextureMetalRGB(137,155,95)
 #end
 #ifndef (L3Texture81_slope)
@@ -1315,9 +1302,9 @@ material {
 #end
 
 
-//// Color 82 Metallic_Gold (from ldconfig.ldr)
+//// Color 82 Metallic_Gold (from lg_color.inc)
 #ifndef (L3Texture82)
-#declare L3Texture82 = L3TextureMetalRGB(219,172,52)
+#declare L3Texture82 = texture { lg_metallic_gold }
 #end
 #ifndef (L3Texture82_slope)
 #declare L3Texture82_slope = L3TextureSlope(L3Texture82)
@@ -1332,6 +1319,7 @@ material {
 
 //// Color 83 Metallic_Black (from ldconfig.ldr)
 #ifndef (L3Texture83)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture83 = L3TextureMetalRGB(26,40,49)
 #end
 #ifndef (L3Texture83_slope)
@@ -1345,9 +1333,9 @@ material {
 #end
 
 
-//// Color 84 Medium_Dark_Flesh (from ldconfig.ldr)
+//// Color 84 Medium_Dark_Flesh (from lg_color.inc)
 #ifndef (L3Texture84)
-#declare L3Texture84 = L3TextureOpaqueRGB(204,112,42)
+#declare L3Texture84 = texture { lg_medium_dark_flesh }
 #end
 #ifndef (L3Texture84_slope)
 #declare L3Texture84_slope = L3TextureSlope(L3Texture84)
@@ -1360,9 +1348,9 @@ material {
 #end
 
 
-//// Color 85 Medium_Lilac (from ldconfig.ldr)
+//// Color 85 Medium_Lilac (from lg_color.inc)
 #ifndef (L3Texture85)
-#declare L3Texture85 = L3TextureOpaqueRGB(63,54,145)
+#declare L3Texture85 = texture { lg_dark_purple }
 #end
 #ifndef (L3Texture85_slope)
 #declare L3Texture85_slope = L3TextureSlope(L3Texture85)
@@ -1375,9 +1363,9 @@ material {
 #end
 
 
-//// Color 86 Dark_Flesh (from ldconfig.ldr)
+//// Color 86 Dark_Flesh (from lg_color.inc)
 #ifndef (L3Texture86)
-#declare L3Texture86 = L3TextureOpaqueRGB(124,80,58)
+#declare L3Texture86 = texture { lg_dark_flesh }
 #end
 #ifndef (L3Texture86_slope)
 #declare L3Texture86_slope = L3TextureSlope(L3Texture86)
@@ -1392,6 +1380,7 @@ material {
 
 //// Color 87 Metallic_Dark_Grey (from ldconfig.ldr)
 #ifndef (L3Texture87)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture87 = L3TextureMetalRGB(109,110,92)
 #end
 #ifndef (L3Texture87_slope)
@@ -1405,9 +1394,9 @@ material {
 #end
 
 
-//// Color 89 Blue_Violet (from ldconfig.ldr)
+//// Color 89 Blue_Violet (from lg_color.inc)
 #ifndef (L3Texture89)
-#declare L3Texture89 = L3TextureOpaqueRGB(76,97,219)
+#declare L3Texture89 = texture { lg_royal_blue }
 #end
 #ifndef (L3Texture89_slope)
 #declare L3Texture89_slope = L3TextureSlope(L3Texture89)
@@ -1420,9 +1409,9 @@ material {
 #end
 
 
-//// Color 92 Flesh (from ldconfig.ldr)
+//// Color 92 Flesh (from lg_color.inc)
 #ifndef (L3Texture92)
-#declare L3Texture92 = L3TextureOpaqueRGB(208,145,104)
+#declare L3Texture92 = texture { lg_flesh }
 #end
 #ifndef (L3Texture92_slope)
 #declare L3Texture92_slope = L3TextureSlope(L3Texture92)
@@ -1435,9 +1424,9 @@ material {
 #end
 
 
-//// Color 100 Light_Salmon (from ldconfig.ldr)
+//// Color 100 Light_Salmon (from lg_color.inc)
 #ifndef (L3Texture100)
-#declare L3Texture100 = L3TextureOpaqueRGB(254,186,189)
+#declare L3Texture100 = texture { lg_light_salmon }
 #end
 #ifndef (L3Texture100_slope)
 #declare L3Texture100_slope = L3TextureSlope(L3Texture100)
@@ -1452,6 +1441,7 @@ material {
 
 //// Color 110 Violet (from ldconfig.ldr)
 #ifndef (L3Texture110)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture110 = L3TextureOpaqueRGB(67,84,163)
 #end
 #ifndef (L3Texture110_slope)
@@ -1465,9 +1455,9 @@ material {
 #end
 
 
-//// Color 112 Medium_Violet (from ldconfig.ldr)
+//// Color 112 Medium_Violet (from lg_color.inc)
 #ifndef (L3Texture112)
-#declare L3Texture112 = L3TextureOpaqueRGB(104,116,202)
+#declare L3Texture112 = texture { lg_medium_violet }
 #end
 #ifndef (L3Texture112_slope)
 #declare L3Texture112_slope = L3TextureSlope(L3Texture112)
@@ -1482,6 +1472,7 @@ material {
 
 //// Color 114 Glitter_Trans_Dark_Pink (from ldconfig.ldr)
 #ifndef (L3Texture114)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture114 = L3TextureTransparentRGBA(223,102,149,128)
 #end
 #ifndef (L3Texture114_slope)
@@ -1495,9 +1486,9 @@ material {
 #end
 
 
-//// Color 115 Medium_Lime (from ldconfig.ldr)
+//// Color 115 Medium_Lime (from lg_color.inc)
 #ifndef (L3Texture115)
-#declare L3Texture115 = L3TextureOpaqueRGB(199,210,60)
+#declare L3Texture115 = texture { lg_medium_lime }
 #end
 #ifndef (L3Texture115_slope)
 #declare L3Texture115_slope = L3TextureSlope(L3Texture115)
@@ -1512,6 +1503,7 @@ material {
 
 //// Color 117 Glitter_Trans_Clear (from ldconfig.ldr)
 #ifndef (L3Texture117)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture117 = L3TextureTransparentRGBA(255,255,255,128)
 #end
 #ifndef (L3Texture117_slope)
@@ -1527,6 +1519,7 @@ material {
 
 //// Color 118 Aqua (from ldconfig.ldr)
 #ifndef (L3Texture118)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture118 = L3TextureOpaqueRGB(179,215,209)
 #end
 #ifndef (L3Texture118_slope)
@@ -1542,6 +1535,7 @@ material {
 
 //// Color 120 Light_Lime (from ldconfig.ldr)
 #ifndef (L3Texture120)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture120 = L3TextureOpaqueRGB(217,228,167)
 #end
 #ifndef (L3Texture120_slope)
@@ -1557,6 +1551,7 @@ material {
 
 //// Color 125 Light_Orange (from ldconfig.ldr)
 #ifndef (L3Texture125)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture125 = L3TextureOpaqueRGB(249,186,97)
 #end
 #ifndef (L3Texture125_slope)
@@ -1572,6 +1567,7 @@ material {
 
 //// Color 128 Dark_Nougat (from ldconfig.ldr)
 #ifndef (L3Texture128)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture128 = L3TextureOpaqueRGB(173,97,64)
 #end
 #ifndef (L3Texture128_slope)
@@ -1587,6 +1583,7 @@ material {
 
 //// Color 129 Glitter_Trans_Purple (from ldconfig.ldr)
 #ifndef (L3Texture129)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture129 = L3TextureTransparentRGBA(100,0,97,128)
 #end
 #ifndef (L3Texture129_slope)
@@ -1602,6 +1599,7 @@ material {
 
 //// Color 132 Speckle_Black_Silver (from ldconfig.ldr)
 #ifndef (L3Texture132)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture132 = L3TextureOpaqueRGB(0,0,0)
 #end
 #ifndef (L3Texture132_slope)
@@ -1617,6 +1615,7 @@ material {
 
 //// Color 133 Speckle_Black_Gold (from ldconfig.ldr)
 #ifndef (L3Texture133)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture133 = L3TextureOpaqueRGB(0,0,0)
 #end
 #ifndef (L3Texture133_slope)
@@ -1630,9 +1629,9 @@ material {
 #end
 
 
-//// Color 134 Copper (from ldconfig.ldr)
+//// Color 134 Copper (from lg_color.inc)
 #ifndef (L3Texture134)
-#declare L3Texture134 = L3TexturePearlescentRGB(150,74,39)
+#declare L3Texture134 = texture { lg_pearl_copper }
 #end
 #ifndef (L3Texture134_slope)
 #declare L3Texture134_slope = L3TextureSlope(L3Texture134)
@@ -1645,9 +1644,9 @@ material {
 #end
 
 
-//// Color 135 Pearl_Light_Grey (from ldconfig.ldr)
+//// Color 135 Pearl_Light_Grey (from lg_color.inc)
 #ifndef (L3Texture135)
-#declare L3Texture135 = L3TexturePearlescentRGB(156,163,168)
+#declare L3Texture135 = texture { lg_pearl_grey }
 #end
 #ifndef (L3Texture135_slope)
 #declare L3Texture135_slope = L3TextureSlope(L3Texture135)
@@ -1660,9 +1659,9 @@ material {
 #end
 
 
-//// Color 137 Metal_Blue (from ldconfig.ldr)
+//// Color 137 Metal_Blue (from lg_color.inc)
 #ifndef (L3Texture137)
-#declare L3Texture137 = L3TexturePearlescentRGB(86,119,186)
+#declare L3Texture137 = texture { lg_pearl_blue }
 #end
 #ifndef (L3Texture137_slope)
 #declare L3Texture137_slope = L3TextureSlope(L3Texture137)
@@ -1675,9 +1674,9 @@ material {
 #end
 
 
-//// Color 142 Pearl_Light_Gold (from ldconfig.ldr)
+//// Color 142 Pearl_Light_Gold (from lg_color.inc)
 #ifndef (L3Texture142)
-#declare L3Texture142 = L3TexturePearlescentRGB(220,190,97)
+#declare L3Texture142 = texture { lg_pearl_gold }
 #end
 #ifndef (L3Texture142_slope)
 #declare L3Texture142_slope = L3TextureSlope(L3Texture142)
@@ -1690,9 +1689,9 @@ material {
 #end
 
 
-//// Color 148 Pearl_Dark_Grey (from ldconfig.ldr)
+//// Color 148 Pearl_Dark_Grey (from lg_color.inc)
 #ifndef (L3Texture148)
-#declare L3Texture148 = L3TexturePearlescentRGB(87,88,87)
+#declare L3Texture148 = texture { lg_pearl_dark_grey }
 #end
 #ifndef (L3Texture148_slope)
 #declare L3Texture148_slope = L3TextureSlope(L3Texture148)
@@ -1707,6 +1706,7 @@ material {
 
 //// Color 150 Pearl_Very_Light_Grey (from ldconfig.ldr)
 #ifndef (L3Texture150)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture150 = L3TexturePearlescentRGB(187,189,188)
 #end
 #ifndef (L3Texture150_slope)
@@ -1720,9 +1720,9 @@ material {
 #end
 
 
-//// Color 151 Very_Light_Bluish_Grey (from ldconfig.ldr)
+//// Color 151 Very_Light_Bluish_Grey (from lg_color.inc)
 #ifndef (L3Texture151)
-#declare L3Texture151 = L3TextureOpaqueRGB(230,227,224)
+#declare L3Texture151 = texture { lg_very_light_bluish_grey }
 #end
 #ifndef (L3Texture151_slope)
 #declare L3Texture151_slope = L3TextureSlope(L3Texture151)
@@ -1737,6 +1737,7 @@ material {
 
 //// Color 178 Flat_Dark_Gold (from ldconfig.ldr)
 #ifndef (L3Texture178)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture178 = L3TexturePearlescentRGB(180,136,62)
 #end
 #ifndef (L3Texture178_slope)
@@ -1750,9 +1751,9 @@ material {
 #end
 
 
-//// Color 179 Flat_Silver (from ldconfig.ldr)
+//// Color 179 Flat_Silver (from lg_color.inc)
 #ifndef (L3Texture179)
-#declare L3Texture179 = L3TexturePearlescentRGB(137,135,136)
+#declare L3Texture179 = texture { lg_flat_silver }
 #end
 #ifndef (L3Texture179_slope)
 #declare L3Texture179_slope = L3TextureSlope(L3Texture179)
@@ -1765,9 +1766,9 @@ material {
 #end
 
 
-//// Color 183 Pearl_White (from ldconfig.ldr)
+//// Color 183 Pearl_White (from lg_color.inc)
 #ifndef (L3Texture183)
-#declare L3Texture183 = L3TexturePearlescentRGB(242,243,242)
+#declare L3Texture183 = texture { lg_pearl_white }
 #end
 #ifndef (L3Texture183_slope)
 #declare L3Texture183_slope = L3TextureSlope(L3Texture183)
@@ -1782,6 +1783,7 @@ material {
 
 //// Color 184 Metallic_Bright_Red (from ldconfig.ldr)
 #ifndef (L3Texture184)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture184 = L3TextureMetalRGB(214,0,38)
 #end
 #ifndef (L3Texture184_slope)
@@ -1797,6 +1799,7 @@ material {
 
 //// Color 186 Metallic_Dark_Green (from ldconfig.ldr)
 #ifndef (L3Texture186)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture186 = L3TextureMetalRGB(0,142,60)
 #end
 #ifndef (L3Texture186_slope)
@@ -1812,6 +1815,7 @@ material {
 
 //// Color 189 Reddish_Gold (from ldconfig.ldr)
 #ifndef (L3Texture189)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture189 = L3TexturePearlescentRGB(172,130,71)
 #end
 #ifndef (L3Texture189_slope)
@@ -1825,9 +1829,9 @@ material {
 #end
 
 
-//// Color 191 Bright_Light_Orange (from ldconfig.ldr)
+//// Color 191 Bright_Light_Orange (from lg_color.inc)
 #ifndef (L3Texture191)
-#declare L3Texture191 = L3TextureOpaqueRGB(248,187,61)
+#declare L3Texture191 = texture { lg_bright_light_orange }
 #end
 #ifndef (L3Texture191_slope)
 #declare L3Texture191_slope = L3TextureSlope(L3Texture191)
@@ -1840,9 +1844,9 @@ material {
 #end
 
 
-//// Color 212 Bright_Light_Blue (from ldconfig.ldr)
+//// Color 212 Bright_Light_Blue (from lg_color.inc)
 #ifndef (L3Texture212)
-#declare L3Texture212 = L3TextureOpaqueRGB(134,193,225)
+#declare L3Texture212 = texture { lg_bright_light_blue }
 #end
 #ifndef (L3Texture212_slope)
 #declare L3Texture212_slope = L3TextureSlope(L3Texture212)
@@ -1855,9 +1859,9 @@ material {
 #end
 
 
-//// Color 216 Rust (from ldconfig.ldr)
+//// Color 216 Rust (from lg_color.inc)
 #ifndef (L3Texture216)
-#declare L3Texture216 = L3TextureOpaqueRGB(179,16,4)
+#declare L3Texture216 = texture { lg_rust }
 #end
 #ifndef (L3Texture216_slope)
 #declare L3Texture216_slope = L3TextureSlope(L3Texture216)
@@ -1872,6 +1876,7 @@ material {
 
 //// Color 218 Reddish_Lilac (from ldconfig.ldr)
 #ifndef (L3Texture218)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture218 = L3TextureOpaqueRGB(142,85,151)
 #end
 #ifndef (L3Texture218_slope)
@@ -1887,6 +1892,7 @@ material {
 
 //// Color 219 Lilac (from ldconfig.ldr)
 #ifndef (L3Texture219)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture219 = L3TextureOpaqueRGB(86,78,157)
 #end
 #ifndef (L3Texture219_slope)
@@ -1900,9 +1906,9 @@ material {
 #end
 
 
-//// Color 226 Bright_Light_Yellow (from ldconfig.ldr)
+//// Color 226 Bright_Light_Yellow (from lg_color.inc)
 #ifndef (L3Texture226)
-#declare L3Texture226 = L3TextureOpaqueRGB(255,240,58)
+#declare L3Texture226 = texture { lg_bright_light_yellow }
 #end
 #ifndef (L3Texture226_slope)
 #declare L3Texture226_slope = L3TextureSlope(L3Texture226)
@@ -1917,6 +1923,7 @@ material {
 
 //// Color 231 Trans_Bright_Light_Orange (from ldconfig.ldr)
 #ifndef (L3Texture231)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture231 = L3TextureTransparentRGBA(252,183,109,128)
 #end
 #ifndef (L3Texture231_slope)
@@ -1930,9 +1937,9 @@ material {
 #end
 
 
-//// Color 232 Sky_Blue (from ldconfig.ldr)
+//// Color 232 Sky_Blue (from lg_color.inc)
 #ifndef (L3Texture232)
-#declare L3Texture232 = L3TextureOpaqueRGB(86,190,214)
+#declare L3Texture232 = texture { lg_sky_blue }
 #end
 #ifndef (L3Texture232_slope)
 #declare L3Texture232_slope = L3TextureSlope(L3Texture232)
@@ -1947,6 +1954,7 @@ material {
 
 //// Color 234 Trans_Fire_Yellow (from ldconfig.ldr)
 #ifndef (L3Texture234)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture234 = L3TextureTransparentRGBA(251,232,144,128)
 #end
 #ifndef (L3Texture234_slope)
@@ -1960,9 +1968,9 @@ material {
 #end
 
 
-//// Color 256 Rubber_Black (from ldconfig.ldr)
+//// Color 256 Rubber_Black (from lg_color.inc)
 #ifndef (L3Texture256)
-#declare L3Texture256 = L3TextureRubberRGB(33,33,33)
+#declare L3Texture256 = texture { lg_rubber_black }
 #end
 #ifndef (L3Texture256_slope)
 #declare L3Texture256_slope = L3TextureSlope(L3Texture256)
@@ -1975,9 +1983,9 @@ material {
 #end
 
 
-//// Color 272 Dark_Blue (from ldconfig.ldr)
+//// Color 272 Dark_Blue (from lg_color.inc)
 #ifndef (L3Texture272)
-#declare L3Texture272 = L3TextureOpaqueRGB(13,50,91)
+#declare L3Texture272 = texture { lg_dark_blue }
 #end
 #ifndef (L3Texture272_slope)
 #declare L3Texture272_slope = L3TextureSlope(L3Texture272)
@@ -1990,9 +1998,9 @@ material {
 #end
 
 
-//// Color 273 Rubber_Blue (from ldconfig.ldr)
+//// Color 273 Rubber_Blue (from lg_color.inc)
 #ifndef (L3Texture273)
-#declare L3Texture273 = L3TextureRubberRGB(0,51,178)
+#declare L3Texture273 = texture { lg_rubber_blue }
 #end
 #ifndef (L3Texture273_slope)
 #declare L3Texture273_slope = L3TextureSlope(L3Texture273)
@@ -2007,6 +2015,7 @@ material {
 
 //// Color 284 Trans_Reddish_Lilac (from ldconfig.ldr)
 #ifndef (L3Texture284)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture284 = L3TextureTransparentRGBA(194,129,165,128)
 #end
 #ifndef (L3Texture284_slope)
@@ -2022,6 +2031,7 @@ material {
 
 //// Color 285 Trans_Light_Green (from ldconfig.ldr)
 #ifndef (L3Texture285)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture285 = L3TextureTransparentRGBA(125,194,145,128)
 #end
 #ifndef (L3Texture285_slope)
@@ -2035,9 +2045,9 @@ material {
 #end
 
 
-//// Color 288 Dark_Green (from ldconfig.ldr)
+//// Color 288 Dark_Green (from lg_color.inc)
 #ifndef (L3Texture288)
-#declare L3Texture288 = L3TextureOpaqueRGB(24,70,50)
+#declare L3Texture288 = texture { lg_dark_green }
 #end
 #ifndef (L3Texture288_slope)
 #declare L3Texture288_slope = L3TextureSlope(L3Texture288)
@@ -2052,6 +2062,7 @@ material {
 
 //// Color 293 Trans_Light_Blue_Violet (from ldconfig.ldr)
 #ifndef (L3Texture293)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture293 = L3TextureTransparentRGBA(107,171,228,128)
 #end
 #ifndef (L3Texture293_slope)
@@ -2065,9 +2076,9 @@ material {
 #end
 
 
-//// Color 294 Glow_In_Dark_Trans (from ldconfig.ldr)
+//// Color 294 Glow_In_Dark_Trans (from lg_color.inc)
 #ifndef (L3Texture294)
-#declare L3Texture294 = L3TextureOtherRGBFAL(189,198,173,0,240,15)
+#declare L3Texture294 = texture { lg_glow_in_dark_clear }
 #end
 #ifndef (L3Texture294_slope)
 #declare L3Texture294_slope = L3TextureSlope(L3Texture294)
@@ -2082,6 +2093,7 @@ material {
 
 //// Color 295 Flamingo_Pink (from ldconfig.ldr)
 #ifndef (L3Texture295)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture295 = L3TextureOpaqueRGB(255,148,194)
 #end
 #ifndef (L3Texture295_slope)
@@ -2095,9 +2107,9 @@ material {
 #end
 
 
-//// Color 297 Pearl_Gold (from ldconfig.ldr)
+//// Color 297 Pearl_Gold (from lg_color.inc)
 #ifndef (L3Texture297)
-#declare L3Texture297 = L3TexturePearlescentRGB(204,156,43)
+#declare L3Texture297 = texture { lg_pearl_gold }
 #end
 #ifndef (L3Texture297_slope)
 #declare L3Texture297_slope = L3TextureSlope(L3Texture297)
@@ -2112,6 +2124,7 @@ material {
 
 //// Color 300 Metallic_Copper (from ldconfig.ldr)
 #ifndef (L3Texture300)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture300 = L3TextureMetalRGB(194,127,83)
 #end
 #ifndef (L3Texture300_slope)
@@ -2127,6 +2140,7 @@ material {
 
 //// Color 302 Glitter_Trans_Light_Blue (from ldconfig.ldr)
 #ifndef (L3Texture302)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture302 = L3TextureTransparentRGBA(174,233,239,128)
 #end
 #ifndef (L3Texture302_slope)
@@ -2140,9 +2154,9 @@ material {
 #end
 
 
-//// Color 308 Dark_Brown (from ldconfig.ldr)
+//// Color 308 Dark_Brown (from lg_color.inc)
 #ifndef (L3Texture308)
-#declare L3Texture308 = L3TextureOpaqueRGB(53,33,0)
+#declare L3Texture308 = texture { lg_dark_brown }
 #end
 #ifndef (L3Texture308_slope)
 #declare L3Texture308_slope = L3TextureSlope(L3Texture308)
@@ -2155,9 +2169,9 @@ material {
 #end
 
 
-//// Color 313 Maersk_Blue (from ldconfig.ldr)
+//// Color 313 Maersk_Blue (from lg_color.inc)
 #ifndef (L3Texture313)
-#declare L3Texture313 = L3TextureOpaqueRGB(84,169,200)
+#declare L3Texture313 = texture { lg_maersk_blue }
 #end
 #ifndef (L3Texture313_slope)
 #declare L3Texture313_slope = L3TextureSlope(L3Texture313)
@@ -2170,9 +2184,9 @@ material {
 #end
 
 
-//// Color 320 Dark_Red (from ldconfig.ldr)
+//// Color 320 Dark_Red (from lg_color.inc)
 #ifndef (L3Texture320)
-#declare L3Texture320 = L3TextureOpaqueRGB(114,14,15)
+#declare L3Texture320 = texture { lg_dark_red }
 #end
 #ifndef (L3Texture320_slope)
 #declare L3Texture320_slope = L3TextureSlope(L3Texture320)
@@ -2185,9 +2199,9 @@ material {
 #end
 
 
-//// Color 321 Dark_Azure (from ldconfig.ldr)
+//// Color 321 Dark_Azure (from lg_color.inc)
 #ifndef (L3Texture321)
-#declare L3Texture321 = L3TextureOpaqueRGB(20,152,215)
+#declare L3Texture321 = texture { lg_dark_azur }
 #end
 #ifndef (L3Texture321_slope)
 #declare L3Texture321_slope = L3TextureSlope(L3Texture321)
@@ -2200,9 +2214,9 @@ material {
 #end
 
 
-//// Color 322 Medium_Azure (from ldconfig.ldr)
+//// Color 322 Medium_Azure (from lg_color.inc)
 #ifndef (L3Texture322)
-#declare L3Texture322 = L3TextureOpaqueRGB(62,194,221)
+#declare L3Texture322 = texture { lg_medium_azur }
 #end
 #ifndef (L3Texture322_slope)
 #declare L3Texture322_slope = L3TextureSlope(L3Texture322)
@@ -2215,9 +2229,9 @@ material {
 #end
 
 
-//// Color 323 Light_Aqua (from ldconfig.ldr)
+//// Color 323 Light_Aqua (from lg_color.inc)
 #ifndef (L3Texture323)
-#declare L3Texture323 = L3TextureOpaqueRGB(189,220,216)
+#declare L3Texture323 = texture { lg_light_aqua }
 #end
 #ifndef (L3Texture323_slope)
 #declare L3Texture323_slope = L3TextureSlope(L3Texture323)
@@ -2230,9 +2244,9 @@ material {
 #end
 
 
-//// Color 324 Rubber_Red (from ldconfig.ldr)
+//// Color 324 Rubber_Red (from lg_color.inc)
 #ifndef (L3Texture324)
-#declare L3Texture324 = L3TextureRubberRGB(196,0,38)
+#declare L3Texture324 = texture { lg_rubber_red }
 #end
 #ifndef (L3Texture324_slope)
 #declare L3Texture324_slope = L3TextureSlope(L3Texture324)
@@ -2245,9 +2259,9 @@ material {
 #end
 
 
-//// Color 326 Yellowish_Green (from ldconfig.ldr)
+//// Color 326 Yellowish_Green (from lg_color.inc)
 #ifndef (L3Texture326)
-#declare L3Texture326 = L3TextureOpaqueRGB(223,238,165)
+#declare L3Texture326 = texture { lg_spring_yellowish_green }
 #end
 #ifndef (L3Texture326_slope)
 #declare L3Texture326_slope = L3TextureSlope(L3Texture326)
@@ -2262,6 +2276,7 @@ material {
 
 //// Color 329 Glow_In_Dark_White (from ldconfig.ldr)
 #ifndef (L3Texture329)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture329 = L3TextureOtherRGBFAL(245,243,215,0,240,15)
 #end
 #ifndef (L3Texture329_slope)
@@ -2275,9 +2290,9 @@ material {
 #end
 
 
-//// Color 330 Olive_Green (from ldconfig.ldr)
+//// Color 330 Olive_Green (from lg_color.inc)
 #ifndef (L3Texture330)
-#declare L3Texture330 = L3TextureOpaqueRGB(155,154,90)
+#declare L3Texture330 = texture { lg_olive_green }
 #end
 #ifndef (L3Texture330_slope)
 #declare L3Texture330_slope = L3TextureSlope(L3Texture330)
@@ -2290,9 +2305,9 @@ material {
 #end
 
 
-//// Color 334 Chrome_Gold (from ldconfig.ldr)
+//// Color 334 Chrome_Gold (from lg_color.inc)
 #ifndef (L3Texture334)
-#declare L3Texture334 = L3TextureChromeRGB(187,165,61)
+#declare L3Texture334 = texture { lg_chrome_gold }
 #end
 #ifndef (L3Texture334_slope)
 #declare L3Texture334_slope = L3TextureSlope(L3Texture334)
@@ -2305,9 +2320,9 @@ material {
 #end
 
 
-//// Color 335 Sand_Red (from ldconfig.ldr)
+//// Color 335 Sand_Red (from lg_color.inc)
 #ifndef (L3Texture335)
-#declare L3Texture335 = L3TextureOpaqueRGB(214,117,114)
+#declare L3Texture335 = texture { lg_sand_red }
 #end
 #ifndef (L3Texture335_slope)
 #declare L3Texture335_slope = L3TextureSlope(L3Texture335)
@@ -2322,6 +2337,7 @@ material {
 
 //// Color 339 Glitter_Trans_Neon_Green (from ldconfig.ldr)
 #ifndef (L3Texture339)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture339 = L3TextureTransparentRGBA(192,255,0,128)
 #end
 #ifndef (L3Texture339_slope)
@@ -2337,6 +2353,7 @@ material {
 
 //// Color 350 Rubber_Orange (from ldconfig.ldr)
 #ifndef (L3Texture350)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture350 = L3TextureRubberRGB(208,102,16)
 #end
 #ifndef (L3Texture350_slope)
@@ -2352,6 +2369,7 @@ material {
 
 //// Color 351 Medium_Dark_Pink (from ldconfig.ldr)
 #ifndef (L3Texture351)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture351 = L3TextureOpaqueRGB(247,133,177)
 #end
 #ifndef (L3Texture351_slope)
@@ -2365,9 +2383,9 @@ material {
 #end
 
 
-//// Color 366 Earth_Orange (from ldconfig.ldr)
+//// Color 366 Earth_Orange (from lg_color.inc)
 #ifndef (L3Texture366)
-#declare L3Texture366 = L3TextureOpaqueRGB(250,156,28)
+#declare L3Texture366 = texture { lg_earth_orange }
 #end
 #ifndef (L3Texture366_slope)
 #declare L3Texture366_slope = L3TextureSlope(L3Texture366)
@@ -2380,9 +2398,9 @@ material {
 #end
 
 
-//// Color 373 Sand_Purple (from ldconfig.ldr)
+//// Color 373 Sand_Purple (from lg_color.inc)
 #ifndef (L3Texture373)
-#declare L3Texture373 = L3TextureOpaqueRGB(132,94,132)
+#declare L3Texture373 = texture { lg_sand_purple }
 #end
 #ifndef (L3Texture373_slope)
 #declare L3Texture373_slope = L3TextureSlope(L3Texture373)
@@ -2395,9 +2413,9 @@ material {
 #end
 
 
-//// Color 375 Rubber_Light_Grey (from ldconfig.ldr)
+//// Color 375 Rubber_Light_Grey (from lg_color.inc)
 #ifndef (L3Texture375)
-#declare L3Texture375 = L3TextureRubberRGB(193,194,193)
+#declare L3Texture375 = texture { lg_rubber_light_gray }
 #end
 #ifndef (L3Texture375_slope)
 #declare L3Texture375_slope = L3TextureSlope(L3Texture375)
@@ -2410,9 +2428,9 @@ material {
 #end
 
 
-//// Color 378 Sand_Green (from ldconfig.ldr)
+//// Color 378 Sand_Green (from lg_color.inc)
 #ifndef (L3Texture378)
-#declare L3Texture378 = L3TextureOpaqueRGB(160,188,172)
+#declare L3Texture378 = texture { lg_sand_green }
 #end
 #ifndef (L3Texture378_slope)
 #declare L3Texture378_slope = L3TextureSlope(L3Texture378)
@@ -2425,9 +2443,9 @@ material {
 #end
 
 
-//// Color 379 Sand_Blue (from ldconfig.ldr)
+//// Color 379 Sand_Blue (from lg_color.inc)
 #ifndef (L3Texture379)
-#declare L3Texture379 = L3TextureOpaqueRGB(89,113,132)
+#declare L3Texture379 = texture { lg_sand_blue }
 #end
 #ifndef (L3Texture379_slope)
 #declare L3Texture379_slope = L3TextureSlope(L3Texture379)
@@ -2440,9 +2458,9 @@ material {
 #end
 
 
-//// Color 383 Chrome_Silver (from ldconfig.ldr)
+//// Color 383 Chrome_Silver (from lg_color.inc)
 #ifndef (L3Texture383)
-#declare L3Texture383 = L3TextureChromeRGB(224,224,224)
+#declare L3Texture383 = texture { lg_chrome }
 #end
 #ifndef (L3Texture383_slope)
 #declare L3Texture383_slope = L3TextureSlope(L3Texture383)
@@ -2455,9 +2473,9 @@ material {
 #end
 
 
-//// Color 406 Rubber_Dark_Blue (from ldconfig.ldr)
+//// Color 406 Rubber_Dark_Blue (from lg_color.inc)
 #ifndef (L3Texture406)
-#declare L3Texture406 = L3TextureRubberRGB(0,29,104)
+#declare L3Texture406 = texture { lg_rubber_dark_blue }
 #end
 #ifndef (L3Texture406_slope)
 #declare L3Texture406_slope = L3TextureSlope(L3Texture406)
@@ -2470,9 +2488,9 @@ material {
 #end
 
 
-//// Color 449 Rubber_Purple (from ldconfig.ldr)
+//// Color 449 Rubber_Purple (from lg_color.inc)
 #ifndef (L3Texture449)
-#declare L3Texture449 = L3TextureRubberRGB(129,0,123)
+#declare L3Texture449 = texture { lg_rubber_purple }
 #end
 #ifndef (L3Texture449_slope)
 #declare L3Texture449_slope = L3TextureSlope(L3Texture449)
@@ -2485,9 +2503,9 @@ material {
 #end
 
 
-//// Color 450 Fabuland_Brown (from ldconfig.ldr)
+//// Color 450 Fabuland_Brown (from lg_color.inc)
 #ifndef (L3Texture450)
-#declare L3Texture450 = L3TextureOpaqueRGB(182,123,80)
+#declare L3Texture450 = texture { lg_fabuland_brown }
 #end
 #ifndef (L3Texture450_slope)
 #declare L3Texture450_slope = L3TextureSlope(L3Texture450)
@@ -2500,9 +2518,9 @@ material {
 #end
 
 
-//// Color 462 Medium_Orange (from ldconfig.ldr)
+//// Color 462 Medium_Orange (from lg_color.inc)
 #ifndef (L3Texture462)
-#declare L3Texture462 = L3TextureOpaqueRGB(255,167,11)
+#declare L3Texture462 = texture { lg_light_orange }
 #end
 #ifndef (L3Texture462_slope)
 #declare L3Texture462_slope = L3TextureSlope(L3Texture462)
@@ -2515,9 +2533,9 @@ material {
 #end
 
 
-//// Color 484 Dark_Orange (from ldconfig.ldr)
+//// Color 484 Dark_Orange (from lg_color.inc)
 #ifndef (L3Texture484)
-#declare L3Texture484 = L3TextureOpaqueRGB(169,85,0)
+#declare L3Texture484 = texture { lg_dark_orange }
 #end
 #ifndef (L3Texture484_slope)
 #declare L3Texture484_slope = L3TextureSlope(L3Texture484)
@@ -2530,9 +2548,9 @@ material {
 #end
 
 
-//// Color 490 Rubber_Lime (from ldconfig.ldr)
+//// Color 490 Rubber_Lime (from lg_color.inc)
 #ifndef (L3Texture490)
-#declare L3Texture490 = L3TextureRubberRGB(215,240,0)
+#declare L3Texture490 = texture { lg_rubber_lime }
 #end
 #ifndef (L3Texture490_slope)
 #declare L3Texture490_slope = L3TextureSlope(L3Texture490)
@@ -2545,9 +2563,9 @@ material {
 #end
 
 
-//// Color 493 Magnet (from ldconfig.ldr)
+//// Color 493 Magnet (from lg_color.inc)
 #ifndef (L3Texture493)
-#declare L3Texture493 = L3TextureMetalRGB(101,103,97)
+#declare L3Texture493 = texture { lg_magnet }
 #end
 #ifndef (L3Texture493_slope)
 #declare L3Texture493_slope = L3TextureSlope(L3Texture493)
@@ -2560,9 +2578,9 @@ material {
 #end
 
 
-//// Color 494 Electric_Contact_Alloy (from ldconfig.ldr)
+//// Color 494 Electric_Contact_Alloy (from lg_color.inc)
 #ifndef (L3Texture494)
-#declare L3Texture494 = L3TextureMetalRGB(208,208,208)
+#declare L3Texture494 = texture { lg_electric_contact_alloy }
 #end
 #ifndef (L3Texture494_slope)
 #declare L3Texture494_slope = L3TextureSlope(L3Texture494)
@@ -2577,6 +2595,7 @@ material {
 
 //// Color 495 Electric_Contact_Copper (from ldconfig.ldr)
 #ifndef (L3Texture495)
+// Color not in lg_color.inc; however use same texture
 #declare L3Texture495 = L3TextureMetalRGB(174,122,89)
 #end
 #ifndef (L3Texture495_slope)
@@ -2590,9 +2609,9 @@ material {
 #end
 
 
-//// Color 496 Rubber_Light_Bluish_Grey (from ldconfig.ldr)
+//// Color 496 Rubber_Light_Bluish_Grey (from lg_color.inc)
 #ifndef (L3Texture496)
-#declare L3Texture496 = L3TextureRubberRGB(163,162,164)
+#declare L3Texture496 = texture { lg_rubber_light_bluish_gray }
 #end
 #ifndef (L3Texture496_slope)
 #declare L3Texture496_slope = L3TextureSlope(L3Texture496)
@@ -2605,9 +2624,9 @@ material {
 #end
 
 
-//// Color 503 Very_Light_Grey (from ldconfig.ldr)
+//// Color 503 Very_Light_Grey (from lg_color.inc)
 #ifndef (L3Texture503)
-#declare L3Texture503 = L3TextureOpaqueRGB(230,227,218)
+#declare L3Texture503 = texture { lg_very_light_grey }
 #end
 #ifndef (L3Texture503_slope)
 #declare L3Texture503_slope = L3TextureSlope(L3Texture503)
@@ -2620,9 +2639,9 @@ material {
 #end
 
 
-//// Color 504 Rubber_Flat_Silver (from ldconfig.ldr)
+//// Color 504 Rubber_Flat_Silver (from lg_color.inc)
 #ifndef (L3Texture504)
-#declare L3Texture504 = L3TextureRubberRGB(137,135,136)
+#declare L3Texture504 = texture { lg_rubber_flat_silver }
 #end
 #ifndef (L3Texture504_slope)
 #declare L3Texture504_slope = L3TextureSlope(L3Texture504)
@@ -2635,9 +2654,9 @@ material {
 #end
 
 
-//// Color 511 Rubber_White (from ldconfig.ldr)
+//// Color 511 Rubber_White (from lg_color.inc)
 #ifndef (L3Texture511)
-#declare L3Texture511 = L3TextureRubberRGB(250,250,250)
+#declare L3Texture511 = texture { lg_rubber_white }
 #end
 #ifndef (L3Texture511_slope)
 #declare L3Texture511_slope = L3TextureSlope(L3Texture511)
@@ -4086,6 +4105,7 @@ object { every__color_dot_ldr material { L3Color7 } }
 //// Statistics
 //               PARTS             P         Total
 // DAT files:        1             5             7
+// LGEO:             0 (0%)        0 (0%)
 // Model has 162 parts (162 studs)
 
 //// End

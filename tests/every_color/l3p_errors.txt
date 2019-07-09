@@ -1,14 +1,46 @@
 SKIPPING "C:\Users\Public\Documents\LDraw\ldconfig.ldr" Line 327: Illegal color code: 0 !COLOUR Main_Colour                                           CODE  16   VALUE #FFFF80   EDGE #333333
 SKIPPING "C:\Users\Public\Documents\LDraw\ldconfig.ldr" Line 328: Illegal color code: 0 !COLOUR Edge_Colour                                           CODE  24   VALUE #7F7F7F   EDGE #333333
 WARNING "every_color.ldr" Line 31: Color 24 illegal for this line type, using 16: 1 24 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat
-WARNING "every_color.ldr" Line 173: Unknown color, using 7: 1 10002 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat
-WARNING "every_color.ldr" Line 174: Unknown color, using 7: 1 10026 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat
-WARNING "every_color.ldr" Line 175: Unknown color, using 7: 1 10031 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat
-WARNING "every_color.ldr" Line 176: Unknown color, using 7: 1 10070 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat
-WARNING "every_color.ldr" Line 177: Unknown color, using 7: 1 10226 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat
-WARNING "every_color.ldr" Line 178: Unknown color, using 7: 1 10308 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat
-WARNING "every_color.ldr" Line 179: Unknown color, using 7: 1 10320 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat
-WARNING "every_color.ldr" Line 180: Unknown color, using 7: 1 10321 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat
-WARNING "every_color.ldr" Line 181: Unknown color, using 7: 1 10322 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat
-WARNING "every_color.ldr" Line 182: Unknown color, using 7: 1 10323 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat
-WARNING "every_color.ldr" Line 183: Unknown color, using 7: 1 10484 0 -24 0 1 0 0 0 1 0 0 0 1 3005.dat
+*** Color 39 not defined in lg_color.inc
+*** Color 45 not defined in lg_color.inc
+*** Color 60 not defined in lg_color.inc
+*** Color 61 not defined in lg_color.inc
+*** Color 62 not defined in lg_color.inc
+*** Color 63 not defined in lg_color.inc
+*** Color 64 not defined in lg_color.inc
+*** Color 75 not defined in lg_color.inc
+*** Color 76 not defined in lg_color.inc
+*** Color 81 not defined in lg_color.inc
+*** Color 83 not defined in lg_color.inc
+*** Color 87 not defined in lg_color.inc
+*** Color 110 not defined in lg_color.inc
+*** Color 114 not defined in lg_color.inc
+*** Color 117 not defined in lg_color.inc
+*** Color 118 not defined in lg_color.inc
+*** Color 120 not defined in lg_color.inc
+*** Color 125 not defined in lg_color.inc
+*** Color 128 not defined in lg_color.inc
+*** Color 129 not defined in lg_color.inc
+*** Color 132 not defined in lg_color.inc
+*** Color 133 not defined in lg_color.inc
+*** Color 150 not defined in lg_color.inc
+*** Color 178 not defined in lg_color.inc
+*** Color 184 not defined in lg_color.inc
+*** Color 186 not defined in lg_color.inc
+*** Color 189 not defined in lg_color.inc
+*** Color 218 not defined in lg_color.inc
+*** Color 219 not defined in lg_color.inc
+*** Color 231 not defined in lg_color.inc
+*** Color 234 not defined in lg_color.inc
+*** Color 284 not defined in lg_color.inc
+*** Color 285 not defined in lg_color.inc
+*** Color 293 not defined in lg_color.inc
+*** Color 295 not defined in lg_color.inc
+*** Color 300 not defined in lg_color.inc
+*** Color 302 not defined in lg_color.inc
+*** Color 329 not defined in lg_color.inc
+*** Color 339 not defined in lg_color.inc
+*** Color 350 not defined in lg_color.inc
+*** Color 351 not defined in lg_color.inc
+*** Color 495 not defined in lg_color.inc
+Not in LGEO: 3005.dat Brick  1 x  1
