@@ -14,13 +14,14 @@
 // You should have received a copy of the GNU Lesser General Public
 // License along with this library; if not, write to the Free Software
 // Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
-
-
+// 
+// 
 // Based on LDCad output by Roland Melkert, now in "materials_ldc_defs.inc".
 // Modified to support SSLT and blurred reflections.
 // SSLT requires an ior for every material. Also, the ior ideally needs to be different for each type of plastic, rubber, etc.
 // See "materials_ldc_defs_clipka.inc" for suggested changes by Christoph Lipka.
 // UberPOV supports a different method of generating blurred reflections which may be faster or better.
+// Note there are no special textures/materials for sloped parts yet, however.
 
 #version 3.7;
 
