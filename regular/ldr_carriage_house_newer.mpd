@@ -27,8 +27,9 @@
 
 0 
 0 NOFILE
-0 FILE center.dat
 0
+0 FILE center.dat
+0 
 0 Name: center.dat
 0 Author: Michael Horvath
 0 Unofficial Model
@@ -40,8 +41,9 @@
 
 0 
 0 NOFILE
-0 FILE east.dat
 0
+0 FILE east.dat
+0 
 0 Name: east.dat
 0 Author: Michael Horvath
 0 Unofficial Model
@@ -54,8 +56,9 @@
 
 0 
 0 NOFILE
-0 FILE west.dat
 0
+0 FILE west.dat
+0 
 0 Name: west.dat
 0 Author: Michael Horvath
 0 Unofficial Model
@@ -67,8 +70,9 @@
 
 0 
 0 NOFILE
-0 FILE roof.dat
 0
+0 FILE roof.dat
+0 
 0 Name: roof.dat
 0 Author: Michael Horvath
 0 Unofficial Model
@@ -85,8 +89,9 @@
 
 0 
 0 NOFILE
-0 FILE cbot.dat
 0
+0 FILE cbot.dat
+0 
 0 Name: cbot.dat
 0 Author: Michael Horvath
 0 Unofficial Model
@@ -190,6 +195,11 @@
 1 4 210 -120 -270 1 0 0 0 1 0 0 0 1 3038.dat
 1 4 170 -120 -270 0 0 1 0 1 0 -1 0 0 3045.dat
 1 0 170 -216 -270 0 0 -1 0 1 0 1 0 0 2339.dat
+1 0 180 -120 -90 1 0 0 0 1 0 0 0 1 3004.dat
+1 0 180 -96 -90 1 0 0 0 1 0 0 0 1 3004.dat
+1 0 180 -72 -90 1 0 0 0 1 0 0 0 1 3004.dat
+1 0 180 -48 -90 1 0 0 0 1 0 0 0 1 3004.dat
+1 0 180 -24 -90 1 0 0 0 1 0 0 0 1 3004.dat
 1 4 80 -168 330 -1 0 0 0 1 0 0 0 -1 3308.dat
 1 4 80 -168 310 -1 0 0 0 1 0 0 0 -1 3308.dat
 1 4 200 -120 310 -1 0 0 0 1 0 0 0 -1 3037.dat
@@ -275,30 +285,31 @@
 1 0 0 -216 -260 -1 0 0 0 1 0 0 0 -1 2445.dat
 1 0 0 -208 -270 -1 0 0 0 1 0 0 0 -1 3460.dat
 1 0 0 -208 -90 -1 0 0 0 1 0 0 0 -1 3460.dat
-1 0 210 -144 -140 0 0 -1 0 1 0 1 0 0 3455.dat
-1 0 210 -120 -170 1 0 0 0 1 0 0 0 1 73312.dat
-1 0 240 -24 -90 -1 0 0 0 1 0 0 0 -1 3008.dat
-1 0 240 -48 -90 -1 0 0 0 1 0 0 0 -1 3008.dat
-1 0 240 -72 -90 -1 0 0 0 1 0 0 0 -1 3008.dat
-1 0 240 -96 -90 -1 0 0 0 1 0 0 0 -1 3008.dat
-1 0 240 -120 -90 -1 0 0 0 1 0 0 0 -1 3008.dat
-1 0 250 -144 -90 -1 0 0 0 1 0 0 0 -1 3622.dat
-1 0 300 -144 -90 -1 0 0 0 1 0 0 0 -1 3004.dat
-1 0 260 -168 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
-1 0 260 -192 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
-1 0 260 -216 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
-1 0 210 -144 -230 0 0 1 0 1 0 -1 0 0 3622.dat
-1 0 210 -120 -220 0 0 1 0 1 0 -1 0 0 3010.dat
-1 0 210 -96 -220 0 0 1 0 1 0 -1 0 0 3010.dat
-1 0 210 -72 -220 0 0 1 0 1 0 -1 0 0 3010.dat
-1 0 210 -48 -220 0 0 1 0 1 0 -1 0 0 3010.dat
-1 0 210 -24 -220 0 0 1 0 1 0 -1 0 0 3010.dat
-1 0 210 -168 -240 0 0 1 0 1 0 -1 0 0 3004.dat
-1 0 210 -168 -160 0 0 1 0 1 0 -1 0 0 3009.dat
-1 0 210 -192 -200 0 0 1 0 1 0 -1 0 0 3009.dat
-1 0 210 -192 -120 0 0 1 0 1 0 -1 0 0 3004.dat
-1 0 210 -216 -240 0 0 1 0 1 0 -1 0 0 3004.dat
-1 0 210 -216 -160 0 0 1 0 1 0 -1 0 0 3009.dat
+1 4 190 -144 -160 0 0 -1 0 1 0 1 0 0 3455.dat
+1 4 190 -120 -110 0 0 -1 0 1 0 1 0 0 3005.dat
+1 4 190 -96 -110 0 0 -1 0 1 0 1 0 0 3005.dat
+1 4 190 -72 -110 0 0 -1 0 1 0 1 0 0 3005.dat
+1 4 190 -48 -110 0 0 -1 0 1 0 1 0 0 3005.dat
+1 4 190 -24 -110 0 0 -1 0 1 0 1 0 0 3005.dat
+1 0 190 -120 -190 1 0 0 0 1 0 0 0 1 73312.dat
+1 4 260 -24 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
+1 4 260 -48 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
+1 4 260 -72 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
+1 4 260 -96 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
+1 4 260 -120 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
+1 4 260 -168 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
+1 4 260 -144 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
+1 4 260 -192 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
+1 4 260 -216 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
+1 4 190 -144 -240 0 0 1 0 1 0 -1 0 0 3004.dat
+1 4 190 -120 -230 0 0 1 0 1 0 -1 0 0 3622.dat
+1 4 190 -96 -230 0 0 1 0 1 0 -1 0 0 3622.dat
+1 4 190 -72 -230 0 0 1 0 1 0 -1 0 0 3622.dat
+1 4 190 -48 -230 0 0 1 0 1 0 -1 0 0 3622.dat
+1 4 190 -24 -230 0 0 1 0 1 0 -1 0 0 3622.dat
+1 4 190 -168 -180 0 0 1 0 1 0 -1 0 0 3008.dat
+1 4 190 -192 -180 0 0 1 0 1 0 -1 0 0 3008.dat
+1 4 190 -216 -180 0 0 1 0 1 0 -1 0 0 3008.dat
 1 0 190 -24 100 0 0 1 0 1 0 -1 0 0 3004.dat
 1 0 -190 -24 100 0 0 1 0 1 0 -1 0 0 3004.dat
 1 0 -310 0 -180 0 0 -1 0 1 0 1 0 0 rck_pick.dat
@@ -312,15 +323,16 @@
 1 0 -190 -216 280 0 0 -1 0 1 0 1 0 0 3004.dat
 1 0 190 -120 290 0 0 -1 0 1 0 1 0 0 2453a.dat
 1 0 -190 -120 290 0 0 -1 0 1 0 1 0 0 2453a.dat
-0 MLCAD HIDE 1 0 0 -88 100 0 0 1 0 1 0 -1 0 0 camera.dat
-0 MLCAD HIDE 1 0 0 -88 -180 0 0 1 0 1 0 -1 0 0 camera.dat
-0 MLCAD HIDE 1 0 -280 -88 -180 0 0 1 0 1 0 -1 0 0 camera.dat
+1 0 0 -88 100 0 0 1 0 1 0 -1 0 0 camera.dat
+1 0 0 -88 -180 0 0 1 0 1 0 -1 0 0 camera.dat
+1 0 -280 -88 -180 0 0 1 0 1 0 -1 0 0 camera.dat
 0 
 
 0 
 0 NOFILE
-0 FILE ctop.dat
 0
+0 FILE ctop.dat
+0 
 0 Name: ctop.dat
 0 Author: Michael Horvath
 0 Unofficial Model
@@ -500,8 +512,9 @@
 
 0 
 0 NOFILE
-0 FILE croof.dat
 0
+0 FILE croof.dat
+0 
 0 Name: croof.dat
 0 Author: Michael Horvath
 0 Unofficial Model
@@ -656,8 +669,9 @@
 
 0 
 0 NOFILE
-0 FILE ebot.dat
 0
+0 FILE ebot.dat
+0 
 0 Name: ebot.dat
 0 Author: Michael Horvath
 0 Unofficial Model
@@ -765,15 +779,15 @@
 1 0 430 -128 -140 0 0 -1 0 1 0 1 0 0 3023.dat
 1 0 430 -48 -140 0 0 -1 0 1 0 1 0 0 3245a.dat
 1 0 320 -144 -140 0 0 1 0 1 0 -1 0 0 30134.dat
-1 0 380 -24 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
-1 0 380 -48 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
-1 0 380 -72 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
-1 0 380 -96 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
-1 0 380 -120 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
-1 0 380 -144 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
-1 0 380 -168 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
-1 0 380 -192 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
-1 0 380 -216 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
+1 4 380 -24 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
+1 4 380 -48 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
+1 4 380 -72 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
+1 4 380 -96 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
+1 4 380 -120 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
+1 4 380 -144 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
+1 4 380 -168 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
+1 4 380 -192 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
+1 4 380 -216 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
 1 14 400 -24 180 0 0 -1 0 1 0 1 0 0 3299.dat
 1 14 320 0 100 -1 0 0 0 1 0 0 0 -1 prp_air_tank.dat
 1 14 220 0 100 -1 0 0 0 1 0 0 0 -1 prp_cone.dat
@@ -803,8 +817,9 @@
 
 0 
 0 NOFILE
-0 FILE etop.dat
 0
+0 FILE etop.dat
+0 
 0 Name: etop.dat
 0 Author: Michael Horvath
 0 Unofficial Model
@@ -865,8 +880,9 @@
 
 0 
 0 NOFILE
-0 FILE eroof.dat
 0
+0 FILE eroof.dat
+0 
 0 Name: eroof.dat
 0 Author: Michael Horvath
 0 Unofficial Model
@@ -939,8 +955,9 @@
 
 0 
 0 NOFILE
-0 FILE wbot.dat
 0
+0 FILE wbot.dat
+0 
 0 Name: wbot.dat
 0 Author: Michael Horvath
 0 Unofficial Model
@@ -1062,8 +1079,9 @@
 
 0 
 0 NOFILE
-0 FILE wtop.dat
 0
+0 FILE wtop.dat
+0 
 0 Name: wtop.dat
 0 Author: Michael Horvath
 0 Unofficial Model
@@ -1133,8 +1151,9 @@
 
 0 
 0 NOFILE
-0 FILE wroof.dat
 0
+0 FILE wroof.dat
+0 
 0 Name: eroof.dat
 0 Author: Michael Horvath
 0 Name: wroof.dat
@@ -1208,8 +1227,9 @@
 
 0 
 0 NOFILE
-0 FILE fig_fman_sit_1.dat
 0
+0 FILE fig_fman_sit_1.dat
+0 
 0 New Model
 0 Name: fig_fman_sit_1.dat
 0 Author: Michael Horvath
@@ -1230,8 +1250,9 @@
 
 0 
 0 NOFILE
-0 FILE fig_fman_sit_2.dat
 0
+0 FILE fig_fman_sit_2.dat
+0 
 0 New Model
 0 Name: fig_fman_sit_2.dat
 0 Author: Michael Horvath
@@ -1256,8 +1277,9 @@
 
 0 
 0 NOFILE
-0 FILE fig_fman_stand.dat
 0
+0 FILE fig_fman_stand.dat
+0 
 0 New Model
 0 Name: fig_fman_stand.dat
 0 Author: Michael Horvath
@@ -1284,8 +1306,9 @@
 
 0 
 0 NOFILE
-0 FILE fig_medic_1.dat
 0
+0 FILE fig_medic_1.dat
+0 
 0 New Model
 0 Name: fig_medic_1.dat
 0 Author: Michael Horvath
@@ -1306,8 +1329,9 @@
 
 0 
 0 NOFILE
-0 FILE fig_medic_2.dat
 0
+0 FILE fig_medic_2.dat
+0 
 0 New Model
 0 Name: fig_medic_2.dat
 0 Author: Michael Horvath
@@ -1332,8 +1356,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_air_hose.dat
 0
+0 FILE prp_air_hose.dat
+0 
 0 New flex hose
 0 Name: prp_air_hose.dat
 0 Author: Michael Horvath
@@ -1394,8 +1419,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_air_tank.dat
 0
+0 FILE prp_air_tank.dat
+0 
 0 New Model
 0 Name: prp_air_tank.dat
 0 Author: Michael Horvath
@@ -1416,8 +1442,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_bed.dat
 0
+0 FILE prp_bed.dat
+0 
 0 Name: prp_bed.dat
 0 Author: Michael Horvath
 0 Unofficial Model
@@ -1451,8 +1478,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_cabinet_1.dat
 0
+0 FILE prp_cabinet_1.dat
+0 
 0 Name: prp_cabinet_1.dat
 0 Author: Michael Horvath
 0 Unofficial Model
@@ -1475,8 +1503,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_cabinet_2.dat
 0
+0 FILE prp_cabinet_2.dat
+0 
 0 New Model
 0 Name: prp_cabinet_2.dat
 0 Author: Michael Horvath
@@ -1504,8 +1533,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_cam_mount.dat
 0
+0 FILE prp_cam_mount.dat
+0 
 0 New Model
 0 Name: prp_cam_mount.dat
 0 Author: Michael Horvath
@@ -1518,8 +1548,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_cam_body.dat
 0
+0 FILE prp_cam_body.dat
+0 
 0 New Model
 0 Name: prp_cam_body.dat
 0 Author: Michael Horvath
@@ -1535,8 +1566,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_chair.dat
 0
+0 FILE prp_chair.dat
+0 
 0 Name: prp_chair.dat
 0 Author: Michael Horvath
 0 Unofficial Model
@@ -1548,8 +1580,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_comms.dat
 0
+0 FILE prp_comms.dat
+0 
 0 New Model
 0 Name: prp_comms.dat
 0 Author: Michael Horvath
@@ -1570,8 +1603,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_cone.dat
 0
+0 FILE prp_cone.dat
+0 
 0 New Model
 0 Name: prp_cone.dat
 0 Author: Michael Horvath
@@ -1584,8 +1618,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_control.dat
 0
+0 FILE prp_control.dat
+0 
 0 Name: prp_control.dat
 0 Author: Michael Horvath
 0 Unofficial Model
@@ -1603,8 +1638,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_cot.dat
 0
+0 FILE prp_cot.dat
+0 
 0 New Model
 0 Name: prp_cot.dat
 0 Author: Michael Horvath
@@ -1657,8 +1693,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_couch.dat
 0
+0 FILE prp_couch.dat
+0 
 0 New Model
 0 Name: prp_couch.dat
 0 Author: Michael Horvath
@@ -1674,8 +1711,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_curtain.dat
 0
+0 FILE prp_curtain.dat
+0 
 0 New Model
 0 Name: prp_curtain.dat
 0 Author: Michael Horvath
@@ -1697,8 +1735,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_cylinder_1.dat
 0
+0 FILE prp_cylinder_1.dat
+0 
 0 Name: prp_cylinder_1.dat
 0 Author: Michael Horvath
 0 Unofficial Model
@@ -1712,8 +1751,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_cylinder_2.dat
 0
+0 FILE prp_cylinder_2.dat
+0 
 0 Name: prp_cylinder_2.dat
 0 Author: Michael Horvath
 0 Unofficial Model
@@ -1727,8 +1767,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_flag.dat
 0
+0 FILE prp_flag.dat
+0 
 0 New Model
 0 Name: prp_flag.dat
 0 Author: Michael Horvath
@@ -1743,8 +1784,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_hypertank.dat
 0
+0 FILE prp_hypertank.dat
+0 
 0 Name: prp_hypertank.dat
 0 Author: Michael Horvath
 0 Unofficial Model
@@ -1761,8 +1803,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_locker.dat
 0
+0 FILE prp_locker.dat
+0 
 0 New Model
 0 Name: prp_locker.dat
 0 Author: Michael Horvath
@@ -1795,8 +1838,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_sat_base.dat
 0
+0 FILE prp_sat_base.dat
+0 
 0 New Model
 0 Name: prp_sat_base.dat
 0 Author: Michael Horvath
@@ -1809,8 +1853,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_sat_dish.dat
 0
+0 FILE prp_sat_dish.dat
+0 
 0 Name: prp_sat_dish.dat
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
@@ -1820,8 +1865,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_sink.dat
 0
+0 FILE prp_sink.dat
+0 
 0 New Model
 0 Name: prp_sink.dat
 0 Author: Michael Horvath
@@ -1835,8 +1881,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_sgn_fire.dat
 0
+0 FILE prp_sgn_fire.dat
+0 
 0 New Model
 0 Name: prp_sgn_fire.dat
 0 Author: Michael Horvath
@@ -1850,8 +1897,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_sgn_medic.dat
 0
+0 FILE prp_sgn_medic.dat
+0 
 0 New Model
 0 Name: prp_sgn_medic.dat
 0 Author: Michael Horvath
@@ -1869,8 +1917,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_stove.dat
 0
+0 FILE prp_stove.dat
+0 
 0 New Model
 0 Name: prp_stove.dat
 0 Author: Michael Horvath
@@ -1900,8 +1949,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_stretcher.dat
 0
+0 FILE prp_stretcher.dat
+0 
 0 New Model
 0 Name: prp_stretcher.dat
 0 Author: Michael Horvath
@@ -1915,8 +1965,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_tableset.dat
 0
+0 FILE prp_tableset.dat
+0 
 0 New Model
 0 Name: prp_tableset.dat
 0 Author: Michael Horvath
@@ -1935,8 +1986,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_toilet.dat
 0
+0 FILE prp_toilet.dat
+0 
 0 New Model
 0 Name: prp_toilet.dat
 0 Author: Michael Horvath
@@ -1951,8 +2003,9 @@
 
 0 
 0 NOFILE
-0 FILE prp_watertank.dat
 0
+0 FILE prp_watertank.dat
+0 
 0 New Model
 0 Name: prp_watertank.dat
 0 Author: Michael Horvath
@@ -1970,8 +2023,9 @@
 
 0 
 0 NOFILE
-0 FILE rck_axe.dat
 0
+0 FILE rck_axe.dat
+0 
 0 New Model
 0 Name: rck_axe.dat
 0 Author: Michael Horvath
@@ -1992,8 +2046,9 @@
 
 0 
 0 NOFILE
-0 FILE rck_broom.dat
 0
+0 FILE rck_broom.dat
+0 
 0 New Model
 0 Name: rck_broom.dat
 0 Author: Michael Horvath
@@ -2016,8 +2071,9 @@
 
 0 
 0 NOFILE
-0 FILE rck_pick.dat
 0
+0 FILE rck_pick.dat
+0 
 0 New Model
 0 Name: rck_pick.dat
 0 Author: Michael Horvath
@@ -2037,8 +2093,9 @@
 
 0 
 0 NOFILE
-0 FILE rck_tank.dat
 0
+0 FILE rck_tank.dat
+0 
 0 New Model
 0 Name: rck_tank.dat
 0 Author: Michael Horvath
@@ -2062,8 +2119,9 @@
 
 0 
 0 NOFILE
-0 FILE rck_tool_1.dat
 0
+0 FILE rck_tool_1.dat
+0 
 0 New Model
 0 Name: rck_tool_1.dat
 0 Author: Michael Horvath
@@ -2082,8 +2140,9 @@
 
 0 
 0 NOFILE
-0 FILE rck_tool_2.dat
 0
+0 FILE rck_tool_2.dat
+0 
 0 New Model
 0 Name: rck_tool_2.dat
 0 Author: Michael Horvath
@@ -2110,8 +2169,9 @@
 
 0 
 0 NOFILE
-0 FILE arc_big.dat
 0
+0 FILE arc_big.dat
+0 
 0 New Model
 0 Name: arc_big.dat
 0 Author: Michael Horvath
@@ -2138,8 +2198,9 @@
 
 0 
 0 NOFILE
-0 FILE shg_east.dat
 0
+0 FILE shg_east.dat
+0 
 0 New Model
 0 Name: shg_east.dat
 0 Author: Michael Horvath
@@ -2160,8 +2221,9 @@
 
 0 
 0 NOFILE
-0 FILE shg_north.dat
 0
+0 FILE shg_north.dat
+0 
 0 New Model
 0 Name: shg_north.dat
 0 Author: Michael Horvath
@@ -2196,8 +2258,9 @@
 
 0 
 0 NOFILE
-0 FILE shg_south.dat
 0
+0 FILE shg_south.dat
+0 
 0 New Model
 0 Name: shg_south.dat
 0 Author: Michael Horvath
@@ -2248,8 +2311,9 @@
 
 0 
 0 NOFILE
-0 FILE shg_west.dat
 0
+0 FILE shg_west.dat
+0 
 0 New Model
 0 Name: shg_west.dat
 0 Author: Michael Horvath
@@ -2283,8 +2347,9 @@
 
 0 
 0 NOFILE
-0 FILE lmp_ceiling_1.dat
 0
+0 FILE lmp_ceiling_1.dat
+0 
 0 New Model
 0 Name: lmp_ceiling_1.dat
 0 Author: Michael Horvath
@@ -2315,8 +2380,9 @@
 
 0 
 0 NOFILE
-0 FILE lmp_ceiling_2.dat
 0
+0 FILE lmp_ceiling_2.dat
+0 
 0 New Model
 0 Name: lmp_ceiling_2.dat
 0 Author: Michael Horvath
@@ -2353,8 +2419,9 @@
 
 0 
 0 NOFILE
-0 FILE lmp_ceiling_3.dat
 0
+0 FILE lmp_ceiling_3.dat
+0 
 0 New Model
 0 Name: lmp_ceiling_3.dat
 0 Author: Michael Horvath
@@ -2395,8 +2462,9 @@
 
 0 
 0 NOFILE
-0 FILE lmp_ceiling_4.dat
 0
+0 FILE lmp_ceiling_4.dat
+0 
 0 New Model
 0 Name: lmp_ceiling_4.dat
 0 Author: Michael Horvath
@@ -2437,8 +2505,9 @@
 
 0 
 0 NOFILE
-0 FILE lmp_ceiling_5.dat
 0
+0 FILE lmp_ceiling_5.dat
+0 
 0 New Model
 0 Name: lmp_ceiling_5.dat
 0 Author: Michael Horvath
@@ -2475,8 +2544,9 @@
 
 0 
 0 NOFILE
-0 FILE lmp_ceiling_6.dat
 0
+0 FILE lmp_ceiling_6.dat
+0 
 0 New Model
 0 Name: lmp_ceiling_6.dat
 0 Author: Michael Horvath
@@ -2514,8 +2584,9 @@
 
 0 
 0 NOFILE
-0 FILE lmp_flourescant.dat
 0
+0 FILE lmp_flourescant.dat
+0 
 0 New Model
 0 Name: lmp_flourescant.dat
 0 Author: Michael Horvath
@@ -2529,8 +2600,9 @@
 
 0 
 0 NOFILE
-0 FILE arc_small.dat
 0
+0 FILE arc_small.dat
+0 
 0 New Model
 0 Name: arc_small.dat
 0 Author: Michael Horvath
@@ -2559,8 +2631,9 @@
 0 
 0 
 0 NOFILE
-0 FILE m6643.ldr
 0
+0 FILE m6643.ldr
+0 
 0 Model exported from LeoCAD
 0 Original name: 6643FI~1.LCD
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -2645,8 +2718,9 @@
 0 
 0 
 0 NOFILE
-0 FILE m6666.ldr
 0
+0 FILE m6666.ldr
+0 
 0 Untitled
 0 Name: m6666.ldr
 0 Author: MLCad
@@ -2740,3 +2814,22 @@
 0 
 0 
 0 NOFILE
+0 
+0 
+0
+0 FILE camera.dat
+0 ~Camera Position
+0 Name: Camera.dat
+0 Author: Tore Eriksson
+0 Un-official part
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+2 24 -20 0 0 20 0 0
+2 24 0 -20 0 0 20 0
+2 24 0 0 -20 0 0 20
+0 L3P IFNOTPOV
+1 0 0 25 37 1 0 0 0 1 0 0 0 1 30148.dat
+0 L3P ENDPOV
+0 
+0
+0
