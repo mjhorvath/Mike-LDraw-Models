@@ -38,7 +38,7 @@ global_settings {assumed_gamma 1}
 #declare Use_Floor		= 1;			// note that LDView has its own floor setting that may conflict with this one
 #declare Use_Background	= 0;			// note that LDView has its own floor setting that may conflict with this one
 #declare Use_Sky		= 1;			// sky sphere
-#declare Use_LensFlare	= 0;			// should only be enabled when the sun is actually visible
+#declare Use_LensFlare	= 1;			// should only be enabled when the sun is actually visible
 #declare LDXSkipLight1	= true;
 #declare LDXSkipLight2	= true;
 #declare LDXSkipLight3	= true;
@@ -278,7 +278,7 @@ sphere
 // Lens flare
 
 #if (Use_LensFlare = 1)
-	#declare camera_off		= true;
+	#declare camera_off			= true;
 	#declare effect_scale		= 1;
 	#declare camera_location	= vtransform(Camera_Location, Camera_Transform);
 	#declare camera_look_at		= vtransform(Camera_LookAt, Camera_Transform);
@@ -301,4 +301,4 @@ sphere
 }
 #declare LDX_camera_dot_dat = union {}
 
-#include "ldv_cubemap_carriage_house_new_lgeo_y.pov"
+//#include "ldv_cubemap_carriage_house_new_lgeo_y.pov"
