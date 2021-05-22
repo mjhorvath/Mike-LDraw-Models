@@ -1,4 +1,4 @@
-0 FILE complete.dat
+0 FILE building_031_carriagehouse.ldr
 0 Name: complete.dat
 0 Author: Michael Horvath
 0 This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
@@ -7,81 +7,66 @@
 0 Unofficial Model
 0 ROTATION CENTER -402.807 -24 20.3509 1 "Custom" 
 0 ROTATION CONFIG -2 0
-1 0 0 0 -20 1 0 0 0 1 0 0 0 1 center.dat
-1 7 0 0 0 1 0 0 0 1 0 0 0 1 44343p02.dat
-1 7 -400 0 0 0 0 -1 0 1 0 1 0 0 4187.dat
-1 7 400 0 0 0 0 -1 0 1 0 1 0 0 4187.dat
-1 0 -120 4 -350 1 0 0 0 1 0 0 0 1 fig_fman_stand.dat
-1 0 0 0 -20 1 0 0 0 1 0 0 0 1 west.dat
-1 0 0 0 -20 1 0 0 0 1 0 0 0 1 east.dat
-1 0 0 0 -20 1 0 0 0 1 0 0 0 1 roof.dat
-1 7 310 16 60 -1 0 0 0 1 0 0 0 -1 m6643.ldr
-1 7 -230 -32 290 0 0 -1 0 1 0 1 0 0 m6666.ldr
-0 MLCAD HIDE 1 7 0 0 0 1 0 0 0 1 0 0 0 1 axis_32s.dat
-0 MLCAD HIDE 1 7 0 -88 -640 0 0 1 0 1 0 -1 0 0 camera.dat
-0 MLCAD HIDE 1 7 -800 -88 0 0 0 1 0 1 0 -1 0 0 camera.dat
-0 MLCAD HIDE 1 7 800 -88 0 0 0 1 0 1 0 -1 0 0 camera.dat
-0 MLCAD HIDE 1 7 0 -88 640 0 0 1 0 1 0 -1 0 0 camera.dat
-0 MLCAD HIDE 1 7 0 -600 100 0 0 1 0 1 0 -1 0 0 camera.dat
+1 0 0 0 -20 1 0 0 0 1 0 0 0 1 building_031_center.ldr
+1 0 0 0 -20 1 0 0 0 1 0 0 0 1 building_031_west.ldr
+1 0 0 0 -20 1 0 0 0 1 0 0 0 1 building_031_east.ldr
+1 0 0 0 -20 1 0 0 0 1 0 0 0 1 building_031_roof.ldr
+1 4294967295 0 0 0 1 0 0 0 1 0 0 0 1 building_031_floor.ldr
+0
+0 FILE building_031_center.ldr
+0 
+0 Name: building_031_center.ldr
+0 Author: Michael Horvath
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 1
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 building_031_cbot.ldr
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 building_031_ctop.ldr
 0 
 
 0 
 0 NOFILE
 0
-0 FILE center.dat
+0 FILE building_031_east.ldr
 0 
-0 Name: center.dat
+0 Name: building_031_east.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 1
-1 0 0 0 0 1 0 0 0 1 0 0 0 1 cbot.dat
-1 0 0 0 0 1 0 0 0 1 0 0 0 1 ctop.dat
-0 
-
-0 
-0 NOFILE
-0
-0 FILE east.dat
-0 
-0 Name: east.dat
-0 Author: Michael Horvath
-0 Unofficial Model
-0 ROTATION CENTER 0 0 0 1 "Custom" 
-0 ROTATION CONFIG 0 1
-1 0 0 0 0 1 0 0 0 1 0 0 0 1 ebot.dat
-1 0 0 0 0 1 0 0 0 1 0 0 0 1 etop.dat
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 building_031_ebot.ldr
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 building_031_etop.ldr
 0 MLCAD HIDE 1 0 400 -184 -180 0 0 1 0 1 0 -1 0 0 camera.dat
 0 
 
 0 
 0 NOFILE
 0
-0 FILE west.dat
+0 FILE building_031_west.ldr
 0 
-0 Name: west.dat
+0 Name: building_031_west.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 1
-1 0 0 0 0 1 0 0 0 1 0 0 0 1 wbot.dat
-1 0 0 0 0 1 0 0 0 1 0 0 0 1 wtop.dat
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 building_031_wbot.ldr
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 building_031_wtop.ldr
 0 
 
 0 
 0 NOFILE
 0
-0 FILE roof.dat
+0 FILE building_031_roof.ldr
 0 
-0 Name: roof.dat
+0 Name: building_031_roof.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 320 -529.83 140 1 "Custom" 
 0 ROTATION CONFIG -2 0
-1 0 0 0 0 1 0 0 0 1 0 0 0 1 croof.dat
-1 0 0 0 0 1 0 0 0 1 0 0 0 1 eroof.dat
-1 0 0 0 0 1 0 0 0 1 0 0 0 1 wroof.dat
-1 0 -320 -528 150 0.707107 0 0.707107 0 1 0 -0.707107 0 0.707107 prp_sat_base.dat
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 building_031_croof.ldr
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 building_031_eroof.ldr
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 building_031_wroof.ldr
+1 0 -320 -528 150 0.707107 0 0.707107 0 1 0 -0.707107 0 0.707107 building_031_prp_sat_base.ldr
 1 0 -320 -528 150 1 0 0 0 1 0 0 0 1 3794a.dat
 1 0 320 -544 60 1 0 0 0 1 0 0 0 1 3144.dat
 1 0 320 -528 140 1 0 0 0 1 0 0 0 1 2569.dat
@@ -90,9 +75,9 @@
 0 
 0 NOFILE
 0
-0 FILE cbot.dat
+0 FILE building_031_cbot.ldr
 0 
-0 Name: cbot.dat
+0 Name: building_031_cbot.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 33.1306 -129.274 -270 1 "Custom" 
@@ -111,13 +96,13 @@
 1 0 -190 -192 100 0 0 -1 0 1 0 1 0 0 3004.dat
 1 0 -190 -216 100 0 0 -1 0 1 0 1 0 0 3010.dat
 1 0 190 -216 100 0 0 -1 0 1 0 1 0 0 3010.dat
-1 0 280 -216 100 -1 0 0 0 1 0 0 0 -1 lmp_flourescant.dat
-1 0 360 -216 100 -1 0 0 0 1 0 0 0 -1 lmp_flourescant.dat
-1 0 -280 -216 100 -1 0 0 0 1 0 0 0 -1 lmp_flourescant.dat
-1 0 -360 -216 100 -1 0 0 0 1 0 0 0 -1 lmp_flourescant.dat
-1 0 -280 -216 -180 -1 0 0 0 1 0 0 0 -1 lmp_flourescant.dat
-1 0 -360 -216 -180 -1 0 0 0 1 0 0 0 -1 lmp_flourescant.dat
-1 0 280 -216 -140 -1 0 0 0 1 0 0 0 -1 lmp_ceiling_6.dat
+1 0 280 -216 100 -1 0 0 0 1 0 0 0 -1 building_031_lmp_flourescant.ldr
+1 0 360 -216 100 -1 0 0 0 1 0 0 0 -1 building_031_lmp_flourescant.ldr
+1 0 -280 -216 100 -1 0 0 0 1 0 0 0 -1 building_031_lmp_flourescant.ldr
+1 0 -360 -216 100 -1 0 0 0 1 0 0 0 -1 building_031_lmp_flourescant.ldr
+1 0 -280 -216 -180 -1 0 0 0 1 0 0 0 -1 building_031_lmp_flourescant.ldr
+1 0 -360 -216 -180 -1 0 0 0 1 0 0 0 -1 building_031_lmp_flourescant.ldr
+1 0 280 -216 -140 -1 0 0 0 1 0 0 0 -1 building_031_lmp_ceiling_6.ldr
 1 0 -190 -216 200 0 0 -1 0 1 0 1 0 0 3710.dat
 1 0 190 -216 200 0 0 -1 0 1 0 1 0 0 3710.dat
 1 0 -190 -216 0 0 0 -1 0 1 0 1 0 0 3710.dat
@@ -209,7 +194,7 @@
 1 4 200 -168 -270 1 0 0 0 1 0 0 0 1 3004.dat
 1 0 230 -168 -270 1 0 0 0 1 0 0 0 1 4287a.dat
 1 0 230 -176 -300 0 0 1 0 1 0 -1 0 0 3794a.dat
-1 0 230 -176 -300 -0.707107 0 0.707107 0 1 0 -0.707107 0 -0.707107 prp_cam_mount.dat
+1 0 230 -176 -300 -0.707107 0 0.707107 0 1 0 -0.707107 0 -0.707107 building_031_prp_cam_mount.ldr
 1 4 280 -168 -270 1 0 0 0 1 0 0 0 1 3010.dat
 1 0 190 -216 290 -1 0 0 0 1 0 0 0 -1 2339.dat
 1 4 240 -192 -270 -1 0 0 0 1 0 0 0 -1 3008.dat
@@ -268,7 +253,7 @@
 1 0 -310 -144 -77 0.707107 0 -0.707107 0 1 0 0.707107 0 0.707107 2554.dat
 1 4 -190 -192 -180 0 0 1 0 1 0 -1 0 0 3008.dat
 1 4 -170 -192 -270 0 0 1 0 1 0 -1 0 0 3005.dat
-1 4 -190 -161.723 -291.84 1 0 0 0 0.866025 -0.5 0 0.5 0.866025 prp_flag.dat
+1 4 -190 -161.723 -291.84 1 0 0 0 0.866025 -0.5 0 0.5 0.866025 building_031_prp_flag.ldr
 1 0 -10 -96 298 0 0 -1 0 1 0 1 0 0 6105.dat
 1 0 -150 -96 298 0 0 1 0 1 0 -1 0 0 6105.dat
 1 0 150 -96 298 0 0 -1 0 1 0 1 0 0 6105.dat
@@ -312,9 +297,9 @@
 1 0 190 -216 -180 0 0 1 0 1 0 -1 0 0 3008.dat
 1 0 190 -24 100 0 0 1 0 1 0 -1 0 0 3004.dat
 1 0 -190 -24 100 0 0 1 0 1 0 -1 0 0 3004.dat
-1 0 -310 0 -180 0 0 -1 0 1 0 1 0 0 rck_pick.dat
-1 0 -210 0 -180 0 0 1 0 1 0 -1 0 0 rck_pick.dat
-1 0 -260 0 -250 -1 0 0 0 1 0 0 0 -1 rck_axe.dat
+1 0 -310 0 -180 0 0 -1 0 1 0 1 0 0 building_031_rck_pick.ldr
+1 0 -210 0 -180 0 0 1 0 1 0 -1 0 0 building_031_rck_pick.ldr
+1 0 -260 0 -250 -1 0 0 0 1 0 0 0 -1 building_031_rck_axe.ldr
 1 4 240 -168 310 -1 0 0 0 1 0 0 0 -1 3008.dat
 1 4 240 -144 310 -1 0 0 0 1 0 0 0 -1 3008.dat
 1 4 -240 -168 310 1 0 0 0 1 0 0 0 1 3008.dat
@@ -323,17 +308,15 @@
 1 0 -190 -216 280 0 0 -1 0 1 0 1 0 0 3004.dat
 1 0 190 -120 290 0 0 -1 0 1 0 1 0 0 2453a.dat
 1 0 -190 -120 290 0 0 -1 0 1 0 1 0 0 2453a.dat
-1 0 0 -88 100 0 0 1 0 1 0 -1 0 0 camera.dat
-1 0 0 -88 -180 0 0 1 0 1 0 -1 0 0 camera.dat
 1 0 -280 -88 -180 0 0 1 0 1 0 -1 0 0 camera.dat
 0 
 
 0 
 0 NOFILE
 0
-0 FILE ctop.dat
+0 FILE building_031_ctop.ldr
 0 
-0 Name: ctop.dat
+0 Name: building_031_ctop.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 33.1306 -129.274 -270 1 "Custom" 
@@ -392,9 +375,9 @@
 1 0 -60 -248 -270 -1 0 0 0 1 0 0 0 -1 3666.dat
 1 0 60 -248 -270 -1 0 0 0 1 0 0 0 -1 3666.dat
 1 0 260 -224 160 0 0 1 0 1 0 -1 0 0 3027.dat
-1 0 130 -224 -220 0 0 1 0 1 0 -1 0 0 prp_comms.dat
-1 0 220 -224 40 0 0 -1 0 1 0 1 0 0 prp_cabinet_2.dat
-1 0 -200 -224 -220 0 0 -1 0 1 0 1 0 0 prp_locker.dat
+1 0 130 -224 -220 0 0 1 0 1 0 -1 0 0 building_031_prp_comms.ldr
+1 0 220 -224 40 0 0 -1 0 1 0 1 0 0 building_031_prp_cabinet_2.ldr
+1 0 -200 -224 -220 0 0 -1 0 1 0 1 0 0 building_031_prp_locker.ldr
 1 0 230 -248 290 0 0 -1 0 1 0 1 0 0 3005.dat
 1 0 250 -368 310 -1 0 0 0 1 0 0 0 -1 3622.dat
 1 0 300 -368 310 -1 0 0 0 1 0 0 0 -1 3004.dat
@@ -416,12 +399,12 @@
 1 0 -260 -224 -120 1 0 0 0 1 0 0 0 1 3032.dat
 1 0 -260 -224 -220 1 0 0 0 1 0 0 0 1 3958.dat
 1 0 -260 -224 160 0 0 1 0 1 0 -1 0 0 3027.dat
-1 0 -240 -288 170 0 0 1 0 1 0 -1 0 0 prp_bed.dat
-1 0 -220 -224 20 0 0 1 0 1 0 -1 0 0 prp_cabinet_1.dat
+1 0 -240 -288 170 0 0 1 0 1 0 -1 0 0 building_031_prp_bed.ldr
+1 0 -220 -224 20 0 0 1 0 1 0 -1 0 0 building_031_prp_cabinet_1.ldr
 1 0 -160 -224 -180 0 0 1 0 1 0 -1 0 0 3035.dat
 1 0 -80 -224 -180 0 0 1 0 1 0 -1 0 0 3035.dat
 1 0 0 -224 -180 0 0 1 0 1 0 -1 0 0 3035.dat
-1 0 -40 -224 -220 1 0 0 0 1 0 0 0 1 prp_cot.dat
+1 0 -40 -224 -220 1 0 0 0 1 0 0 0 1 building_031_prp_cot.ldr
 1 0 80 -224 -180 0 0 1 0 1 0 -1 0 0 3035.dat
 1 0 160 -224 -180 0 0 1 0 1 0 -1 0 0 3035.dat
 1 0 240 -224 -220 0 0 1 0 1 0 -1 0 0 3032.dat
@@ -480,7 +463,7 @@
 1 0 190 -344 220 0 0 1 0 1 0 -1 0 0 2493b.dat
 1 39 280 -344 310 -1 0 0 0 1 0 0 0 -1 2494.dat
 1 39 190 -344 220 0 0 1 0 1 0 -1 0 0 2494.dat
-1 7 227 -224 139 1 0 0 0 1 0 0 0 1 prp_stove.dat
+1 7 227 -224 139 1 0 0 0 1 0 0 0 1 building_031_prp_stove.ldr
 0 MLCAD HIDE 1 0 280 -312 140 0 0 1 0 1 0 -1 0 0 camera.dat
 0 MLCAD HIDE 1 0 200 -312 -140 0 0 1 0 1 0 -1 0 0 camera.dat
 0 MLCAD HIDE 1 0 -200 -312 -140 0 0 1 0 1 0 -1 0 0 camera.dat
@@ -492,10 +475,10 @@
 1 0 -270 -296 -180 0 0 1 0 1 0 -1 0 0 4864b.dat
 1 0 -270 -344 -180 0 0 1 0 1 0 -1 0 0 4864b.dat
 1 0 -270 -368 -180 0 0 1 0 1 0 -1 0 0 30413.dat
-1 0 -290 -224 -180 1 0 0 0 1 0 0 0 1 prp_toilet.dat
+1 0 -290 -224 -180 1 0 0 0 1 0 0 0 1 building_031_prp_toilet.ldr
 1 0 -310 -368 -110 1 0 0 0 1 0 0 0 1 6231.dat
 1 0 -310 -368 -250 0 0 -1 0 1 0 1 0 0 6231.dat
-1 0 320 -224 260 1 0 0 0 1 0 0 0 1 prp_couch.dat
+1 0 320 -224 260 1 0 0 0 1 0 0 0 1 building_031_prp_couch.ldr
 1 0 -190 -368 -50 0 0 -1 0 1 0 1 0 0 3622.dat
 1 0 190 -368 200 0 0 1 0 1 0 -1 0 0 3004.dat
 1 0 -190 -368 200 0 0 -1 0 1 0 1 0 0 3004.dat
@@ -513,9 +496,9 @@
 0 
 0 NOFILE
 0
-0 FILE croof.dat
+0 FILE building_031_croof.ldr
 0 
-0 Name: croof.dat
+0 Name: building_031_croof.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 320 -422 -120 1 "Custom" 
@@ -630,8 +613,8 @@
 1 0 350 -512 -130 0 0 -1 0 1 0 1 0 0 3040b.dat
 1 0 370 -488 -150 0 0 -1 0 1 0 1 0 0 3046.dat
 1 0 350 -512 -170 0 0 -1 0 1 0 1 0 0 3046.dat
-1 7 -190 -368 -180 -1 0 0 0 1 0 0 0 -1 arc_small.dat
-1 7 190 -368 -180 -1 0 0 0 1 0 0 0 -1 arc_small.dat
+1 7 -190 -344 -180 -1 0 0 0 1 0 0 0 -1 building_031_arc_small.ldr
+1 7 190 -344 -180 -1 0 0 0 1 0 0 0 -1 building_031_arc_small.ldr
 1 7 80 -392 -90 1 0 0 0 1 0 0 0 1 6111.dat
 1 7 -100 -392 -90 1 0 0 0 1 0 0 0 1 3008.dat
 1 7 80 -392 -270 1 0 0 0 1 0 0 0 1 6111.dat
@@ -656,19 +639,19 @@
 1 0 -250 -464 -130 0 0 -1 0 1 0 1 0 0 3046.dat
 1 0 -290 -512 -170 0 0 -1 0 1 0 1 0 0 3046.dat
 1 0 -270 -488 -150 0 0 -1 0 1 0 1 0 0 3046.dat
-1 7 0 -512 -180 -1 0 0 0 1 0 0 0 -1 lmp_ceiling_2.dat
-1 7 -320 -512 -180 -1 0 0 0 1 0 0 0 -1 lmp_ceiling_4.dat
-1 7 320 -512 -180 -1 0 0 0 1 0 0 0 -1 lmp_ceiling_4.dat
-1 0 0 -516 -156 1 0 0 0 0.640184 0.768221 0 -0.768221 0.640184 shg_north.dat
-1 0 0 -516 -204 1 0 0 0 0.640184 -0.768221 0 0.768221 0.640184 shg_south.dat
+1 7 0 -512 -180 -1 0 0 0 1 0 0 0 -1 building_031_lmp_ceiling_2.ldr
+1 7 -320 -512 -180 -1 0 0 0 1 0 0 0 -1 building_031_lmp_ceiling_4.ldr
+1 7 320 -512 -180 -1 0 0 0 1 0 0 0 -1 building_031_lmp_ceiling_4.ldr
+1 0 0 -516 -156 1 0 0 0 0.640184 0.768221 0 -0.768221 0.640184 building_031_shg_north.ldr
+1 0 0 -516 -204 1 0 0 0 0.640184 -0.768221 0 0.768221 0.640184 building_031_shg_south.ldr
 0 
 
 0 
 0 NOFILE
 0
-0 FILE ebot.dat
+0 FILE building_031_ebot.ldr
 0 
-0 Name: ebot.dat
+0 Name: building_031_ebot.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 450 -54.8982 69.1509 1 "Custom" 
@@ -756,7 +739,7 @@
 1 4 470 -216 190 0 0 1 0 1 0 -1 0 0 4490.dat
 1 0 340 -216 -220 0 0 -1 0 1 0 1 0 0 30134.dat
 1 0 390 -48 -220 0 0 -1 0 1 0 1 0 0 3245a.dat
-1 0 280 0 -250 -1 0 0 0 1 0 0 0 -1 rck_axe.dat
+1 0 280 0 -250 -1 0 0 0 1 0 0 0 -1 building_031_rck_axe.ldr
 1 0 390 -72 -220 0 0 -1 0 1 0 1 0 0 3004.dat
 1 0 390 -136 -220 0 0 -1 0 1 0 1 0 0 3660.dat
 1 0 390 -112 -220 0 0 -1 0 1 0 1 0 0 3023.dat
@@ -785,8 +768,8 @@
 1 0 380 -192 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
 1 0 380 -216 -90 -1 0 0 0 1 0 0 0 -1 3009.dat
 1 14 400 -24 180 0 0 -1 0 1 0 1 0 0 3299.dat
-1 14 320 0 100 -1 0 0 0 1 0 0 0 -1 prp_air_tank.dat
-1 14 220 0 100 -1 0 0 0 1 0 0 0 -1 prp_cone.dat
+1 14 320 0 100 -1 0 0 0 1 0 0 0 -1 building_031_prp_air_tank.ldr
+1 14 220 0 100 -1 0 0 0 1 0 0 0 -1 building_031_prp_cone.ldr
 1 14 400 -24 240 0 0 -1 0 1 0 1 0 0 3300.dat
 1 14 400 -24 20 0 0 -1 0 1 0 1 0 0 3299.dat
 1 14 400 -24 -40 0 0 -1 0 1 0 1 0 0 3300.dat
@@ -814,9 +797,9 @@
 0 
 0 NOFILE
 0
-0 FILE etop.dat
+0 FILE building_031_etop.ldr
 0 
-0 Name: etop.dat
+0 Name: building_031_etop.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -860,7 +843,7 @@
 1 0 380 -224 -40 -1 0 0 0 1 0 0 0 -1 3032.dat
 1 4 400 -240 50 -1 0 0 0 1 0 0 0 -1 fig_fman_sit_2.dat
 1 4 400 -240 190 1 0 0 0 1 0 0 0 1 fig_fman_sit_1.dat
-1 4 380 -224 120 1 0 0 0 1 0 0 0 1 prp_tableset.dat
+1 4 380 -224 120 1 0 0 0 1 0 0 0 1 building_031_prp_tableset.ldr
 1 4 380 -272 -70 1 0 0 0 1 0 0 0 1 2486.dat
 1 0 400 -368 -270 1 0 0 0 1 0 0 0 1 3004.dat
 1 0 430 -368 -250 1 0 0 0 1 0 0 0 1 2345.dat
@@ -877,17 +860,17 @@
 0 
 0 NOFILE
 0
-0 FILE eroof.dat
+0 FILE building_031_eroof.ldr
 0 
-0 Name: eroof.dat
+0 Name: building_031_eroof.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 320 -422 -120 1 "Custom" 
 0 ROTATION CONFIG 0 0
 1 7 280 -392 310 1 0 0 0 1 0 0 0 1 3010.dat
 1 7 360 -392 310 1 0 0 0 1 0 0 0 1 3010.dat
-1 0 320 -224 250 -1 0 0 0 1 0 0 0 -1 arc_big.dat
-1 0 320 -224 -50 -1 0 0 0 1 0 0 0 -1 arc_big.dat
+1 0 320 -224 250 -1 0 0 0 1 0 0 0 -1 building_031_arc_big.ldr
+1 0 320 -224 -50 -1 0 0 0 1 0 0 0 -1 building_031_arc_big.ldr
 1 7 250 -416 310 1 0 0 0 1 0 0 0 1 3622.dat
 1 7 390 -416 310 1 0 0 0 1 0 0 0 1 3622.dat
 1 7 370 -464 310 1 0 0 0 1 0 0 0 1 3005.dat
@@ -944,17 +927,17 @@
 1 7 390 -464 310 0 0 -1 0 1 0 1 0 0 3040b.dat
 1 7 350 -512 310 0 0 -1 0 1 0 1 0 0 3040b.dat
 1 7 370 -488 310 0 0 -1 0 1 0 1 0 0 3040b.dat
-1 0 320 -512 100 0 0 1 0 1 0 -1 0 0 lmp_ceiling_3.dat
-1 0 364 -516 320 0 -0.768221 -0.640184 0 0.640184 -0.768221 1 0 0 shg_east.dat
-1 0 276 -516 320 0 0.768221 0.640184 0 0.640184 -0.768221 -1 0 0 shg_west.dat
+1 0 320 -512 100 0 0 1 0 1 0 -1 0 0 building_031_lmp_ceiling_3.ldr
+1 0 364 -516 320 0 -0.768221 -0.640184 0 0.640184 -0.768221 1 0 0 building_031_shg_east.ldr
+1 0 276 -516 320 0 0.768221 0.640184 0 0.640184 -0.768221 -1 0 0 building_031_shg_west.ldr
 0 
 
 0 
 0 NOFILE
 0
-0 FILE wbot.dat
+0 FILE building_031_wbot.ldr
 0 
-0 Name: wbot.dat
+0 Name: building_031_wbot.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER -341.115 -30 -240 1 "Custom" 
@@ -964,10 +947,10 @@
 1 4 -460 -24 40 0 0 -1 0 1 0 1 0 0 3006.dat
 1 4 -460 -24 240 0 0 -1 0 1 0 1 0 0 3006.dat
 1 4 -350 0 20 0 0 -1 0 1 0 1 0 0 fig_medic_2.dat
-1 4 -320 0 90 -1 0 0 0 1 0 0 0 -1 rck_tool_1.dat
-1 4 -320 0 110 -1 0 0 0 1 0 0 0 -1 rck_tool_2.dat
+1 4 -320 0 90 -1 0 0 0 1 0 0 0 -1 building_031_rck_tool_1.ldr
+1 4 -320 0 110 -1 0 0 0 1 0 0 0 -1 building_031_rck_tool_2.ldr
 1 1 -220 -40 100 -1 0 0 0 1 0 0 0 -1 2489.dat
-1 4 -430 0 100 0 0 -1 0 1 0 1 0 0 rck_broom.dat
+1 4 -430 0 100 0 0 -1 0 1 0 1 0 0 building_031_rck_broom.ldr
 1 14 -400 -24 180 0 0 -1 0 1 0 1 0 0 3299.dat
 1 14 -400 -24 240 0 0 -1 0 1 0 1 0 0 3300.dat
 1 14 -400 -24 20 0 0 -1 0 1 0 1 0 0 3299.dat
@@ -999,7 +982,7 @@
 1 4 -410 -120 310 -1 0 0 0 1 0 0 0 -1 3038.dat
 1 4 -450 -120 310 -1 0 0 0 1 0 0 0 -1 3045.dat
 1 4 -450 -120 -230 0 0 1 0 1 0 -1 0 0 3038.dat
-1 4 -400 0 -220 0 0 1 0 1 0 -1 0 0 prp_watertank.dat
+1 4 -400 0 -220 0 0 1 0 1 0 -1 0 0 building_031_prp_watertank.ldr
 1 4 -450 -120 -10 0 0 1 0 1 0 -1 0 0 3046.dat
 1 4 -450 -120 -270 0 0 1 0 1 0 -1 0 0 3045.dat
 1 4 -400 -120 -270 1 0 0 0 1 0 0 0 1 3037.dat
@@ -1060,7 +1043,7 @@
 1 4 -380 -48 -90 1 0 0 0 1 0 0 0 1 3009.dat
 1 4 -380 -24 -90 1 0 0 0 1 0 0 0 1 3009.dat
 1 4 -380 -216 -90 1 0 0 0 1 0 0 0 1 3009.dat
-1 4 -419.135 -83.606 -133.013 0 0.965926 -0.258819 0 -0.258819 -0.965926 -1 0 0 prp_stretcher.dat
+1 4 -419.135 -83.606 -133.013 0 0.965926 -0.258819 0 -0.258819 -0.965926 -1 0 0 building_031_prp_stretcher.ldr
 1 0 -420 -24 -135 0 0 -1 0 1 0 1 0 0 2584.dat
 1 7 -420 -30 -135 0 0 -1 0 1 0 1 0 0 2585.dat
 1 4 -450 -144 100 0 0 -1 0 1 0 1 0 0 3009.dat
@@ -1076,9 +1059,9 @@
 0 
 0 NOFILE
 0
-0 FILE wtop.dat
+0 FILE building_031_wtop.ldr
 0 
-0 Name: wtop.dat
+0 Name: building_031_wtop.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -1092,17 +1075,17 @@
 1 15 -430 -248 -210 -1 0 0 0 1 0 0 0 -1 3005.dat
 1 15 -330 -248 -210 -1 0 0 0 1 0 0 0 -1 3005.dat
 1 15 -380 -248 -210 1 0 0 0 1 0 0 0 1 30413.dat
-1 7 -430 -224 -160 0 0 -1 0 1 0 1 0 0 prp_sink.dat
+1 7 -430 -224 -160 0 0 -1 0 1 0 1 0 0 building_031_prp_sink.ldr
 1 0 -380 -368 -110 1 0 0 0 1 0 0 0 1 3009.dat
 1 0 -390 -344 -110 0 0 1 0 1 0 -1 0 0 73435.dat
 1 0 -380 -224 160 0 0 1 0 1 0 -1 0 0 3027.dat
-1 0 -360 -288 170 1 0 0 0 1 0 0 0 1 prp_control.dat
-1 0 -360 -288 100 0 0 -1 0 1 0 1 0 0 prp_chair.dat
-1 0 -420 -224 40 0 0 -1 0 1 0 1 0 0 prp_cabinet_1.dat
-1 0 -420 -224 160 0 0 1 0 1 0 -1 0 0 prp_cylinder_1.dat
-1 0 -420 -224 120 0 0 1 0 1 0 -1 0 0 prp_cylinder_2.dat
+1 0 -360 -288 170 1 0 0 0 1 0 0 0 1 building_031_prp_control.ldr
+1 0 -360 -288 100 0 0 -1 0 1 0 1 0 0 building_031_prp_chair.ldr
+1 0 -420 -224 40 0 0 -1 0 1 0 1 0 0 building_031_prp_cabinet_1.ldr
+1 0 -420 -224 160 0 0 1 0 1 0 -1 0 0 building_031_prp_cylinder_1.ldr
+1 0 -420 -224 120 0 0 1 0 1 0 -1 0 0 building_031_prp_cylinder_2.ldr
 1 0 -430 -344 -80 0 0 -1 0 1 0 1 0 0 2454ps5.dat
-1 0 -380 -224 240 0 0 1 0 1 0 -1 0 0 prp_curtain.dat
+1 0 -380 -224 240 0 0 1 0 1 0 -1 0 0 building_031_prp_curtain.ldr
 1 0 -400 -248 -270 1 0 0 0 1 0 0 0 1 3004.dat
 1 0 -400 -368 -270 1 0 0 0 1 0 0 0 1 3004.dat
 1 0 -430 -368 -250 0 0 1 0 1 0 -1 0 0 2345.dat
@@ -1148,9 +1131,9 @@
 0 
 0 NOFILE
 0
-0 FILE wroof.dat
+0 FILE building_031_wroof.ldr
 0 
-0 Name: eroof.dat
+0 Name: building_031_wroof.ldr
 0 Author: Michael Horvath
 0 Name: wroof.dat
 0 Unofficial Model
@@ -1158,8 +1141,8 @@
 0 ROTATION CONFIG 0 0
 1 7 -360 -392 310 1 0 0 0 1 0 0 0 1 3010.dat
 1 7 -280 -392 310 1 0 0 0 1 0 0 0 1 3010.dat
-1 0 -320 -224 250 -1 0 0 0 1 0 0 0 -1 arc_big.dat
-1 0 -320 -224 -50 -1 0 0 0 1 0 0 0 -1 arc_big.dat
+1 0 -320 -224 250 -1 0 0 0 1 0 0 0 -1 building_031_arc_big.ldr
+1 0 -320 -224 -50 -1 0 0 0 1 0 0 0 -1 building_031_arc_big.ldr
 1 7 -390 -416 310 1 0 0 0 1 0 0 0 1 3622.dat
 1 7 -250 -416 310 1 0 0 0 1 0 0 0 1 3622.dat
 1 7 -270 -464 310 1 0 0 0 1 0 0 0 1 3005.dat
@@ -1217,9 +1200,9 @@
 1 7 -250 -464 310 0 0 -1 0 1 0 1 0 0 3040b.dat
 1 7 -290 -512 310 0 0 -1 0 1 0 1 0 0 3040b.dat
 1 7 -270 -488 310 0 0 -1 0 1 0 1 0 0 3040b.dat
-1 0 -276 -516 320 0 -0.768221 -0.640184 0 0.640184 -0.768221 1 0 0 shg_east.dat
-1 0 -364 -516 320 0 0.768221 0.640184 0 0.640184 -0.768221 -1 0 0 shg_west.dat
-1 0 -320 -512 100 0 0 1 0 1 0 -1 0 0 lmp_ceiling_3.dat
+1 0 -276 -516 320 0 -0.768221 -0.640184 0 0.640184 -0.768221 1 0 0 building_031_shg_east.ldr
+1 0 -364 -516 320 0 0.768221 0.640184 0 0.640184 -0.768221 -1 0 0 building_031_shg_west.ldr
+1 0 -320 -512 100 0 0 1 0 1 0 -1 0 0 building_031_lmp_ceiling_3.ldr
 
 0 
 0 NOFILE
@@ -1269,35 +1252,6 @@
 1 14 23.8634 -26.4044 -10.321 0.985 0.12019 -0.12019 -0.17 0.696395 -0.696395 0 0.707 0.707 3820.dat
 1 0 0 -9 0 1 0 0 0 0 1 0 -1 0 3817.dat
 1 0 0 -9 0 1 0 0 0 0 1 0 -1 0 3816.dat
-0 
-
-0 
-0 NOFILE
-0
-0 FILE fig_fman_stand.dat
-0 
-0 New Model
-0 Name: fig_fman_stand.dat
-0 Author: Michael Horvath
-0 Unofficial Model
-0 New Model
-0 Name: fman_sit1.dat
-0 Author: Michael Horvath
-0 Unofficial Model
-0 ROTATION CENTER 0 0 0 1 "Custom" 
-0 ROTATION CONFIG 0 0
-1 15 0 -100 0 1 0 0 0 1 0 0 0 1 3834.dat
-1 14 0 -100 0 1 0 0 0 1 0 0 0 1 3626bp39.dat
-1 15 0 -72 0 1 0 0 0 1 0 0 0 1 3838.dat
-1 0 0 -72 0 1 0 0 0 1 0 0 0 1 973p77.dat
-1 0 0 -40 0 1 0 0 0 1 0 0 0 1 3815.dat
-1 0 -15.552 -63 0 0.985 -0.17 0 0.17 0.985 0 0 0 1 3818.dat
-1 0 15.552 -63 0 0.985 0.17 0 -0.17 0.985 0 0 0 1 3819.dat
-1 14 -23.8634 -45.4044 -10.321 0.985 -0.12019 0.12019 0.17 0.696395 -0.696395 0 0.707 0.707 3820.dat
-1 14 23.8634 -45.4044 -10.321 0.985 0.12019 -0.12019 -0.17 0.696395 -0.696395 0 0.707 0.707 3820.dat
-1 0 0 -28 0 1 0 0 0 1 0 0 0 1 3817.dat
-1 0 0 -28 0 1 0 0 0 1 0 0 0 1 3816.dat
-0 
 0 
 
 0 
@@ -1353,10 +1307,10 @@
 0 
 0 NOFILE
 0
-0 FILE prp_air_hose.dat
+0 FILE building_031_prp_air_hose.ldr
 0 
 0 New flex hose
-0 Name: prp_air_hose.dat
+0 Name: building_031_prp_air_hose.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -1416,10 +1370,10 @@
 0 
 0 NOFILE
 0
-0 FILE prp_air_tank.dat
+0 FILE building_031_prp_air_tank.ldr
 0 
 0 New Model
-0 Name: prp_air_tank.dat
+0 Name: building_031_prp_air_tank.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 Name: prp_cyl_yellow.dat
@@ -1433,15 +1387,15 @@
 1 0 40 -22 0 1 0 0 0 0 -1 0 1 0 4349.dat
 1 0 0 -88 0 1 0 0 0 1 0 0 0 1 750.dat
 1 0 40 -56 0 1 0 0 0 1 0 0 0 1 750.dat
-1 0 0 0 0 1 0 0 0 1 0 0 0 1 prp_air_hose.dat
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 building_031_prp_air_hose.ldr
 0 
 
 0 
 0 NOFILE
 0
-0 FILE prp_bed.dat
+0 FILE building_031_prp_bed.ldr
 0 
-0 Name: prp_bed.dat
+0 Name: building_031_prp_bed.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 98.968 24 -21.1559 1 "Custom" 
@@ -1475,9 +1429,9 @@
 0 
 0 NOFILE
 0
-0 FILE prp_cabinet_1.dat
+0 FILE building_031_prp_cabinet_1.ldr
 0 
-0 Name: prp_cabinet_1.dat
+0 Name: building_031_prp_cabinet_1.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -1500,10 +1454,10 @@
 0 
 0 NOFILE
 0
-0 FILE prp_cabinet_2.dat
+0 FILE building_031_prp_cabinet_2.ldr
 0 
 0 New Model
-0 Name: prp_cabinet_2.dat
+0 Name: building_031_prp_cabinet_2.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 Name: prp_cabinet.dat
@@ -1530,25 +1484,25 @@
 0 
 0 NOFILE
 0
-0 FILE prp_cam_mount.dat
+0 FILE building_031_prp_cam_mount.ldr
 0 
 0 New Model
-0 Name: prp_cam_mount.dat
+0 Name: building_031_prp_cam_mount.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
 1 0 0 -16 0 1 0 0 0 1 0 0 0 1 4531.dat
-1 0 30 -12 0 0.866025 -0.5 0 0.5 0.866025 0 0 0 1 prp_cam_body.dat
+1 0 30 -12 0 0.866025 -0.5 0 0.5 0.866025 0 0 0 1 building_031_prp_cam_body.ldr
 0 
 
 0 
 0 NOFILE
 0
-0 FILE prp_cam_body.dat
+0 FILE building_031_prp_cam_body.ldr
 0 
 0 New Model
-0 Name: prp_cam_body.dat
+0 Name: building_031_prp_cam_body.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -1563,9 +1517,9 @@
 0 
 0 NOFILE
 0
-0 FILE prp_chair.dat
+0 FILE building_031_prp_chair.ldr
 0 
-0 Name: prp_chair.dat
+0 Name: building_031_prp_chair.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -1577,10 +1531,10 @@
 0 
 0 NOFILE
 0
-0 FILE prp_comms.dat
+0 FILE building_031_prp_comms.ldr
 0 
 0 New Model
-0 Name: prp_comms.dat
+0 Name: building_031_prp_comms.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -1600,10 +1554,10 @@
 0 
 0 NOFILE
 0
-0 FILE prp_cone.dat
+0 FILE building_031_prp_cone.ldr
 0 
 0 New Model
-0 Name: prp_cone.dat
+0 Name: building_031_prp_cone.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -1615,9 +1569,9 @@
 0 
 0 NOFILE
 0
-0 FILE prp_control.dat
+0 FILE building_031_prp_control.ldr
 0 
-0 Name: prp_control.dat
+0 Name: building_031_prp_control.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -1635,10 +1589,10 @@
 0 
 0 NOFILE
 0
-0 FILE prp_cot.dat
+0 FILE building_031_prp_cot.ldr
 0 
 0 New Model
-0 Name: prp_cot.dat
+0 Name: building_031_prp_cot.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -1690,10 +1644,10 @@
 0 
 0 NOFILE
 0
-0 FILE prp_couch.dat
+0 FILE building_031_prp_couch.ldr
 0 
 0 New Model
-0 Name: prp_couch.dat
+0 Name: building_031_prp_couch.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -1708,10 +1662,10 @@
 0 
 0 NOFILE
 0
-0 FILE prp_curtain.dat
+0 FILE building_031_prp_curtain.ldr
 0 
 0 New Model
-0 Name: prp_curtain.dat
+0 Name: building_031_prp_curtain.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -1732,9 +1686,9 @@
 0 
 0 NOFILE
 0
-0 FILE prp_cylinder_1.dat
+0 FILE building_031_prp_cylinder_1.ldr
 0 
-0 Name: prp_cylinder_1.dat
+0 Name: building_031_prp_cylinder_1.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -1748,9 +1702,9 @@
 0 
 0 NOFILE
 0
-0 FILE prp_cylinder_2.dat
+0 FILE building_031_prp_cylinder_2.ldr
 0 
-0 Name: prp_cylinder_2.dat
+0 Name: building_031_prp_cylinder_2.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -1764,10 +1718,10 @@
 0 
 0 NOFILE
 0
-0 FILE prp_flag.dat
+0 FILE building_031_prp_flag.ldr
 0 
 0 New Model
-0 Name: prp_flag.dat
+0 Name: building_031_prp_flag.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -1781,9 +1735,9 @@
 0 
 0 NOFILE
 0
-0 FILE prp_hypertank.dat
+0 FILE building_031_prp_hypertank.ldr
 0 
-0 Name: prp_hypertank.dat
+0 Name: building_031_prp_hypertank.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER -40 -144 1.08359 1 "Custom" 
@@ -1800,10 +1754,10 @@
 0 
 0 NOFILE
 0
-0 FILE prp_locker.dat
+0 FILE building_031_prp_locker.ldr
 0 
 0 New Model
-0 Name: prp_locker.dat
+0 Name: building_031_prp_locker.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 New Model
@@ -1835,24 +1789,24 @@
 0 
 0 NOFILE
 0
-0 FILE prp_sat_base.dat
+0 FILE building_031_prp_sat_base.ldr
 0 
 0 New Model
-0 Name: prp_sat_base.dat
+0 Name: building_031_prp_sat_base.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
 1 0 0 -8 0 -1 0 0 0 1 0 0 0 -1 30383.dat
-1 0 -10 -16 0 -0.5 -0.866025 0 0.866025 -0.5 0 0 0 1 prp_sat_dish.dat
+1 0 -10 -16 0 -0.5 -0.866025 0 0.866025 -0.5 0 0 0 1 building_031_prp_sat_dish.ldr
 0 
 
 0 
 0 NOFILE
 0
-0 FILE prp_sat_dish.dat
+0 FILE building_031_prp_sat_dish.ldr
 0 
-0 Name: prp_sat_dish.dat
+0 Name: building_031_prp_sat_dish.ldr
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
 1 0 -30 -2 0 1 0 0 0 1 0 0 0 1 44302a.dat
@@ -1862,10 +1816,10 @@
 0 
 0 NOFILE
 0
-0 FILE prp_sink.dat
+0 FILE building_031_prp_sink.ldr
 0 
 0 New Model
-0 Name: prp_sink.dat
+0 Name: building_031_prp_sink.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -1878,10 +1832,10 @@
 0 
 0 NOFILE
 0
-0 FILE prp_sgn_fire.dat
+0 FILE building_031_prp_sgn_fire.ldr
 0 
 0 New Model
-0 Name: prp_sgn_fire.dat
+0 Name: building_031_prp_sgn_fire.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -1894,10 +1848,10 @@
 0 
 0 NOFILE
 0
-0 FILE prp_sgn_medic.dat
+0 FILE building_031_prp_sgn_medic.ldr
 0 
 0 New Model
-0 Name: prp_sgn_medic.dat
+0 Name: building_031_prp_sgn_medic.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 New Model
@@ -1914,10 +1868,10 @@
 0 
 0 NOFILE
 0
-0 FILE prp_stove.dat
+0 FILE building_031_prp_stove.ldr
 0 
 0 New Model
-0 Name: prp_stove.dat
+0 Name: building_031_prp_stove.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -1946,10 +1900,10 @@
 0 
 0 NOFILE
 0
-0 FILE prp_stretcher.dat
+0 FILE building_031_prp_stretcher.ldr
 0 
 0 New Model
-0 Name: prp_stretcher.dat
+0 Name: building_031_prp_stretcher.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -1962,10 +1916,10 @@
 0 
 0 NOFILE
 0
-0 FILE prp_tableset.dat
+0 FILE building_031_prp_tableset.ldr
 0 
 0 New Model
-0 Name: prp_tableset.dat
+0 Name: building_031_prp_tableset.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -1983,10 +1937,10 @@
 0 
 0 NOFILE
 0
-0 FILE prp_toilet.dat
+0 FILE building_031_prp_toilet.ldr
 0 
 0 New Model
-0 Name: prp_toilet.dat
+0 Name: building_031_prp_toilet.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -2000,10 +1954,10 @@
 0 
 0 NOFILE
 0
-0 FILE prp_watertank.dat
+0 FILE building_031_prp_watertank.ldr
 0 
 0 New Model
-0 Name: prp_watertank.dat
+0 Name: building_031_prp_watertank.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -2020,10 +1974,10 @@
 0 
 0 NOFILE
 0
-0 FILE rck_axe.dat
+0 FILE building_031_rck_axe.ldr
 0 
 0 New Model
-0 Name: rck_axe.dat
+0 Name: building_031_rck_axe.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -2043,10 +1997,10 @@
 0 
 0 NOFILE
 0
-0 FILE rck_broom.dat
+0 FILE building_031_rck_broom.ldr
 0 
 0 New Model
-0 Name: rck_broom.dat
+0 Name: building_031_rck_broom.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 New Model
@@ -2068,10 +2022,10 @@
 0 
 0 NOFILE
 0
-0 FILE rck_pick.dat
+0 FILE building_031_rck_pick.ldr
 0 
 0 New Model
-0 Name: rck_pick.dat
+0 Name: building_031_rck_pick.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 11.3439 -48 0 1 "Custom" 
@@ -2090,10 +2044,10 @@
 0 
 0 NOFILE
 0
-0 FILE rck_tank.dat
+0 FILE building_031_rck_tank.ldr
 0 
 0 New Model
-0 Name: rck_tank.dat
+0 Name: building_031_rck_tank.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 New Model
@@ -2116,10 +2070,10 @@
 0 
 0 NOFILE
 0
-0 FILE rck_tool_1.dat
+0 FILE building_031_rck_tool_1.ldr
 0 
 0 New Model
-0 Name: rck_tool_1.dat
+0 Name: building_031_rck_tool_1.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 New Model
@@ -2137,10 +2091,10 @@
 0 
 0 NOFILE
 0
-0 FILE rck_tool_2.dat
+0 FILE building_031_rck_tool_2.ldr
 0 
 0 New Model
-0 Name: rck_tool_2.dat
+0 Name: building_031_rck_tool_2.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 New Model
@@ -2166,10 +2120,10 @@
 0 
 0 NOFILE
 0
-0 FILE arc_big.dat
+0 FILE building_031_arc_big.ldr
 0 
 0 New Model
-0 Name: arc_big.dat
+0 Name: building_031_arc_big.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -2202,10 +2156,10 @@
 0 
 0 NOFILE
 0
-0 FILE shg_east.dat
+0 FILE building_031_shg_east.ldr
 0 
 0 New Model
-0 Name: shg_east.dat
+0 Name: building_031_shg_east.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -2225,10 +2179,10 @@
 0 
 0 NOFILE
 0
-0 FILE shg_north.dat
+0 FILE building_031_shg_north.ldr
 0 
 0 New Model
-0 Name: shg_north.dat
+0 Name: building_031_shg_north.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -2262,10 +2216,10 @@
 0 
 0 NOFILE
 0
-0 FILE shg_south.dat
+0 FILE building_031_shg_south.ldr
 0 
 0 New Model
-0 Name: shg_south.dat
+0 Name: building_031_shg_south.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -2315,10 +2269,10 @@
 0 
 0 NOFILE
 0
-0 FILE shg_west.dat
+0 FILE building_031_shg_west.ldr
 0 
 0 New Model
-0 Name: shg_west.dat
+0 Name: building_031_shg_west.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 New Model
@@ -2351,10 +2305,10 @@
 0 
 0 NOFILE
 0
-0 FILE lmp_ceiling_1.dat
+0 FILE building_031_lmp_ceiling_1.ldr
 0 
 0 New Model
-0 Name: lmp_ceiling_1.dat
+0 Name: building_031_lmp_ceiling_1.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 New Model
@@ -2384,10 +2338,10 @@
 0 
 0 NOFILE
 0
-0 FILE lmp_ceiling_2.dat
+0 FILE building_031_lmp_ceiling_2.ldr
 0 
 0 New Model
-0 Name: lmp_ceiling_2.dat
+0 Name: building_031_lmp_ceiling_2.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 New Model
@@ -2423,10 +2377,10 @@
 0 
 0 NOFILE
 0
-0 FILE lmp_ceiling_3.dat
+0 FILE building_031_lmp_ceiling_3.ldr
 0 
 0 New Model
-0 Name: lmp_ceiling_3.dat
+0 Name: building_031_lmp_ceiling_3.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 New Model
@@ -2466,10 +2420,10 @@
 0 
 0 NOFILE
 0
-0 FILE lmp_ceiling_4.dat
+0 FILE building_031_lmp_ceiling_4.ldr
 0 
 0 New Model
-0 Name: lmp_ceiling_4.dat
+0 Name: building_031_lmp_ceiling_4.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 New Model
@@ -2509,10 +2463,10 @@
 0 
 0 NOFILE
 0
-0 FILE lmp_ceiling_5.dat
+0 FILE building_031_lmp_ceiling_5.ldr
 0 
 0 New Model
-0 Name: lmp_ceiling_5.dat
+0 Name: building_031_lmp_ceiling_5.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 New Model
@@ -2548,10 +2502,10 @@
 0 
 0 NOFILE
 0
-0 FILE lmp_ceiling_6.dat
+0 FILE building_031_lmp_ceiling_6.ldr
 0 
 0 New Model
-0 Name: lmp_ceiling_6.dat
+0 Name: building_031_lmp_ceiling_6.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 New Model
@@ -2588,10 +2542,10 @@
 0 
 0 NOFILE
 0
-0 FILE lmp_flourescant.dat
+0 FILE building_031_lmp_flourescant.ldr
 0 
 0 New Model
-0 Name: lmp_flourescant.dat
+0 Name: building_031_lmp_flourescant.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
@@ -2604,15 +2558,27 @@
 0 
 0 NOFILE
 0
-0 FILE arc_small.dat
+0 FILE building_031_arc_small.ldr
 0 
 0 New Model
-0 Name: arc_small.dat
+0 Name: building_031_arc_small.ldr
 0 Author: Michael Horvath
 0 Unofficial Model
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
 1 0 0 -96 -90 1 0 0 0 1 0 0 0 1 2339.dat
+1 0 0 -72 -90 1 0 0 0 1 0 0 0 1 3040b.dat
+1 0 0 -96 -70 1 0 0 0 1 0 0 0 1 3040b.dat
+1 0 0 -120 -50 1 0 0 0 1 0 0 0 1 3040b.dat
+1 0 0 -144 -30 1 0 0 0 1 0 0 0 1 3040b.dat
+1 0 0 -168 -10 1 0 0 0 1 0 0 0 1 3040b.dat
+1 0 0 -144 30 -1 0 0 0 1 0 0 0 -1 3040b.dat
+1 0 0 -168 10 -1 0 0 0 1 0 0 0 -1 3040b.dat
+1 0 0 -120 50 -1 0 0 0 1 0 0 0 -1 3040b.dat
+1 0 0 -96 70 -1 0 0 0 1 0 0 0 -1 3040b.dat
+1 0 0 -72 90 -1 0 0 0 1 0 0 0 -1 3040b.dat
+1 0 0 -120 -30 -1 0 0 0 1 0 0 0 -1 3005.dat
+1 0 0 -120 30 -1 0 0 0 1 0 0 0 -1 3005.dat
 1 0 0 -96 90 -1 0 0 0 1 0 0 0 -1 2339.dat
 1 0 0 -96 0 0 0 1 0 1 0 -1 0 0 3710.dat
 1 0 0 -144 0 0 0 -1 0 1 0 1 0 0 3245a.dat
@@ -2635,191 +2601,6 @@
 0 
 0 NOFILE
 0
-0 FILE m6643.ldr
-0 
-0 Model exported from LeoCAD
-0 Original name: 6643FI~1.LCD
-0 ROTATION CENTER 0 0 0 1 "Custom" 
-0 ROTATION CONFIG 0 0
-1 0 -40 -48 80 0 0 -1 0 1 0 1 0 0 4600.dat
-1 0 80 -48 80 0 0 -1 0 1 0 1 0 0 4600.dat
-0 STEP
-1 0 -40 -56 80 1 0 0 0 1 0 0 0 1 3022.dat
-1 0 90 -56 80 1 0 0 0 1 0 0 0 1 3021.dat
-0 STEP
-1 15 20 -64 50 1 0 0 0 1 0 0 0 1 3023.dat
-1 15 20 -64 110 1 0 0 0 1 0 0 0 1 3023.dat
-1 15 80 -64 80 1 0 0 0 1 0 0 0 1 3022.dat
-1 15 -50 -64 80 1 0 0 0 1 0 0 0 1 3021.dat
-0 STEP
-1 7 130 -64 60 1 0 0 0 0 -1 0 1 0 6141.dat
-1 7 130 -64 100 1 0 0 0 0 1 0 -1 0 6141.dat
-1 15 20 -72 80 0 0 -1 0 1 0 1 0 0 4212b.dat
-0 STEP
-1 4 -70 -80 80 0 0 -1 0 1 0 1 0 0 3710.dat
-1 4 -10 -80 80 0 0 -1 0 1 0 1 0 0 3710.dat
-1 4 80 -88 80 0 0 -1 0 1 0 1 0 0 3788.dat
-1 4 -40 -88 80 0 0 -1 0 1 0 1 0 0 3788.dat
-0 STEP
-1 4 50 -80 80 0 0 -1 0 1 0 1 0 0 3829c01.dat
-1 4 -70 -88 50 1 0 0 0 1 0 0 0 1 3024.dat
-1 4 -70 -88 110 1 0 0 0 1 0 0 0 1 3024.dat
-1 4 -10 -88 80 0 0 -1 0 1 0 1 0 0 3710.dat
-1 4 110 -96 50 0 0 -1 0 1 0 1 0 0 4070.dat
-1 4 110 -96 70 0 0 -1 0 1 0 1 0 0 4070.dat
-1 4 110 -96 90 0 0 -1 0 1 0 1 0 0 4070.dat
-1 4 110 -96 110 0 0 -1 0 1 0 1 0 0 4070.dat
-0 STEP
-1 33 -20 -136 110 -1 0 0 0 1 0 0 0 -1 4862.dat
-1 33 -60 -136 110 -1 0 0 0 1 0 0 0 -1 4862.dat
-1 4 -40 -136 110 -1 0 0 0 1 0 0 0 -1 4863.dat
-1 33 -60 -136 50 1 0 0 0 1 0 0 0 1 4862.dat
-1 33 -20 -136 50 1 0 0 0 1 0 0 0 1 4862.dat
-1 4 -40 -136 50 1 0 0 0 1 0 0 0 1 4863.dat
-1 46 124.25 -86 50 0 -1 0 1 0 0 0 0 1 3024.dat
-1 46 124.25 -86 110 0 -1 0 1 0 0 0 0 1 3024.dat
-1 4 50 -96 50 0 0 -1 0 1 0 1 0 0 3821.dat
-1 4 50 -96 110 0 0 -1 0 1 0 1 0 0 3822.dat
-1 4 -10 -112 80 0 0 1 0 1 0 -1 0 0 4865a.dat
-1 4 80 -96 80 0 0 -1 0 1 0 1 0 0 3020.dat
-0 STEP
-1 33 50 -144 80 0 0 -1 0 1 0 1 0 0 3823.dat
-0 STEP
-1 4 100 -104 80 1 0 0 0 1 0 0 0 1 3068bp57.dat
-1 4 -50 -144 50 1 0 0 0 1 0 0 0 1 3623.dat
-1 4 -50 -144 110 1 0 0 0 1 0 0 0 1 3623.dat
-1 4 -10 -144 50 1 0 0 0 1 0 0 0 1 3070a.dat
-1 4 -10 -144 110 1 0 0 0 1 0 0 0 1 3070a.dat
-0 STEP
-1 33 -82 -127.5 80 0 1 0 0 0 1 1 0 0 2348b.dat
-1 4 -50 -152 80 0 0 -1 0 1 0 1 0 0 3710.dat
-1 4 -86 -110 80 0 1 0 0 0 -1 -1 0 0 2349a.dat
-1 4 -70 -152 80 0 0 1 0 1 0 -1 0 0 4315.dat
-0 STEP
-1 15 -94 -80 80 0 1 0 0 0 1 1 0 0 3069b.dat
-1 36 -94 -80 50 0 1 0 -1 0 0 0 0 1 3070a.dat
-1 36 -94 -80 110 0 1 0 -1 0 0 0 0 1 3070a.dat
-1 4 20 -152 80 0 0 -1 0 1 0 1 0 0 4213.dat
-1 4 -70 -152 80 0 0 1 0 1 0 -1 0 0 4315.dat
-1 4 -30 -152 80 0 0 -1 0 1 0 1 0 0 4315.dat
-0 STEP
-1 0 -30 -160 90 0 0 -1 0 1 0 1 0 0 4593.dat
-1 15 -30 -160 90 0 0 -1 0 1 0 1 0 0 4592.dat
-1 15 30 -160 80 0 0 -1 0 1 0 1 0 0 3710.dat
-0 STEP
-1 0 80 -40 40 1 0 0 0 1 0 0 0 1 6015.dat
-1 0 -40 -40 40 1 0 0 0 1 0 0 0 1 6015.dat
-1 0 -40 -40 120 1 0 0 0 1 0 0 0 1 6015.dat
-1 0 80 -40 120 1 0 0 0 1 0 0 0 1 6015.dat
-1 15 80 -40 50 1 0 0 0 1 0 0 0 1 6014.dat
-1 15 -40 -40 50 1 0 0 0 1 0 0 0 1 6014.dat
-1 15 80 -40 110 -1 0 0 0 1 0 0 0 -1 6014.dat
-1 15 -40 -40 110 -1 0 0 0 1 0 0 0 -1 6014.dat
-1 33 30 -168 50 1 0 0 0 1 0 0 0 1 3024.dat
-1 33 30 -168 110 1 0 0 0 1 0 0 0 1 3024.dat
-1 15 30 -168 80 0 0 -1 0 1 0 1 0 0 3069b.dat
-0 
-0 
-0 NOFILE
-0
-0 FILE m6666.ldr
-0 
-0 Untitled
-0 Name: m6666.ldr
-0 Author: MLCad
-0 Unofficial Model
-0 ROTATION CENTER 0 0 0 1 "Custom" 
-0 ROTATION CONFIG 0 0
-1 0 -110 8 -30 1 0 0 0 1 0 0 0 1 6157.dat
-1 0 -110 8 130 1 0 0 0 1 0 0 0 1 6157.dat
-0 STEP
-1 0 -110 8 -20 0 0 -1 0 1 0 1 0 0 3021.dat
-1 0 -110 8 140 0 0 -1 0 1 0 1 0 0 3021.dat
-0 STEP
-1 0 -110 0 50 0 0 -1 0 1 0 1 0 0 3034.dat
-0 STEP
-1 0 -110 0 160 0 0 -1 0 1 0 1 0 0 3021.dat
-1 0 -110 0 -40 -1 0 0 0 1 0 0 0 -1 3023.dat
-0 STEP
-1 4 -110 -16 -30 -1 0 0 0 1 0 0 0 -1 3788.dat
-1 4 -110 -16 130 -1 0 0 0 1 0 0 0 -1 3788.dat
-0 STEP
-1 4 -110 -8 170 -1 0 0 0 1 0 0 0 -1 3020.dat
-1 4 -110 -8 50 0 0 1 0 1 0 -1 0 0 3032.dat
-0 STEP
-1 4 -80 -16 50 0 0 1 0 1 0 -1 0 0 3666.dat
-1 4 -140 -16 50 0 0 1 0 1 0 -1 0 0 3666.dat
-1 36 -140 -16 180 0 0 1 0 1 0 -1 0 0 3024.dat
-1 36 -80 -16 180 0 0 1 0 1 0 -1 0 0 3024.dat
-1 4 -80 -16 160 0 0 1 0 1 0 -1 0 0 3024.dat
-1 4 -140 -16 160 0 0 1 0 1 0 -1 0 0 3024.dat
-1 4 -110 -16 180 -1 0 0 0 1 0 0 0 -1 3069b.dat
-1 4 -110 -16 -40 1 0 0 0 1 0 0 0 1 2436a.dat
-0 STEP
-1 1 -110 -16 -20 1 0 0 0 1 0 0 0 1 3829c01.dat
-1 1 -110 -40 40 1 0 0 0 1 0 0 0 1 2432.dat
-1 46 -140 -6 -62 1 0 0 0 0 -1 0 1 0 3070a.dat
-1 46 -80 -6 -62 1 0 0 0 0 -1 0 1 0 3070a.dat
-1 4 -110 -6 -62 1 0 0 0 0 -1 0 1 0 2412b.dat
-0 STEP
-1 15 -140 -88 110 0 0 -1 0 1 0 1 0 0 6156.dat
-1 15 -110 -40 -40 1 0 0 0 1 0 0 0 1 3037.dat
-1 15 -80 -88 110 0 0 1 0 1 0 -1 0 0 6156.dat
-0 STEP
-1 15 -80 -88 50 0 0 1 0 1 0 -1 0 0 2362b.dat
-1 15 -80 -88 170 0 0 1 0 1 0 -1 0 0 2362b.dat
-1 15 -140 -88 170 0 0 -1 0 1 0 1 0 0 2362b.dat
-1 15 -140 -88 50 0 0 -1 0 1 0 1 0 0 2362b.dat
-1 15 -80 -40 -20 1 0 0 0 1 0 0 0 1 3822.dat
-1 15 -140 -40 -20 1 0 0 0 1 0 0 0 1 3821.dat
-0 STEP
-1 1 -80 -96 110 0 0 -1 0 1 0 1 0 0 3666.dat
-1 15 -80 -96 40 0 0 -1 0 1 0 1 0 0 3070a.dat
-1 15 -140 -96 40 0 0 -1 0 1 0 1 0 0 3070a.dat
-1 41 -110 -71 194 1 0 0 0 0 1 0 -1 0 2348b.dat
-1 1 -140 -96 110 0 0 -1 0 1 0 1 0 0 3666.dat
-1 15 -110 -96 180 -1 0 0 0 1 0 0 0 -1 4315.dat
-1 15 -110 -56 198 -1 0 0 0 0 -1 0 -1 0 2349a.dat
-0 STEP
-1 41 -110 -88 -20 1 0 0 0 1 0 0 0 1 3823.dat
-1 15 -110 -104 130 0 0 -1 0 1 0 1 0 0 3032.dat
-1 33 -140 -96 -20 0 0 -1 0 1 0 1 0 0 3024.dat
-1 33 -80 -96 -20 0 0 -1 0 1 0 1 0 0 3024.dat
-0 STEP
-1 15 -110 -104 60 1 0 0 0 1 0 0 0 1 4315.dat
-1 15 -110 -104 10 1 0 0 0 1 0 0 0 1 4213.dat
-1 15 -110 -96 -20 -1 0 0 0 1 0 0 0 -1 3023.dat
-1 15 -110 -112 20 -1 0 0 0 1 0 0 0 -1 3023.dat
-1 15 -110 -112 180 -1 0 0 0 1 0 0 0 -1 3794a.dat
-1 33 -80 -112 20 -1 0 0 0 1 0 0 0 -1 3024.dat
-1 33 -140 -112 20 -1 0 0 0 1 0 0 0 -1 3024.dat
-0 STEP
-1 33 -140 -120 20 -1 0 0 0 1 0 0 0 -1 3070a.dat
-1 33 -80 -120 20 -1 0 0 0 1 0 0 0 -1 3070a.dat
-1 33 -110 -120 180 -1 0 0 0 1 0 0 0 -1 3070a.dat
-1 15 -110 -120 20 -1 0 0 0 1 0 0 0 -1 2412b.dat
-1 15 -100 -112 70 0 0 1 0 1 0 -1 0 0 2412b.dat
-1 15 -120 -112 70 0 0 1 0 1 0 -1 0 0 2412b.dat
-1 15 -150 13 -30 0 0 1 0 1 0 -1 0 0 4624.dat
-1 0 -150 13 -30 0 0 1 0 1 0 -1 0 0 3641.dat
-1 15 -150 13 130 0 0 1 0 1 0 -1 0 0 4624.dat
-1 0 -150 13 130 0 0 1 0 1 0 -1 0 0 3641.dat
-1 15 -70 13 130 0 0 -1 0 1 0 1 0 0 4624.dat
-1 0 -70 13 130 0 0 -1 0 1 0 1 0 0 3641.dat
-1 15 -70 13 -30 0 0 -1 0 1 0 1 0 0 4624.dat
-1 0 -70 13 -30 0 0 -1 0 1 0 1 0 0 3641.dat
-1 4 -100 -112 120 1 0 0 0 1 0 0 0 1 4592c01.dat
-0 
-0 
-0 
-0 
-0 
-0 
-0 
-0 NOFILE
-0 
-0 
-0
 0 FILE camera.dat
 0 ~Camera Position
 0 Name: Camera.dat
@@ -2835,6 +2616,30 @@
 0 L3P ENDPOV
 0 
 0 
+0 
+0 
+0 
+0
+0 FILE building_031_floor.ldr
+0 New Model
+0 Name: building_031_floor.ldr
+0 Author: MLCad
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 7 -80 0 160 0 0 -1 0 1 0 1 0 0 90498.dat
+1 7 80 0 160 0 0 -1 0 1 0 1 0 0 90498.dat
+1 7 80 0 160 0 0 -1 0 1 0 1 0 0 90498.dat
+1 7 80 0 -160 0 0 -1 0 1 0 1 0 0 90498.dat
+1 7 240 0 160 0 0 -1 0 1 0 1 0 0 90498.dat
+1 7 240 0 -160 0 0 -1 0 1 0 1 0 0 90498.dat
+1 7 -400 0 160 0 0 -1 0 1 0 1 0 0 92438.dat
+1 7 -400 0 -160 0 0 -1 0 1 0 1 0 0 92438.dat
+1 7 400 0 160 0 0 -1 0 1 0 1 0 0 92438.dat
+1 7 400 0 -160 0 0 -1 0 1 0 1 0 0 92438.dat
+1 7 -80 0 -160 0 0 -1 0 1 0 1 0 0 90498.dat
+1 7 -240 0 160 0 0 -1 0 1 0 1 0 0 90498.dat
+1 7 -240 0 -160 0 0 -1 0 1 0 1 0 0 90498.dat
 0 
 0 
 0
