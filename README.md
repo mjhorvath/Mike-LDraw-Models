@@ -9,7 +9,7 @@ There are several folders:
 * povray - models and scenes in [POV-Ray](http://www.povray.org/) format
 * scripts - scripts created for processing the models
 * source - the original versions of my models in MPD format
-* tests - tests of various kinds
+* tests - test files of various kinds
 
 There was originally a sixth folder for what I call "superinlined" models created using the "lowest level" extraction tool of [MPDCenter](https://ldraw.heidemann.org/index.php?page=mpdcenter), but the files were too large to upload to GitHub.
 
