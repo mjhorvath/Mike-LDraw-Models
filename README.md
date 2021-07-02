@@ -1,4 +1,3 @@
-# mike_ldraw_models
 Mike Horvath's LDraw models and scenes.
 
 There are four folders:
@@ -7,7 +6,7 @@ There are four folders:
 * inlined - created using the "library level" extraction tool of [MPDCenter](https://ldraw.heidemann.org/index.php?page=mpdcenter)
 * povray - models and scenes in [POV-Ray](http://www.povray.org/) format
 * regular - the latest versions of my models in MPD format
-* renders - rendered images created using [POV-Ray](http://www.povray.org/)
+* renders - rendered images created using [POV-Ray](http://www.povray.org/) or other software. See my [Gallery](https://mjhorvath.github.io/Mike-LDraw-Models/renders/renders.html).
 
 There was originally a sixth folder for what I call "superinlined" models created using the "lowest level" extraction tool of [MPDCenter](https://ldraw.heidemann.org/index.php?page=mpdcenter), but the files were too large to upload to GitHub.
 
