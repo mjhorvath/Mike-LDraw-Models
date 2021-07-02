@@ -2,12 +2,14 @@ Mike Horvath's LDraw models and scenes.
 
 There are several folders:
 
-* docs - various notes about models and software usage.
+* docs - various notes about models and software usage
 * boxed - contains "boxed" versions of models created using [LDraw Boxer](https://github.com/Jeremy1980/LDBoxer)
 * gallery - rendered images created using [POV-Ray](http://www.povray.org/) or other software. See the [gallery page](https://mjhorvath.github.io/Mike-LDraw-Models/gallery/gallery.html).
 * inlined - created using the "library level" extraction tool of [MPDCenter](https://ldraw.heidemann.org/index.php?page=mpdcenter)
 * povray - models and scenes in [POV-Ray](http://www.povray.org/) format
+* scripts - scripts created for processing the models
 * source - the original versions of my models in MPD format
+* tests - tests of various kinds
 
 There was originally a sixth folder for what I call "superinlined" models created using the "lowest level" extraction tool of [MPDCenter](https://ldraw.heidemann.org/index.php?page=mpdcenter), but the files were too large to upload to GitHub.
 
