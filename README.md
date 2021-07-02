@@ -19,3 +19,5 @@ The licenses are:
 
 * [LGPL 2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html) for programming code (POV-Ray SDL, JavaScript, etc.)
 * [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode) for artistic content (LDraw models, rendered images, etc.)
+
+LEGO&reg; is a trademark of the LEGO Group, which does not sponsor, authorize, or endorse this project.
