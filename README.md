@@ -11,7 +11,7 @@ There are several folders:
 * source - the original versions of my models in MPD format
 * tests - test files of various kinds
 
-There was originally a sixth folder for what I call "superinlined" models created using the "lowest level" extraction tool of [MPDCenter](https://ldraw.heidemann.org/index.php?page=mpdcenter), but the files were too large to upload to GitHub.
+There was originally an additional folder for what I call "superinlined" models created using the "lowest level" extraction tool of [MPDCenter](https://ldraw.heidemann.org/index.php?page=mpdcenter), but the files were too large to upload to GitHub.
 
 Povray files prefixed with "wrapper" are the top level files that should be rendered. All other povray files are transcluded into them.
 
@@ -19,3 +19,5 @@ The licenses are:
 
 * [LGPL 2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html) for programming code (POV-Ray SDL, JavaScript, etc.)
 * [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode) for artistic content (LDraw models, rendered images, etc.)
+
+LEGO&reg; is a trademark of the LEGO Group, which does not sponsor, authorize, or endorse this project.
