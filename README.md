@@ -1,7 +1,8 @@
 Mike Horvath's LDraw models and scenes.
 
-There are four folders:
+There are several folders:
 
+* docs - various notes about models and software usage.
 * boxed - contains "boxed" versions of models created using [LDraw Boxer](https://github.com/Jeremy1980/LDBoxer)
 * gallery - rendered images created using [POV-Ray](http://www.povray.org/) or other software. See the [gallery page](https://mjhorvath.github.io/Mike-LDraw-Models/gallery/gallery.html).
 * inlined - created using the "library level" extraction tool of [MPDCenter](https://ldraw.heidemann.org/index.php?page=mpdcenter)
